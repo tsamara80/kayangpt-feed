@@ -11,11 +11,10 @@ paths:
       operationId: getKayanUpdates
       summary: Get the latest Kayan.ai feature updates
       description: >
-        Returns a JSON list of Kayan.ai updates. Each item has a category
-        (LIVE_NOW or COMING_SOON — DISCARD items are filtered out already),
-        a title, and rewritten content. When answering "what's new", only
-        use LIVE_NOW items by default. Only mention COMING_SOON items if
-        the user specifically asks about upcoming features or the roadmap.
+        Returns Kayan.ai's latest feature updates as JSON. Each item has a
+        category (LIVE_NOW or COMING_SOON), a title, and content. Use
+        LIVE_NOW items by default for "what's new". Only mention
+        COMING_SOON items if asked about upcoming features or the roadmap.
       responses:
         "200":
           description: Successful response
