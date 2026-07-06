@@ -54,7 +54,7 @@ permission plumbing, or purely cosmetic/UI polish with no functional
 change.
 
 Respond with ONLY a JSON object, no other text:
-{"category": "LIVE_NOW" | "COMING_SOON" | "DISCARD", "reason": "one line justification"}
+{{"category": "LIVE_NOW" | "COMING_SOON" | "DISCARD", "reason": "one line justification"}}
 
 Raw entry title: {title}
 Raw entry content: {content}
