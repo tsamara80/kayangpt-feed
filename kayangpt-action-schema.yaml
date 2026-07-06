@@ -6,7 +6,7 @@ info:
 servers:
   - url: https://raw.githubusercontent.com
 paths:
-  /YOUR_GITHUB_USERNAME/kayangpt-feed/main/updates.json:
+  /tsamara80/kayangpt-feed/main/updates.json:
     get:
       operationId: getKayanUpdates
       summary: Get the latest Kayan.ai feature updates
