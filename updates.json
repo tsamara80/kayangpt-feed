@@ -1,4 +1,73 @@
 {
-  "last_updated": null,
-  "updates": []
+  "last_updated": "2026-07-06T09:22:13.827193+00:00",
+  "updates": [
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/ad-manager-opportunity-score-for-meta-campaigns",
+      "category": "LIVE_NOW",
+      "published": "Wed, 01 Jul 2026 16:21:48 GMT",
+      "title": "Ad Manager: Opportunity Score for Meta Campaigns",
+      "content": "**Ad Manager: Opportunity Score for Meta Campaigns**\n\nBefore you publish a Meta ad campaign, Kayan now shows you an Opportunity Score — a readiness rating that flags setup gaps and points you directly to where you can fix them.\n\n**What's new:**\n\n- **Pre-publish readiness score** — See a percentage score (rated Low, Medium, or High) on the campaign Review screen before going live\n- **Improvement suggestions across four areas:**\n  - *Audience* — flags if targeting is too narrow, too broad, or incomplete\n  - *Budget* — identifies if spend settings may limit delivery or learning\n  - *Creative* — reviews ad content, media, CTAs, and destination links\n  - *Tracking* — checks whether conversion tracking is configured\n- **Click-to-fix navigation** — each recommendation links directly to the relevant section of the campaign builder so you can make updates without hunting through settings\n- **Prioritised guidance** — the score panel surfaces the highest-impact fixes first\n\n**A few things to note:**\n- Opportunity Score is currently available for Meta campaigns only\n- It's a guidance tool — it does not guarantee performance or make changes automatically\n- You decide which recommendations to act on\n\n---\n\n**How to set it up:**\n\n1. Open **Ad Manager** in your Kayan dashboard and create or edit a Meta campaign\n2. Complete your campaign setup\n3. Proceed to the **Review** screen\n4. Check your **Opportunity Score** in the score panel\n5. Review the suggestions listed and click any recommendation to jump directly to that section\n6. Make your updates, return to the Review screen, and publish when ready",
+      "processed_at": "2026-07-06T09:21:43.826531+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/sms-notifications-now-available-for-rentals",
+      "category": "LIVE_NOW",
+      "published": "Wed, 01 Jul 2026 08:03:13 GMT",
+      "title": "📲 SMS Notifications Now Available for Rentals",
+      "content": "**SMS Notifications Now Available for Rental Bookings**\n\nYou can now send SMS notifications for rental bookings directly from Kayan. Set up confirmations, reminders, and follow-ups that reach contacts and your team in real time — no manual outreach needed.\n\n**What's new:**\n- SMS support across all rental booking events: unconfirmed, booked, canceled, rescheduled, reminder, and follow-up\n- Choose recipients per notification — send to the contact, your business, or both\n- Set separate SMS templates for contacts vs. your business so each party gets the right message\n- Default templates included for every notification type, with full customization options or the ability to pull from existing templates in your account\n- Test any SMS before it goes live using the built-in Send Test SMS option\n\n**How to set it up:**\n1. In your Kayan dashboard, go to **Calendar Settings → Rentals → Global Settings → Notifications**\n2. Select a notification type and open the **SMS tab**, then toggle SMS on\n3. Choose your recipients (Contact, Business, or both)\n4. Select or customize your SMS template\n5. Send a test SMS to confirm the message looks right\n6. Save — SMS will fire automatically when that event is triggered",
+      "processed_at": "2026-07-06T09:21:52.404236+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/whatsapp-notifications-are-here-for-rentals",
+      "category": "LIVE_NOW",
+      "published": "Wed, 01 Jul 2026 06:15:50 GMT",
+      "title": "💬 WhatsApp Notifications Are Here for Rentals",
+      "content": "**WhatsApp Notifications Now Available for Rentals**\n\nYou can now send WhatsApp messages as part of your Rentals notification workflow — giving clients and your team a direct, mobile-first communication channel they're already using.\n\n**What's new:**\n\n- WhatsApp is supported across all rental event types: Unconfirmed, Booked, Canceled, Rescheduled, Reminder, and Follow-up\n- Toggle WhatsApp on or off per individual notification type\n- Choose recipients separately — send to Contacts, your Business, or both\n- Set different WhatsApp templates per recipient type for full message control\n- Each notification comes with a default template; keep it, select an existing approved template, or build a new one using the in-app template builder\n- Refresh your available templates in real time with a single click\n- Preview any message before it goes live using the test notification option\n\n**How to set it up:**\n\n1. In your Kayan dashboard, go to **Calendar Settings → Rentals → Global Settings → Notifications**\n2. Under each notification type, toggle **WhatsApp** on\n3. Select your recipients (Contacts, Business, or both)\n4. Choose an approved WhatsApp template or create a new one using the template builder\n5. Send a test message to confirm it looks right\n6. Save — WhatsApp messages will now send automatically based on booking activity",
+      "processed_at": "2026-07-06T09:22:02.530789+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/prospecting-smarter-crm-contact-creation-contact-enrichment",
+      "category": "LIVE_NOW",
+      "published": "Wed, 01 Jul 2026 06:01:24 GMT",
+      "title": "Prospecting: Smarter CRM contact creation & contact enrichment",
+      "content": "**Prospecting: Smarter Contact Creation & Enrichment**\n\nKayan's Prospecting tool now creates richer, cleaner CRM contacts the moment you add a prospect — no manual cleanup required, and ready for outreach or automation from day one.\n\n**What's new:**\n\n- **Website-based enrichment** — Kayan now scrapes phone numbers and emails directly from a prospect's website, going beyond basic directory data so your CRM records start more complete\n- **Fuller contact records by default** — Every new prospect contact now includes source tagging, prospect tags for segmentation, phone and email fields (including additional numbers/addresses), website URL, and full address details\n- **Control over decision-maker contacts** — A new enrichment setting lets you choose whether Kayan should search for additional Points of Contact (POCs) like owners, managers, or key decision-makers. When enabled, each POC is created as its own CRM contact. When disabled, only the primary business contact is created — faster and cleaner for simpler workflows\n- **No more duplicate business contacts** — Additional phone numbers and emails are now consolidated onto a single primary business contact rather than generating separate duplicate records. POCs are still created individually when found\n\n---\n\n**How to set it up:**\n\n1. Open the **Kayan dashboard** and navigate to the **Prospecting** section\n2. Go to **Prospecting Settings** and locate the **Contact Enrichment** options\n3. Toggle **POC search** on or off depending on whether you want decision-maker contacts created automatically\n4. Run or re-run a prospect search — new contacts will be created with the enriched fields applied automatically\n5. Find all created contacts in your **CRM tab**, filterable by the \"Prospecting\" source tag",
+      "processed_at": "2026-07-06T09:22:13.827166+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/ad-manager-custom-values-in-ad-copy",
+      "category": "LIVE_NOW",
+      "published": "Thu, 02 Jul 2026 14:06:33 GMT",
+      "title": "Ad Manager - Custom Values in ad copy",
+      "content": "**Ad Manager: Custom Values in Ad Copy**\n\nYou can now insert Custom Values directly into ad copy fields across Meta, Google, and LinkedIn campaigns — no more retyping the same business details every time.\n\n**What's new:**\n\n- **Custom Values in ad copy** — Insert saved values (business name, phone number, city, offer name, support email, service area, etc.) into supported copy fields including primary text, headlines, descriptions, and introduction text\n- **Custom Values picker** — A new insert option lets you search and select any saved Custom Value directly within the copy field\n- **Map Custom Values before publishing** — A dedicated mapping step lets you review and fill in any missing values before the campaign goes live\n- **Resolved preview** — Preview and review screens now display the final rendered copy so you can confirm exactly what will appear in the published ad\n- **Validation alerts** — Kayan will flag missing, empty, invalid, or character-limit-exceeding values before you publish, reducing the risk of errors\n- **Reusable templates** — Campaign templates retain Custom Value keys, making it straightforward to reuse one template across multiple clients by mapping new values at launch\n\n**How to set it up:**\n\n1. Open the **Ad Manager** in your Kayan dashboard\n2. Create or edit a Meta, Google, or LinkedIn campaign\n3. Navigate to the ad copy section\n4. Click the **Insert Custom Values** icon next to a supported copy field\n5. Search for and select the value you want to use\n6. Repeat across any additional copy fields as needed\n7. Click **Map Custom Values** to review or fill in any outstanding values\n8. Check the preview screen to confirm the resolved copy looks correct\n9. Clear any validation warnings, then publish\n\n**Notes:**\n- Custom Values are supported in copy fields only — not in URLs, CTA dropdowns, media uploads, targeting, or budget/bid fields\n- Campaigns can be saved as drafts with unresolved values\n- Updating a Custom Value after a campaign is live will not automatically update running ads — changes require a republish",
+      "processed_at": "2026-07-06T09:21:28.191528+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/clearer-payment-provider-selection-when-enabling-saas-or-rebilling",
+      "category": "DISCARD",
+      "published": "Thu, 02 Jul 2026 12:31:50 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/dashboards-custom-reports-refreshed-ui-components-for-a-more-consistent-experien",
+      "category": "DISCARD",
+      "published": "Thu, 02 Jul 2026 11:21:30 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/more-control-when-adding-prospects-in-prospecting-tool",
+      "category": "DISCARD",
+      "published": "Thu, 02 Jul 2026 03:30:00 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/introducing-new-templates-100",
+      "category": "LIVE_NOW",
+      "published": "Sun, 05 Jul 2026 03:01:31 GMT",
+      "title": "Introducing New Templates",
+      "content": "**New Templates Now Available**\n\nFresh pre-built templates are live across websites, ads, social, and automations — ready to customize and deploy straight from your Kayan dashboard.\n\n**What's new:**\n\n- **1 Website Template** — General/Other category\n- **8 Social Templates** — covering Restaurants & Bars, Marketing Agencies, Insurance, and Other\n- **2 Facebook Ad Templates** — Auto Body & Painting, Banking\n- **5 Google Ad Templates** — Eyelash Boutique, Automotive Repair, Travel Writer, Bistro Restaurant, Real Estate Management\n- **3 LinkedIn Ad Templates** — Financial Planner, Marketing Agency Affiliate, Commercial Insurance\n- **3 Automation Workflow Templates** — Speed-to-Lead SMS + Email, Employee/Team Review Collection, Task Overdue Escalation\n- **1 New Snapshot** — Real Estate: Home Staging\n\n**How to set it up:**\n\n1. From your Kayan dashboard, navigate to the relevant section (Website Builder, Ad Campaigns, Social Planner, or Automations tab).\n2. Select **Templates** and browse the newly added options by category.\n3. Choose a template, customize it to match your brand, and publish or activate directly from the editor.",
+      "processed_at": "2026-07-06T09:21:09.300517+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/pricing-update-sms-costs-for-select-international-destinations-effective-july-6-1",
+      "category": "DISCARD",
+      "published": "Fri, 03 Jul 2026 10:51:28 GMT"
+    }
+  ]
 }
