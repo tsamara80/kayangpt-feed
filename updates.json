@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-06T09:22:13.827193+00:00",
+  "last_updated": "2026-07-07T09:40:28.182023+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/ad-manager-opportunity-score-for-meta-campaigns",
@@ -34,6 +34,14 @@
       "processed_at": "2026-07-06T09:22:13.827166+00:00"
     },
     {
+      "source_link": "https://ideas.gohighlevel.com/changelog/rcs-messaging-is-now-available-in-workflows-private-beta",
+      "category": "COMING_SOON",
+      "published": "Tue, 07 Jul 2026 09:10:11 GMT",
+      "title": "RCS Messaging is Now Available in Workflows (Private Beta)",
+      "content": "**RCS Messaging in Automations — Coming Soon**\n\nKayan.ai is bringing RCS messaging directly into your automation workflows, enabling richer, more interactive customer conversations beyond standard SMS.\n\n**What's coming:**\n- Send standard RCS messages as automated actions within your workflows\n- Build interactive RCS experiences with rich cards and buttons\n- Route contacts down different workflow paths based on how they respond or interact\n- Automate reminders, follow-ups, promotions, and engagement sequences using RCS\n- 1:1 and bulk RCS messaging from the Conversations view\n- RCS template creation and management\n\nThis capability is currently in private beta. General availability is planned for later in 2026. Early access details will be shared as the rollout progresses.",
+      "processed_at": "2026-07-07T09:40:08.979122+00:00"
+    },
+    {
       "source_link": "https://ideas.gohighlevel.com/changelog/ad-manager-custom-values-in-ad-copy",
       "category": "LIVE_NOW",
       "published": "Thu, 02 Jul 2026 14:06:33 GMT",
@@ -63,6 +71,22 @@
       "title": "Introducing New Templates",
       "content": "**New Templates Now Available**\n\nFresh pre-built templates are live across websites, ads, social, and automations — ready to customize and deploy straight from your Kayan dashboard.\n\n**What's new:**\n\n- **1 Website Template** — General/Other category\n- **8 Social Templates** — covering Restaurants & Bars, Marketing Agencies, Insurance, and Other\n- **2 Facebook Ad Templates** — Auto Body & Painting, Banking\n- **5 Google Ad Templates** — Eyelash Boutique, Automotive Repair, Travel Writer, Bistro Restaurant, Real Estate Management\n- **3 LinkedIn Ad Templates** — Financial Planner, Marketing Agency Affiliate, Commercial Insurance\n- **3 Automation Workflow Templates** — Speed-to-Lead SMS + Email, Employee/Team Review Collection, Task Overdue Escalation\n- **1 New Snapshot** — Real Estate: Home Staging\n\n**How to set it up:**\n\n1. From your Kayan dashboard, navigate to the relevant section (Website Builder, Ad Campaigns, Social Planner, or Automations tab).\n2. Select **Templates** and browse the newly added options by category.\n3. Choose a template, customize it to match your brand, and publish or activate directly from the editor.",
       "processed_at": "2026-07-06T09:21:09.300517+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/tags-for-courses",
+      "category": "LIVE_NOW",
+      "published": "Mon, 06 Jul 2026 15:54:07 GMT",
+      "title": "Tags for Courses",
+      "content": "**Course Tags — Organize and Surface the Right Content**\n\nCourses now support tags, making it faster for learners to find what they need and easier for you to keep your library organized.\n\n**What's new:**\n- Add Language, Difficulty, and Topic tags directly from Course Settings\n- Learners can filter the course library by these tags to find relevant content quickly\n- Tags display on course cards for at-a-glance identification\n- Predefined, standardized tags ensure consistent categorization across your catalog\n- Tag filtering works across both All Courses and My Courses views\n\n**How to set it up:**\n1. Go to the **Courses** section in your Kayan dashboard and open the course you want to tag\n2. Navigate to **Settings** for that course\n3. Under **Course Tags**, select the relevant Language, Difficulty, and Topic values\n4. Save the course — learners will immediately see the tags and can use filters to browse by them",
+      "processed_at": "2026-07-07T09:40:17.666583+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/client-portal-shared-file-notifications-for-clients",
+      "category": "LIVE_NOW",
+      "published": "Mon, 06 Jul 2026 10:07:04 GMT",
+      "title": "Client Portal - Shared File Notifications for Clients",
+      "content": "**Client Portal – File Share Notifications**\n\nClients now get notified the moment you share a file with them through the Kayan Client Portal — no more chasing people down to let them know a document is waiting.\n\n**What's new:**\n\n- Contacts receive an automatic in-app notification when a file is shared with them via the Client Portal\n- Push notifications are supported on both the web portal and the Kayan mobile app\n- Clients can manage their own notification preferences (in-app and push) directly from their portal settings\n\n**How to set it up:**\n\n1. In your Kayan dashboard, open the relevant contact record\n2. Navigate to the **Files** section in the right-hand panel\n3. Upload or select the file you want to share\n4. Enable the **Upload to Client Portal** toggle before saving\n5. The contact will receive an in-app notification immediately — and a push notification if they have that enabled\n\n**Client-side (notification preferences):**\n\n1. Client logs into the Kayan Client Portal\n2. Goes to **Settings → Notification Preferences**\n3. Toggles In-app and/or Push notifications for file shares on or off\n4. Saves preferences",
+      "processed_at": "2026-07-07T09:40:28.181968+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/pricing-update-sms-costs-for-select-international-destinations-effective-july-6-1",
