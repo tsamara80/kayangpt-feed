@@ -1,6 +1,14 @@
 {
-  "last_updated": "2026-07-07T09:40:28.182023+00:00",
+  "last_updated": "2026-07-08T08:27:26.644747+00:00",
   "updates": [
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/buffer-time-is-now-visible-in-calendar-day-week-views",
+      "category": "LIVE_NOW",
+      "published": "Wed, 08 Jul 2026 07:58:43 GMT",
+      "title": "🗓️ Buffer Time is Now Visible in Calendar Day & Week Views",
+      "content": "**Buffer Time Now Visible in Day & Week Calendar Views**\n\nPre- and post-buffer times are now displayed directly in your Day and Week calendar views, giving you a clearer picture of how your schedule is spaced without changing how bookings work.\n\n**What's new:**\n- Buffer periods appear as distinct visual blocks before and after appointments in both Day and Week views\n- Buffers are clearly differentiated from actual appointments so your schedule is easy to read at a glance\n- Visibility applies across all calendar filters — by staff member, service, or category/group\n\n**How to set it up:**\n1. Open the **Calendar** section in your Kayan dashboard\n2. Switch to **Day** or **Week** view\n3. Enable the **Show buffer time** toggle\n4. Buffer periods will appear highlighted around your appointments across all active filters",
+      "processed_at": "2026-07-08T08:27:13.234368+00:00"
+    },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/ad-manager-opportunity-score-for-meta-campaigns",
       "category": "LIVE_NOW",
@@ -32,6 +40,22 @@
       "title": "Prospecting: Smarter CRM contact creation & contact enrichment",
       "content": "**Prospecting: Smarter Contact Creation & Enrichment**\n\nKayan's Prospecting tool now creates richer, cleaner CRM contacts the moment you add a prospect — no manual cleanup required, and ready for outreach or automation from day one.\n\n**What's new:**\n\n- **Website-based enrichment** — Kayan now scrapes phone numbers and emails directly from a prospect's website, going beyond basic directory data so your CRM records start more complete\n- **Fuller contact records by default** — Every new prospect contact now includes source tagging, prospect tags for segmentation, phone and email fields (including additional numbers/addresses), website URL, and full address details\n- **Control over decision-maker contacts** — A new enrichment setting lets you choose whether Kayan should search for additional Points of Contact (POCs) like owners, managers, or key decision-makers. When enabled, each POC is created as its own CRM contact. When disabled, only the primary business contact is created — faster and cleaner for simpler workflows\n- **No more duplicate business contacts** — Additional phone numbers and emails are now consolidated onto a single primary business contact rather than generating separate duplicate records. POCs are still created individually when found\n\n---\n\n**How to set it up:**\n\n1. Open the **Kayan dashboard** and navigate to the **Prospecting** section\n2. Go to **Prospecting Settings** and locate the **Contact Enrichment** options\n3. Toggle **POC search** on or off depending on whether you want decision-maker contacts created automatically\n4. Run or re-run a prospect search — new contacts will be created with the enriched fields applied automatically\n5. Find all created contacts in your **CRM tab**, filterable by the \"Prospecting\" source tag",
       "processed_at": "2026-07-06T09:22:13.827166+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/control-google-sign-in-on-your-client-portal",
+      "category": "LIVE_NOW",
+      "published": "Tue, 07 Jul 2026 17:58:31 GMT",
+      "title": "🔐 Control Google Sign-In on Your Client Portal",
+      "content": "**Control Google Sign-In on Your Client Portal**\n\nYou can now choose whether the \"Sign in with Google\" button appears on your Client Portal login and sign-up pages — giving you direct control over authentication options to meet compliance or data-handling requirements (including GDPR).\n\n**What's new:**\n- **Google Sign-In toggle** — Show or hide the Google login button on your portal's sign-up and login pages\n- **Self-serve control** — Manage this setting directly from your portal permissions; no support request needed\n- **Compliance-ready** — Remove third-party sign-in to align with regional privacy regulations such as GDPR\n- When Google Sign-In is disabled, contacts authenticate via email + password or a secure login code\n\n**How to set it up:**\n1. In your Kayan dashboard, navigate to **Sites → Client Portal**\n2. Open **App Permissions** and scroll to **Sign-up & sign-in methods**\n3. Toggle **Disable Google sign-in & sign-up** on or off\n4. Click **Save Settings**",
+      "processed_at": "2026-07-08T08:27:19.448540+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/new-communities-triggers-in-workflows-automate-more-faster",
+      "category": "LIVE_NOW",
+      "published": "Tue, 07 Jul 2026 17:36:35 GMT",
+      "title": "🚀 New Communities Triggers in Workflows: Automate More, Faster",
+      "content": "**4 New Community Triggers Now Live in Kayan Automations**\n\nAutomate responses to member activity inside your communities — without lifting a finger. Four new triggers are now available in Kayan Automations, letting you act instantly on group joins, posts, comments, and event registrations.\n\n**What's new:**\n\n- **Join Request Rejected** — Triggers when a member's request to join a group is declined. Filter by group.\n- **Group Post Created** — Triggers when a new post is published in a group. Filter by group, channel, post title, or post content.\n- **Group Comment Created** — Triggers when a comment is added to a group post. Filter by group, channel, post title, post content, or comment content.\n- **Member Registered for Event** — Triggers when a member signs up for a group event. Filter by group or event title.\n\n**How to set it up:**\n\n1. Go to the **Automations** tab in your Kayan dashboard.\n2. Create a new automation or open an existing one.\n3. Click **Add Trigger** and search for \"Community\" to find the new options.\n4. Select your trigger, set the required group filter, and add any optional filters to narrow targeting.\n5. Configure your actions, save, and publish.",
+      "processed_at": "2026-07-08T08:27:26.644697+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/rcs-messaging-is-now-available-in-workflows-private-beta",
