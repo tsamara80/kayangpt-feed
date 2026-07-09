@@ -1,6 +1,43 @@
 {
-  "last_updated": "2026-07-08T08:27:26.644747+00:00",
+  "last_updated": "2026-07-09T09:39:07.677739+00:00",
   "updates": [
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/goal-action-now-with-support-for-user-replies",
+      "category": "LIVE_NOW",
+      "published": "Wed, 08 Jul 2026 16:56:29 GMT",
+      "title": "Goal Action: Now with Support for User Replies!",
+      "content": "**Goal Action: Trigger on Team Member Reply**\n\nAutomations can now detect when a team member replies to a contact and use that as a Goal event — immediately halting or redirecting the automation the moment human engagement begins.\n\n**What's new:**\n- \"User Replied\" is now a supported Goal event inside Kayan Automations\n- When a team member sends a reply through any connected conversation channel, the contact jumps directly to the Goal step — skipping all intermediate actions\n- Prevents contacts from receiving automated follow-ups after a real conversation has started\n- Works across nurture sequences, support workflows, and any automation where human handoff matters\n\n**How to set it up:**\n1. Open the **Kayan Automations** tab and select the workflow you want to update\n2. Add a **Goal** action at the point where human engagement should take over\n3. Set the goal event to **User Replied**\n4. Configure any actions that should run once the Goal is reached (e.g. move to a pipeline stage, add a tag, end the sequence)\n5. Save and publish the workflow\n\n**Notes:**\n- The Goal triggers only when a team member sends the reply — not the contact\n- Contacts skip all steps between their current position and the Goal step instantly\n- Best used at the end of nurture sequences or before any actions that would create duplicate outreach",
+      "processed_at": "2026-07-09T09:38:39.118007+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/wait-step-now-with-support-for-user-replies",
+      "category": "LIVE_NOW",
+      "published": "Wed, 08 Jul 2026 16:14:07 GMT",
+      "title": "Wait Step: Now with Support for User Replies!",
+      "content": "**Wait Step Now Supports User Reply as a Wait Condition**\n\nThe Wait step in Kayan Automations now supports \"User Replied\" as a wait condition — letting you pause a workflow until a team member responds to a conversation, not just until a contact replies.\n\n**What's new:**\n- New wait condition: pause workflow execution until a user (team member) sends a reply in the conversation\n- Optional timeout setting — if no reply is sent within your defined window, the workflow moves forward automatically\n- On timeout, route contacts through escalation logic: supervisor alerts, conversation reassignments, task creation, or reminders\n- If a user replies before the timeout, the workflow resumes immediately\n- Works without a timeout configured — workflow simply waits indefinitely until a user reply is detected\n\n**How to set it up:**\n\n1. Open your workflow in the Kayan Automations tab and add a **Wait** step at the point where a team member response is expected.\n2. Set the wait condition to **User Replied**.\n3. Optionally define a timeout duration (e.g. 15 or 30 minutes) to cap the wait window.\n4. Configure the path for when a reply is received, then configure a separate path for when the timeout expires — add escalation actions like notifications, reassignments, or task creation on the timeout branch.\n5. Save and publish your workflow.\n\n**Good for:** first-response SLA enforcement, sales lead response tracking, support escalation workflows, and internal response-time automations.",
+      "processed_at": "2026-07-09T09:38:49.315798+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/workflow-trigger-user-replied",
+      "category": "LIVE_NOW",
+      "published": "Wed, 08 Jul 2026 15:46:14 GMT",
+      "title": "Workflow Trigger: User Replied",
+      "content": "**New Trigger: User Replied**\n\nAutomate actions the moment a team member responds to a contact — no more waiting on customer activity to move things forward.\n\n**What's new:**\n- A new automation trigger fires whenever a team member sends a reply to a contact\n- Works across supported conversation channels\n- Supports trigger filters so you control exactly when the automation runs\n- Pairs with any follow-up actions: tagging, stage updates, internal notifications, task creation, assignments, and more\n\n**How to set it up:**\n1. Go to the **Automations** tab in your Kayan dashboard and open or create a workflow\n2. Add the **User Replied** trigger\n3. Configure any filters to narrow when the workflow should fire\n4. Publish the workflow — it will run automatically each time a team member sends a reply\n\n**Example use cases:**\n- A rep replies to a new lead's SMS → opportunity stage updates to *Contacted* and the sales manager gets notified\n- A support agent replies to a customer email → a *Support Responded* tag is applied and a 48-hour follow-up task is created\n\n**Note:** This trigger activates on team member replies only, not incoming customer messages. Use it to build automations that respond to what your team does, not just what your contacts do.",
+      "processed_at": "2026-07-09T09:38:57.763924+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/sub-account-snapshot-load-history",
+      "category": "DISCARD",
+      "published": "Wed, 08 Jul 2026 15:10:23 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/services-v2-payment-enhancements",
+      "category": "LIVE_NOW",
+      "published": "Wed, 08 Jul 2026 11:43:28 GMT",
+      "title": "💳 Services (v2): Payment Enhancements",
+      "content": "**Services Payments: More Flexibility at Checkout**\n\nCheckout for bookable services now supports flexible payment options, smarter deposit calculations, and better Buy Now, Pay Later compatibility.\n\n**What's new:**\n\n- **Deposit or full payment choice** — You can now enable an option that lets customers choose at checkout whether to pay a deposit or the full amount. Requires online payments to be active and a deposit configured on the service.\n- **BNPL on full amounts** — Customers using Buy Now, Pay Later can now finance the complete service cost, not just the deposit, for a smoother booking experience.\n- **Smarter percentage-based deposits** — Deposit amounts are now calculated against the final payable amount after discounts, add-ons, and taxes are applied. If a coupon is added, removed, or changed during checkout, the deposit recalculates in real time.\n- **Flat deposits unchanged** — Fixed deposit amounts continue to work exactly as before.\n\n---\n\n**How to set it up:**\n\n1. In your Kayan dashboard, go to **Services → Settings → Payment Settings**.\n2. Set the payment mode to **Online Payment**.\n3. Toggle on **Allow Deposit or Full Payment Choice**.\n4. Save your changes.\n\nOnce enabled, customers booking services with a deposit configured will see both payment options at checkout.",
+      "processed_at": "2026-07-09T09:39:07.677688+00:00"
+    },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/buffer-time-is-now-visible-in-calendar-day-week-views",
       "category": "LIVE_NOW",
@@ -64,6 +101,11 @@
       "title": "RCS Messaging is Now Available in Workflows (Private Beta)",
       "content": "**RCS Messaging in Automations — Coming Soon**\n\nKayan.ai is bringing RCS messaging directly into your automation workflows, enabling richer, more interactive customer conversations beyond standard SMS.\n\n**What's coming:**\n- Send standard RCS messages as automated actions within your workflows\n- Build interactive RCS experiences with rich cards and buttons\n- Route contacts down different workflow paths based on how they respond or interact\n- Automate reminders, follow-ups, promotions, and engagement sequences using RCS\n- 1:1 and bulk RCS messaging from the Conversations view\n- RCS template creation and management\n\nThis capability is currently in private beta. General availability is planned for later in 2026. Early access details will be shared as the rollout progresses.",
       "processed_at": "2026-07-07T09:40:08.979122+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/highrise-migration-for-forms-surveys-quizzes-submission-page",
+      "category": "DISCARD",
+      "published": "Thu, 09 Jul 2026 06:48:07 GMT"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/ad-manager-custom-values-in-ad-copy",
