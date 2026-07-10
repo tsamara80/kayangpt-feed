@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-09T09:39:07.677739+00:00",
+  "last_updated": "2026-07-10T09:34:04.499864+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/goal-action-now-with-support-for-user-replies",
@@ -101,6 +101,14 @@
       "title": "RCS Messaging is Now Available in Workflows (Private Beta)",
       "content": "**RCS Messaging in Automations — Coming Soon**\n\nKayan.ai is bringing RCS messaging directly into your automation workflows, enabling richer, more interactive customer conversations beyond standard SMS.\n\n**What's coming:**\n- Send standard RCS messages as automated actions within your workflows\n- Build interactive RCS experiences with rich cards and buttons\n- Route contacts down different workflow paths based on how they respond or interact\n- Automate reminders, follow-ups, promotions, and engagement sequences using RCS\n- 1:1 and bulk RCS messaging from the Conversations view\n- RCS template creation and management\n\nThis capability is currently in private beta. General availability is planned for later in 2026. Early access details will be shared as the rollout progresses.",
       "processed_at": "2026-07-07T09:40:08.979122+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/fully-edit-service-bookingseven-after-payment",
+      "category": "LIVE_NOW",
+      "published": "Thu, 09 Jul 2026 12:59:09 GMT",
+      "title": "✏️ Fully Edit Service Bookings—Even After Payment",
+      "content": "**Edit Service Bookings After the Fact—No Cancellations Needed**\n\nYou can now fully edit service appointments after they've been booked and paid for. Add services, swap staff, adjust add-ons, apply coupons—without canceling and recreating the booking. Payment totals, order records, and appointment details all stay in sync automatically.\n\n**What's new:**\n\n- Edit both paid and unpaid service bookings directly\n- Add or remove services from an existing appointment\n- Update or remove add-ons at any time\n- Reassign the staff member on a booking\n- Apply, change, or remove coupons post-booking\n- Automatic recalculation of the booking total on every edit\n- Payment status updates in real time: additional payment required, fully paid, or refund due\n- Process refunds directly from the appointment view—no need to navigate elsewhere\n- Editing is temporarily locked if a refund is still processing (rescheduling remains available during this window)\n- Existing orders are updated rather than replaced, keeping your order history clean\n\n**Mobile app support for booking edits is scheduled to roll out the week of July 20th.**\n\n---\n\n**How to set it up:**\n\n1. Open the relevant appointment in your Kayan dashboard calendar or contacts view\n2. Click **Edit** on the service booking\n3. Make your changes—add or remove services, modify add-ons, reassign staff, or update coupons\n4. Save your changes\n5. Review the updated payment status shown on the booking; if a refund is due, process it directly from the same screen",
+      "processed_at": "2026-07-10T09:34:04.499789+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/highrise-migration-for-forms-surveys-quizzes-submission-page",
