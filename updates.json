@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-16T08:12:06.728439+00:00",
+  "last_updated": "2026-07-17T08:09:03.342513+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/goal-action-now-with-support-for-user-replies",
@@ -101,6 +101,14 @@
       "title": "RCS Messaging is Now Available in Workflows (Private Beta)",
       "content": "**RCS Messaging in Automations — Coming Soon**\n\nKayan.ai is bringing RCS messaging directly into your automation workflows, enabling richer, more interactive customer conversations beyond standard SMS.\n\n**What's coming:**\n- Send standard RCS messages as automated actions within your workflows\n- Build interactive RCS experiences with rich cards and buttons\n- Route contacts down different workflow paths based on how they respond or interact\n- Automate reminders, follow-ups, promotions, and engagement sequences using RCS\n- 1:1 and bulk RCS messaging from the Conversations view\n- RCS template creation and management\n\nThis capability is currently in private beta. General availability is planned for later in 2026. Early access details will be shared as the rollout progresses.",
       "processed_at": "2026-07-07T09:40:08.979122+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/introducing-new-templates-102",
+      "category": "LIVE_NOW",
+      "published": "Thu, 16 Jul 2026 15:16:02 GMT",
+      "title": "Introducing New Templates",
+      "content": "**New Templates Now Available**\n\nFresh templates have been added across websites, ads, social, and automations — ready to customize and deploy directly from your Kayan dashboard.\n\n**What's new:**\n\n- **Website Templates (1)**\n  - Beauty & Fashion\n\n- **Social Templates (4)**\n  - Real Estate (2)\n  - Automotive (2)\n\n- **Facebook Ad Templates (2)**\n  - Travel & Hospitality — Travel Blogger\n  - Creative — Architectural Design\n\n- **Google Ad Templates (5)**\n  - Retirement Living Community\n  - Cosmetic Medical Spa\n  - Affiliate Marketing Services\n  - Debt Relief Attorney\n  - Travel Coverage Insurance\n\n- **LinkedIn Ad Templates (5)**\n  - Investment Advisor\n  - Social Networking Services\n  - Bookkeeper\n  - Public Relations Firm\n  - Health Insurance\n\n- **Automation Workflow Templates (3)**\n  - Voicemail Drop Follow-Up\n  - Open House Follow-Up\n  - Buyer Search Drip\n\n- **New Pre-Built Snapshot (1)**\n  - Boat Tour Agency\n\n---\n\n**How to set it up:**\n\n1. In your Kayan dashboard, navigate to the relevant section — **Sites**, **Ads**, **Social Planner**, or **Automations**.\n2. Select **Templates** and browse the newly added options by category.\n3. Choose a template, customize it to fit your brand, and publish or activate directly from the editor.",
+      "processed_at": "2026-07-17T08:09:03.342435+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/fully-edit-service-bookingseven-after-payment",
