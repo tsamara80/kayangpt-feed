@@ -1,6 +1,11 @@
 {
-  "last_updated": "2026-07-21T08:27:24.462622+00:00",
+  "last_updated": "2026-07-22T08:28:02.648760+00:00",
   "updates": [
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/inline-validation-errors-for-schema-markup-json-view",
+      "category": "DISCARD",
+      "published": "Wed, 22 Jul 2026 05:46:35 GMT"
+    },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/goal-action-now-with-support-for-user-replies",
       "category": "LIVE_NOW",
@@ -77,6 +82,11 @@
       "title": "Prospecting: Smarter CRM contact creation & contact enrichment",
       "content": "**Prospecting: Smarter Contact Creation & Enrichment**\n\nKayan's Prospecting tool now creates richer, cleaner CRM contacts the moment you add a prospect — no manual cleanup required, and ready for outreach or automation from day one.\n\n**What's new:**\n\n- **Website-based enrichment** — Kayan now scrapes phone numbers and emails directly from a prospect's website, going beyond basic directory data so your CRM records start more complete\n- **Fuller contact records by default** — Every new prospect contact now includes source tagging, prospect tags for segmentation, phone and email fields (including additional numbers/addresses), website URL, and full address details\n- **Control over decision-maker contacts** — A new enrichment setting lets you choose whether Kayan should search for additional Points of Contact (POCs) like owners, managers, or key decision-makers. When enabled, each POC is created as its own CRM contact. When disabled, only the primary business contact is created — faster and cleaner for simpler workflows\n- **No more duplicate business contacts** — Additional phone numbers and emails are now consolidated onto a single primary business contact rather than generating separate duplicate records. POCs are still created individually when found\n\n---\n\n**How to set it up:**\n\n1. Open the **Kayan dashboard** and navigate to the **Prospecting** section\n2. Go to **Prospecting Settings** and locate the **Contact Enrichment** options\n3. Toggle **POC search** on or off depending on whether you want decision-maker contacts created automatically\n4. Run or re-run a prospect search — new contacts will be created with the enriched fields applied automatically\n5. Find all created contacts in your **CRM tab**, filterable by the \"Prospecting\" source tag",
       "processed_at": "2026-07-06T09:22:13.827166+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/refreshed-placeholder-images-in-store-builder",
+      "category": "DISCARD",
+      "published": "Tue, 21 Jul 2026 15:46:52 GMT"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/control-google-sign-in-on-your-client-portal",
