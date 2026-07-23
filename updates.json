@@ -1,6 +1,14 @@
 {
-  "last_updated": "2026-07-22T08:28:02.648760+00:00",
+  "last_updated": "2026-07-23T08:28:59.255924+00:00",
   "updates": [
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/rebuilt-course-progress-analytics",
+      "category": "COMING_SOON",
+      "published": "Wed, 22 Jul 2026 12:44:33 GMT",
+      "title": "📈 Rebuilt Course Progress Analytics",
+      "content": "**Rebuilt Course Progress Analytics** *(Coming Soon)*\n\nA fully rebuilt analytics experience for your courses is on the way. Track how learners move through your content, spot drop-offs early, and get a clearer picture of engagement — all from one place.\n\n**What's coming:**\n\n- Unified analytics dashboard with filters by course and enrollment date\n- Key metrics: Completion Rate, Average Progress, and Time to Complete — with period-over-period comparisons\n- Learner Journey Funnel showing progression from Enrolled → Started → Completed\n- Member Progress Table with enrollment, activity, completion, and session-level detail\n- CSV export for filtered reports, with email delivery for larger data sets\n- Significantly faster load times and a more responsive analytics experience\n\n**Up next after launch:** Assessment Analytics and Revenue Analytics will follow to round out the full courses reporting suite.",
+      "processed_at": "2026-07-23T08:28:59.255846+00:00"
+    },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/inline-validation-errors-for-schema-markup-json-view",
       "category": "DISCARD",
