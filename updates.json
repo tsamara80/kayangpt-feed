@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-23T08:28:59.255924+00:00",
+  "last_updated": "2026-07-24T08:27:24.812516+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/rebuilt-course-progress-analytics",
@@ -121,6 +121,30 @@
       "processed_at": "2026-07-07T09:40:08.979122+00:00"
     },
     {
+      "source_link": "https://ideas.gohighlevel.com/changelog/client-portal-file-upload-notifications-for-account-admins-and-users",
+      "category": "LIVE_NOW",
+      "published": "Thu, 23 Jul 2026 14:56:17 GMT",
+      "title": "Client Portal: File Upload Notifications for Account Admins and Users",
+      "content": "**Client Portal: File Upload Notifications for Admins and Team Members**\n\nTeam members can now receive instant in-app notifications whenever a client uploads a file through the Client Portal — no more manually checking for new submissions.\n\n**What's new:**\n\n- Admins and assigned users are automatically notified when a contact uploads files via the Shared Documents section of the Client Portal\n- Clients can upload up to 10 files at a time per submission\n- Notification preferences are managed per team member, giving admins precise control over who gets alerted\n- Notifications are delivered in-app and triggered only by contact-initiated uploads through the Shared Documents experience\n\n---\n\n**How to set it up:**\n\n1. In your Kayan dashboard, go to **Settings → My Staff**\n2. Select the team member whose notification preferences you want to configure\n3. Open their **Notification Settings**\n4. Under **Client Portal Notifications**, toggle on **Notify when a contact uploads a file in the Client Portal**\n5. Save your changes\n\nRepeat for each team member as needed. Each staff member's preferences are configured independently.",
+      "processed_at": "2026-07-24T08:27:06.243809+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/enhanced-sell-products-experience-in-forms-surveys",
+      "category": "LIVE_NOW",
+      "published": "Thu, 23 Jul 2026 12:47:02 GMT",
+      "title": "Enhanced Sell Products Experience in Forms & Surveys",
+      "content": "**Enhanced Product Selling in Forms & Surveys**\n\nSelling products directly through Forms and Surveys just got a cleaner, more capable experience. The product selling element has been redesigned with a unified payment configuration panel — connect payment providers, configure products, and manage pricing all from one place. Price level and variant selection are now supported, giving customers more flexibility at checkout.\n\n**What's New**\n\n- Unified payment configuration panel on the right side of the builder\n- Connect payment providers directly without leaving the form or survey builder\n- Support for product price level selection\n- Support for product variant selection\n- Selected prices and variants display clearly in the payment summary\n- Price and variant choices carry through accurately to checkout, invoicing, and payment processing\n- Required selections are validated before the form can be submitted\n- Existing payment settings are fully preserved — nothing breaks\n\n**Notes**\n\n- All existing Forms and Surveys continue to work exactly as before\n- Price levels and variants are available for products configured with multiple pricing options or variants\n- No changes are applied to existing forms unless you choose to update the payment configuration\n- Fully supported on desktop and mobile\n\n---\n\n**How to set it up**\n\n1. Open the Kayan dashboard and navigate to your Forms or Surveys builder.\n2. Add or select a **Sell Products** element in your form or survey.\n3. Open the **Payment** panel on the right side of the builder.\n4. Connect your payment provider directly from the panel if you haven't already.\n5. Select your products and configure available price levels and variants.\n6. Save and publish — customer selections will flow through to checkout, invoices, and payment processing automatically.",
+      "processed_at": "2026-07-24T08:27:15.523689+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/generate-submission-documents-forms-surveys-quizzes",
+      "category": "LIVE_NOW",
+      "published": "Thu, 23 Jul 2026 09:16:34 GMT",
+      "title": "Generate Submission Documents - Forms, Surveys & Quizzes",
+      "content": "**Auto-Generate PDF Documents from Form, Survey & Quiz Submissions**\n\nEvery submission your contacts make can now instantly produce a clean, printable PDF — stored automatically against their contact record, no manual effort required.\n\n**What's New**\n\n- A new **Generate Submission Document** toggle is available in the settings for Forms, Surveys, and Quizzes\n- When enabled, every new submission automatically generates a formatted PDF containing all questions, responses, submission date/time, and contact information\n- Documents are automatically saved to the contact's Documents section, organized by type (Forms, Surveys, or Quizzes)\n- PDFs are named consistently: `[FormName]_[ContactName]_[YYYY-MM-DD_HHMM]` for forms and surveys; `Result_[FormName]_[ContactName]_[YYYY-MM-DD_HHMM]` for quizzes\n- Documents can be viewed, downloaded, and used across contact workflows\n- Works across desktop and mobile\n- Only new submissions are affected — existing submissions are not retroactively converted\n\n**How to Set It Up**\n\n1. In your Kayan dashboard, navigate to **Forms**, **Surveys**, or **Quizzes** and open the item you want to configure\n2. Go to its **Settings** panel and locate the **Generate Submission Document** toggle\n3. Switch it **on** and save\n4. From that point forward, every new submission will generate and store a PDF automatically — accessible from the contact's **Documents** section",
+      "processed_at": "2026-07-24T08:27:24.812465+00:00"
+    },
+    {
       "source_link": "https://ideas.gohighlevel.com/changelog/introducing-new-templates-102",
       "category": "LIVE_NOW",
       "published": "Thu, 16 Jul 2026 15:16:02 GMT",
@@ -200,6 +224,38 @@
       "title": "Client Portal - Shared File Notifications for Clients",
       "content": "**Client Portal – File Share Notifications**\n\nClients now get notified the moment you share a file with them through the Kayan Client Portal — no more chasing people down to let them know a document is waiting.\n\n**What's new:**\n\n- Contacts receive an automatic in-app notification when a file is shared with them via the Client Portal\n- Push notifications are supported on both the web portal and the Kayan mobile app\n- Clients can manage their own notification preferences (in-app and push) directly from their portal settings\n\n**How to set it up:**\n\n1. In your Kayan dashboard, open the relevant contact record\n2. Navigate to the **Files** section in the right-hand panel\n3. Upload or select the file you want to share\n4. Enable the **Upload to Client Portal** toggle before saving\n5. The contact will receive an in-app notification immediately — and a push notification if they have that enabled\n\n**Client-side (notification preferences):**\n\n1. Client logs into the Kayan Client Portal\n2. Goes to **Settings → Notification Preferences**\n3. Toggles In-app and/or Push notifications for file shares on or off\n4. Saves preferences",
       "processed_at": "2026-07-07T09:40:28.181968+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/automatically-associate-crm-records-with-workflows",
+      "category": "COMING_SOON",
+      "published": "Fri, 24 Jul 2026 06:58:34 GMT",
+      "title": "Automatically Associate CRM Records with Workflows",
+      "content": "**Automatically Associate CRM Records via Workflows** *(Coming Soon)*\n\nA new workflow action is on the way that will let Kayan automatically link related CRM records based on matching field values — no manual association required.\n\n**What's coming:**\n- A dedicated **Associate Records** action for Contact, Company, and Custom Object workflows\n- Filter-based record matching using one or more field conditions\n- Support for merge fields from the enrolled record as filter values\n- Flexible match handling — associate the earliest created, latest created, or all matching records\n- Ability to apply existing association labels when linking records\n- Works across Contacts, Companies, Opportunities, and Custom Objects\n\n**Example use case:** A real estate team could automatically link a buyer contact to property records that match their preferred city, type, and bedroom count — all without touching a single record manually.\n\nThis is currently in development. Once live, it will be available directly within the Kayan Automations builder.",
+      "processed_at": "2026-07-24T08:26:37.199138+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/separate-email-templates-for-badges",
+      "category": "LIVE_NOW",
+      "published": "Fri, 24 Jul 2026 06:16:44 GMT",
+      "title": "Separate email templates for Badges",
+      "content": "**Separate Email Templates for Welcome Badges**\n\nWelcome Badge emails can now be customized independently from standard Badge Issued emails — so your enrollment-triggered messaging stays distinct without affecting other badge notifications.\n\n**What's new:**\n- New **Welcome Badge Issued** notification type, separate from the existing Badge Issued type\n- Dedicated email template for welcome badge emails in your portal email settings\n- Cleaner separation between Certificate, Badge, and Welcome Badge email configurations\n- Enrollment-triggered welcome badges automatically route through the Welcome Badge Issued path\n\n**How to set it up:**\n1. Go to your **Kayan dashboard** and open **Client Portal → Email Settings**\n2. Locate **Welcome Badge Issued** listed alongside Badge Issued and Certificate Issued\n3. Edit the welcome badge email template and adjust mute settings as needed\n4. Enrollment-triggered welcome badges will automatically use this template going forward — no additional configuration required",
+      "processed_at": "2026-07-24T08:26:43.883769+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/custom-credential-expiration-for-certificates",
+      "category": "LIVE_NOW",
+      "published": "Fri, 24 Jul 2026 06:12:40 GMT",
+      "title": "Custom credential expiration for Certificates",
+      "content": "**Custom Expiration Controls for Certificates**\n\nYou can now define exactly how long issued certificates remain valid — and automate reminders before they expire.\n\n**What's new:**\n- Set expiration to Never, a fixed date, or relative to the issue date (3, 6, 9, 12, 24, or 36 months)\n- Configure reminder offsets so recipients are notified ahead of expiry\n- Expiration calculations are timezone-aware\n- Expiry status is visible directly in certificate and template lists and modals\n\n**How to set it up:**\n1. Open the Kayan dashboard and navigate to your Certificates section\n2. Open an existing certificate template or create a new one\n3. Locate the Expiration settings and choose Never, a fixed date, or a relative duration from the issue date\n4. Optionally configure one or more reminder offsets to notify recipients before their certificate expires\n5. Save — all newly issued certificates will automatically calculate and store the correct expiry date based on your settings",
+      "processed_at": "2026-07-24T08:26:50.386559+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/layersin-certificate-badge-builder",
+      "category": "LIVE_NOW",
+      "published": "Fri, 24 Jul 2026 06:07:26 GMT",
+      "title": "Layers in Certificate/Badge Builder",
+      "content": "**Layers Panel Now Live in Certificate & Badge Builder**\n\nThe Certificate & Badge Builder now includes a dedicated Layers panel, giving you full control over element stacking, layer protection, and placeholder validation before any certificate goes out.\n\n**What's new:**\n\n- New **Layers tab** in the builder sidebar shows your full canvas stack at a glance\n- Click any layer to select it on the canvas; drag and drop to reorder\n- Lock or unlock individual layers — locked layers cannot be moved, resized, deleted, or edited via shortcuts\n- Delete unlocked layers directly from the panel without hunting on the canvas\n- Invalid custom-field placeholders are flagged with a visible error pill\n- Manual save will warn you if broken placeholders exist before publishing (auto-save behavior is unchanged)\n\n**How to set it up:**\n\n1. Open the **Certificate & Badge Builder** from your Kayan dashboard\n2. Select the **Layers** tab in the left sidebar\n3. Click rows to select elements, drag to reorder the stack, and use the lock icon to protect layers from accidental edits\n4. Before publishing, check for any error pills on placeholder fields and resolve them — certificates won't issue cleanly with invalid custom fields in place",
+      "processed_at": "2026-07-24T08:26:57.822329+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/targeted-edits-in-ai-builder",
