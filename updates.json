@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T08:27:24.812516+00:00",
+  "last_updated": "2026-07-25T08:05:49.546975+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/rebuilt-course-progress-analytics",
@@ -224,6 +224,22 @@
       "title": "Client Portal - Shared File Notifications for Clients",
       "content": "**Client Portal – File Share Notifications**\n\nClients now get notified the moment you share a file with them through the Kayan Client Portal — no more chasing people down to let them know a document is waiting.\n\n**What's new:**\n\n- Contacts receive an automatic in-app notification when a file is shared with them via the Client Portal\n- Push notifications are supported on both the web portal and the Kayan mobile app\n- Clients can manage their own notification preferences (in-app and push) directly from their portal settings\n\n**How to set it up:**\n\n1. In your Kayan dashboard, open the relevant contact record\n2. Navigate to the **Files** section in the right-hand panel\n3. Upload or select the file you want to share\n4. Enable the **Upload to Client Portal** toggle before saving\n5. The contact will receive an in-app notification immediately — and a push notification if they have that enabled\n\n**Client-side (notification preferences):**\n\n1. Client logs into the Kayan Client Portal\n2. Goes to **Settings → Notification Preferences**\n3. Toggles In-app and/or Push notifications for file shares on or off\n4. Saves preferences",
       "processed_at": "2026-07-07T09:40:28.181968+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/schema-markup-auto-generation-on-website-funnel-webinar-publish",
+      "category": "LIVE_NOW",
+      "published": "Fri, 24 Jul 2026 12:06:13 GMT",
+      "title": "Schema markup auto-generation on Website, Funnel & Webinar publish",
+      "content": "**Auto-Generate Schema Markup on Page Publish**\n\nKayan now automatically generates schema markup for any page published without it — across Websites, Funnels, and Webinars. No more missing structured data because a step got skipped.\n\n**What's new:**\n\n- When enabled, Kayan's AI generates schema markup in the background the moment a page is published without existing schema\n- Publishing speed is unaffected — generation runs in parallel and never delays the page going live\n- Existing schema is never touched or overwritten\n- Works across all publish methods: manual publish, save-triggered publish, and version-history publish\n- Applies to Websites, Funnels, and Webinars\n- New assets default to **ON**; existing assets default to **OFF** — nothing changes on your current pages unless you switch it on\n\n**Why it matters:**\n\nSchema markup drives rich results in Google and helps AI answer engines understand and cite your content. Auto-generation ensures every published page carries structured data by default, protecting your SEO and AI search visibility without any manual effort.\n\n**How to set it up:**\n\n1. Open the Kayan dashboard and navigate to your Website, Funnel, or Webinar\n2. Go to **Settings**, then select the **SEO & AEO** section\n3. Toggle **Auto-generate schema** on or off per asset\n4. Hit **Save**\n\nThat's it. Kayan handles the rest at publish time.",
+      "processed_at": "2026-07-25T08:05:40.873749+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/save-progress-forms-surveys-quizzes",
+      "category": "LIVE_NOW",
+      "published": "Fri, 24 Jul 2026 09:41:06 GMT",
+      "title": "Save Progress - Forms, Surveys & Quizzes",
+      "content": "**Save Progress for Forms, Surveys & Quizzes**\n\nRespondents can now leave a multi-step form, survey, or quiz mid-way and pick up exactly where they left off — no lost answers, no starting over.\n\n**What's new:**\n- A **Save Exit Confirmation** toggle is available in the Settings tab for all Forms, Surveys, and Quizzes\n- When enabled, progress is automatically saved if a respondent closes the browser, refreshes, or navigates away before submitting\n- On return, a **Resume Progress modal** appears giving respondents the choice to continue where they left off or start fresh\n- The Resume modal automatically inherits your form's branding — button color matches your footer color, font matches your label font\n- Fully supported on desktop and mobile\n- Existing forms are unaffected until you explicitly enable the toggle\n\n**How to set it up:**\n\n1. Open the **Kayan dashboard** and navigate to your Forms, Surveys, or Quizzes builder\n2. Select the form you want to update and open its **Settings** tab\n3. Enable the **Save Exit Confirmation** toggle\n4. Save your changes — progress saving is now active for that form\n\nNo additional configuration required. The resume experience is handled automatically for your respondents.",
+      "processed_at": "2026-07-25T08:05:49.546918+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/automatically-associate-crm-records-with-workflows",
