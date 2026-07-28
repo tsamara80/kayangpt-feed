@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27T09:50:49.843474+00:00",
+  "last_updated": "2026-07-28T08:33:15.804689+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/rebuilt-course-progress-analytics",
@@ -90,6 +90,22 @@
       "title": "Prospecting: Smarter CRM contact creation & contact enrichment",
       "content": "**Prospecting: Smarter Contact Creation & Enrichment**\n\nKayan's Prospecting tool now creates richer, cleaner CRM contacts the moment you add a prospect — no manual cleanup required, and ready for outreach or automation from day one.\n\n**What's new:**\n\n- **Website-based enrichment** — Kayan now scrapes phone numbers and emails directly from a prospect's website, going beyond basic directory data so your CRM records start more complete\n- **Fuller contact records by default** — Every new prospect contact now includes source tagging, prospect tags for segmentation, phone and email fields (including additional numbers/addresses), website URL, and full address details\n- **Control over decision-maker contacts** — A new enrichment setting lets you choose whether Kayan should search for additional Points of Contact (POCs) like owners, managers, or key decision-makers. When enabled, each POC is created as its own CRM contact. When disabled, only the primary business contact is created — faster and cleaner for simpler workflows\n- **No more duplicate business contacts** — Additional phone numbers and emails are now consolidated onto a single primary business contact rather than generating separate duplicate records. POCs are still created individually when found\n\n---\n\n**How to set it up:**\n\n1. Open the **Kayan dashboard** and navigate to the **Prospecting** section\n2. Go to **Prospecting Settings** and locate the **Contact Enrichment** options\n3. Toggle **POC search** on or off depending on whether you want decision-maker contacts created automatically\n4. Run or re-run a prospect search — new contacts will be created with the enriched fields applied automatically\n5. Find all created contacts in your **CRM tab**, filterable by the \"Prospecting\" source tag",
       "processed_at": "2026-07-06T09:22:13.827166+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/threads-comment-management-now-available-in-social-planner",
+      "category": "LIVE_NOW",
+      "published": "Tue, 28 Jul 2026 06:46:37 GMT",
+      "title": "💬Threads Comment Management: Now Available in Social Planner",
+      "content": "**Threads Comment Management Now Available in Social Planner**\n\nYou can now manage Threads comments directly inside Kayan's Social Planner — no platform switching required. View, reply to, and track Threads conversations from the same unified inbox you use for all your other social channels.\n\n**What's new**\n\n- **Threads added to the unified inbox** — Threads now sits alongside Facebook, Instagram, LinkedIn, TikTok, Communities, and Bluesky in a single comment management view\n- **Full reply support** — respond to Threads comments with text, images, emojis, and location attachments\n- **Real-time sync** — comments update via webhooks so you're always seeing the latest activity\n- **No workflow interruptions** — everything lives inside Social Planner; no need to leave Kayan to stay on top of Threads engagement\n\n**How to set it up**\n\n1. In the Kayan dashboard, go to **Marketing → Social Planner → Comment Management**\n2. Select your connected Threads account\n3. Open the **Comments** tab to view and reply to comments from the unified inbox\n\n> **Note:** Existing Threads users will need to reconnect their account once to grant the additional permissions required for Comment Management.",
+      "processed_at": "2026-07-28T08:33:03.971141+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/email-ai-smart-countdown-timer-creation-and-suggestions",
+      "category": "LIVE_NOW",
+      "published": "Tue, 28 Jul 2026 05:27:46 GMT",
+      "title": "Email AI – Smart Countdown Timer Creation and Suggestions",
+      "content": "**Email AI: Smart Countdown Timer Creation and Suggestions**\n\nKayan's Email AI now detects when an email calls for a countdown timer and guides you through adding one — no manual setup required.\n\n**What's new:**\n- Email AI identifies time-sensitive emails (flash sales, product launches, webinars, expiring offers) and suggests a countdown timer only when relevant\n- Choose from an existing timer or create a new one directly within the AI flow\n- When creating a new timer, AI collects the end date, style, and destination link automatically\n- The selected timer is embedded into your email template on the spot\n- If you skip the timer prompt, the AI continues without interruption — no dead ends\n\n**How to set it up:**\n1. Open the **Email Builder** from your Kayan dashboard and start a new template or edit an existing one\n2. Activate **Email AI** to generate or update your layout\n3. If your email content is time-sensitive, AI will prompt you to add a countdown timer — select an existing one or choose to create new\n4. Provide the end date, preferred style, and a destination link when creating a new timer\n5. Confirm, and the timer is embedded directly into your email — ready to send",
+      "processed_at": "2026-07-28T08:33:13.570173+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/refreshed-placeholder-images-in-store-builder",
@@ -216,6 +232,11 @@
       "title": "Introducing New Templates",
       "content": "**New Templates Now Available**\n\nFresh templates have been added across websites, ads, social, and email — ready to customize and deploy from your Kayan dashboard.\n\n**What's new:**\n\n- **1 Website Template** — Real Estate\n- **4 Social Templates** — General (×2), Medical (×2)\n- **2 Facebook Ad Templates** — General (×1), Insurance (×1)\n- **5 Google Ad Templates** — Home Services (Bathroom Remodel Contractor), Health & Wellness (Health Club), Finance (Accounting Bookkeeper), Creative (Mobile DJ), Business Coaching (Personal Development Coach)\n- **2 LinkedIn Templates** — Creative (×1), Real Estate (×1)\n- **3 Automation Templates** — Facebook Lead Ad Auto-Responder, Property Inquiry Follow-Up, Home Valuation Funnel\n- **1 New Full Snapshot** — Restaurant & Bar (Donut Shop)\n\n**How to set it up:**\n\n1. In your Kayan dashboard, navigate to the **Templates** section.\n2. Browse by category (Websites, Ads, Social, or Automations) to find the template you need.\n3. Click **Use Template**, then customize copy, branding, and assets to match your business.\n4. Publish or activate directly from the editor when ready.",
       "processed_at": "2026-07-11T07:55:05.664236+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/increased-pit-token-limit-per-subaccount",
+      "category": "DISCARD",
+      "published": "Mon, 27 Jul 2026 11:29:05 GMT"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/tags-for-courses",
