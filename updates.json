@@ -1,6 +1,32 @@
 {
-  "last_updated": "2026-07-29T08:39:54.708418+00:00",
+  "last_updated": "2026-07-30T08:25:49.144330+00:00",
   "updates": [
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
+      "category": "DISCARD",
+      "published": "Wed, 29 Jul 2026 19:10:36 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/introducing-email-action-in-company-and-custom-object-workflows",
+      "category": "COMING_SOON",
+      "published": "Wed, 29 Jul 2026 15:24:33 GMT",
+      "title": "Introducing email action in company and custom object workflows",
+      "content": "**Email Actions in Company & Custom Object Workflows**\n\nAutomated emails are coming to Company and Custom Object workflows — no more limiting this capability to contact-based workflows alone.\n\n**What's coming:**\n\n- Send automated emails directly from workflows built on Company records or any Custom Object\n- Target associated contacts without adding extra workflow logic or triggering processes manually\n- Choose which associated contacts receive the email — earliest, most recent, or all\n- Select up to 10 association labels per email action, with built-in deduplication so no contact receives the same email twice\n- Supports a wide range of business processes that go beyond standard contact workflows\n\nThis is currently in development and will be available in Kayan.ai soon.",
+      "processed_at": "2026-07-30T08:25:37.719556+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/social-planner-post-sync-for-linkedin-tiktok-beta",
+      "category": "COMING_SOON",
+      "published": "Wed, 29 Jul 2026 13:16:44 GMT",
+      "title": "Social Planner: Post Sync for LinkedIn & TikTok (Beta)",
+      "content": "**Social Planner: Post Sync for LinkedIn & TikTok (Beta) — Coming Soon**\n\nPost Sync for LinkedIn and TikTok is coming to Kayan's Social Planner, giving you a unified view of your published content history alongside your scheduled posts — no manual imports required.\n\n**What's coming:**\n\n- **LinkedIn Post Sync** — Pull your published LinkedIn Organization Page posts directly into the Social Planner; view historical content and track reactions, comments, and shares alongside your content calendar\n- **TikTok Post Sync** — Import published TikTok videos (Personal and Business accounts supported) and monitor likes, comments, shares, and views from one place\n- **Automatic daily metric refresh** — Engagement data for both platforms updates every 24 hours, keeping your analytics current within platform API limits\n- **Unified publishing calendar** — Manage historical and scheduled content across LinkedIn and TikTok alongside your other connected social accounts\n\n**Good to know before it launches:**\n\n- LinkedIn sync supports Organization Pages only — personal profiles are not supported due to API limitations\n- PDF, Event, Poll, and Article post types will sync but won't support in-app previews\n- TikTok videos play via TikTok's hosted player; cloning synced videos into new posts is not supported\n- Sync is one-way — posts deleted on LinkedIn or TikTok will remain visible in the Social Planner\n- Mentions, tagged users, hashtag details, location tags, and music metadata are unavailable due to platform API restrictions\n\nThis feature is currently in Beta. Full availability and setup instructions will be shared on release.",
+      "processed_at": "2026-07-30T08:25:46.952393+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/choose-the-right-ai-employee-plan-for-your-saas-clients",
+      "category": "DISCARD",
+      "published": "Wed, 29 Jul 2026 12:10:58 GMT"
+    },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/make-your-sites-ai-ready-with-llmstxt",
       "category": "LIVE_NOW",
