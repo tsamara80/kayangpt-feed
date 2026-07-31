@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-30T08:25:49.144330+00:00",
+  "last_updated": "2026-07-31T08:49:30.193198+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -187,6 +187,56 @@
       "processed_at": "2026-07-07T09:40:08.979122+00:00"
     },
     {
+      "source_link": "https://ideas.gohighlevel.com/changelog/client-portal-one-portal-zero-tab-hopping",
+      "category": "LIVE_NOW",
+      "published": "Thu, 30 Jul 2026 12:13:59 GMT",
+      "title": "Client Portal — One Portal. Zero Tab-Hopping",
+      "content": "**Client Portal — One Home for Everything**\n\nYour client-facing portal is now a single, unified experience. Dashboard, Courses, Communities, Billing, Shared Files, Affiliates, and Account Settings all live under one roof — one login, one navigation, no tab-switching.\n\n**What's new:**\n\n- **Unified portal architecture** — Courses, Communities, and the Client Portal now share a common foundation. Features and user flows work across all of them seamlessly, with no product boundaries getting in the way.\n- **Redesigned Dashboard** — Clients land on a real launchpad: courses in progress, community activity, pending invoices, recently shared files, and pinned communities all surface immediately. Content loads in ~0.4s and becomes interactive roughly a second sooner than before.\n- **Business tools in the portal** — Invoices, estimates, contracts, shared files, and affiliate access are all reachable without leaving the experience.\n- **Redesigned Communities UI** — Discussions, events, leaderboards, member directories, and community content are now part of the unified portal. Cleaner interface, consistent navigation, no separate app.\n- **Connected Course experience** — Clients can discover courses, track progress, and move between lessons while staying inside the same branded environment.\n- **Smoother transitions** — Polished page-change animations and faster load times across desktop and mobile.\n- **SEO-ready public pages** — Public Course and Community pages now have search-friendly rendering, crawlable URLs, and page metadata. Lighthouse SEO scores of 92–100, up from 75–85. Private and gated content stays protected.\n\n---\n\n**How to set it up:**\n\n1. Open your **Kayan dashboard** and navigate to **Sites → Client Portal**.\n2. Review your portal sections — Dashboard, Courses, Communities, Billing, Shared Files, and Affiliates should all appear within the unified navigation automatically.\n3. Go to **Branding settings** within the portal to confirm your logo, colors, and domain are applied consistently across all sections.\n4. Check any public Course or Community pages and verify metadata is configured under each item's settings to take advantage of the SEO improvements.\n5. Share the portal login link with your clients — they'll land on the redesigned Dashboard and have access to everything from one place.",
+      "processed_at": "2026-07-31T08:48:51.543370+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/smarter-drip-campaigns-with-review-date-range-targeting",
+      "category": "LIVE_NOW",
+      "published": "Thu, 30 Jul 2026 11:25:33 GMT",
+      "title": "🎉 Smarter Drip Campaigns with Review Date Range Targeting",
+      "content": "**Smarter Drip Campaigns with Review Date Range Targeting**\n\nYou can now target reviews by an exact date range when setting up a drip campaign — no more relying solely on a fixed review age window.\n\n**What's new:**\n- Define a specific start and end date to target a precise batch of reviews\n- See the total number of eligible reviews before launching\n- Get instant validation if your selected filters return no matching reviews — preventing empty campaigns from being created\n- Existing age-based drip campaigns continue running without any changes required\n\n**How to set it up:**\n1. In your Kayan dashboard, navigate to **Reputation → Settings → Reviews AI**\n2. Open the **Drip Campaign** section\n3. When creating a new campaign, select **Date Range** as your targeting method and define your start and end dates\n4. Review the eligible review count shown before confirming\n5. Launch once you've confirmed the campaign has matching reviews",
+      "processed_at": "2026-07-31T08:48:58.404217+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/communities-ui-new-experience-inside-unified-clientportal-and-gokollab",
+      "category": "LIVE_NOW",
+      "published": "Thu, 30 Jul 2026 11:23:13 GMT",
+      "title": "Communities UI - New Experience Inside Unified Clientportal and Gokollab",
+      "content": "**Communities & Courses: Rebuilt Inside the Client Portal**\n\nCommunities has been fully rebuilt inside the Kayan Client Portal, delivering a faster, unified experience for both members and admins — no unnecessary reloads, no context switching.\n\n**What's new:**\n\n- Members can move seamlessly between community discussions and courses without leaving the portal\n- Courses open directly within the Learning tab and resume from the exact lesson where the member left off\n- Progress is preserved when switching between courses and discussions\n- Communities, Courses, Dashboard, and Billing now share consistent navigation and faster page transitions\n- The discussion feed has been redesigned — comments, replies, and attachments display directly inline\n- Redesigned post and comment editors make writing and responding more intuitive\n- Members can react to posts and comments with six reaction types\n- Post nudges encourage participation when engagement is low\n- Unified search covers posts, comments, and members from one place\n- Profile popovers give a quick member overview without leaving the page\n- Creating community events is now a streamlined flow\n- Admins can manage posts directly from the feed: pin/unpin, move between channels, disable comments, ban users, download recordings, report, or delete\n- Community settings are reorganized into dedicated sections for easier configuration — covering group access, invitations, member profiles, branding, membership questions, and themes\n\n**How to set it up:**\n\n1. Go to your **Kayan dashboard** and open the **Client Portal** section\n2. Select **Enable** to activate the new experience\n3. No migration needed — existing community content, members, courses, and settings carry over automatically",
+      "processed_at": "2026-07-31T08:49:07.151488+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/choose-your-sender-for-review-requests",
+      "category": "LIVE_NOW",
+      "published": "Thu, 30 Jul 2026 11:22:49 GMT",
+      "title": "🎉 Choose Your Sender for Review Requests",
+      "content": "**Choose Your Default Sender for Review Requests**\n\nYou can now set a default phone number (SMS & WhatsApp) and email address for review requests at the location level — so every request goes out from a consistent, recognisable sender.\n\n**What's new:**\n- Set a default SMS, WhatsApp, or email sender for review requests\n- Default sender applies automatically across manual requests, campaigns, and automations\n- No more system-selected sender identities causing confusion for your contacts\n\n**How to set it up:**\n1. In your Kayan dashboard, go to **Reputation**\n2. Open **Settings**\n3. Select **Email** or **Phone/WhatsApp Review Request**\n4. Choose your preferred default sender and save",
+      "processed_at": "2026-07-31T08:49:18.901152+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/introducing-separate-rebilling-configuration-for-conversation-ai-and-voice-ai",
+      "category": "DISCARD",
+      "published": "Thu, 30 Jul 2026 10:56:25 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/client-portal-file-share-notifications-1",
+      "category": "LIVE_NOW",
+      "published": "Thu, 30 Jul 2026 10:45:55 GMT",
+      "title": "📁 Client Portal — File Share Notifications",
+      "content": "**Client Portal — File Share Notifications**\n\nContacts are now automatically notified when you share a file with them through the Client Portal — no more wondering if they saw it.\n\n**What's new:**\n\n- Contacts receive an instant in-app notification when a file is shared with them via the Client Portal\n- Push notifications are supported on both the web portal and the Kayan mobile app\n- Contacts can manage their own notification preferences directly from their portal settings, choosing which alerts they receive\n\n**How to set it up:**\n\n1. Open a contact record in your Kayan dashboard\n2. Navigate to the **Files** section in the right-hand panel\n3. Upload a new file or select an existing one\n4. Enable the **Upload to Client Portal** option before saving\n5. The contact will receive an in-app notification (and push notification, if enabled) as soon as the file is shared\n\n**For contacts managing their preferences:**\nLog in to the Client Portal → go to **Settings → Notification Preferences** → toggle In-app and Push Notifications on or off → save.\n\n**Notes:**\n- Notifications trigger only when a file is shared through the Client Portal\n- Supported channels: in-app and push notifications\n- Available on web and mobile",
+      "processed_at": "2026-07-31T08:49:28.168585+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/cancel-a-pending-saas-plan-or-rebilling-setup-no-need-to-turn-off-saas-mode",
+      "category": "DISCARD",
+      "published": "Thu, 30 Jul 2026 10:05:48 GMT"
+    },
+    {
       "source_link": "https://ideas.gohighlevel.com/changelog/client-portal-file-upload-notifications-for-account-admins-and-users",
       "category": "LIVE_NOW",
       "published": "Thu, 23 Jul 2026 14:56:17 GMT",
@@ -303,6 +353,14 @@
       "title": "Client Portal - Shared File Notifications for Clients",
       "content": "**Client Portal – File Share Notifications**\n\nClients now get notified the moment you share a file with them through the Kayan Client Portal — no more chasing people down to let them know a document is waiting.\n\n**What's new:**\n\n- Contacts receive an automatic in-app notification when a file is shared with them via the Client Portal\n- Push notifications are supported on both the web portal and the Kayan mobile app\n- Clients can manage their own notification preferences (in-app and push) directly from their portal settings\n\n**How to set it up:**\n\n1. In your Kayan dashboard, open the relevant contact record\n2. Navigate to the **Files** section in the right-hand panel\n3. Upload or select the file you want to share\n4. Enable the **Upload to Client Portal** toggle before saving\n5. The contact will receive an in-app notification immediately — and a push notification if they have that enabled\n\n**Client-side (notification preferences):**\n\n1. Client logs into the Kayan Client Portal\n2. Goes to **Settings → Notification Preferences**\n3. Toggles In-app and/or Push notifications for file shares on or off\n4. Saves preferences",
       "processed_at": "2026-07-07T09:40:28.181968+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/redeeming-gift-cards-in-offline-payment-flows",
+      "category": "LIVE_NOW",
+      "published": "Fri, 31 Jul 2026 07:20:25 GMT",
+      "title": "Redeeming Gift Cards in Offline Payment Flows",
+      "content": "**Gift Card Redemption Now Available in Business-Initiated Payment Flows**\n\nYou can now apply a customer's Gift Card balance when collecting payments on their behalf — not just on customer-facing checkouts. This brings a consistent redemption experience across every payment flow in Kayan.\n\n**What's new:**\n\n- Gift Card redemption is now supported when recording or collecting payments directly from your dashboard\n- Applies across orders, invoices, direct charges, and new subscriptions\n- If the Gift Card covers the full amount, no other payment method is charged\n- If the balance is partial, the Gift Card is applied first and the remainder is automatically charged to the customer's saved payment method\n- Validation messages surface for invalid, expired, or zero-balance Gift Cards\n- Transaction details clearly show the Gift Card amount redeemed\n- Split payments display the Gift Card and remaining charge separately\n- The Gift Card's remaining balance updates automatically after each successful redemption\n\n> **Note:** Gift Card redemption on future-dated or scheduled subscriptions is not yet supported — that's coming soon.\n\n---\n\n**How to set it up:**\n\n1. Navigate to the relevant payment flow in your Kayan dashboard:\n   - **Payments → Orders → Record Payment**\n   - **Payments → Invoices → Record Payment**\n   - **Contacts → Charge Now**\n   - **Contacts → Create Subscription**\n   - **Payments → Subscriptions → Create Subscription**\n2. During the payment process, enter the customer's Gift Card code in the Gift Card field\n3. Click **Apply** to validate and apply the available balance\n4. Complete the payment — any remaining balance will charge to the customer's saved payment method automatically",
+      "processed_at": "2026-07-31T08:48:38.384120+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/schema-markup-auto-generation-on-website-funnel-webinar-publish",
