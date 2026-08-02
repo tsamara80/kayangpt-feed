@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-01T08:20:28.416765+00:00",
+  "last_updated": "2026-08-02T08:22:57.296981+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -332,6 +332,14 @@
       "title": "Introducing New Templates",
       "content": "**New Templates Now Available**\n\nFresh templates have been added across websites, ads, social, and email — ready to customize and deploy from your Kayan dashboard.\n\n**What's new:**\n\n- **1 Website Template** — Real Estate\n- **4 Social Templates** — General (×2), Medical (×2)\n- **2 Facebook Ad Templates** — General (×1), Insurance (×1)\n- **5 Google Ad Templates** — Home Services (Bathroom Remodel Contractor), Health & Wellness (Health Club), Finance (Accounting Bookkeeper), Creative (Mobile DJ), Business Coaching (Personal Development Coach)\n- **2 LinkedIn Templates** — Creative (×1), Real Estate (×1)\n- **3 Automation Templates** — Facebook Lead Ad Auto-Responder, Property Inquiry Follow-Up, Home Valuation Funnel\n- **1 New Full Snapshot** — Restaurant & Bar (Donut Shop)\n\n**How to set it up:**\n\n1. In your Kayan dashboard, navigate to the **Templates** section.\n2. Browse by category (Websites, Ads, Social, or Automations) to find the template you need.\n3. Click **Use Template**, then customize copy, branding, and assets to match your business.\n4. Publish or activate directly from the editor when ready.",
       "processed_at": "2026-07-11T07:55:05.664236+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/introducing-new-templates-104",
+      "category": "LIVE_NOW",
+      "published": "Sat, 01 Aug 2026 23:08:10 GMT",
+      "title": "Introducing New Templates",
+      "content": "**New Templates Now Available**\n\nFresh, ready-to-use templates have been added across websites, stores, emails, ads, social posts, and automations — so you can launch faster without starting from scratch.\n\n**What's new:**\n\n- **Website:** Business, Coaching & Consulting (1)\n- **Store:** Restaurant and Bar (1)\n- **Email:** Real Estate (1)\n- **Social Posts:** Insurance (2), Home Services (2), Financial (2), Other (2)\n- **Facebook Ads:** Real Estate – Residential Architect; Travel & Hospitality – Tour Guide\n- **Google Ads:** House Cleaning, Wellness Guidance, Credit Score Repair, Live Band, Financial Advisor\n- **LinkedIn Ads:** Career Counselor, Website Developer, Ledger Manager, Creative Agency, Entrepreneur Coach\n- **Automation Workflows:** Appointment Reminder (24h + 1h); New Lead Round-Robin Assignment\n- **Snapshot:** Automotive – Roadside Assistance\n\n---\n\n**How to set it up:**\n\n1. Log in to your Kayan dashboard and navigate to the relevant builder — Sites, Emails, Ads, or Automations.\n2. Select **Templates** and browse by category or use the search to find a specific industry.\n3. Preview any template, then click **Use Template** to load it into your workspace.\n4. Customize the content, branding, and settings to match your business, then publish or activate.",
+      "processed_at": "2026-08-02T08:22:57.296913+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/increased-pit-token-limit-per-subaccount",
