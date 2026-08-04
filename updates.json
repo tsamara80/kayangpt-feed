@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-03T09:42:38.126179+00:00",
+  "last_updated": "2026-08-04T08:36:04.461360+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -187,6 +187,22 @@
       "processed_at": "2026-07-07T09:40:08.979122+00:00"
     },
     {
+      "source_link": "https://ideas.gohighlevel.com/changelog/improved-abandoned-checkouts-with-export-filters-notifications",
+      "category": "LIVE_NOW",
+      "published": "Tue, 04 Aug 2026 06:32:43 GMT",
+      "title": "Improved Abandoned Checkouts with Export, Filters & Notifications",
+      "content": "**Abandoned Checkouts: Export, Filters & Notifications**\n\nThe Abandoned Checkouts section has been redesigned with new tools to help you find, manage, and act on incomplete purchases faster.\n\n**What's new:**\n- **CSV Export** — Select one, several, or all records on the current page and export customer, cart, product, activity, and recovery details\n- **Search & Filters** — Search by customer name or email, and filter by Email Status, Recovery Status, or Date Range\n- **Notification Settings** — Access abandoned cart notification settings directly from the page via a new quick-access button\n- **Shareable Recovery Links** — Open any abandoned checkout to copy and share its URL directly with the customer so they can return and complete their purchase\n- **UI Improvements** — Refreshed empty states, loading states, pagination, and responsive layout throughout\n\n**How to set it up:**\n\n1. In your Kayan dashboard, go to **Payments → Orders → Abandoned Checkouts**\n2. Use the search bar or **Add Filter** to narrow down records by customer, email status, recovery status, or date range\n3. Select the records you want, then click **Export CSV** to download the data\n4. Click **Configure Notifications** to manage your abandoned cart notification settings\n\n**A few things to note:**\n- Export becomes available only after at least one record is selected\n- \"Select All\" applies to the current page only\n- Exports exceeding 5,000 records will be sent to you by email",
+      "processed_at": "2026-08-04T08:35:27.299644+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/multi-role-signing-for-your-documents-and-contracts-templates-right-inside-workf",
+      "category": "LIVE_NOW",
+      "published": "Tue, 04 Aug 2026 03:44:35 GMT",
+      "title": "🚀 Multi-role signing for your Documents and Contracts templates, right inside Workflows.",
+      "content": "**Multi-Role Signing for Documents & Contracts in Automations**\n\nYou can now define multiple signer roles directly on your document templates and route them automatically through Kayan Automations — no manual re-entry, no workarounds.\n\n**What's new:**\n\n- Add up to 6 signer roles per template (e.g. buyer, seller, witness, or any custom role you define)\n- Assign fields — signature, date, and more — to each individual role\n- When a document is sent via an Automation, all roles auto-populate based on your template setup\n- Override any role's name, email, or phone at the automation level without editing the template\n- One template can serve multiple deal types — just adjust role details per automation as needed\n- If a required email is missing, you'll be prompted before the document goes out; duplicate emails across roles trigger an alert\n\n**How to set it up:**\n\n1. **Build your template** — Open your document template in the Kayan dashboard, define your signer roles (name, email, phone), and assign at least one fillable field to each role\n2. **Assign a Contact field** — At least one fillable element must be assigned to the Contact role; this is required for the automation send action to work\n3. **Add to your Automation** — In the Kayan Automations tab, add a Send Document action and select your multi-role template; roles will auto-populate\n4. **Override if needed** — Adjust any role's details at the automation step level; these values take precedence over template defaults\n5. **Activate** — Each signer receives their copy in the role and order you've defined\n\n**Good to know:**\n- Roles auto-populate only when sent via an Automation, not through manual send\n- Role definitions are local to each individual template\n- Available on web",
+      "processed_at": "2026-08-04T08:35:39.690128+00:00"
+    },
+    {
       "source_link": "https://ideas.gohighlevel.com/changelog/client-portal-one-portal-zero-tab-hopping",
       "category": "LIVE_NOW",
       "published": "Thu, 30 Jul 2026 12:13:59 GMT",
@@ -361,6 +377,22 @@
       "title": "Client Portal - Shared File Notifications for Clients",
       "content": "**Client Portal – File Share Notifications**\n\nClients now get notified the moment you share a file with them through the Kayan Client Portal — no more chasing people down to let them know a document is waiting.\n\n**What's new:**\n\n- Contacts receive an automatic in-app notification when a file is shared with them via the Client Portal\n- Push notifications are supported on both the web portal and the Kayan mobile app\n- Clients can manage their own notification preferences (in-app and push) directly from their portal settings\n\n**How to set it up:**\n\n1. In your Kayan dashboard, open the relevant contact record\n2. Navigate to the **Files** section in the right-hand panel\n3. Upload or select the file you want to share\n4. Enable the **Upload to Client Portal** toggle before saving\n5. The contact will receive an in-app notification immediately — and a push notification if they have that enabled\n\n**Client-side (notification preferences):**\n\n1. Client logs into the Kayan Client Portal\n2. Goes to **Settings → Notification Preferences**\n3. Toggles In-app and/or Push notifications for file shares on or off\n4. Saves preferences",
       "processed_at": "2026-07-07T09:40:28.181968+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/version-history-in-ai-builder",
+      "category": "LIVE_NOW",
+      "published": "Mon, 03 Aug 2026 19:49:16 GMT",
+      "title": "Version History in AI Builder",
+      "content": "**Version History in AI Workflow Builder**\n\nEvery AI-generated iteration of your workflow is now tracked and restorable — no more rebuilding from scratch if an AI edit goes wrong.\n\n**What's new:**\n\n- **Artifact card per iteration** — each AI build or edit produces an inline card in the chat at the exact point the change was made\n- **Active version indicator** — the card matching your current canvas state gets a purple border so you always know where you are\n- **One-click restore** — open the three-dot menu on any older card and select \"Restore this version\" to revert the canvas instantly\n- **Non-destructive navigation** — restoring an older version keeps all newer ones intact; move between iterations freely without losing anything\n- **Unsaved pill** — when auto-save is off, cards display an \"Unsaved\" indicator until the workflow is saved manually; the pill disappears when auto-save is on\n- **Unified version timeline** — AI iterations and manual edits appear together in a single Version History, keeping one authoritative source of truth\n\n**How to set it up:**\n\n1. Open your workflow in the Kayan Automations tab and launch the AI Assistant\n2. Prompt it to build or edit your workflow — an artifact card appears in chat with a purple border marking it as the active version\n3. Prompt another change; the new card takes the purple border and the previous card gains a three-dot menu with \"Restore this version\"\n4. To restore any prior iteration, open its three-dot menu and select \"Restore this version\" — the canvas updates immediately\n5. To view the full timeline, select \"Show in version history\" from the three-dot menu to open the Version History tab",
+      "processed_at": "2026-08-04T08:35:50.007475+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/explain-this-workflow-discovery-pill-in-snapshot-imported-workflows",
+      "category": "LIVE_NOW",
+      "published": "Mon, 03 Aug 2026 18:56:49 GMT",
+      "title": "&quot;Explain This Workflow&quot; discovery pill in Snapshot imported workflows",
+      "content": "**\"Explain This Automation\" — Instant Context on Imported Workflows**\n\nWorkflows brought in through a template import now surface an \"Explain This Automation\" pill at the top of the builder. One click opens the AI Assistant with a full breakdown of exactly what that workflow does.\n\n**What's new:**\n- **\"Explain This Automation\" pill** — Appears automatically at the top of any workflow imported via template\n- **One-click breakdown** — Opens the AI Assistant with a complete explanation of the workflow's triggers, actions, and branching logic\n- **Dismissible** — Dismiss it once and it won't reappear on that workflow\n\n**How to set it up:**\n\n1. Open any workflow you've imported through a Kayan template\n2. Click the **\"Explain This Automation\"** pill at the top of the Kayan Automations builder\n3. Review the full breakdown in the AI Assistant panel\n4. Ask follow-up questions about specific steps, or describe the changes you want — the AI Builder can apply them directly\n\nInherited workflows come with no built-in context. This closes that gap at the moment it matters most — right when you open it — and connects you directly into the AI Assistant and AI Builder to understand, question, and edit without leaving the builder.",
+      "processed_at": "2026-08-04T08:36:04.461282+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/hover-animations-for-buttons",
