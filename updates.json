@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-05T08:35:05.764453+00:00",
+  "last_updated": "2026-08-06T08:34:51.828650+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -92,6 +92,30 @@
       "title": "🗓️ Buffer Time is Now Visible in Calendar Day & Week Views",
       "content": "**Buffer Time Now Visible in Day & Week Calendar Views**\n\nPre- and post-buffer times are now displayed directly in your Day and Week calendar views, giving you a clearer picture of how your schedule is spaced without changing how bookings work.\n\n**What's new:**\n- Buffer periods appear as distinct visual blocks before and after appointments in both Day and Week views\n- Buffers are clearly differentiated from actual appointments so your schedule is easy to read at a glance\n- Visibility applies across all calendar filters — by staff member, service, or category/group\n\n**How to set it up:**\n1. Open the **Calendar** section in your Kayan dashboard\n2. Switch to **Day** or **Week** view\n3. Enable the **Show buffer time** toggle\n4. Buffer periods will appear highlighted around your appointments across all active filters",
       "processed_at": "2026-07-08T08:27:13.234368+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/whatsapp-statistics-in-workflows",
+      "category": "LIVE_NOW",
+      "published": "Wed, 05 Aug 2026 12:13:19 GMT",
+      "title": "WhatsApp statistics in Workflows",
+      "content": "**WhatsApp Message Statistics in Automations**\n\nTrack the full delivery lifecycle of your WhatsApp messages directly inside your automation — no need to jump between tools.\n\n**What's new**\n\n- **Full delivery tracking:** Monitor total sent, pending, delivered, read, and failed counts for any WhatsApp action inside an automation, using the same status data reported back by Meta.\n- **Custom date ranges:** Filter statistics by a specific time window to evaluate performance for a particular campaign or send period.\n- **Message-level detail:** Open any individual message to view recipient information and precise delivery timestamps.\n- **Export:** Download your statistics for external analysis or reporting.\n- **Live refresh:** Update message statuses on demand with a refresh button — no full page reload required.\n\n**How to set it up**\n\n1. Open the **Kayan Automations** tab and select the automation containing a WhatsApp action.\n2. Click on the WhatsApp action, then select **Statistics**.\n3. Use the date range selector to define your reporting window.\n4. Click into any individual message to view recipient and timestamp details.\n5. Select **Open All Statistics**, then click **Export** to download the data.\n\nWhatsApp delivery isn't guaranteed — messages can sit pending, fail, or go unread. Having delivered, read, and failed counts surfaced at the automation level means you can catch delivery drops or failure spikes at the source and export the detail when you need to investigate or report.",
+      "processed_at": "2026-08-06T08:34:23.877436+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/whatsapp-ai-template-generator-compliant-on-brand-fast",
+      "category": "LIVE_NOW",
+      "published": "Wed, 05 Aug 2026 12:09:15 GMT",
+      "title": "WhatsApp: AI template generator (compliant, on-brand, fast)",
+      "content": "**WhatsApp: AI Template Generator**\n\nGenerate compliant, ready-to-submit WhatsApp message templates from a plain description — no field-by-field building required.\n\n**What's new**\n\n- **AI drafting from a description:** Describe your use case and audience (e.g. \"payment reminder for retail customers\") and the AI drafts a complete template with personalisation variables already in place.\n- **Auto-categorisation:** The AI classifies each draft as Utility, Marketing, or Authentication — aligned with Meta's own categories — so your template is set up correctly before it ever reaches review.\n- **Inline validation:** Get real-time recommendations on length, formatting, and policy fit as you draft, catching issues before submission rather than after a rejection.\n- **Fully editable before submit:** Adjust copy, variables, and CTAs however you need, then submit to Meta for approval when it's ready.\n\n**Why it matters**\n\nMeta applies different rules by template category — Utility templates, for example, aren't subject to the same per-user frequency limits as Marketing templates. Getting categorisation and formatting right up front means fewer rejections and no surprises at send time.\n\n**How to set it up**\n\n1. In your Kayan dashboard, go to **WhatsApp → Templates** and select **Create Template → AI Template**.\n2. Enter a description of your use case and target audience.\n3. Review the AI-generated draft, its assigned category, and any validation hints.\n4. Edit copy, variables, or CTAs as needed.\n5. Submit to Meta for approval.",
+      "processed_at": "2026-08-06T08:34:40.313884+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/whatsapp-template-management-a-full-ux-revamp",
+      "category": "LIVE_NOW",
+      "published": "Wed, 05 Aug 2026 08:53:20 GMT",
+      "title": "WhatsApp template management: a full UX revamp",
+      "content": "**WhatsApp Template Management: Full UX Overhaul**\n\nManaging WhatsApp templates at scale just got significantly easier. The entire template and folder experience has been rebuilt — faster navigation, real folder structure, filtering, sorting, and flexible reorganization, all in a cleaner interface.\n\n**What's new**\n\n- **One-click refresh** — Update your template list and approval statuses in place without reloading the page. You stay exactly where you are.\n- **Real folder navigation** — Open a folder and work inside it like a true directory. Templates and subfolders are scoped to the folder you're in, so nested organization is finally practical.\n- **Template location visibility** — The templates list now shows which folder each template lives in, so your library structure is always clear at a glance.\n- **Filters** — Narrow templates by Status, Language, Last Edited, and Category. No more scrolling through hundreds of templates to find the right one.\n- **Sorting** — Order your list by Template Name, Language, Category, Last Edited, or Status.\n- **Flexible reorganization** — Move templates between folders, nest folders inside others, or pull them back up to a parent level. Restructure freely as your needs change.\n- **Refreshed interface** — Both the templates and folders screens have been rebuilt to match current design standards — cleaner, faster, more structured.\n\n**How to set it up**\n\n1. In your Kayan dashboard, go to **Messaging → WhatsApp Templates**.\n2. Use the new **filter and sort controls** at the top of the template list to narrow or reorder your view.\n3. Click into any folder to enter it directly and see only its contents.\n4. To move a template or folder, select it and use the **Move** option to place it wherever it belongs.\n5. Hit the **Refresh** button anytime to pull the latest Meta approval statuses without leaving your current view.",
+      "processed_at": "2026-08-06T08:34:51.828565+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/whatsapp-templates-cleaner-selection-rtl-authoring-and-compliance-visibility",
