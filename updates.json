@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-06T08:34:51.828650+00:00",
+  "last_updated": "2026-08-07T07:14:44.426479+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -354,6 +354,53 @@
       "published": "Thu, 09 Jul 2026 06:48:07 GMT"
     },
     {
+      "source_link": "https://ideas.gohighlevel.com/changelog/company-custom-fields-now-supported-in-snapshots",
+      "category": "DISCARD",
+      "published": "Thu, 06 Aug 2026 15:30:00 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/ai-studio-website-detection-in-prospecting-audit-reports",
+      "category": "DISCARD",
+      "published": "Thu, 06 Aug 2026 15:20:43 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/slack-migration-to-marketplace-architecture",
+      "category": "DISCARD",
+      "published": "Thu, 06 Aug 2026 13:56:16 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/callers-now-hear-their-own-countrys-ringtone",
+      "category": "LIVE_NOW",
+      "published": "Thu, 06 Aug 2026 13:43:57 GMT",
+      "title": "Callers now hear their own country&apos;s ringtone",
+      "content": "**Callers Now Hear a Familiar Ringtone, Wherever They Are**\n\nWhen a call was forwarded, routed through an IVR, or transferred via Voice AI, callers outside the US were hearing a US-style ringback tone. That mismatch made calls feel off — sometimes enough to cause hang-ups before anyone answered.\n\nRingback tones are now localized to match the country of the phone number involved, across 37 countries.\n\n**What's changed:**\n- Inbound call forwarding plays the caller's local ringback tone\n- Outbound calls use the local tone for the destination country\n- IVR call routing respects the caller's regional tone\n- Voice AI transfers play the correct tone for the country involved\n\n**How to set it up:**\n\nNo configuration needed — this applies automatically based on the phone numbers in use. To confirm your numbers are set up correctly:\n\n1. Go to your **Kayan dashboard** and open **Settings → Phone Numbers**\n2. Verify that each number is assigned to the correct country\n3. Make a test call to confirm the ringback tone matches what callers in that country expect\n\nIf a number is misconfigured to the wrong country, update it here and the correct tone will apply immediately.",
+      "processed_at": "2026-08-07T07:14:13.288098+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/audio-device-settings-on-the-web-dialer",
+      "category": "COMING_SOON",
+      "published": "Thu, 06 Aug 2026 11:31:07 GMT",
+      "title": "Audio device settings on the web dialer",
+      "content": "**Audio Device Settings for the Web Dialer**\n\nGranular control over which audio devices handle your calls in the web dialer is coming soon to Kayan.ai.\n\n**What's coming:**\n- Choose your primary speaker for call audio\n- Route ringing to a second device simultaneously (e.g. headset + desk speaker) so inbound calls never go unheard\n- Select your preferred microphone from available input devices\n- Test speakers and additional output devices before going live\n- Live volume meter on the microphone picker confirms your mic is active and picking up sound\n\n> **Note:** Full multi-device audio selection requires Chrome or Edge — Safari supports only one audio output device.",
+      "processed_at": "2026-08-07T07:14:19.635864+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/gbp-post-sync-into-social-planner-beta",
+      "category": "COMING_SOON",
+      "published": "Thu, 06 Aug 2026 11:14:15 GMT",
+      "title": "🔄 GBP Post Sync into Social Planner-Beta",
+      "content": "**Google Business Profile Post Sync — Coming Soon**\n\nYour Google Business Profile posts will soon sync automatically into Kayan's Social Planner, letting you manage GBP content alongside all your other social channels from one place.\n\n**What's coming:**\n\n- **Automatic post import** — Pulls your existing GBP posts directly into the Social Planner, including Standard, Event, Offer, and Call-to-Action posts, with key details preserved: text, images, CTAs, event info, and offer data\n- **Unified content calendar** — View synced GBP posts alongside scheduled and published content from all connected social channels in a single timeline\n- **Daily auto-sync** — Content and supported engagement data refresh every 24 hours, with status indicators and reconnect prompts if your GBP account needs attention\n- **Historical import** — Posts from the last 30 days sync by default; if fewer exist, the system automatically pulls up to 365 days of history\n\n**A few things to know:**\n\n- Sync is one-way (GBP → Kayan); deleted GBP posts will still appear in your planner\n- Cloning will be supported for text-only and single-image posts only — multi-image and video posts are excluded\n- Engagement metrics are limited to what the Google Business Profile API supports\n- Will need to be enabled per location once available\n\nThis feature is currently in beta. We'll let you know when it's live.",
+      "processed_at": "2026-08-07T07:14:28.879503+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/single-page-unpublish-for-funnels-and-websites",
+      "category": "LIVE_NOW",
+      "published": "Thu, 06 Aug 2026 09:42:14 GMT",
+      "title": "Single Page Unpublish for Funnels and Websites",
+      "content": "**Single Page Unpublish for Funnels and Websites**\n\nYou can now take individual pages offline without touching the rest of your site. Hide outdated content, pause seasonal promotions, or manage campaigns granularly — all without disconnecting your domain or deleting a page permanently.\n\n**What's new**\n\n- **Granular page control:** Publish or unpublish a single funnel or website page while everything else stays live. The option is available directly from each page's actions menu — in both the page list and the builder's side panel.\n- **Full page management inside the builder:** The side panel now includes a complete actions menu per page — Edit (rename/change URL slug), Preview, Clone, Publish, Unpublish, Edit Redirect Link, and Delete. The menu adapts based on the page's current state.\n- **Built-in redirects:** When unpublishing, choose what visitors see at the old URL — a 404, a redirect to another page in the same funnel/website, or any external URL.\n- **Editable redirects anytime:** Already unpublished a page? Update where its traffic goes at any time via Edit Redirect Link, without changing the page's publish state.\n- **Status visibility everywhere:** Unpublished pages display a clear tag in the page list and sidebar. The builder header shows a live status chip (• Live / • Unpublished), the page's URL, and who last changed its status.\n- **A/B test handling:** Unpublishing a page with an active A/B test automatically stops the test — all historical metrics are preserved.\n- **Instant effect:** Status changes take effect immediately. No full-funnel republish needed.\n- **Zero domain disruption:** Unpublishing a page does not affect your domain's SSL certificate or DNS settings.\n- **Team accountability:** Every publish/unpublish action logs who made the change and when.\n\n---\n\n**How to set it up**\n\n1. Open the funnel or website you want to manage in your Kayan dashboard and navigate to its page list.\n2. Find the page you want to take offline and open its **Options** menu.\n3. Select **Unpublish**. A confirmation dialog will appear explaining exactly what will and won't be affected.\n4. Choose your redirect behavior: standard 404, redirect to another page in the same funnel/website, or redirect to a custom external URL.\n5. Confirm. The page goes offline immediately — all other published pages are unaffected.\n6. To update the redirect destination later, open the page's Options menu and select **Edit Redirect Link**.\n7. To bring the page back, select **Publish** from the same menu — it goes live instantly.\n8. Everything above is also accessible from the pages side panel inside the builder — no need to leave the canvas.",
+      "processed_at": "2026-08-07T07:14:44.426429+00:00"
+    },
+    {
       "source_link": "https://ideas.gohighlevel.com/changelog/ad-manager-custom-values-in-ad-copy",
       "category": "LIVE_NOW",
       "published": "Thu, 02 Jul 2026 14:06:33 GMT",
@@ -577,6 +624,24 @@
       "title": "Jira: Workflow actions and triggers",
       "content": "**Jira Integration: Triggers & Actions in Automations**\n\nJira is now natively connected to Kayan Automations. You can trigger workflows when Jira issues are created or updated, and push actions back into Jira — all without leaving Kayan.\n\n**What's new:**\n\n- **2 triggers** — fire a workflow when a Jira issue is created or updated\n- **11 actions** across four categories:\n  - *Discovery:* Find users, find projects, find issues\n  - *Creation & updates:* Create issue, update issue\n  - *Enrichment:* Add comment, add watcher, add attachment, log work\n  - *Relationships:* Link issue, move issue to sprint\n- OAuth authentication with a friendly account label (name + email) so you can manage multiple connections cleanly\n- Cloud Site selector on every trigger and action — one connected Atlassian account can target any of your Jira Cloud sites\n\n---\n\n**How to set it up:**\n\n1. Open the **Kayan Automations** tab and create or edit a workflow.\n2. Add any Jira trigger or action — you'll be prompted to connect your account.\n3. Enter a display name (e.g. \"Support Jira\") and the email tied to your Jira account, then click **Continue**.\n4. Approve the requested permissions on Atlassian's authorization screen. You'll be returned to the workflow automatically.\n5. On each Jira step, select the **Cloud Site** it should read from or write to.\n6. Save and activate your workflow.",
       "processed_at": "2026-07-11T07:56:04.246358+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/tiktok-lead-ads-migration-to-marketplace-architecture",
+      "category": "DISCARD",
+      "published": "Fri, 07 Aug 2026 06:34:48 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/whatsapp-usernames",
+      "category": "COMING_SOON",
+      "published": "Fri, 07 Aug 2026 06:25:14 GMT",
+      "title": "WhatsApp usernames",
+      "content": "**WhatsApp Username Support — Coming Soon**\n\nWhatsApp is rolling out usernames, allowing users to message businesses without sharing a phone number. Kayan.ai has already built support for this ahead of Meta's rollout — so when it reaches your market, new contacts who message you via username are captured automatically, with no gaps in your lead flow.\n\n**What's coming**\n\n- **Automatic contact capture for username adopters:** When a net-new customer messages you via a WhatsApp username for the first time, Kayan.ai creates a contact using their username and a business-scoped user ID (BSUID) — a stable, account-specific identifier assigned by WhatsApp. No phone number required to keep the lead.\n- **Phone-number messaging stays exactly the same:** Every existing conversation, import, and contact record is unaffected. This only applies to brand-new inbounds from customers who have opted into a username.\n- **Reply and continue conversations:** Once a username-only contact messages you first, their BSUID is captured and you can reply normally — following the same WhatsApp session-window and template rules that apply to all conversations.\n- **No cold outreach to username-only leads:** You cannot initiate an outbound message to someone you only know by username. Outreach is only possible after they've contacted you first and their BSUID is on record.\n- **No change to automations, billing, or templates:** Existing workflows continue running without modification.\n\n**Availability**\n\nMeta is releasing usernames in a regional beta. Current markets include Algeria, Azerbaijan, Ghana, Libya, Nepal, Colombia, Dominican Republic, Singapore, Malaysia, and Peru. More regions will follow. No setup will be required — contact capture for username adopters will activate automatically once the feature reaches your market.",
+      "processed_at": "2026-08-07T07:13:55.186477+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/set-a-fixed-price-for-your-ai-products",
+      "category": "DISCARD",
+      "published": "Fri, 07 Aug 2026 04:51:29 GMT"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/pricing-update-sms-costs-for-select-international-destinations-effective-july-6-1",
