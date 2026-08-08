@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-07T07:14:44.426479+00:00",
+  "last_updated": "2026-08-08T06:51:37.157150+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -453,6 +453,14 @@
       "processed_at": "2026-07-11T07:55:05.664236+00:00"
     },
     {
+      "source_link": "https://ideas.gohighlevel.com/changelog/introducing-new-templates-105",
+      "category": "LIVE_NOW",
+      "published": "Sat, 08 Aug 2026 02:42:21 GMT",
+      "title": "Introducing New Templates",
+      "content": "**New Templates Added to Kayan**\n\nFresh templates are now available across websites, funnels, emails, social posts, and ads — ready to deploy and fully customizable to fit your brand.\n\n**What's new:**\n\n- **1 Website Template** — Travel & Hospitality\n- **1 Funnel Template** — Home Services\n- **1 Email Template** — Beauty & Fashion\n- **8 Social Post Templates** — Automotive (2), Medical (2), Legal (2), Marketing Agency (2)\n- **4 Facebook Ad Templates** — Restaurant & Bar (Tea Parlors), Travel & Hospitality (RV Rentals, Boat Tours), Health & Wellness (Holistic Wellness)\n- **5 Google Ad Templates** — Assisted Living, Skin Med Spa, Affiliate Program, Bankruptcy Attorney, Property & Casualty Insurance\n- **7 LinkedIn Ad Templates** — Brand Advertising, Digital Creator, Creative Copywriter, Financial Services, IT Security Consultant, PR Agency, Web-Based Software Firm\n- **1 New Snapshot** — Beauty & Fashion (Skin Care Clinic)\n\n**How to set it up:**\n\n1. Log in to your Kayan dashboard.\n2. Navigate to the **Templates** section from the left sidebar.\n3. Browse by category (Websites, Funnels, Emails, Ads, or Social).\n4. Select a template, preview it, and click **Use Template** to load it into your editor.\n5. Customize copy, images, and branding, then publish or schedule as needed.",
+      "processed_at": "2026-08-08T06:51:34.084279+00:00"
+    },
+    {
       "source_link": "https://ideas.gohighlevel.com/changelog/introducing-new-templates-104",
       "category": "LIVE_NOW",
       "published": "Sat, 01 Aug 2026 23:08:10 GMT",
@@ -624,6 +632,11 @@
       "title": "Jira: Workflow actions and triggers",
       "content": "**Jira Integration: Triggers & Actions in Automations**\n\nJira is now natively connected to Kayan Automations. You can trigger workflows when Jira issues are created or updated, and push actions back into Jira — all without leaving Kayan.\n\n**What's new:**\n\n- **2 triggers** — fire a workflow when a Jira issue is created or updated\n- **11 actions** across four categories:\n  - *Discovery:* Find users, find projects, find issues\n  - *Creation & updates:* Create issue, update issue\n  - *Enrichment:* Add comment, add watcher, add attachment, log work\n  - *Relationships:* Link issue, move issue to sprint\n- OAuth authentication with a friendly account label (name + email) so you can manage multiple connections cleanly\n- Cloud Site selector on every trigger and action — one connected Atlassian account can target any of your Jira Cloud sites\n\n---\n\n**How to set it up:**\n\n1. Open the **Kayan Automations** tab and create or edit a workflow.\n2. Add any Jira trigger or action — you'll be prompted to connect your account.\n3. Enter a display name (e.g. \"Support Jira\") and the email tied to your Jira account, then click **Continue**.\n4. Approve the requested permissions on Atlassian's authorization screen. You'll be returned to the workflow automatically.\n5. On each Jira step, select the **Cloud Site** it should read from or write to.\n6. Save and activate your workflow.",
       "processed_at": "2026-07-11T07:56:04.246358+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/fix-accurate-email-when-a-marketplace-app-plan-change-affects-your-saas-plan",
+      "category": "DISCARD",
+      "published": "Fri, 07 Aug 2026 08:25:36 GMT"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/tiktok-lead-ads-migration-to-marketplace-architecture",
