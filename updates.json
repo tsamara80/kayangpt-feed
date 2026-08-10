@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-09T06:54:49.800457+00:00",
+  "last_updated": "2026-08-10T07:39:50.054537+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -472,6 +472,35 @@
       "source_link": "https://ideas.gohighlevel.com/changelog/increased-pit-token-limit-per-subaccount",
       "category": "DISCARD",
       "published": "Mon, 27 Jul 2026 11:29:05 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/clearer-and-more-accurate-invoice-line-items-for-rentals",
+      "category": "LIVE_NOW",
+      "published": "Mon, 10 Aug 2026 06:25:41 GMT",
+      "title": "Clearer and More Accurate Invoice Line Items for Rentals",
+      "content": "**Clearer Line Items on Rental Invoices**\n\nRental invoices now display accurate per-unit pricing and real quantities instead of a single lump-sum line — making charges easier for your customers to read and verify.\n\n**What's new:**\n\n- **Accurate unit pricing** — Each line item shows the true cost per unit alongside the actual quantity booked. Example: a 3-day rental of 4 units at $50/day now shows Unit Price: $135.00 | Qty: 4 | Total: $540.00, rather than a single line of $540.00 at Qty: 1.\n- **Consistent per-unit calculations** — Pricing is calculated at the unit level before reaching the final total, keeping results predictable across all discount configurations and booking sizes.\n- **Clean invoice totals** — In rare cases involving non-round discount percentages, per-unit rounding may cause totals to vary by $0.01. This is expected and reflects the most accurate representation of the configured price.\n\n**How to set it up:**\n\nNo configuration needed — this update applies automatically to all rental invoices in your Kayan dashboard. Open any existing or new rental booking, generate an invoice, and the updated line item format will appear. Verify your line items reflect the correct unit price and quantity before sending to your customer.",
+      "processed_at": "2026-08-10T07:39:27.789985+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/chat-widget-embed-any-chat-widget-inline",
+      "category": "LIVE_NOW",
+      "published": "Mon, 10 Aug 2026 05:11:12 GMT",
+      "title": "Chat Widget - Embed Any Chat Widget Inline",
+      "content": "**Chat Widget Now Supports Inline Embedding Across All Types**\n\nYou can now embed any Kayan chat widget directly inline on a page — not just as a floating bubble in the corner. This gives you full control over where conversations appear within your websites, landing pages, funnels, and custom layouts.\n\n**What's new:**\n\n- Embedded (inline) placement is now available for all chat widget types: All-in-One Chat, Email/SMS, WhatsApp, Facebook, Instagram, Live Chat, and Voice AI\n- Embedded widgets open automatically and stay open — no bubble, no popup, no minimize option\n- The widget displays as a fully visible, always-on conversation experience within the page itself\n- For All-in-One Chat, visitors can switch between communication channels without leaving the embedded widget\n- The widget builder preview updates in real time when you switch to Embedded placement, and floating-bubble-specific settings are automatically hidden\n\n**How to set it up:**\n\n1. Go to **Chat Widgets** in your Kayan dashboard and open the widget builder\n2. Select the chat widget type you want to use\n3. Under placement settings, choose **Embedded** instead of Sticky\n4. Customise your widget — bubble and popup options will hide automatically since they don't apply\n5. Copy the embed code and place it in the page section where you want the chat to appear\n\nConversations become part of the page, not an interruption to it.",
+      "processed_at": "2026-08-10T07:39:37.922429+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/ad-manager-opportunity-score-for-google-linkedin-campaigns",
+      "category": "LIVE_NOW",
+      "published": "Mon, 10 Aug 2026 04:57:29 GMT",
+      "title": "Ad Manager: Opportunity Score for Google & LinkedIn Campaigns",
+      "content": "**Ad Manager: Opportunity Score Now Live for Google & LinkedIn Campaigns**\n\nBefore you publish a Google or LinkedIn campaign, Kayan now shows you a readiness score and actionable recommendations — the same pre-launch guidance already available for Meta campaigns.\n\n**What's new:**\n\n- **0–100 Opportunity Score** displayed on the Review screen before publishing, summarized as Low, Medium, or High campaign health\n- **Platform-aware recommendations** tailored to each channel:\n  - *Google:* evaluates keywords, audience, budget, creatives, tracking, ad schedule, language, placements, bidding, and campaign assets\n  - *LinkedIn:* evaluates audience and location targeting, budget, creatives, destination URLs, lead-gen setup, language, and campaign-specific requirements\n- Recommendations are scoped to your selected objective, ad format, and configuration — no irrelevant suggestions\n- **Prioritized suggestions** grouped by area (Audience, Budget, Creative, Tracking, Keywords) with impact indicators so you know what to fix first\n- **Click-to-fix navigation** — select any suggestion to jump directly to the relevant campaign section and make changes without hunting through settings\n\n**How to set it up:**\n\n1. In the Kayan dashboard, open the **Ad Manager** tab and create or edit a Google or LinkedIn campaign\n2. Complete your campaign setup and proceed to the **Review** screen\n3. Open the **Opportunity Score** panel to view your overall score and individual recommendations\n4. Click any suggestion to navigate directly to that campaign setting, make your changes, and return to see your updated score\n5. Publish when you're satisfied with your readiness level\n\n*Note: Opportunity Score is advisory guidance only — it does not automatically modify your campaign settings or guarantee performance outcomes.*",
+      "processed_at": "2026-08-10T07:39:47.601424+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/bulk-keyword-management-for-google-ads-in-ad-manager",
+      "category": "DISCARD",
+      "published": "Mon, 10 Aug 2026 03:51:05 GMT"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/tags-for-courses",
