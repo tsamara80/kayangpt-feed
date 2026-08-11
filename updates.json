@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-10T07:39:50.054537+00:00",
+  "last_updated": "2026-08-11T07:07:00.705365+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -201,6 +201,46 @@
       "source_link": "https://ideas.gohighlevel.com/changelog/refreshed-placeholder-images-in-store-builder",
       "category": "DISCARD",
       "published": "Tue, 21 Jul 2026 15:46:52 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/available-quantity-as-a-custom-value-workflow-filter",
+      "category": "LIVE_NOW",
+      "published": "Tue, 11 Aug 2026 06:35:24 GMT",
+      "title": "Available Quantity as a Custom Value & Workflow Filter",
+      "content": "**Available Quantity as a Workflow Filter & Custom Value**\n\nYou can now use product inventory levels to trigger and filter automations — making it easier to act on stock changes without manual monitoring.\n\n**What's new:**\n- Abandoned Cart and Order Fulfilled triggers now support Available Quantity as a filter condition\n- Available Quantity can be passed as a custom value into supported workflow actions\n- Filter logic is structured by product → price → available quantity, giving you precise inventory-based targeting\n\n**How to set it up:**\n1. In the **Kayan Automations** tab, open or create a workflow using the **Abandoned Cart** or **Order Fulfilled** trigger\n2. In the workflow filters, select **Global Products** and choose a specific product\n3. Select a single **Price** under that product\n4. Configure the **Available Quantity** condition with your chosen operator (e.g. less than, equals) and a numeric value\n5. To use inventory data downstream, insert **Available Quantity** or **Price** as a custom value in any supported workflow action\n\n**Keep in mind:**\n- Filters follow this nesting order: Global Products → Price → Available Quantity\n- Only a single Price and a single numeric quantity value are supported at this time\n- Available Quantity and Price cannot be used inside If/Else branches in the current version",
+      "processed_at": "2026-08-11T07:05:51.774680+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/generate-copy-reschedule-links-directly-from-appointments",
+      "category": "LIVE_NOW",
+      "published": "Tue, 11 Aug 2026 05:47:42 GMT",
+      "title": "🔗 Generate & Copy Reschedule Links Directly from Appointments",
+      "content": "**Generate & Copy Reschedule Links from Any Appointment**\n\nWhen a customer needs to reschedule, you can now generate and copy a reschedule link directly from the appointment — no digging through old emails required. Available for both Meetings and Services.\n\n**What's new:**\n- Generate a reschedule link on demand from any existing appointment\n- View the link instantly and copy it to your clipboard in one click\n- Share it via any channel — chat, email, SMS, wherever works best\n- Customers can open the link and pick a new time immediately\n- Existing appointment permissions apply — users without appointment management access won't be able to generate links\n\n**How to set it up:**\n\n1. Open any appointment from your Kayan dashboard (accessible via Contacts, Conversations, Appointments, or Opportunities)\n2. Click the **Appointment Actions** icon\n3. Select **Generate Reschedule Link**\n4. Click **Copy Link** once it appears\n5. Send it to your customer through your preferred channel\n\nThat's it — the customer follows the link and selects a new time on their own.",
+      "processed_at": "2026-08-11T07:06:01.394545+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/week-start-preferences-are-now-consistent-across-calendars",
+      "category": "LIVE_NOW",
+      "published": "Tue, 11 Aug 2026 02:52:52 GMT",
+      "title": "📅 Week Start Preferences Are Now Consistent Across Calendars",
+      "content": "**Week Start Preferences Now Consistent Across All Calendar Types**\n\nYour preferred start day of the week is now applied consistently across every scheduling experience in Kayan — no more mismatches between different calendar views.\n\n**What's new:**\n- Choose Saturday, Sunday, or Monday as your week start for Meetings, Services, and Rentals separately\n- Your preference now carries through consistently across:\n  - Calendar views\n  - Appointment creation and editing\n  - Schedules and availability settings\n  - Staff availability\n  - Date pickers\n  - Business operating hours\n- Booking widget week start settings remain independent — your internal preference won't override your customer-facing widget configuration\n\n**How to set it up:**\n\n1. Open the **Kayan dashboard** and navigate to your **Calendars** section\n2. Set your week start preference per calendar type:\n   - **Meetings** → Meetings > Preferences\n   - **Services** → Services > Global Settings > In-App Settings\n   - **Rentals** → Rentals > Global Settings > In-App Settings\n3. Select your preferred start day: Saturday, Sunday, or Monday\n4. Save — your preference will apply automatically across all relevant in-app scheduling views",
+      "processed_at": "2026-08-11T07:06:16.126138+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/services-v2-enhancements-2",
+      "category": "LIVE_NOW",
+      "published": "Tue, 11 Aug 2026 02:29:15 GMT",
+      "title": "✨ Services (v2): Enhancements",
+      "content": "**Services Booking: New Enhancements**\n\nKayan's Services module just got a meaningful upgrade — more notification channels, smarter email personalization, flexible category layouts, and better out-of-the-box defaults so you spend less time configuring and more time serving clients.\n\n**What's new:**\n\n- **WhatsApp Notifications for Services** — In addition to Email and SMS, you can now send WhatsApp notifications at any stage of the booking journey: confirmations, reminders, follow-ups, and more. Reach clients on the channel they actually use.\n- **Service & Rental Custom Values in the Email Builder** — When building service-related emails, you can now insert Service and Rental custom values directly from the Email Builder. No more manually typing or hunting for variable names — pick them from the list and drop them into your content.\n- **Top Tabs Layout for Service Categories** — Your booking widget now supports a Top Tabs display for Service Categories, giving clients a clean, easy way to browse between categories during the booking flow.\n- **Smarter Default Settings** — Key settings that improve the booking experience are now enabled by default, including: allowing clients to explore services outside the category they landed on, and allowing clients to book multiple services in a single session. Both can still be adjusted to fit your workflow.\n\n---\n\n**How to set it up:**\n\n1. In your Kayan dashboard, navigate to the **Services** section and open the service you want to configure.\n2. Under **Notifications**, select **WhatsApp** as a notification channel and set up messages for the booking stages you want to cover.\n3. To use Service or Rental custom values in emails, open the **Email Builder**, place your cursor where you want the value, and select it from the custom values picker.\n4. To update your booking widget's category display, go to your widget settings and switch the layout to **Top Tabs** under Category Display.\n5. Review your booking flow defaults under **Booking Settings** — multi-service booking and cross-category browsing are now on by default, but can be toggled off if needed.",
+      "processed_at": "2026-08-11T07:06:30.239069+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/gift-cards-redeem-gift-cards-while-collecting-calendar-payments",
+      "category": "LIVE_NOW",
+      "published": "Tue, 11 Aug 2026 01:47:27 GMT",
+      "title": "Gift Cards: Redeem Gift Cards While Collecting Calendar Payments",
+      "content": "**Gift Cards: Redeem Gift Cards During Calendar Payment Collection**\n\nYou can now apply a customer's Gift Card balance when collecting payment for an appointment — without requiring the customer to initiate it themselves. Works across Meetings, Services, and Rentals calendars.\n\n**What's new:**\n- Apply a customer's Gift Card balance when collecting payment on their behalf, including when charging a saved card or adding a new one\n- Full balance coverage: if the Gift Card covers the total, no additional payment method is charged\n- Partial balance: Gift Card is applied first, remaining amount is automatically charged to the customer's saved payment method\n- Invalid, expired, or zero-balance Gift Cards surface clear validation messages\n- Transaction details show exactly how much was redeemed via Gift Card; split payments display each amount separately\n- The associated Gift Card order updates automatically with the remaining balance after each redemption\n\n**How to set it up:**\n\n1. Open the relevant appointment in your Kayan dashboard\n2. Navigate to the **Payments** tab within the appointment\n3. Click **Collect Payment**\n4. Select **Charge a Card**\n5. Choose **Redeem a Gift Card** and apply the customer's available balance\n6. Any remaining amount after the Gift Card is applied will be charged to the customer's saved payment method",
+      "processed_at": "2026-08-11T07:06:41.467099+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/control-google-sign-in-on-your-client-portal",
@@ -472,6 +512,27 @@
       "source_link": "https://ideas.gohighlevel.com/changelog/increased-pit-token-limit-per-subaccount",
       "category": "DISCARD",
       "published": "Mon, 27 Jul 2026 11:29:05 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/native-speech-to-speech-voice-ai-support-in-chat-widget",
+      "category": "COMING_SOON",
+      "published": "Mon, 10 Aug 2026 19:02:44 GMT",
+      "title": "Native Speech-to-Speech Voice AI Support in Chat Widget",
+      "content": "**Native Speech-to-Speech Voice AI Coming to Chat Widget**\n\nKayan's Chat Widget will soon support Speech-to-Speech (S2S) Voice AI agents alongside existing Voice AI agents — giving you a single, unified experience for deploying voice capabilities directly on your website.\n\n**What's coming:**\n\n- S2S and standard Voice AI agents will appear together in a single agent dropdown inside the Chat Widget builder\n- The widget will automatically detect which agent type is selected and launch the correct voice experience — no manual configuration needed\n- Switching an existing agent to an S2S model will automatically update any widgets already using that agent — no code changes, no re-embedding required\n- The existing calling experience stays intact: two-way audio, mute/unmute, call status, and end-call controls remain unchanged\n- The S2S SDK will only load when a visitor initiates a call with an S2S agent, keeping standard widget performance unaffected\n\nThis update removes the need for separate setup flows and lets you upgrade voice experiences across your site without touching a single line of embed code.",
+      "processed_at": "2026-08-11T07:06:49.680869+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/ai-agent-action-now-upto-50-cheaper-to-run",
+      "category": "LIVE_NOW",
+      "published": "Mon, 10 Aug 2026 17:21:39 GMT",
+      "title": "AI Agent action now upto 50% cheaper to run",
+      "content": "**AI Agent Action: Up to 50% Cheaper Per Execution**\n\nRunning AI Agents in your automations just got significantly more affordable. Kayan.ai has shipped a set of cost optimizations across the agent execution pipeline — up to 50% cheaper per run, with zero changes to behavior, output quality, or your existing setup.\n\n**What's New**\n\n- **Up to 50% lower cost per AI Agent execution** across all workflows\n- **Prompt caching:** repeated context across agent steps is now cached rather than resent on every call, eliminating redundant token usage\n- **Leaner system and tool prompts:** rewritten to be tighter and more precise, reducing token cost on every run\n- **Right-sized models for supporting tasks:** internal operations like summarization, structured output, and memory generation now use lighter models — core reasoning stays unchanged\n- **Fewer total tokens consumed per execution**, on top of per-call savings\n- Heaviest agents benefit most — long conversation and multi-tool agents see the largest cost drop\n- High-volume automations are now well within reach\n\n**How to Set It Up**\n\nNothing to configure. The optimizations are already live and apply automatically to all new and existing AI Agent Actions in your Kayan Automations tab — no changes needed on your end.",
+      "processed_at": "2026-08-11T07:06:58.440885+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/white-label-desktop-app-agency-banners-build-notifications",
+      "category": "DISCARD",
+      "published": "Mon, 10 Aug 2026 12:54:41 GMT"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/clearer-and-more-accurate-invoice-line-items-for-rentals",
