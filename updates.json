@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-11T07:07:00.705365+00:00",
+  "last_updated": "2026-08-12T07:24:17.542185+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -201,6 +201,64 @@
       "source_link": "https://ideas.gohighlevel.com/changelog/refreshed-placeholder-images-in-store-builder",
       "category": "DISCARD",
       "published": "Tue, 21 Jul 2026 15:46:52 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/private-by-default-enhanced-privacy-controls-for-documents-uploaded-through-note",
+      "category": "LIVE_NOW",
+      "published": "Tue, 11 Aug 2026 17:12:16 GMT",
+      "title": "Private by default: Enhanced privacy controls for documents uploaded through notes",
+      "content": "**Documents uploaded via Notes are now private by default**\n\nNote attachments are now stored privately from the moment they're uploaded, giving you tighter control over sensitive documents without any extra steps.\n\n**What's new:**\n- New attachments added through the Notes section are private by default and stored in the \"Notes Attachments\" folder within Documents\n- When sharing a document, you can choose the access level that fits your needs: public link, private link, OTP-protected link, or password-protected link\n- Existing note attachments are not affected — they retain their current access status\n- For existing documents that need tighter controls, you can manually generate a private or protected link at any time\n\n**How to set it up:**\n\n1. Open any contact record in your Kayan dashboard and navigate to the **Notes** section\n2. Upload a document as an attachment — it will automatically be saved as private\n3. To share it, open the file from the **Documents** tab under the \"Notes Attachments\" folder\n4. Select your preferred sharing method: public, private, OTP-protected, or password-protected\n5. For any older attachments, open the file and generate a private link manually if additional access control is needed\n\n> **Coming next:** These privacy controls will extend to document attachments shared through custom fields for a consistent, secure experience across the platform.",
+      "processed_at": "2026-08-12T07:23:18.213879+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/widget-trend-badge-color-choose-whether-an-increase-or-a-decrease-is-good",
+      "category": "DISCARD",
+      "published": "Tue, 11 Aug 2026 14:11:49 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/more-control-over-what-your-sub-accounts-can-see",
+      "category": "DISCARD",
+      "published": "Tue, 11 Aug 2026 13:50:53 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/events-beta-is-now-available-in-labs-for-everyone",
+      "category": "COMING_SOON",
+      "published": "Tue, 11 Aug 2026 13:18:41 GMT",
+      "title": "🎟️ Events Beta is Now Available in Labs for Everyone",
+      "content": "**🎟️ Events Management — Coming to Kayan.ai**\n\nA full event management suite is on its way to Kayan.ai. From creating and promoting events to selling tickets, managing attendees, and triggering automations — the entire event lifecycle will be handled inside your Kayan dashboard.\n\n**What's coming:**\n\n- **Event creation & management** — Build free, paid, RSVP, in-person, online, and hybrid events. Manage details, schedules, speakers, and registrations all in one place.\n- **Branded event pages** — Fully customizable registration and event detail pages with custom layouts, styling, and CSS support. Embeddable inside Kayan funnels or any external site.\n- **Ticketing & registration** — Multiple ticket types, pricing tiers, inventory controls, coupon codes, add-ons, and per-attendee data collection. Manual attendee entry and payment recording included.\n- **QR code tickets & check-in** — Automatic QR ticket issuance after registration. Scan and check in attendees via the Kayan mobile app with live attendance tracking.\n- **Automation triggers** — Fire workflows when attendees register or check in. Build timed sequences before and after events — confirmations, reminders, follow-ups, and full CRM journeys.\n\nThis feature is currently in beta and not yet available. Once it rolls out, you'll be able to enable it directly from your Kayan dashboard settings. More details to come.",
+      "processed_at": "2026-08-12T07:23:41.986517+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/custom-values-support-in-dashboards-and-reporting",
+      "category": "LIVE_NOW",
+      "published": "Tue, 11 Aug 2026 12:51:28 GMT",
+      "title": "Custom values support in dashboards and reporting",
+      "content": "**Custom Values Now Supported in Dashboards and Reports**\n\nYou can now insert dynamic tokens into dashboard widgets and elements — build one dashboard template and let it adapt automatically for every client or location.\n\n**What's new:**\n- Use the `{}` picker to insert tokens into widget conditions (e.g. Source field) and dashboard elements (Embed URL, Title, Text box)\n- **Location tokens available:** Location ID, Name, Email, Phone, Website, Address, City, State, Country, Postal Code, Timezone\n- **User tokens available:** User ID, Email, Phone, Role, Type, First Name, Last Name, Full Name\n- **Custom tokens:** Any custom values you've created under Settings → Custom Values are available in the picker, organised by folder\n- Tokens resolve automatically per account when the dashboard is viewed — no manual duplication needed\n\n**How to set it up:**\n1. Open a dashboard in your Kayan dashboard and enter **Edit mode**\n2. Add or edit a widget and go to its **Conditions** tab — or add an Element (Embed, Title, or Text box)\n3. Click the **`{}`** button next to any text input field\n4. Browse or search Location, User, or Custom value tokens\n5. Select a token — it inserts automatically (e.g. `{{ location.name }}`)\n6. Save and switch to **View mode** — the token resolves to the real value for that account\n\n**Notes:**\n- Token insertion is available to dashboard editors only\n- If a token has no value set for a given account, it resolves as blank in view mode\n- Location and User tokens are available by default; custom tokens require prior setup under Settings → Custom Values",
+      "processed_at": "2026-08-12T07:23:50.599824+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/add-ecommerce-stores-directly-to-funnels",
+      "category": "LIVE_NOW",
+      "published": "Tue, 11 Aug 2026 10:59:55 GMT",
+      "title": "Add Ecommerce Stores Directly to Funnels",
+      "content": "**Embed a Full Store Experience Inside Your Funnels**\n\nYou can now add a complete ecommerce store directly into any funnel — combining product browsing, cart, checkout, and order confirmation into a single, seamless flow.\n\n**What's new:**\n- Adding a store to a funnel automatically generates 5 linked steps: Product List, Product Details, Cart, Checkout, and Thank You\n- Store elements (Featured Product, Upsell, Collection List, Search Bar, and more) can be added to any funnel step — doing so converts the funnel into a store-embedded funnel and creates the 5 required steps automatically\n- A new **Store Products tab** appears on converted funnels, letting you control which products are visible and adjust their display priority\n- Converted funnels are tagged for easy identification across your funnels and stores lists\n\n**Things to know:**\n- The 5 store steps maintain a fixed internal order but can be repositioned as a group relative to other funnel steps\n- Only one store can be embedded per funnel\n- Cloning a funnel carries over the store setup and steps — products themselves are not duplicated\n- Deleting any one of the 5 store steps removes all of them and disables the store for that funnel\n- Clone Step and A/B split testing are not supported on store steps\n\n**How to set it up:**\n1. Open a funnel in your Kayan dashboard and navigate to the funnel editor\n2. Add a store from the Store section in the sidebar, or drop a Store element onto any existing funnel step\n3. Select a theme and complete the store configuration when prompted\n4. Use the **Store Products tab** on the step list page to manage product visibility and ordering\n5. Customize the generated store pages, then publish your funnel",
+      "processed_at": "2026-08-12T07:23:59.922203+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/threads-post-sync-in-social-planner-labs",
+      "category": "COMING_SOON",
+      "published": "Tue, 11 Aug 2026 08:47:22 GMT",
+      "title": "Threads Post Sync in Social Planner- Labs",
+      "content": "**Threads Post Sync Coming to Social Planner (Beta)**\n\nThreads content will soon sync directly into your Social Planner, giving you a single place to manage, review, and repurpose your Threads posts alongside all your other social channels.\n\n**What's coming:**\n\n- **Automatic Threads import** — pull in existing Threads posts including text, images, videos, carousels, GIFs, and polls\n- **Engagement data included** — synced posts carry over captions, media previews, location tags, and engagement metrics (views, likes, replies, reposts, quotes, shares)\n- **Clone and repurpose** — reuse existing Threads posts by cloning text, image, video, carousel, and GIF content directly from Social Planner\n- **Daily auto-sync** — once enabled, posts sync every 24 hours automatically; sync status and reconnection alerts will be surfaced in the dashboard\n- **Up to 365 days of history** — the last 30 days sync by default, with older posts available on demand up to one year back\n\n**A few things to know:**\n\n- This feature will be available as a beta release through Labs\n- Sync is one-way (Threads → Social Planner); deleted Threads posts will remain visible in the planner\n- Polls can be viewed but not cloned, as poll creation is not yet supported in the Threads composer\n- Some engagement data may vary depending on what the Threads API makes available\n\nThis one is still on the way — we'll let you know as soon as it's live.",
+      "processed_at": "2026-08-12T07:24:09.559275+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/conditional-custom-fields-for-opportunities",
+      "category": "COMING_SOON",
+      "published": "Tue, 11 Aug 2026 07:27:53 GMT",
+      "title": "Conditional Custom Fields for Opportunities",
+      "content": "**Conditional Custom Fields for Opportunities** *(Coming Soon)*\n\nOpportunity forms will soon adapt automatically based on deal context — showing only the fields that matter for each pipeline, stage, or status.\n\n**What's coming:**\n\n- Build display and requirement rules using single conditions or AND/OR logic\n- Trigger rules based on pipeline, stage, status, dropdown, radio, checkbox, or multi-select field values\n- Show or hide individual fields or entire field folders when conditions are met\n- Mark visible fields as required and block saves when mandatory fields are incomplete\n- Preview rules in real time before activating them\n- Rules apply across add, edit, and bulk edit flows on both web and mobile\n- Manage pipeline-specific rules directly from the Pipelines settings page\n- Rules activate immediately upon saving\n\n**Why it matters:**\n\n- Keeps opportunity forms focused and relevant at every stage\n- Enforces data collection at the right point in your sales process\n- Improves reporting consistency and accuracy across pipelines and teams\n- Prevents incomplete records from being saved\n\n**Good to know:**\n\n- Fields not included in any Show rule remain visible by default\n- When multiple rules apply, their required-field conditions are combined\n- Only Admins can create, edit, or delete rules\n- Validation applies on web and mobile; API and automation-based updates are not affected",
+      "processed_at": "2026-08-12T07:24:17.542133+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/available-quantity-as-a-custom-value-workflow-filter",
