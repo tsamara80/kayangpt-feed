@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-13T07:25:04.798439+00:00",
+  "last_updated": "2026-08-14T07:23:03.990933+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -437,6 +437,30 @@
       "title": "Introducing New Templates",
       "content": "**New Templates Now Available**\n\nFresh templates have been added across websites, ads, social, and automations — ready to customize and deploy directly from your Kayan dashboard.\n\n**What's new:**\n\n- **Website Templates (1)**\n  - Beauty & Fashion\n\n- **Social Templates (4)**\n  - Real Estate (2)\n  - Automotive (2)\n\n- **Facebook Ad Templates (2)**\n  - Travel & Hospitality — Travel Blogger\n  - Creative — Architectural Design\n\n- **Google Ad Templates (5)**\n  - Retirement Living Community\n  - Cosmetic Medical Spa\n  - Affiliate Marketing Services\n  - Debt Relief Attorney\n  - Travel Coverage Insurance\n\n- **LinkedIn Ad Templates (5)**\n  - Investment Advisor\n  - Social Networking Services\n  - Bookkeeper\n  - Public Relations Firm\n  - Health Insurance\n\n- **Automation Workflow Templates (3)**\n  - Voicemail Drop Follow-Up\n  - Open House Follow-Up\n  - Buyer Search Drip\n\n- **New Pre-Built Snapshot (1)**\n  - Boat Tour Agency\n\n---\n\n**How to set it up:**\n\n1. In your Kayan dashboard, navigate to the relevant section — **Sites**, **Ads**, **Social Planner**, or **Automations**.\n2. Select **Templates** and browse the newly added options by category.\n3. Choose a template, customize it to fit your brand, and publish or activate directly from the editor.",
       "processed_at": "2026-07-17T08:09:03.342435+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/contact-overlay-for-opportunities-and-appointments",
+      "category": "LIVE_NOW",
+      "published": "Thu, 13 Aug 2026 18:01:55 GMT",
+      "title": "Contact overlay for opportunities and appointments",
+      "content": "**Contact Overlay for Opportunities and Appointments**\n\nClicking a contact's name from your Opportunities or Appointments view now opens their details in an overlay on the same page — no more losing your place to check a conversation or review contact info.\n\n**What's new:**\n\n- Contact details open in an overlay directly within Opportunities and Appointments, keeping your current workflow in view\n- **Single-column view:** Opens the contact's left panel alongside conversations and related features\n- **Two-column view:** Expanded view with full contact details and an extended Conversations panel\n- **Direct page option:** A separate icon lets you skip the overlay and go straight to the full Contact details page if preferred\n- If you navigate to the full Contact details page from the overlay, you can return to where you were without retracing your steps\n- Overlay respects any customizations you've applied to your Contact details page — what you see there, you'll see here\n\n**How to set it up:**\n\nNo configuration needed — the overlay is active automatically.\n\n1. Go to **Opportunities** or **Appointments** in your Kayan dashboard\n2. Click any contact's name or conversation icon\n3. The overlay will appear — use the view toggle to switch between single-column and two-column layouts\n4. To bypass the overlay and open the full Contact page directly, click the dedicated external link icon next to the contact's name\n\nThe overlay will extend to additional areas of the Kayan dashboard where contact names appear in future updates.",
+      "processed_at": "2026-08-14T07:22:45.873288+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/import-data-directly-from-hubspot-into-highlevel",
+      "category": "LIVE_NOW",
+      "published": "Thu, 13 Aug 2026 13:29:36 GMT",
+      "title": "Import Data Directly from HubSpot into HighLevel",
+      "content": "**Import Your HubSpot Data Directly into Kayan**\n\nSwitching from HubSpot? You can now migrate your CRM data directly into Kayan without touching a CSV file.\n\n**What's included:**\n\n- Contacts\n- Deals (imported as Opportunities)\n- Companies\n- Contact, Company, and Deal properties as Custom Fields\n- Pipelines and stages\n- Notes, emails, and tasks\n- Supported record associations\n\n**How to set it up:**\n\n1. In your Kayan dashboard, navigate to Contacts, Companies, or Opportunities\n2. Click **Import** and select **Connect HubSpot**\n3. Sign in to your HubSpot account\n4. Choose the objects and data you want to bring over\n5. Review record counts and select specific properties as needed\n6. Click **Confirm** to start the import — it runs in the background, so you can leave the page and return later\n\n**Reviewing your results:**\n\nThe Import History table lets you track progress and audit completed imports. For each import you can:\n\n- View successful, skipped, failed, and warning totals\n- Filter by object type or status\n- See specific error messages per record\n- Download results as a CSV for further review\n\n**A few things to know:**\n\n- Existing matching records will not be overwritten\n- Imported emails are read-only\n- Deals require associated contacts to be imported as Opportunities\n- We recommend running a test import in a non-production account first",
+      "processed_at": "2026-08-14T07:22:54.994996+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/new-review-received-trigger-now-supports-all-integrated-review-platforms",
+      "category": "LIVE_NOW",
+      "published": "Thu, 13 Aug 2026 11:22:14 GMT",
+      "title": "🌟 New Review Received Trigger Now Supports All Integrated Review Platforms",
+      "content": "**Review Automations Now Work Across All Connected Review Platforms**\n\nThe \"New Review Received\" trigger in Kayan Automations now fires for reviews from every review platform connected to your account — not just Google and Facebook.\n\n**What's new:**\n\n- Trigger automations from reviews on Trustpilot, Yelp, TripAdvisor, and any other integrated review source\n- Notify team members instantly when a new review comes in from any platform\n- Build automated follow-up or response workflows that work across your entire review ecosystem\n- Route reviews internally based on platform, rating, or any other logic\n- Existing Google and Facebook review triggers are unaffected — nothing breaks\n\n**How to set it up:**\n\n1. Go to **Automations** in your Kayan dashboard and open an existing workflow or create a new one\n2. Set the trigger to **New Review Received**\n3. In the trigger settings, select your desired review platform from the source list — you'll now see all connected platforms available, not just Google and Facebook\n4. Add your actions (notify a team member, send a response, update a contact record, etc.)\n5. Save and publish the workflow\n\nOne trigger. Every connected review platform.",
+      "processed_at": "2026-08-14T07:23:03.990869+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/fully-edit-service-bookingseven-after-payment",
