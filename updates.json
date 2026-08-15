@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-14T07:23:03.990933+00:00",
+  "last_updated": "2026-08-15T06:36:38.994428+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -764,6 +764,38 @@
       "title": "Layers in Certificate/Badge Builder",
       "content": "**Layers Panel Now Live in Certificate & Badge Builder**\n\nThe Certificate & Badge Builder now includes a dedicated Layers panel, giving you full control over element stacking, layer protection, and placeholder validation before any certificate goes out.\n\n**What's new:**\n\n- New **Layers tab** in the builder sidebar shows your full canvas stack at a glance\n- Click any layer to select it on the canvas; drag and drop to reorder\n- Lock or unlock individual layers — locked layers cannot be moved, resized, deleted, or edited via shortcuts\n- Delete unlocked layers directly from the panel without hunting on the canvas\n- Invalid custom-field placeholders are flagged with a visible error pill\n- Manual save will warn you if broken placeholders exist before publishing (auto-save behavior is unchanged)\n\n**How to set it up:**\n\n1. Open the **Certificate & Badge Builder** from your Kayan dashboard\n2. Select the **Layers** tab in the left sidebar\n3. Click rows to select elements, drag to reorder the stack, and use the lock icon to protect layers from accidental edits\n4. Before publishing, check for any error pills on placeholder fields and resolve them — certificates won't issue cleanly with invalid custom fields in place",
       "processed_at": "2026-07-24T08:26:57.822329+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/whatsapp-analytics-in-the-ai-assistant-in-workflows",
+      "category": "LIVE_NOW",
+      "published": "Fri, 14 Aug 2026 14:39:38 GMT",
+      "title": "WhatsApp Analytics in the AI Assistant in Workflows",
+      "content": "**WhatsApp Analytics Now Available in the AI Workflow Assistant**\n\nThe AI Assistant inside Kayan Automations now covers WhatsApp alongside Email and SMS — ask about any WhatsApp step in plain language and get live delivery and read metrics back instantly.\n\n**What's new:**\n\n- **Delivery and read metrics for WhatsApp steps** — query any WhatsApp step and get total sends, delivered, failed, and pending counts, plus calculated delivery rate, failure rate, and read rate among delivered messages\n- **Automatic period-over-period comparison** — specify a time window (e.g. \"last 2 weeks\") and the Assistant compares it against the preceding period, showing volume movement and whether delivery is trending up or down\n- **Insight-led responses** — answers lead with the headline numbers, then surface what changed, with plain-language observations on volume, delivery vs. failure, and read behaviour\n\n**How to set it up:**\n\n1. Open any workflow in the Kayan Automations tab\n2. Launch the AI Assistant panel\n3. Ask for the data you need — for example: *\"Show me WhatsApp delivery stats for this workflow over the last 2 weeks\"*\n4. No configuration required — it works against your live workflow data immediately\n\nEmail, SMS, and WhatsApp performance now resolve through the same conversational interface, so you can assess full workflow performance in one place rather than switching between separate reports and logs.",
+      "processed_at": "2026-08-15T06:36:14.905006+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/google-merchant-center-integration-for-ecommerce-stores",
+      "category": "LIVE_NOW",
+      "published": "Fri, 14 Aug 2026 13:46:52 GMT",
+      "title": "Google Merchant Center Integration for Ecommerce Stores",
+      "content": "**Google Merchant Center Integration for Kayan Stores**\n\nConnect your Kayan ecommerce store to Google Merchant Center and automatically sync your products for visibility across Google Shopping and other Google surfaces.\n\n**What's new:**\n\n- Install the Google Merchant Center integration directly from the Kayan App Marketplace and link your Google account\n- Select your Merchant Center account and the Kayan store you want to connect — or follow in-app guidance to create a new Merchant Center account and verify your domain\n- Eligible products assigned to the connected store sync automatically, including one-time payment and digital products\n- Product details, pricing, inventory, images, and variants stay up to date after initial setup\n- Errors and warnings surface during and after setup so you can resolve issues before Google reviews your submissions\n- Multiple store-to-Merchant Center mappings are supported; each store or Merchant Center account can only be active in one mapping at a time\n- A manual Force Sync option is available when you need to trigger an immediate refresh\n\n**How to set it up:**\n\n1. Go to the **Kayan App Marketplace** and install the Google Merchant Center integration\n2. Connect your Google account and select your Merchant Center account\n3. Choose the Kayan store you want to link\n4. Complete setup — eligible products will begin syncing automatically\n5. Monitor sync status, errors, and warnings from within the integration; use **Force Sync** if a manual refresh is needed\n\n**Note:** Google controls product review and approval after submission. This integration syncs your products to Merchant Center only — it does not create or manage Google Ads campaigns. A valid, verified store domain is required for sync to work.",
+      "processed_at": "2026-08-15T06:36:24.219951+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/client-portal-graceful-otp-fallback-for-expired-magic-links",
+      "category": "LIVE_NOW",
+      "published": "Fri, 14 Aug 2026 13:29:05 GMT",
+      "title": "Client Portal — Graceful OTP Fallback for Expired Magic Links",
+      "content": "**Client Portal — Automatic OTP Fallback for Expired Magic Links**\n\nExpired magic links no longer leave contacts stuck. When a magic link has expired, contacts are now automatically redirected to OTP verification so they can regain access on their own — no admin intervention required.\n\n**What's new:**\n\n- **Automatic redirect on expiry** — Clicking an expired magic link now takes contacts straight to the OTP verification screen instead of showing an error\n- **OTP sent instantly** — A one-time code is dispatched to the contact's email address without any manual steps\n- **Masked email display** — The contact's email address is partially hidden on the verification screen for privacy\n- **Self-serve recovery** — Contacts resolve their own access issues independently, reducing support requests related to expired links\n\n**How to set it up:**\n\nNo configuration needed. This fallback is active automatically for all Client Portal magic link authentication. No changes are required in your Kayan dashboard.",
+      "processed_at": "2026-08-15T06:36:30.576690+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/course-announcements",
+      "category": "LIVE_NOW",
+      "published": "Fri, 14 Aug 2026 12:40:13 GMT",
+      "title": "📢 Course Announcements",
+      "content": "**Course Announcements**\n\nKeep learners in the loop without leaving your course environment. You can now create and send announcements directly inside Kayan's course builder — no external email tool required.\n\n**What's new:**\n\n- **Create and manage announcements** — Build, edit, clone, and delete announcements from the Courses admin area\n- **Rich content support** — Format text, add images, and include links to make announcements clear and engaging\n- **Flexible targeting** — Send to learners in a specific course or broadcast across all courses at once\n- **Optional email delivery** — Choose to notify course members by email alongside the in-app announcement\n- **In-app visibility** — Learners see new announcements via banners and unread indicators without interrupting their progress\n- **Dedicated announcement view** — Learners can browse all announcements and open individual updates without leaving their course\n\n---\n\n**How to set it up:**\n\n1. In your Kayan dashboard, go to **Courses** and select **Announcements**\n2. Click to create a new announcement\n3. Add a title and your content (text, images, links)\n4. Choose your target — a specific course or all courses\n5. Toggle on email notifications if you want members to receive it by email as well\n6. Publish — learners will see it immediately via the announcement banner and unread indicator in their learning view",
+      "processed_at": "2026-08-15T06:36:38.994360+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/targeted-edits-in-ai-builder",
