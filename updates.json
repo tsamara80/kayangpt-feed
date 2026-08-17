@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-16T06:37:47.719494+00:00",
+  "last_updated": "2026-08-17T06:53:17.366693+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -602,6 +602,22 @@
       "source_link": "https://ideas.gohighlevel.com/changelog/increased-pit-token-limit-per-subaccount",
       "category": "DISCARD",
       "published": "Mon, 27 Jul 2026 11:29:05 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/client-portal-invoice-estimate-notifications-for-contacts",
+      "category": "LIVE_NOW",
+      "published": "Mon, 17 Aug 2026 04:23:49 GMT",
+      "title": "Client Portal — Invoice & Estimate Notifications for Contacts 🔔",
+      "content": "**Client Portal — Invoice & Estimate Notifications**\n\nContacts now receive in-app notifications inside the Client Portal whenever a new invoice or estimate is issued to them — no more relying solely on email to catch billing activity.\n\n**What's New**\n\n- When a new invoice is issued, the contact sees an automatic notification inside their Client Portal\n- When a new estimate is issued, the contact is notified immediately and can review or respond without manually navigating to the Estimates section\n- Billing alerts surface in the Portal notification center as soon as they're triggered\n- Contacts can tap the notification to go directly to the relevant invoice or estimate and take action\n\n**How to Set It Up**\n\nNo configuration required. Notifications are automatically active for any contact with Client Portal access.\n\nAs a contact:\n1. Log in to the Client Portal\n2. When a new invoice or estimate is issued to you, a notification appears automatically\n3. Open the Notifications panel\n4. Select the notification to go directly to the document and take action\n\n**Notes**\n- Notifications are triggered per contact when a new invoice or estimate is issued to them\n- Currently supported channel: in-app notifications only",
+      "processed_at": "2026-08-17T06:53:08.060891+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/appointments-in-the-client-portal",
+      "category": "LIVE_NOW",
+      "published": "Mon, 17 Aug 2026 04:10:10 GMT",
+      "title": "Appointments in the Client Portal",
+      "content": "**Client Portal Now Includes Appointment Management**\n\nClients can book, view, and manage appointments directly inside the Client Portal — no more bouncing between emails, separate booking links, or external tools.\n\n**What's new:**\n\n- **Unified appointment view** — Clients see all appointments in one place with Today, Upcoming, and Past filters, plus a full calendar view with date, time, and status details\n- **In-portal booking** — Clients book new appointments without leaving the portal; their contact info is pre-filled automatically, cutting out repetitive data entry\n- **Multi-calendar support** — If you've enabled more than one calendar, clients can choose which one to book with\n- **Book again** — After a completed appointment, clients can instantly rebook from the same place\n- **Reschedule and cancel** — Eligible appointments can be rescheduled or cancelled directly by the client, reducing inbound requests to your team\n- **You control what's available** — Choose which calendars appear in the portal and toggle the entire Appointments experience on or off through permissions\n\n---\n\n**How to set it up:**\n\n1. **Enable calendars for portal booking**\n   Go to your Kayan dashboard → **Calendars** → open the calendar you want to make available → navigate to **Booking Channels** → turn on Client Portal booking → save. Repeat for each calendar you want clients to access.\n\n2. **Turn on the Appointments feature**\n   Go to **Client Portal** → **Settings** → **App Permissions** → enable **Appointments** → save.\n\nOnce enabled, clients will see the Appointments section the next time they log into their portal.\n\n> **Note:** Appointment management is available in the updated Client Portal interface.",
+      "processed_at": "2026-08-17T06:53:17.366631+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/native-speech-to-speech-voice-ai-support-in-chat-widget",
