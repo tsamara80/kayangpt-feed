@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-17T06:53:17.366693+00:00",
+  "last_updated": "2026-08-18T06:41:57.783680+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -602,6 +602,43 @@
       "source_link": "https://ideas.gohighlevel.com/changelog/increased-pit-token-limit-per-subaccount",
       "category": "DISCARD",
       "published": "Mon, 27 Jul 2026 11:29:05 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/rearrange-and-rename-tabs-in-communities",
+      "category": "LIVE_NOW",
+      "published": "Mon, 17 Aug 2026 19:07:45 GMT",
+      "title": "Rearrange and Rename Tabs in Communities",
+      "content": "**Customize Community Tab Layout — Reorder, Rename & Hide Tabs**\n\nCommunity admins can now fully control how navigation tabs appear inside their community — reordering them, renaming them to match their own language, and hiding the ones they don't use.\n\n**What's new:**\n\n- **Reorder tabs** — Drag and drop tabs (Discussion, Learning, Events, Leaderboards, Members, About) into any order so the most important sections appear first\n- **Rename tabs** — Give any tab a custom label that fits your community's branding and terminology\n- **Show/hide tabs** — Toggle individual tabs off without deleting them; changes apply instantly for all members\n- Changes are persistent and visible to all members immediately upon saving\n\n**Notes:**\n- Only community admins and owners can make these changes\n- The Discussion and About tabs cannot be disabled\n- Custom tab names display exactly as entered and are not auto-translated\n\n---\n\n**How to set it up:**\n\n1. Open your community in the Kayan dashboard and go to **Settings → Community Tabs**\n2. Use the drag handle on the left of any tab to reorder it\n3. Click the **edit icon** next to a tab to enter a custom name, then confirm\n4. Use the toggle switches to show or hide individual tabs\n5. Click **Save changes** — the updated layout applies to all members immediately",
+      "processed_at": "2026-08-18T06:41:17.418702+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/local-seo-heatmaps-just-got-more-powerful-in-local-marketing-audit",
+      "category": "DISCARD",
+      "published": "Mon, 17 Aug 2026 18:53:54 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/rich-link-event-previews-in-communities",
+      "category": "LIVE_NOW",
+      "published": "Mon, 17 Aug 2026 17:35:33 GMT",
+      "title": "Rich Link & Event Previews in Communities",
+      "content": "**Rich Link & Event Previews in Communities**\n\nShared links and events in Communities now generate rich previews automatically — giving members more context without pulling them out of the conversation.\n\n**What's new:**\n\n- Paste a YouTube or Loom URL into a post or comment and a rich preview is generated instantly — no extra steps required\n- Supported videos play directly from the feed without opening a new tab\n- Rich previews work in both posts and comments\n- Mention a community event in a post and an interactive event card appears automatically, showing the event name, date, time, price, and registration status\n- Members can register or RSVP directly from the event card — no need to navigate away from the feed\n\n**How to set it up:**\n\n1. Open your Kayan dashboard and navigate to your Community\n2. Create a new post or comment\n3. Paste a supported video link (YouTube, Loom) — the preview generates automatically\n4. To trigger an event card, mention or reference an existing event in your post — the card populates with event details on its own\n5. No additional configuration needed — previews are active by default",
+      "processed_at": "2026-08-18T06:41:32.595629+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/in-labs-organize-and-personalize-tags-with-categories-and-colors",
+      "category": "COMING_SOON",
+      "published": "Mon, 17 Aug 2026 14:55:01 GMT",
+      "title": "In labs: Organize and personalize tags with categories and colors",
+      "content": "**Coming Soon: Tag Categories and Custom Colors**\n\nA more organized way to manage your tags is on the way. You'll soon be able to group tags into categories and assign custom colors — making it faster to identify and manage tags across your account.\n\n**What's coming:**\n\n- **Custom tag colors** — assign a color to each tag from a predefined palette or use a color picker to match your brand; uncolored tags default to gray\n- **Tag categories** — create categories and group related tags under them for a cleaner, more structured setup\n- **Bulk tag management** — move individual tags or multiple tags between categories at once\n- **Graceful defaults** — all existing tags will automatically fall under a *No category* group in gray, so nothing breaks when this rolls out\n- **Visual consistency** — tag colors will appear when adding tags from a contact's detail view and when browsing tags in Smart List columns\n- **Safe category deletion** — if a category is removed, its tags automatically move back to *No category* rather than being lost\n\nThis feature is currently in labs and not yet available. We'll notify you when it goes live.",
+      "processed_at": "2026-08-18T06:41:44.156060+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/communities-smarter-join-requests-with-workflow-automation",
+      "category": "LIVE_NOW",
+      "published": "Mon, 17 Aug 2026 12:57:24 GMT",
+      "title": "Communities - Smarter Join Requests with Workflow Automation",
+      "content": "**Communities: Automate Join Request Review with Workflow Triggers**\n\nCommunity admins can now connect join requests directly to Kayan Automations — automatically screening, routing, and approving (or flagging) submissions without manual review.\n\n**What's new:**\n\n- **New trigger: Requested to Join Group** — fires whenever a user submits a join request, giving you a starting point to build a full approval workflow around it\n- **Dynamic membership question filters** — filter the trigger by group and by the actual answers users submit; questions update automatically based on whichever group you select\n- **AI-powered screening** — pass membership question responses into a GPT prompt to detect spam, low-quality answers, or mismatched applicants before granting access\n- **Conditional branching** — use If/Else logic to automatically approve and grant group access, or route the request for manual review, based on GPT output or response values\n- **Follow-up actions** — chain on actions like granting group access, sending a welcome message, or tagging the contact\n\n**Notes:**\n- This trigger fires on join requests only; the group must have request-based access enabled\n- GPT actions incur additional charges per execution\n\n---\n\n**How to set it up:**\n\n1. In your Kayan dashboard, go to the **Automations** tab and create a new workflow\n2. Add the **Requested to Join Group** trigger and select the target group — membership question filters will populate automatically\n3. Optionally, add a GPT action and pass in the membership question responses (e.g., prompt it to flag spam or off-topic answers)\n4. Add an **If/Else** condition branching on the GPT result or specific response values\n5. On each branch, add your actions — **Grant Group Access**, send a message, apply a tag, or assign for manual review\n6. Activate the workflow — no changes needed on the member side",
+      "processed_at": "2026-08-18T06:41:57.783621+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/client-portal-invoice-estimate-notifications-for-contacts",
