@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-18T06:41:57.783680+00:00",
+  "last_updated": "2026-08-19T06:43:00.091271+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -47,6 +47,14 @@
       "source_link": "https://ideas.gohighlevel.com/changelog/inline-validation-errors-for-schema-markup-json-view",
       "category": "DISCARD",
       "published": "Wed, 22 Jul 2026 05:46:35 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/rental-booking-page-gets-smarter-ctas-clearer-checkout-polished-ui",
+      "category": "LIVE_NOW",
+      "published": "Wed, 19 Aug 2026 05:33:37 GMT",
+      "title": "Rental Booking Page Gets Smarter CTAs, Clearer Checkout & Polished UI",
+      "content": "**Rental Booking: Smarter CTAs, Clearer Checkout & UI Improvements**\n\nThe rental booking experience just got a meaningful upgrade — from the listing page through to checkout. These changes give you more control over button labeling, surface key booking details where they matter most, and clean up the overall flow for a more trustworthy experience.\n\n**What's new:**\n\n- **Custom \"Add to Cart\" button label** — When multi-item cart is enabled, you can now set a custom label for the add-to-cart button directly from your booking page settings. Defaults to \"Add to cart\" if left unchanged. Only appears when multi-cart is active, so single-item bookings are unaffected.\n- **Rental dates shown throughout checkout** — Selected rental dates now appear in the Order Summary on the checkout page, giving customers clear confirmation they're booking the right dates before they complete payment.\n- **Listing descriptions expanded by default** — Full descriptions are now shown inline on rental detail pages with no \"Read more\" click required. Mobile experience is improved as well.\n- **Cart persistence when navigating** — Clicking the company logo to return to the homepage no longer clears an in-progress booking. The cart stays intact while browsing.\n- **General UI polish** — Improved text wrapping on homepage listing cards, removal of a redundant single-quantity label from Booking Summary and Confirmation screens, and various minor fixes for a cleaner look.\n\n**How to set it up:**\n\n1. In your Kayan dashboard, go to **Global Settings** and open the **Booking Page** tab.\n2. Enable **Multi-item cart** — this reveals the button label field.\n3. Enter your preferred label text and save. The change reflects on your booking page immediately.\n\nAll other improvements are live automatically across all rental listings — no configuration needed.",
+      "processed_at": "2026-08-19T06:41:37.805817+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/goal-action-now-with-support-for-user-replies",
@@ -201,6 +209,75 @@
       "source_link": "https://ideas.gohighlevel.com/changelog/refreshed-placeholder-images-in-store-builder",
       "category": "DISCARD",
       "published": "Tue, 21 Jul 2026 15:46:52 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/workflow-builder-array-list-values-now-supported-in-text-fields",
+      "category": "LIVE_NOW",
+      "published": "Tue, 18 Aug 2026 20:13:14 GMT",
+      "title": "Workflow Builder: Array/List Values Now Supported in Text Fields",
+      "content": "**Automation Builder: List & Array Values Now Supported in Text Fields**\n\nYou can now insert list-type data — like order line items, webhook arrays, or any multi-value collection — directly into text fields within your automations, with full control over how that list is displayed.\n\n**What's new:**\n- The value picker now recognizes list-type variables and opens an inline formatting panel instead of dumping raw data into your field\n- Choose which field to extract from the list (e.g. a SKU, name, or price field)\n- Select your preferred display format: comma-separated, bulleted, numbered, or a custom separator\n- Set an optional fallback for when the list is empty\n- Preview the output before inserting it\n- Formatting rules are saved with the variable and re-rendered live each time the automation runs\n- Single-value variables (text, number, date, etc.) are unaffected — they still insert instantly as before\n\n**How to set it up:**\n\n1. Open your automation in the Kayan Automations tab and navigate to any text field (e.g. an email body, internal note, or message action)\n2. Open the value picker and select a list-type variable from your available data sources\n3. In the inline panel that appears, choose the field to extract from the list and your preferred format\n4. Optionally define a fallback value if the list is empty\n5. Check the preview, then click **Insert** to place the formatted list at your cursor",
+      "processed_at": "2026-08-19T06:41:47.284624+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/workflow-dynamic-values-new-chip-interface-with-quick-add-and-edit",
+      "category": "LIVE_NOW",
+      "published": "Tue, 18 Aug 2026 18:27:27 GMT",
+      "title": "Workflow Dynamic Values: New Chip Interface with Quick Add and Edit",
+      "content": "**Automation Text Fields Now Show Dynamic Values as Chips**\n\nDynamic values in automation text fields now display as visual chips, making it easier to distinguish them from static text at a glance. Invalid or unrecognized values are flagged in red so you can catch and fix issues before your automation runs.\n\n**What's new:**\n- Dynamic values render as chips inside automation text fields for clear visual separation from static content\n- Type `/` anywhere in a text field to search and insert a dynamic value without leaving your cursor\n- Click an existing chip to swap it out with a different value in the same position\n- Stale or unrecognized values are highlighted in red, making them easy to spot and correct\n- No change to how values are resolved or how your automations behave — this is a visual update only\n\n**How to set it up:**\n1. Open any automation in the **Kayan Automations** tab and select an action with a text field\n2. Type `/` inside the text field to pull up the dynamic value search and select the value you want to insert\n3. To replace an existing value, click its chip and choose a new one from the list\n4. If any values appear in red, click them and select a valid replacement — red chips indicate values that are no longer recognized and should be updated before the automation goes live",
+      "processed_at": "2026-08-19T06:41:57.398560+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/whatsapp-composer-reliability-and-faster-settings",
+      "category": "LIVE_NOW",
+      "published": "Tue, 18 Aug 2026 16:02:07 GMT",
+      "title": "WhatsApp: composer reliability and faster Settings",
+      "content": "**WhatsApp Composer & Settings: Reliability Fixes**\n\nThe WhatsApp conversation composer and Settings page now load correctly on the first attempt — no more false prompts or blank screens requiring repeated refreshes.\n\n**What's new**\n\n- **No more false \"Connect WhatsApp\" prompt** — After the 24-hour messaging window closes, the composer was incorrectly showing a reconnect prompt even on fully connected accounts, blocking template sends. It now reads connection status correctly before rendering, so the template send path appears as expected.\n- **WhatsApp Settings loads on first open** — The WhatsApp Settings tab no longer gets stuck on a blank or perpetual loading state. It renders immediately without requiring a manual refresh.\n- **Noticeably faster Settings load** — Page load performance has improved significantly: Speed Index dropped from 13.2s to 4.3s, and First Contentful Paint from 3.8s to 1.0s.\n\n**How to set it up**\n\nNo configuration needed — these fixes are live automatically.\n\n1. Open the **Kayan dashboard** and navigate to a WhatsApp conversation.\n2. Confirm the composer shows the correct send options without prompting you to reconnect.\n3. Go to **Settings → WhatsApp** to verify the page loads fully on first open.\n\nIf a connected account still shows an unexpected reconnect prompt, a hard refresh will resolve it. No re-authentication required.",
+      "processed_at": "2026-08-19T06:42:06.305099+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/qr-codes-save-to-apple-google-wallet",
+      "category": "LIVE_NOW",
+      "published": "Tue, 18 Aug 2026 15:24:07 GMT",
+      "title": "QR Codes — Save to Apple & Google Wallet",
+      "content": "**QR Codes Now Save to Apple & Google Wallet**\n\nYour QR codes can now be saved directly to Apple Wallet or Google Wallet — no more digging through a camera roll to find the right one during in-person interactions.\n\n**What's new:**\n\n- **Save to digital wallet** — Add any QR code to Apple Wallet or Google Wallet directly from the Kayan dashboard\n- **Fast offline access** — Open your wallet, pull up the right QR code, and let a customer scan it in seconds\n- **Contextual pass details** — Each wallet pass displays relevant information (QR type, destination, associated location) so you always know what you're presenting\n- **Wallet-native designs** — Pass layouts are optimized for each platform; Apple Wallet and Google Wallet each render passes according to their own supported configurations, so expect some visual differences between the two\n- **Works with existing QR codes** — No need to recreate anything; all previously built QR codes are eligible\n- **Brand attribution** — Your brand appears in the wallet pass header by default; an option to make this configurable is planned for a future update\n\n---\n\n**How to set it up:**\n\n1. Go to the **QR Code Builder** in your Kayan dashboard\n2. Create a new QR code or open an existing one and navigate to the final step of the builder\n3. Select **Add to Digital Wallet**\n4. A new QR code will appear on screen — scan it with your phone\n5. Your device will automatically add the pass to Apple Wallet or Google Wallet based on your OS\n6. Open your wallet when needed, select the relevant pass, and present it for scanning",
+      "processed_at": "2026-08-19T06:42:17.206216+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/new-a2p-campaign-flow-default-to-chat-widget",
+      "category": "DISCARD",
+      "published": "Tue, 18 Aug 2026 15:03:39 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/ask-ai-mobile-app-schedule-ask-ai-prompts-to-run-automatically",
+      "category": "LIVE_NOW",
+      "published": "Tue, 18 Aug 2026 14:43:16 GMT",
+      "title": "✨ Ask AI Mobile App - Schedule Ask AI prompts to run automatically",
+      "content": "**Schedule Your AI Assistant to Run Automatically — Mobile**\n\nThe Kayan AI Scheduler lets you set any prompt once and have it run on a recurring basis — no manual input required. Open the app and your results are already waiting.\n\n**What's new:**\n\n- **Five scheduling frequencies:** Manual (on-demand), Hourly, Daily, Weekdays, and Weekly with your choice of day and time\n- **Full task management:** Create, edit, pause, resume, and delete scheduled tasks directly from your phone\n- **Run now:** Trigger any task instantly — including paused ones — and see the result land in run history immediately\n- **Run history per task:** Every run logged with Completed / Skipped / Failed status, timestamps, and unread indicators for results you haven't opened yet\n- **Open the conversation:** Tap any completed run to open the full AI chat session, exactly as if you'd asked it yourself\n- **Organised chat history:** Scheduled runs appear in their own dedicated section, separate from your recent conversations — automated results never bury your active chats\n- **Fully cross-platform:** Tasks created on mobile appear on the Kayan web dashboard and vice versa, with shared run history across both\n\n**How to set it up:**\n\n1. Open the **Ask AI** section in the Kayan mobile app and tap the **recurring-clock icon** in the header\n2. Tap **+ New task**, give it a name, add the prompt you want to run, and choose a frequency — Manual, Hourly, Daily, Weekdays, or Weekly\n3. Set your preferred time (and day, if Weekly), then save the task\n4. From the task view, you can pause, resume, edit, delete, or tap **Run now** at any time — tap any completed run to open the full conversation\n\n**Requires app version 4.22.0 or higher. Available on iOS and Android.**",
+      "processed_at": "2026-08-19T06:42:30.262349+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/custom-fields-grouping-bulk-management-forms-surveys-quizzes",
+      "category": "LIVE_NOW",
+      "published": "Tue, 18 Aug 2026 14:05:47 GMT",
+      "title": "Custom Fields Grouping & Bulk Management - Forms, Surveys & Quizzes",
+      "content": "**Custom Fields Grouping & Bulk Management — Forms, Surveys & Quizzes**\n\nBuilding long forms with dozens of fields just got a lot faster. The Custom Fields sidebar in the Kayan form builder has been fully redesigned to support multi-select, bulk insertion, and group drag-and-drop — across Forms, Surveys, and Quizzes.\n\n**What's New**\n\n- **Multi-select checkboxes** on every field row so you can queue up multiple fields at once\n- **\"Add N fields\" button** to insert your entire selection onto the canvas in one click\n- **Multi-field drag & drop** — drag a group of selected fields with a stacked preview and a badge showing how many are in motion\n- **Smart insertion point** — bulk-added fields land directly after the currently active canvas element, not just at the end\n- **Object dropdown** to filter fields by Contact, Opportunity, Business, or any custom object\n- **Tooltips on truncated field names** — hover to see the full name or query key\n- Selections persist while you scroll and search, so you can build a batch across multiple folders\n- Switching objects clears the current selection automatically — no stale counts\n- Shift-click selects a range, automatically skipping fields already placed on the canvas\n- One-question-per-slide (Survey) is respected — bulk-inserted fields split onto their own slides where needed\n- Works identically across Forms, Surveys, and Quizzes\n\n**How to set it up**\n\n1. Open any Form, Survey, or Quiz in the Kayan dashboard builder.\n2. In the left sidebar, switch to the **Object Fields** tab.\n3. Use the object dropdown to select **Contact, Opportunity, Business**, or a custom object.\n4. Search by field name or browse folders to find what you need.\n5. Check the fields you want to add using the checkboxes on each row.\n6. Either click **\"Add N fields\"** at the bottom of the sidebar, or drag any selected field onto the canvas — all checked fields move together as a group.\n7. Fields land on the canvas in sidebar order, immediately after your active element.",
+      "processed_at": "2026-08-19T06:42:42.851013+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/upload-google-demand-gen-campaigns-to-template-library",
+      "category": "LIVE_NOW",
+      "published": "Tue, 18 Aug 2026 13:52:29 GMT",
+      "title": "Upload Google Demand Gen Campaigns to Template Library",
+      "content": "**Save Google Demand Gen Campaigns as Reusable Templates**\n\nYou can now upload Google Demand Gen campaigns directly to the Template Library — no rebuilding from scratch when you need to replicate a proven setup across locations.\n\n**What's new:**\n- Template Library upload is now supported for Google Demand Gen campaigns\n- Upload any existing campaign directly from its action menu\n- Uploaded campaigns are saved as Draft templates first, giving you a chance to review and edit before publishing\n- Published templates are available for reuse across any location\n\n**How to set it up:**\n1. Go to **Ads Manager** in your Kayan dashboard and open the **Campaigns** tab\n2. Find the Google Demand Gen campaign you want to save as a template\n3. Click the **⋮** menu on that campaign\n4. Select **Upload to Template Library**\n5. Enter a template name and assign a category\n6. Confirm the upload — it will appear in your Template Library as a Draft\n7. Review the draft, make any edits, and publish it when ready\n\n**Notes:**\n- Templates are always created as Drafts first — nothing goes live until you publish\n- Your existing Template Library workflows are unchanged\n- This update applies specifically to Google Demand Gen campaigns",
+      "processed_at": "2026-08-19T06:42:51.265375+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/communities-editor-community-experience-enhancements",
+      "category": "LIVE_NOW",
+      "published": "Tue, 18 Aug 2026 13:41:14 GMT",
+      "title": "Communities - Editor & Community Experience Enhancements ✏️",
+      "content": "**Communities: Editor & Moderation Enhancements**\n\nCreating content, moderating discussions, and managing recordings in Kayan Communities just got faster and more intuitive across the board.\n\n**What's New**\n\n- **Floating Rich Text Toolbar** — Select any text in a post to reveal a formatting toolbar. Bold, Italic, Underline, Strikethrough, and link insertion are all available inline, no need to hunt through menus.\n- **Ban Users Directly from Posts** — Open the three-dot menu (⋮) on any post to ban a spammer on the spot. You can optionally delete all of their content before confirming — no more navigating away to the Members section.\n- **Download Recordings from Posts** — Open the three-dot menu (⋮) on a recording post and select Download Recording to save it instantly.\n- **Updated Comment Editor Shortcuts** — Enter creates a new paragraph, Shift + Enter adds a new line within the same paragraph, and Ctrl + Enter (or clicking Post) publishes the comment.\n\n---\n\n**How to set it up**\n\nThese enhancements are active automatically — no configuration needed.\n\n1. Go to **Communities** in your Kayan dashboard.\n2. Open any community and start a post to access the floating formatting toolbar when selecting text.\n3. To moderate, open the ⋮ menu on any post and select **Ban User**.\n4. To download a recording, open the ⋮ menu on a recording post and select **Download Recording**.",
+      "processed_at": "2026-08-19T06:43:00.091226+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/private-by-default-enhanced-privacy-controls-for-documents-uploaded-through-note",
