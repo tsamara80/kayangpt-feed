@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-19T06:43:00.091271+00:00",
+  "last_updated": "2026-08-20T06:43:24.941268+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -47,6 +47,40 @@
       "source_link": "https://ideas.gohighlevel.com/changelog/inline-validation-errors-for-schema-markup-json-view",
       "category": "DISCARD",
       "published": "Wed, 22 Jul 2026 05:46:35 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/email-events-message-id-now-available-in-the-dynamic-picker",
+      "category": "LIVE_NOW",
+      "published": "Wed, 19 Aug 2026 15:14:45 GMT",
+      "title": "Email Events: Message ID Now Available in the Dynamic Picker",
+      "content": "**Email Events: Message ID Now in the Dynamic Picker**\n\nEmail Events triggers now include a unique Message ID, so every open and click can be traced back to the exact email that generated it — no guesswork, no API workarounds.\n\n**What's new**\n\n- Message ID is now available as a custom value inside the Send Webhook action when your workflow starts with an Email Events trigger\n- The ID is stable per message — repeat opens of the same email always send the same value\n- Works for both Email Opened and Email Clicked events\n- Late-arriving opens still carry the correct ID, pointing back to the original email regardless of timing\n\n**Why it matters**\n\nPreviously, teams pushing email engagement data to external dashboards had no reliable way to deduplicate events. A contact opening the same email four times would generate four separate records with no shared identifier. Now, those events collapse cleanly against a single message, and opens from two different campaigns stay correctly separated — even when sent to the same contact in the same week.\n\n**How to set it up**\n\n1. In the Kayan Automations tab, open or create a workflow with **Email Events** as the trigger\n2. Add a **Send Webhook** action to the workflow\n3. When building the webhook payload, open the custom value picker\n4. Select **Message ID** and insert it into the body\n5. Save and publish — every open and click event will now include the Message ID in the outbound payload",
+      "processed_at": "2026-08-20T06:42:57.080744+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/fixed-create-update-record-picklists-now-accept-dynamic-values",
+      "category": "LIVE_NOW",
+      "published": "Wed, 19 Aug 2026 14:49:29 GMT",
+      "title": "Fixed: &apos;Create/Update Record&apos; Picklists Now Accept Dynamic Values",
+      "content": "**Fix: Dynamic Values Now Work in Create/Update Record Dropdown Fields**\n\nDropdown fields in Create Record and Update Record actions were dropping saved dynamic values — opening blank with no selected option and no way to re-enter a merge tag. That's fixed.\n\n**What's new**\n\n- Single-select dropdown fields now include a **Standard / Dynamic toggle**, consistent with how the Update Contact Field action already works.\n- **Standard mode** gives you the searchable picklist, including any image options.\n- **Dynamic mode** gives you a free-text input with the custom value picker — use merge tags from triggers, formatters, or inbound webhooks.\n- Fields with a saved value that doesn't match a picklist option will automatically open in Dynamic mode, so existing automation configs render correctly without any manual fixes.\n- Switching between modes clears the current field value to prevent a stale value from the previous mode saving silently.\n\n**What's not affected**\n\n- Multi-select fields are unchanged.\n- Update Contact Field already had this toggle and remains unchanged.\n\n---\n\n**How to set it up**\n\n1. Open the **Kayan Automations** tab and select an automation that uses a Create Record or Update Record action.\n2. Click into the action and find the dropdown field you want to populate dynamically.\n3. Toggle the field from **Standard** to **Dynamic**.\n4. Use the value picker to insert your merge tag (trigger field, formatter output, webhook value, etc.).\n5. Save the action. Note: switching modes clears the field — re-enter your value after toggling.\n\nApplies to Create Record, Update Record, and associated record actions in both contact-based and custom object automations.",
+      "processed_at": "2026-08-20T06:43:11.591567+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/fixed-pinned-and-recent-tabs-now-match-the-workflow-type",
+      "category": "LIVE_NOW",
+      "published": "Wed, 19 Aug 2026 14:45:33 GMT",
+      "title": "Fixed: Pinned and Recent Tabs Now Match the Workflow Type",
+      "content": "**Pinned and Recent Actions Now Filter by Workflow Type**\n\nThe Pinned and Recent sections in the Automations sidebar were showing actions and triggers regardless of the workflow type you were editing. A Contact action used once could appear as a shortcut inside a Company or Custom Object workflow, where it doesn't belong.\n\n**What's fixed**\n\n- Pinned and Recent now only show actions and triggers that are valid for the workflow you currently have open\n- Contact actions stay scoped to Contact workflows; Company actions to Company workflows; Custom Object actions to their respective workflows\n- Shortcuts that would fail on selection are hidden automatically — no more broken clicks\n- Your existing pins are untouched; they're simply hidden in workflows where they don't apply\n- The full action and trigger list below these sections was already accurate and remains unchanged\n\n**How to set it up**\n\nNo configuration needed — this is automatic.\n\n1. Open the **Kayan Automations** tab and select any existing workflow, or create a new one\n2. Click into the Actions & Triggers sidebar and check the **Pinned** or **Recent** sections\n3. You'll only see shortcuts relevant to that workflow's type — anything that doesn't apply is hidden from view",
+      "processed_at": "2026-08-20T06:43:20.940984+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/the-billing-screen-now-recognizes-a-card-youve-already-added",
+      "category": "DISCARD",
+      "published": "Wed, 19 Aug 2026 08:01:47 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/your-sub-account-subscriptions-now-stay-in-sync-with-plan-changes",
+      "category": "DISCARD",
+      "published": "Wed, 19 Aug 2026 07:48:14 GMT"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/rental-booking-page-gets-smarter-ctas-clearer-checkout-polished-ui",
