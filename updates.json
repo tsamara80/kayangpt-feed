@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-20T06:43:24.941268+00:00",
+  "last_updated": "2026-08-21T06:44:13.314440+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -540,6 +540,43 @@
       "title": "Generate Submission Documents - Forms, Surveys & Quizzes",
       "content": "**Auto-Generate PDF Documents from Form, Survey & Quiz Submissions**\n\nEvery submission your contacts make can now instantly produce a clean, printable PDF — stored automatically against their contact record, no manual effort required.\n\n**What's New**\n\n- A new **Generate Submission Document** toggle is available in the settings for Forms, Surveys, and Quizzes\n- When enabled, every new submission automatically generates a formatted PDF containing all questions, responses, submission date/time, and contact information\n- Documents are automatically saved to the contact's Documents section, organized by type (Forms, Surveys, or Quizzes)\n- PDFs are named consistently: `[FormName]_[ContactName]_[YYYY-MM-DD_HHMM]` for forms and surveys; `Result_[FormName]_[ContactName]_[YYYY-MM-DD_HHMM]` for quizzes\n- Documents can be viewed, downloaded, and used across contact workflows\n- Works across desktop and mobile\n- Only new submissions are affected — existing submissions are not retroactively converted\n\n**How to Set It Up**\n\n1. In your Kayan dashboard, navigate to **Forms**, **Surveys**, or **Quizzes** and open the item you want to configure\n2. Go to its **Settings** panel and locate the **Generate Submission Document** toggle\n3. Switch it **on** and save\n4. From that point forward, every new submission will generate and store a PDF automatically — accessible from the contact's **Documents** section",
       "processed_at": "2026-07-24T08:27:24.812465+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/anthropic-google-models-now-available-in-ai-agent-action",
+      "category": "LIVE_NOW",
+      "published": "Thu, 20 Aug 2026 15:27:30 GMT",
+      "title": "Anthropic & Google models now available in AI agent action",
+      "content": "**More AI Models Now Available in Workflow Automations**\n\nYou can now choose from Anthropic, Google, and OpenAI models inside Kayan's AI Agent action — with a redesigned model picker and built-in reasoning effort control.\n\n**What's New**\n\n- **Expanded model support across three providers:**\n  - Anthropic: Claude Opus 5, Claude Sonnet 5, Claude Haiku 4.5\n  - Google: Gemini 3.6 Flash, Gemini 3.1 Pro Preview\n  - OpenAI: GPT-5.6 Luna, GPT-5.6 Tera, GPT-5.6 Sol, GPT-5 Nano\n- **Redesigned model picker** — models are grouped by provider, with short descriptions so you know what each one is built for before selecting it\n- **Reasoning effort control** — set effort to Low, Medium, or High; models that support reasoning are marked with a thinking indicator directly in the dropdown\n- **Cost efficiency** — combined with recent token optimisations, the same tasks now run up to 50% cheaper\n\n**How to set it up**\n\n1. Open the Kayan Automations tab and select or create a workflow\n2. Add or open an existing AI Agent action\n3. Click the model dropdown and browse by provider — use the thinking indicator and model description to guide your choice\n4. Set your preferred reasoning effort level (Low, Medium, or High) from the same dropdown\n5. Save and publish your workflow\n\nUse a higher-capability model where accuracy matters on complex, multi-step tasks. Use a faster, lighter model for intent classification and simple reads. Effort control lets you tune quality against speed independently on each action.",
+      "processed_at": "2026-08-21T06:43:46.597875+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/instagram-explore-feed-placement-discontinued-by-meta",
+      "category": "LIVE_NOW",
+      "published": "Thu, 20 Aug 2026 13:00:14 GMT",
+      "title": "Instagram Explore Feed Placement Discontinued by Meta",
+      "content": "**Instagram Explore Feed Placement Removed by Meta**\n\nMeta has discontinued the Instagram Explore Feed ad placement as part of their Marketing API v26 update. This change is handled automatically — no action required on your end.\n\n**What's changed:**\n- Instagram Explore Feed is no longer available as a selectable placement when creating new ad campaigns in Kayan\n- Live campaigns with Explore Feed enabled remain active and unaffected\n- Draft campaigns will have Explore Feed removed automatically when the ad set is saved, with delivery shifting to other eligible placements\n- No errors will surface during this transition — everything is handled silently in the background\n\n**How to set it up:**\nNothing to configure. This deprecation is automatic. Simply continue building and managing your Meta ad campaigns through the Kayan Ads Manager as normal. If you have drafts in progress, save your ad sets and Kayan will handle the placement update for you.\n\n**Note:** This is a Meta platform change, not a Kayan product decision. All other campaign workflows and templates remain unchanged.",
+      "processed_at": "2026-08-21T06:43:54.310740+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/calendar-ai-ai-powered-calendar-setup",
+      "category": "LIVE_NOW",
+      "published": "Thu, 20 Aug 2026 11:38:19 GMT",
+      "title": "🚀 Calendar AI — AI-powered Calendar setup",
+      "content": "**Calendar AI — Smarter Calendar Setup, Powered by AI**\n\nSet up your booking calendar in minutes by describing what you need — no manual configuration guesswork required.\n\n**What's new:**\n\n- Describe your scheduling use case in plain language and Calendar AI recommends and creates the right calendar type for you\n- Add team members, configure availability, and choose a meeting location — all within a single guided flow\n- Preview your booking calendar live as you build it\n- Book a test appointment the moment setup is complete to confirm everything works\n- Ask questions or use preset prompts to explore additional calendar capabilities\n\n**How to set it up:**\n\n1. Go to your **Kayan dashboard** and navigate to the **Calendars** section\n2. Select **Create Calendar** and choose the **AI Setup** option\n3. Describe your use case when prompted (e.g. \"I need a round-robin calendar for my sales team, Monday to Friday\")\n4. Follow the guided flow to add team members, set availability, and pick a meeting location\n5. Review the live preview, then book a test appointment to confirm your setup is live and working",
+      "processed_at": "2026-08-21T06:44:02.273255+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/your-saas-customers-can-now-change-plans-and-billing-frequency-together",
+      "category": "DISCARD",
+      "published": "Thu, 20 Aug 2026 08:51:13 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/clearer-card-on-file-0-payment-handling-for-calendars",
+      "category": "LIVE_NOW",
+      "published": "Thu, 20 Aug 2026 06:55:02 GMT",
+      "title": "Clearer Card-on-File & $0 Payment Handling for Calendars",
+      "content": "**Clearer Card-on-File & $0 Payment Handling for Calendars**\n\nKayan now separates two distinct booking payment scenarios — collecting a card on file versus processing an actual charge — so customers only see what's relevant to their booking.\n\n**What's new:**\n\n- A dedicated **Collect Card on File** option is now available in Calendar Payment settings\n- When enabled, customers securely save their card during booking with no charge and no transaction created\n- When **Charge Upfront** is enabled, payment collection now responds to the final amount due:\n  - Final amount > $0 → payment details collected and charge processed normally\n  - Configured amount = $0 → card collection and payment skipped entirely\n  - Coupon reduces amount to $0 → card collection and payment skipped entirely\n  - Coupon leaves amount > $0 → discounted amount collected normally\n- Customers with genuinely free bookings will no longer be prompted for card details or put through a $0 transaction\n\n**How to set it up:**\n\n1. Go to your **Kayan dashboard** and open **Calendars**\n2. Select the calendar you want to update and open its **Payment settings**\n3. To save a card without charging: enable **Collect Card on File**\n4. To charge based on the final booking amount: enable **Charge Upfront** — Kayan will automatically handle $0 and discounted scenarios from there\n5. Save your changes",
+      "processed_at": "2026-08-21T06:44:13.314368+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/introducing-new-templates-102",
