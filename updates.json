@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-21T06:44:13.314440+00:00",
+  "last_updated": "2026-08-22T06:37:49.121210+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -973,6 +973,14 @@
       "title": "Layers in Certificate/Badge Builder",
       "content": "**Layers Panel Now Live in Certificate & Badge Builder**\n\nThe Certificate & Badge Builder now includes a dedicated Layers panel, giving you full control over element stacking, layer protection, and placeholder validation before any certificate goes out.\n\n**What's new:**\n\n- New **Layers tab** in the builder sidebar shows your full canvas stack at a glance\n- Click any layer to select it on the canvas; drag and drop to reorder\n- Lock or unlock individual layers — locked layers cannot be moved, resized, deleted, or edited via shortcuts\n- Delete unlocked layers directly from the panel without hunting on the canvas\n- Invalid custom-field placeholders are flagged with a visible error pill\n- Manual save will warn you if broken placeholders exist before publishing (auto-save behavior is unchanged)\n\n**How to set it up:**\n\n1. Open the **Certificate & Badge Builder** from your Kayan dashboard\n2. Select the **Layers** tab in the left sidebar\n3. Click rows to select elements, drag to reorder the stack, and use the lock icon to protect layers from accidental edits\n4. Before publishing, check for any error pills on placeholder fields and resolve them — certificates won't issue cleanly with invalid custom fields in place",
       "processed_at": "2026-07-24T08:26:57.822329+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/badge-automation-is-now-available-in-workflows",
+      "category": "LIVE_NOW",
+      "published": "Fri, 21 Aug 2026 07:59:42 GMT",
+      "title": "Badge automation is now available in Workflows",
+      "content": "**Badge Automation Now Available in Kayan Automations**\n\nYou can now issue badges and trigger follow-up actions directly inside Kayan Automations — no manual steps required.\n\n**What's new:**\n- **Issue Badge action:** Automatically issue a badge to a contact when workflow conditions are met\n- **Badge Issued trigger:** Kick off a new automation the moment a badge is issued — send a message, update a contact, or chain into another workflow\n\n**How to set it up:**\n\n1. Open the **Kayan Automations** tab and create or edit a workflow\n2. To issue a badge automatically, add the **Issue Badge** action and select the badge to assign\n3. To trigger follow-up steps after a badge is issued, create a new workflow and set **Badge Issued** as the trigger\n4. Add your follow-up actions (message, email, contact update, etc.) and publish",
+      "processed_at": "2026-08-22T06:37:49.121132+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/whatsapp-analytics-in-the-ai-assistant-in-workflows",
