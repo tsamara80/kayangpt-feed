@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-22T06:37:49.121210+00:00",
+  "last_updated": "2026-08-23T06:39:09.100335+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -713,6 +713,14 @@
       "title": "Introducing New Templates",
       "content": "**New Templates Now Available in Kayan**\n\nWe've expanded the template library with fresh, ready-to-use designs across websites, social media, ads, and automations — so you can launch faster without starting from scratch.\n\n**What's new:**\n\n- **2 Website Templates** — Health & Wellness, Home Services\n- **8 Social Templates** — Health & Wellness, Business Coaching & Consulting, Creative, Travel & Hospitality\n- **2 Facebook Ad Templates** — Finance, Insurance\n- **5 Google Ad Templates** — Beauty & Fashion (Makeup Artist), Automotive (Auto Body Repair), Travel & Hospitality (B&B), Restaurant & Bar (Brewpub), Real Estate (Home Inspector)\n- **5 LinkedIn Ad Templates** — Life Insurance, Lifestyle Coaching, Accounting Firm, Home Insurance, Video Production & Editing\n- **1 Automation Workflow Template** — Client Onboarding (Industry-Specific)\n- **1 Revamped Template** — Home Services (Plumber): fully updated with a redesigned website, refreshed funnel, updated forms, improved email automations, cleaner pipeline structure, and a new Facebook Ad included\n\n**How to set it up:**\n\n1. From your Kayan dashboard, navigate to the **Templates** section\n2. Browse by category (Websites, Social, Ads, or Automations) to find the template you need\n3. Select a template and click **Use Template** to add it to your workspace\n4. Customise the content, branding, and copy directly in the editor\n5. Publish or activate when ready",
       "processed_at": "2026-07-26T08:24:59.065449+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/introducing-new-templates-107",
+      "category": "LIVE_NOW",
+      "published": "Sat, 22 Aug 2026 15:32:24 GMT",
+      "title": "Introducing New Templates",
+      "content": "**New Templates Now Available**\n\nFresh templates have been added across websites, funnels, emails, ads, social, and automations — ready to customize and deploy directly from your Kayan dashboard.\n\n**What's new:**\n\n- **Website Templates (1):** Automotive\n- **Funnel Templates (1):** Marketing Agency\n- **Email Templates (1):** Automotive\n- **Social Templates (4):** Health & Wellness (2), Creative (2)\n- **Facebook Ad Templates (2):** Automotive – Car Rental Agency, Health & Wellness – Weight Loss\n- **Google Ad Templates (5):** Home Services – Dry Cleaning, Health & Wellness – Weight Management, Finance – Payment Solutions, Creative – Digital Designer, Business Coaching & Consulting – Education Tutor\n- **LinkedIn Ad Templates (7):** Insurance – Health Insurance, Finance – Credit Repair, Real Estate – Real Estate Management, Business Coaching & Consulting – Business Mentoring, Marketing Agency – Affiliate Marketing Services, Finance – Tax Consultant, Creative – Professional Photographer\n- **Automation Templates (3):** Calendar Booking Confirmation, Just Sold/Just Listed Announcement, Insurance Quote Follow-Up Sequence\n- **Snapshot (1):** Creative – Dance Company\n\n**How to set it up:**\n\n1. In your Kayan dashboard, navigate to the relevant builder — Sites, Funnels, Email, Ads, or Automations.\n2. Select **Templates** and browse by category or industry.\n3. Choose a template, customize it to fit your brand, and publish or activate.",
+      "processed_at": "2026-08-23T06:39:09.100250+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/introducing-new-templates-106",
