@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-23T06:39:09.100335+00:00",
+  "last_updated": "2026-08-24T06:55:59.137397+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -692,6 +692,14 @@
       "source_link": "https://ideas.gohighlevel.com/changelog/more-control-when-adding-prospects-in-prospecting-tool",
       "category": "DISCARD",
       "published": "Thu, 02 Jul 2026 03:30:00 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/turn-your-custom-fields-into-real-metrics-in-sub-account-dashboards-and-custom-r",
+      "category": "LIVE_NOW",
+      "published": "Sun, 23 Aug 2026 17:22:58 GMT",
+      "title": "Turn Your Custom Fields Into Real Metrics in Sub-account dashboards and custom reports",
+      "content": "**Custom Fields Now Work as Live Metrics in Dashboards and Reports**\n\nNumeric and monetary custom fields on Contacts and Opportunities can now be used as real metrics — aggregated, calculated, and displayed live across your dashboards and reports.\n\n**What's new:**\n- Use any numeric or monetary custom field as a metric (not just a filter or grouping)\n- Aggregate values with Sum, Min, Max, or Average\n- Works across dashboard widgets, custom reports, and the custom metric builder\n- New custom fields are automatically available in the metric picker the moment you create them — no extra configuration needed\n\n**How to set it up:**\n\n1. Open a dashboard widget, custom report, or custom metric builder in your Kayan dashboard\n2. Select **Add Metric**, then open the **Field** dropdown — your numeric and monetary custom fields (e.g. \"Property Value,\" \"Treatment Cost\") will appear alongside standard fields\n3. Choose your **Aggregation** method: Sum, Min, Max, or Average\n4. Save — your widget or report will reflect the live aggregated value immediately\n\n**Note:** Applies to numeric and monetary custom field types on Contacts and Opportunities records only.",
+      "processed_at": "2026-08-24T06:55:59.137307+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/expanded-permissions-for-meetings-services-rentals",
