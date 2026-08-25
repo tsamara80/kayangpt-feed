@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-24T06:55:59.137397+00:00",
+  "last_updated": "2026-08-25T06:43:46.737020+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -238,6 +238,14 @@
       "title": "Email AI – Smart Countdown Timer Creation and Suggestions",
       "content": "**Email AI: Smart Countdown Timer Creation and Suggestions**\n\nKayan's Email AI now detects when an email calls for a countdown timer and guides you through adding one — no manual setup required.\n\n**What's new:**\n- Email AI identifies time-sensitive emails (flash sales, product launches, webinars, expiring offers) and suggests a countdown timer only when relevant\n- Choose from an existing timer or create a new one directly within the AI flow\n- When creating a new timer, AI collects the end date, style, and destination link automatically\n- The selected timer is embedded into your email template on the spot\n- If you skip the timer prompt, the AI continues without interruption — no dead ends\n\n**How to set it up:**\n1. Open the **Email Builder** from your Kayan dashboard and start a new template or edit an existing one\n2. Activate **Email AI** to generate or update your layout\n3. If your email content is time-sensitive, AI will prompt you to add a countdown timer — select an existing one or choose to create new\n4. Provide the end date, preferred style, and a destination link when creating a new timer\n5. Confirm, and the timer is embedded directly into your email — ready to send",
       "processed_at": "2026-07-28T08:33:13.570173+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/offer-multiple-meeting-durations-within-a-single-calendar",
+      "category": "LIVE_NOW",
+      "published": "Tue, 25 Aug 2026 02:30:04 GMT",
+      "title": "Offer multiple meeting durations within a single calendar",
+      "content": "**Offer Multiple Meeting Durations on a Single Calendar**\n\nBookers can now choose their preferred meeting length directly from your booking page — no need to maintain separate calendars for different durations.\n\n**What's new:**\n\n- Configure up to 3 duration options on a single calendar\n- Set a default duration for new bookings\n- Add or remove duration options at any time without affecting existing appointments\n- Availability refreshes automatically when a booker selects a different duration\n- Duration selection is supported during rescheduling — bookers can change the meeting length alongside the date and time\n- Works across web and mobile booking pages, booking widgets, and in-app appointment booking\n- Supported on Personal, Round Robin, Collective, and Event calendars\n\n**How to set it up:**\n\n1. Open the **Kayan dashboard** and navigate to your **Calendars** section\n2. Select the calendar you want to update and open its settings\n3. Find the **Duration Options** setting and add up to 3 time options\n4. Mark one duration as the default\n5. Save your changes — the booking page will update immediately\n\nExisting appointments are never modified when you change duration options. Any already-booked meetings retain their original length, reminders, and notifications.",
+      "processed_at": "2026-08-25T06:43:35.595745+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/refreshed-placeholder-images-in-store-builder",
@@ -766,6 +774,14 @@
       "source_link": "https://ideas.gohighlevel.com/changelog/increased-pit-token-limit-per-subaccount",
       "category": "DISCARD",
       "published": "Mon, 27 Jul 2026 11:29:05 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/zero-dollar-checkout-for-sell-products-forms-surveys",
+      "category": "LIVE_NOW",
+      "published": "Mon, 24 Aug 2026 13:40:27 GMT",
+      "title": "Zero-Dollar Checkout for Sell Products - Forms & Surveys",
+      "content": "**Zero-Dollar Checkout for Forms & Surveys**\n\nFree offers shouldn't ask for a credit card. Kayan now lets you skip payment fields entirely when a product order totals $0 — no workarounds needed.\n\n**What's new**\n\n- New **Require card for $0 orders** toggle on the Sell Products element in Forms and Surveys\n- When toggled off, payment fields are automatically hidden any time an order totals $0 with no recurring charges due\n- Works for coupon-driven zeros too — a 100% discount hides the card the moment the total hits $0\n- Free orders are still created and recorded; submission history and order records remain intact\n- Subscriptions, free trials, and any order with a future recurring charge always require a card regardless of this setting\n- If the $0 total can't be confirmed (e.g. pricing still loading, totals mid-update), the card field is shown as a safe fallback\n- For Sell Products elements embedded inside a Funnel, the Funnel-level card requirement takes precedence over the element-level toggle\n- Existing Forms and Surveys are unaffected — the toggle defaults to on, so nothing changes unless you turn it off\n- Fully supported on desktop and mobile\n\n**How to set it up**\n\n1. Open the Kayan dashboard and navigate to your Form or Survey builder.\n2. Add or select an existing **Sell Products** element.\n3. In the element settings, locate **Require card for $0 orders** and toggle it off.\n4. Save and publish. Customers whose order totals $0 with nothing recurring will now complete checkout without entering card details.\n5. If the Form or Survey is embedded inside a Funnel, adjust the card requirement at the Funnel level instead — that setting takes precedence.",
+      "processed_at": "2026-08-25T06:43:46.736949+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/rearrange-and-rename-tabs-in-communities",
