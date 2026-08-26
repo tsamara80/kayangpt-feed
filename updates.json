@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-25T06:43:46.737020+00:00",
+  "last_updated": "2026-08-26T06:47:17.494799+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -238,6 +238,35 @@
       "title": "Email AI – Smart Countdown Timer Creation and Suggestions",
       "content": "**Email AI: Smart Countdown Timer Creation and Suggestions**\n\nKayan's Email AI now detects when an email calls for a countdown timer and guides you through adding one — no manual setup required.\n\n**What's new:**\n- Email AI identifies time-sensitive emails (flash sales, product launches, webinars, expiring offers) and suggests a countdown timer only when relevant\n- Choose from an existing timer or create a new one directly within the AI flow\n- When creating a new timer, AI collects the end date, style, and destination link automatically\n- The selected timer is embedded into your email template on the spot\n- If you skip the timer prompt, the AI continues without interruption — no dead ends\n\n**How to set it up:**\n1. Open the **Email Builder** from your Kayan dashboard and start a new template or edit an existing one\n2. Activate **Email AI** to generate or update your layout\n3. If your email content is time-sensitive, AI will prompt you to add a countdown timer — select an existing one or choose to create new\n4. Provide the end date, preferred style, and a destination link when creating a new timer\n5. Confirm, and the timer is embedded directly into your email — ready to send",
       "processed_at": "2026-07-28T08:33:13.570173+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/whatsapp-template-builder-now-catches-invalid-variables-before-you-save",
+      "category": "LIVE_NOW",
+      "published": "Tue, 25 Aug 2026 15:42:18 GMT",
+      "title": "WhatsApp template builder now catches invalid variables before you save",
+      "content": "**WhatsApp Template Builder Now Catches Variable Errors Before You Save**\n\nThe WhatsApp template builder in Kayan now validates your variable placeholders in real time as you type — so mistakes are flagged immediately, not after a submission gets rejected.\n\n**What's new**\n\n- **Start/end variable check:** WhatsApp rejects message bodies that begin or end with a variable. The builder now flags this and blocks saving until there's surrounding text.\n- **Invalid variable detection in headers and body:** Only numbered placeholders like `{{1}}`, `{{2}}` are valid. Malformed tokens like `{{1$}}` or unbalanced braces are caught instantly, with clear guidance on the correct format.\n- **Reputation review-request preset fixed:** The default reputation template previously ended with a trailing variable, causing automatic rejection. It's been corrected so new reputation templates pass validation out of the box.\n\n**How to set it up**\n\nNothing to enable — validation is built directly into the template builder.\n\n1. Go to your **Kayan dashboard** and navigate to **Settings → WhatsApp → Templates**.\n2. Open or create a template.\n3. As you type, any invalid variables are flagged inline before you can save.\n\nThat's it. Errors surface immediately so your templates go live on the first attempt.",
+      "processed_at": "2026-08-26T06:46:56.074017+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/request-contact-info-collect-phone-numbers-from-whatsapp-username-adopters",
+      "category": "LIVE_NOW",
+      "published": "Tue, 25 Aug 2026 13:22:46 GMT",
+      "title": "Request contact info: collect phone numbers from WhatsApp username adopters",
+      "content": "**Collect Phone Numbers from WhatsApp Username Contacts**\n\nSome WhatsApp users have switched to usernames instead of visible phone numbers. When they message you, you receive their username only — no phone number, no way to call them, export them, or run phone-based automations. You can now send a one-tap \"Share contact info\" request that recovers their number and turns them into a fully usable contact.\n\n---\n\n**What's new**\n\n- **Share contact info button on templates:** Add a contact-sharing button to utility or marketing WhatsApp templates. When the contact taps it, their phone number is captured automatically on their record.\n- **Workflow action for contact info requests:** Trigger the same request from inside a Kayan Automation, so the ask goes out at exactly the right moment — no manual follow-up needed.\n- **Duplicate-safe capture:** If a phone number already exists on another contact, it won't be added again. Recovering numbers at scale stays clean.\n- **WhatsApp calling for username contacts:** Contacts using usernames are now supported in WhatsApp calling flows, so they no longer fall out of your call sequences.\n\n---\n\n**How to set it up**\n\n1. Go to **Settings → WhatsApp → Templates** in your Kayan dashboard.\n2. Create or edit a template. Under **Button (Optional)**, select **Share contact info**.\n3. To automate it, open the **Kayan Automations** tab, add a new action, and choose **WhatsApp Interactive Message**. Set the message type to **Request Contact Info** and write your message body.\n4. Save and activate — the number is captured the moment the contact taps.",
+      "processed_at": "2026-08-26T06:47:06.896384+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/chat-widget-brand-board-integration",
+      "category": "DISCARD",
+      "published": "Tue, 25 Aug 2026 07:53:37 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/chat-widget-flexible-compliance-notice-consent-settings",
+      "category": "LIVE_NOW",
+      "published": "Tue, 25 Aug 2026 07:46:36 GMT",
+      "title": "Chat Widget: Flexible Compliance Notice & Consent Settings",
+      "content": "**Chat Widget: Flexible Compliance & Consent Settings**\n\nYou now have independent control over legal notices and visitor consent in your chat widget — no longer bundled into a single setting.\n\n**What's new:**\n\n- Display a legal notice below the contact form with no action required from the visitor\n- Add a consent checkbox with fully custom wording (e.g. SMS or email marketing opt-in)\n- Set consent as required or optional depending on your compliance needs\n- Pre-check the consent checkbox when the form loads\n- Show inline validation (\"Please tick this box to continue.\") when required consent is missing\n- Track consent in Activity details — including whether it was given, whether it was required, and the exact text shown\n\n**How to set it up:**\n\n1. Go to your Kayan dashboard and open the **Chat Widget** builder\n2. Select your widget, then navigate to **Chat Window → Additional Options → Compliance Notice & Consent**\n3. Configure your legal notice text, consent checkbox wording, required/optional behavior, and pre-checked state\n4. Use the live preview to confirm the experience before saving\n\n**A few things to note:**\n\n- Available to all accounts\n- Existing widgets are unchanged until you open and save them in the builder\n- Any existing legal text carries over automatically to the correct field\n- No changes to your website embed code are needed",
+      "processed_at": "2026-08-26T06:47:17.494730+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/offer-multiple-meeting-durations-within-a-single-calendar",
