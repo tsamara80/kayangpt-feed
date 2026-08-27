@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-26T06:47:17.494799+00:00",
+  "last_updated": "2026-08-27T17:22:38.016955+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -34,6 +34,27 @@
       "title": "Make Your Sites AI-Ready with llms.txt",
       "content": "**Make Your Sites AI-Ready with llms.txt**\n\nYou can now configure and manage an `llms.txt` file for each of your domains directly inside Kayan. Once saved, your file is served automatically at `https://<domain>/llms.txt` — no extra hosting or setup required.\n\n**What's new:**\n- Native hosting of your `llms.txt` as a clean Markdown map at your domain root\n- In-platform editing — add and update content without touching external tools\n- Per-domain control so each connected domain can have its own tailored file\n- Passes Google PageSpeed Agentic Browsing checks out of the box, supporting AI search visibility (AEO/GEO)\n\n**How to set it up:**\n1. In your Kayan dashboard, go to **Sites** and open **Settings → Domains**\n2. Select the domain you want to configure and open its settings modal\n3. Scroll to the **llms.txt** section\n4. Add or edit your site map content in Markdown\n5. Save — your file publishes instantly to `https://<domain>/llms.txt`",
       "processed_at": "2026-07-29T08:39:32.668286+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/trigger-automation-in-bulk-for-companies-custom-objects",
+      "category": "LIVE_NOW",
+      "published": "Wed, 26 Aug 2026 15:30:00 GMT",
+      "title": "Trigger Automation in Bulk for Companies & Custom Objects",
+      "content": "**Bulk Automation Triggers for Companies & Custom Objects**\n\nYou can now trigger automations across multiple Company or Custom Object records at once — no more running workflows one record at a time.\n\n**What's new:**\n- Select multiple Company or Custom Object records from the list view and trigger an automation in bulk\n- Choose which workflow to run without touching each record individually\n- Monitor progress and review per-record results directly from the Bulk Actions panel\n\n**Why it matters:**\nSome automations need to run on records that already exist — not just new ones coming in. This lets you act on a group immediately, whether that's onboarding a batch of companies, firing renewal workflows for policies or subscriptions, or processing a freshly imported set of custom records.\n\n**How to set it up:**\n1. In your Kayan dashboard, open **Companies** or navigate to the relevant **Custom Object**\n2. Select the records you want to process\n3. Click **Trigger Automation**\n4. Choose the workflow you want to run\n5. Confirm the action\n6. Track progress and results under **Bulk Actions**",
+      "processed_at": "2026-08-27T17:22:26.990955+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/app-approval-flow-enhancements-and-bug-fixes",
+      "category": "DISCARD",
+      "published": "Wed, 26 Aug 2026 11:45:19 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/guest-enhancements-in-calendars-more-flexible-guest-details",
+      "category": "LIVE_NOW",
+      "published": "Wed, 26 Aug 2026 10:08:09 GMT",
+      "title": "✨ Guest Enhancements in Calendars — More Flexible Guest Details",
+      "content": "**Guest Management in Calendars — More Flexible Guest Details**\n\nYou can now control exactly what information you collect from guests during booking, and guest contact records are more accurate from the start.\n\n**What's new:**\n\n- **Flexible guest detail fields** — Choose which information to collect per calendar:\n  - Name & Email\n  - Name & Phone\n  - Name, Email & Phone\n  - Guest Count Only (records headcount without creating a guest contact)\n- **Auto contact matching** — When guest details are collected, Kayan automatically creates or matches a contact using the provided email and/or phone number\n- **Existing calendars** — No change; they continue collecting Name & Email by default\n- **New calendars** — Default to Name, Email & Phone for richer records out of the box\n- **Accurate guest timezones** — Guest contacts now inherit the primary contact's timezone instead of defaulting to the business timezone. If the guest already exists in your CRM, their timezone stays unchanged\n\n---\n\n**How to set it up:**\n\n1. Go to your **Kayan dashboard** and open **Calendars**\n2. Select the calendar you want to edit and open its settings\n3. Navigate to the **Guest Settings** section\n4. Choose your preferred guest detail fields from the available options\n5. Save your changes — new bookings will reflect the updated configuration immediately",
+      "processed_at": "2026-08-27T17:22:38.016893+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/rebuilt-course-progress-analytics",
@@ -553,6 +574,51 @@
       "source_link": "https://ideas.gohighlevel.com/changelog/cancel-a-pending-saas-plan-or-rebilling-setup-no-need-to-turn-off-saas-mode",
       "category": "DISCARD",
       "published": "Thu, 30 Jul 2026 10:05:48 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/sms-action-test-sms-now-with-a-country-picker-and-enhanced-ui",
+      "category": "LIVE_NOW",
+      "published": "Thu, 27 Aug 2026 13:33:46 GMT",
+      "title": "SMS Action: Test SMS Now with a Country Picker and enhanced UI",
+      "content": "**SMS Test Action: Country Picker + Cleaner UI**\n\nTesting an SMS action now works the way you'd expect — type your number in local format, no manual country codes required.\n\n**What's new:**\n- The test phone number field now includes a country flag picker, consistent with the rest of the Kayan dashboard\n- Defaults to your account's country automatically\n- Numbers are saved in full international format before the test sends, so the country is always resolved correctly\n- Click the flag to open a searchable list — search by country name or dialing code\n- The old country code hint text is removed; validation error now reads simply \"Invalid phone number\"\n\n**How to set it up:**\n\n1. Open the **Automations** tab and navigate to your workflow containing a Send SMS action\n2. Click into the Send SMS action and scroll to the **Test Phone Number** field\n3. The flag will default to your account's country — leave it as-is or click it to select a different country\n4. Type the number in local format (no country code needed)\n5. Click **Send Test SMS**\n\n**Example:** If your account is set to India and you type `9089786755`, the test sends to `+919089786755`. Switch the flag to US, type `4088613552`, and it sends to `+14088613552`.",
+      "processed_at": "2026-08-27T17:21:32.668000+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/certificate-ai-beta-is-now-live",
+      "category": "COMING_SOON",
+      "published": "Thu, 27 Aug 2026 09:49:44 GMT",
+      "title": "Certificate AI Beta is now live",
+      "content": "**AI-Generated Certificates — Coming Soon**\n\nDesigning a certificate will soon start with a simple description. Kayan's Certificate AI is in beta and will let you go from a text prompt to a fully structured, editable certificate design in minutes.\n\n**What's coming:**\n\n- **AI generation from a prompt** — Describe the certificate you need and AI builds the design for you\n- **Guided setup** — AI asks focused questions (like orientation and purpose) to get the details right before generating\n- **Full element support** — Designs can include text, frames, signatures, QR codes, and more\n- **Fully editable output** — Every AI-generated certificate can be customized directly in the Certificate Builder after creation\n- **Quick-start prompts** — Built-in ideas for course completions, milestones, event participation, training programs, and more\n\nThis feature is currently in beta. More updates to follow as the experience is refined.",
+      "processed_at": "2026-08-27T17:21:39.832520+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/date-range-setting-can-now-count-only-the-days-you-actually-work",
+      "category": "LIVE_NOW",
+      "published": "Thu, 27 Aug 2026 08:44:49 GMT",
+      "title": "📅 Date Range Setting Can Now Count Only the Days You Actually Work",
+      "content": "**📅 Booking Windows Now Count Real Working Days**\n\nThe Date Range setting for Calendars, Services, and Rentals now has a smarter counting mode. A new toggle lets you ensure your booking window reflects actual working days — skipping weekends and closed days instead of burning through them silently.\n\n**What's new:**\n\n- **Count available days only toggle** — Enable it below the Date Range setting and the system skips non-working days when calculating your booking window. A business closed on weekends with a 2-day range no longer shows a blank calendar on Fridays — it extends to Monday and Tuesday instead.\n- **Works with minimum scheduling notice** — When the toggle is on, the date range starts counting from the first available day after any minimum notice period ends. Bookers always see the full configured window, even when notice rules push it forward.\n- **Supported across all calendar types** — Applies to Meeting Calendars, Services, and Rentals, including round robin and collective setups. A day counts as available if at least one assigned team member is free. Date-specific hour overrides are fully respected.\n\n**How to set it up:**\n\n1. In the Kayan dashboard, go to **Calendars** and open the settings for the calendar you want to update. For Services, navigate to **Services → Global Settings → Service Settings**. For Rentals, edit the listing and open **Booking Settings**.\n2. Locate the **Date Range** setting.\n3. Enable **Count available days only** directly below the Date Range input.\n4. Save your changes.\n\nWorks for any schedule configuration — standard Mon–Fri, custom days like Mon/Wed/Fri, salons, clinics, field teams, and beyond.",
+      "processed_at": "2026-08-27T17:21:48.963662+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/reuse-protected-snapshot-assets-within-your-agency",
+      "category": "DISCARD",
+      "published": "Thu, 27 Aug 2026 07:13:21 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/schedule-availability-with-custom-open-expiry-experiences-form-survey-quiz",
+      "category": "LIVE_NOW",
+      "published": "Thu, 27 Aug 2026 06:14:23 GMT",
+      "title": "Schedule Availability with Custom Open & Expiry Experiences - Form, Survey & Quiz",
+      "content": "**Schedule Open & Close Windows for Forms, Surveys, and Quizzes**\n\nYou can now set exact open and close times for any Form, Survey, or Quiz — no more manually disabling them after a campaign ends.\n\n**What's new:**\n\n- Set a specific date and time for a form to start accepting submissions, or make it live immediately\n- Set an expiry date and time to automatically stop new submissions\n- Choose the time zone for both the open and close schedule\n- Configure a custom pre-launch page so visitors know what to expect before the window opens\n- Configure a custom expired page — or redirect visitors to another URL — once submissions close\n- Preview exactly what the unavailable state looks like before publishing\n- All existing Forms, Surveys, and Quizzes continue to work as before when scheduling is not enabled\n\n**How to set it up:**\n\n1. Open the Kayan dashboard and navigate to **Forms**, **Surveys**, or **Quizzes**\n2. Select the form you want to schedule and open its **Settings**\n3. Find and enable the **Schedule** visibility option\n4. Set your **Open** date — choose *Right away* or pick a specific date and time\n5. Set your **Close** date — choose *Never* or pick a specific date and time\n6. Select the correct **time zone**\n7. Configure what visitors see outside the active window — either a custom message page or a redirect URL\n8. Save and publish — Kayan handles the rest automatically\n\n**Good for:** event registrations, flash sales, webinar sign-ups, contests, limited-time offers, and any campaign with a hard deadline.",
+      "processed_at": "2026-08-27T17:22:02.081081+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/whatsapp-messaging-limits-now-shown-at-the-portfolio-level",
+      "category": "LIVE_NOW",
+      "published": "Thu, 27 Aug 2026 05:36:43 GMT",
+      "title": "WhatsApp messaging limits: now shown at the portfolio level",
+      "content": "**WhatsApp Messaging Limits Now Reflect Meta's Portfolio Model**\n\nMeta has moved WhatsApp messaging limits from individual phone numbers to the business portfolio (WABA) level. Kayan.ai now displays this accurately — one shared daily limit across all numbers in your portfolio, so you're always working with a clear, real ceiling.\n\n> ⚠️ One high-volume number can consume your entire portfolio's daily capacity. Kayan now surfaces the single limit that actually governs what your business can send.\n\n---\n\n**What's changed**\n\n- **Portfolio-level limit panel** — A new Messaging Limits panel shows the single shared limit that applies across all your WhatsApp numbers, replacing the old per-number display.\n- **Per-number limit column removed** — The individual limit column has been removed from the Phone Numbers view. It was misleading under Meta's model and is gone.\n- **Tooltip for clarity** — A tooltip explains that the limit is shared portfolio-wide and that one number can exhaust the full daily quota.\n- **Fully localized** — The new panel is available in 13 languages.\n\n**Meta's updated tier structure (effective Oct 7, 2025)**\n\n- Starting limit is 250/day; the first step up is now **2,000** (previously 1,000)\n- Reach 2,000 by verifying your business or sending 2,000 delivered messages to unique recipients over 30 days using high-quality templates\n- Above 2,000, scaling to 10,000 → 100,000 → Unlimited is **automatic**, provided quality stays high and you use at least 50% of your current limit over 7 days\n- Meta re-evaluates limits roughly every **6 hours** (down from 24)\n- Low quality no longer reduces your limit — it blocks scaling up instead\n- New numbers **instantly inherit** the portfolio's current limit — no warm-up period\n\n---\n\n**How to set it up**\n\n1. Open your **Kayan dashboard** and go to **WhatsApp Settings**\n2. Select **Messaging Limits**\n3. Review your portfolio-level limit and note which number is driving the highest send volume\n\nNo configuration needed — the panel is live and accurate for all accounts now.",
+      "processed_at": "2026-08-27T17:22:19.089845+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/client-portal-file-upload-notifications-for-account-admins-and-users",
