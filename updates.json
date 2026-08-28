@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-27T17:22:38.016955+00:00",
+  "last_updated": "2026-08-28T18:14:27.500635+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -1052,6 +1052,19 @@
       "title": "Redeeming Gift Cards in Offline Payment Flows",
       "content": "**Gift Card Redemption Now Available in Business-Initiated Payment Flows**\n\nYou can now apply a customer's Gift Card balance when collecting payments on their behalf — not just on customer-facing checkouts. This brings a consistent redemption experience across every payment flow in Kayan.\n\n**What's new:**\n\n- Gift Card redemption is now supported when recording or collecting payments directly from your dashboard\n- Applies across orders, invoices, direct charges, and new subscriptions\n- If the Gift Card covers the full amount, no other payment method is charged\n- If the balance is partial, the Gift Card is applied first and the remainder is automatically charged to the customer's saved payment method\n- Validation messages surface for invalid, expired, or zero-balance Gift Cards\n- Transaction details clearly show the Gift Card amount redeemed\n- Split payments display the Gift Card and remaining charge separately\n- The Gift Card's remaining balance updates automatically after each successful redemption\n\n> **Note:** Gift Card redemption on future-dated or scheduled subscriptions is not yet supported — that's coming soon.\n\n---\n\n**How to set it up:**\n\n1. Navigate to the relevant payment flow in your Kayan dashboard:\n   - **Payments → Orders → Record Payment**\n   - **Payments → Invoices → Record Payment**\n   - **Contacts → Charge Now**\n   - **Contacts → Create Subscription**\n   - **Payments → Subscriptions → Create Subscription**\n2. During the payment process, enter the customer's Gift Card code in the Gift Card field\n3. Click **Apply** to validate and apply the available balance\n4. Complete the payment — any remaining balance will charge to the customer's saved payment method automatically",
       "processed_at": "2026-07-31T08:48:38.384120+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/target-announcement-banners-by-sub-account-and-user",
+      "category": "DISCARD",
+      "published": "Fri, 28 Aug 2026 16:23:17 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/workflow-builder-pick-an-email-sender-domain-for-each-workflow",
+      "category": "LIVE_NOW",
+      "published": "Fri, 28 Aug 2026 14:52:21 GMT",
+      "title": "Workflow Builder: Pick an Email Sender Domain for Each Workflow!",
+      "content": "**Workflow Builder: Set a Sender Domain Per Workflow**\n\nYou can now assign a specific sending domain to each automation workflow. Every email action inside that workflow sends from that domain — keeping your transactional, promotional, and outreach emails cleanly separated at the domain level.\n\n**What's new:**\n\n- A **Sender Domain** dropdown is now available in Workflow Settings under Sender Details\n- Choose any verified dedicated domain on your account, or select **All Domains** to continue using weighted distribution across all configured domains\n- Selecting a specific domain + email prefix (e.g. `marketing` + `example.com`) sends all workflow emails as `marketing@example.com`\n- If a sender email entered in an individual email action doesn't match the workflow-level domain, a **Sender Domain Mismatch** warning appears — mismatched domains can affect deliverability\n- Sender details set inside an individual email action always take final priority over workflow-level settings\n- The dropdown only appears if you have at least one verified dedicated domain configured\n\n**Why it matters:**\n\nPreviously, all workflows on an account shared the same sending domain. One underperforming campaign could drag down deliverability for your receipts, reminders, and confirmations. Now each workflow carries its own domain reputation — a bad promo run stays contained, and your transactional emails stay clean.\n\n---\n\n**How to set it up:**\n\n1. Go to **Email Services → Dedicated Domains** in your Kayan dashboard and confirm your domain is verified\n2. Open the workflow you want to configure and navigate to **Settings**\n3. Under **Sender Details**, select your domain from the **Sender Domain** dropdown\n4. Enter your **From Name** and **email prefix**, then save\n5. All email actions in that workflow will now inherit these sender settings automatically",
+      "processed_at": "2026-08-28T18:14:27.500548+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/schema-markup-auto-generation-on-website-funnel-webinar-publish",
