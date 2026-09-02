@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-01T11:09:56.231292+00:00",
+  "last_updated": "2026-09-02T10:42:35.933036+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -195,6 +195,11 @@
       "title": "Smarter, Customizable Profile & Business Cards",
       "content": "**Smarter, Customizable Profile & Business Cards**\n\nYour digital business card just got a significant upgrade — modernized designs, deeper personalization, and built-in tools to capture and track leads automatically.\n\n**What's New**\n\n- **Refreshed card designs** — Profile and Business Cards have a cleaner, more professional look out of the box\n- **Default \"Save Contact\" button** — visitors can save your contact info to their device in one tap, no extra setup required\n- **Cover images** — upload your own or choose from pre-designed templates\n- **Custom color palette** — control background, text, icons, buttons, and button text individually\n- **Minimalist view toggle** — hide icon labels for a cleaner card layout\n- **Custom links** — add websites, booking links, portfolios, social profiles, or landing pages, each with an assigned icon via the built-in Icon Picker\n- **Exchange Contact forms** — collect visitor info directly from your card using a new or existing form; submissions automatically create a new contact in your CRM with the lead source logged\n- **Editable CTA text** — rename the contact exchange button to match your brand\n- **Smart automation toggles** — optionally auto-display the contact form on card open, or auto-download your contact info to the visitor's device on arrival\n\n---\n\n**How to set it up**\n\n1. Open the **Kayan dashboard** and navigate to **QR Code Builder**\n2. Select or create a Profile or Business Card\n3. Apply your cover image, color palette, and toggle minimalist view if preferred\n4. Add custom links and assign icons using the Icon Picker\n5. Configure your Exchange Contact form — build a new one or select an existing form\n6. Set your CTA button text and enable any automation toggles you want\n7. Publish and share your updated card\n\n> **Note:** Existing Profile and Business Cards won't update automatically — you'll need to open each one and apply the new settings manually.",
       "processed_at": "2026-08-05T08:34:35.286495+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/privacy-policy-tc-urls-on-toll-free-verification",
+      "category": "DISCARD",
+      "published": "Wed, 02 Sep 2026 07:35:27 GMT"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/ad-manager-opportunity-score-for-meta-campaigns",
@@ -524,6 +529,11 @@
       "title": "🚀 Multi-role signing for your Documents and Contracts templates, right inside Workflows.",
       "content": "**Multi-Role Signing for Documents & Contracts in Automations**\n\nYou can now define multiple signer roles directly on your document templates and route them automatically through Kayan Automations — no manual re-entry, no workarounds.\n\n**What's new:**\n\n- Add up to 6 signer roles per template (e.g. buyer, seller, witness, or any custom role you define)\n- Assign fields — signature, date, and more — to each individual role\n- When a document is sent via an Automation, all roles auto-populate based on your template setup\n- Override any role's name, email, or phone at the automation level without editing the template\n- One template can serve multiple deal types — just adjust role details per automation as needed\n- If a required email is missing, you'll be prompted before the document goes out; duplicate emails across roles trigger an alert\n\n**How to set it up:**\n\n1. **Build your template** — Open your document template in the Kayan dashboard, define your signer roles (name, email, phone), and assign at least one fillable field to each role\n2. **Assign a Contact field** — At least one fillable element must be assigned to the Contact role; this is required for the automation send action to work\n3. **Add to your Automation** — In the Kayan Automations tab, add a Send Document action and select your multi-role template; roles will auto-populate\n4. **Override if needed** — Adjust any role's details at the automation step level; these values take precedence over template defaults\n5. **Activate** — Each signer receives their copy in the role and order you've defined\n\n**Good to know:**\n- Roles auto-populate only when sent via an Automation, not through manual send\n- Role definitions are local to each individual template\n- Available on web",
       "processed_at": "2026-08-04T08:35:39.690128+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/delete-saved-payment-methods-on-saas-v2-sub-accounts",
+      "category": "DISCARD",
+      "published": "Tue, 01 Sep 2026 11:54:44 GMT"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/client-portal-one-portal-zero-tab-hopping",
