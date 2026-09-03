@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-02T10:42:35.933036+00:00",
+  "last_updated": "2026-09-03T10:43:54.300586+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -782,6 +782,11 @@
       "title": "Single Page Unpublish for Funnels and Websites",
       "content": "**Single Page Unpublish for Funnels and Websites**\n\nYou can now take individual pages offline without touching the rest of your site. Hide outdated content, pause seasonal promotions, or manage campaigns granularly — all without disconnecting your domain or deleting a page permanently.\n\n**What's new**\n\n- **Granular page control:** Publish or unpublish a single funnel or website page while everything else stays live. The option is available directly from each page's actions menu — in both the page list and the builder's side panel.\n- **Full page management inside the builder:** The side panel now includes a complete actions menu per page — Edit (rename/change URL slug), Preview, Clone, Publish, Unpublish, Edit Redirect Link, and Delete. The menu adapts based on the page's current state.\n- **Built-in redirects:** When unpublishing, choose what visitors see at the old URL — a 404, a redirect to another page in the same funnel/website, or any external URL.\n- **Editable redirects anytime:** Already unpublished a page? Update where its traffic goes at any time via Edit Redirect Link, without changing the page's publish state.\n- **Status visibility everywhere:** Unpublished pages display a clear tag in the page list and sidebar. The builder header shows a live status chip (• Live / • Unpublished), the page's URL, and who last changed its status.\n- **A/B test handling:** Unpublishing a page with an active A/B test automatically stops the test — all historical metrics are preserved.\n- **Instant effect:** Status changes take effect immediately. No full-funnel republish needed.\n- **Zero domain disruption:** Unpublishing a page does not affect your domain's SSL certificate or DNS settings.\n- **Team accountability:** Every publish/unpublish action logs who made the change and when.\n\n---\n\n**How to set it up**\n\n1. Open the funnel or website you want to manage in your Kayan dashboard and navigate to its page list.\n2. Find the page you want to take offline and open its **Options** menu.\n3. Select **Unpublish**. A confirmation dialog will appear explaining exactly what will and won't be affected.\n4. Choose your redirect behavior: standard 404, redirect to another page in the same funnel/website, or redirect to a custom external URL.\n5. Confirm. The page goes offline immediately — all other published pages are unaffected.\n6. To update the redirect destination later, open the page's Options menu and select **Edit Redirect Link**.\n7. To bring the page back, select **Publish** from the same menu — it goes live instantly.\n8. Everything above is also accessible from the pages side panel inside the builder — no need to leave the canvas.",
       "processed_at": "2026-08-07T07:14:44.426429+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/carrier-fee-pricing-update-effective-october-1-2026",
+      "category": "DISCARD",
+      "published": "Thu, 03 Sep 2026 09:50:45 GMT"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/ad-manager-custom-values-in-ad-copy",
