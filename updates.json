@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-03T10:43:54.300586+00:00",
+  "last_updated": "2026-09-04T10:41:15.097237+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -784,6 +784,14 @@
       "processed_at": "2026-08-07T07:14:44.426429+00:00"
     },
     {
+      "source_link": "https://ideas.gohighlevel.com/changelog/client-portal-user-login-workflow-trigger-now-supports-the-new-client-portal-exp",
+      "category": "LIVE_NOW",
+      "published": "Thu, 03 Sep 2026 11:14:42 GMT",
+      "title": "🔐 Client Portal: &quot;User login&quot; Workflow Trigger Now Supports the New Client Portal Experience",
+      "content": "**Client Portal: \"User Login\" Trigger Now Covers the Full Portal Experience**\n\nThe User Login automation trigger now fires for logins from the new Client Portal — not just legacy membership logins. All Client Portal triggers have also been consolidated into a single category for easier access.\n\n**What's new:**\n\n- **New Client Portal logins now activate the User Login trigger** — successful logins from the new Client Portal emit the same trigger event as legacy membership logins, with no reconfiguration needed on existing automations\n- **New \"Client Portal\" category in the trigger picker** — all Client Portal triggers are now grouped together in one place:\n  - *User Login* (previously listed under Courses)\n  - *Client Portal File Uploaded* (previously listed under Membership)\n- **Clearer trigger descriptions** — the User Login trigger now explicitly states it covers both legacy membership logins and new Client Portal logins, removing the guesswork\n\n**How to set it up:**\n\n1. Go to the **Kayan Automations** tab and open or create a workflow\n2. Click **Add Trigger** and select the new **Client Portal** category\n3. Choose **User Login** from the list\n4. Save the workflow — it will fire on both legacy membership and new Client Portal logins\n\n**Already using this trigger?** No action needed. Existing workflows will automatically pick up login events from the new Client Portal experience.",
+      "processed_at": "2026-09-04T10:41:15.097149+00:00"
+    },
+    {
       "source_link": "https://ideas.gohighlevel.com/changelog/carrier-fee-pricing-update-effective-october-1-2026",
       "category": "DISCARD",
       "published": "Thu, 03 Sep 2026 09:50:45 GMT"
@@ -1239,6 +1247,14 @@
       "source_link": "https://ideas.gohighlevel.com/changelog/set-a-fixed-price-for-your-ai-products",
       "category": "DISCARD",
       "published": "Fri, 07 Aug 2026 04:51:29 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/more-reliable-missed-call-text-back-with-smarter-number-selection",
+      "category": "LIVE_NOW",
+      "published": "Fri, 04 Sep 2026 04:56:34 GMT",
+      "title": "📞 More Reliable Missed Call Text Back with Smarter Number Selection",
+      "content": "**More Reliable Missed Call Text Back**\n\nWhen you miss a call, your follow-up text now has a better chance of actually reaching the customer — even if the number they called can't send SMS.\n\n**What's new:**\n\n- Kayan now automatically selects an eligible sending number when the originally called number can't send SMS\n- Selection priority: a number previously used to message that contact → your default outbound number → any other eligible number on your account\n- Applies automatically to calls coming through number pools, call tracking numbers, unverified toll-free numbers, or other non-SMS-eligible numbers\n- Answered calls are unaffected — text back only triggers on missed calls\n- Contact DND settings and communication preferences are still respected\n- If no eligible number is available, the failed attempt is logged in the conversation with a clear reason\n\n**How to set it up:**\n\n1. In your Kayan dashboard, go to **Phone Settings** and confirm Missed Call Text Back is enabled\n2. Ensure at least one number in your account is SMS-eligible (verified for A2P or toll-free messaging as applicable)\n3. No additional configuration needed — smarter number selection runs automatically in the background\n\nThat's it. If an eligible number exists, Kayan will find it and send the follow-up.",
+      "processed_at": "2026-09-04T10:41:00.734494+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/pricing-update-sms-costs-for-select-international-destinations-effective-july-6-1",
