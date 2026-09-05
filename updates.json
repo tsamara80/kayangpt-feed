@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-04T10:41:15.097237+00:00",
+  "last_updated": "2026-09-05T10:00:48.136371+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -1247,6 +1247,14 @@
       "source_link": "https://ideas.gohighlevel.com/changelog/set-a-fixed-price-for-your-ai-products",
       "category": "DISCARD",
       "published": "Fri, 07 Aug 2026 04:51:29 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/improved-dynamic-value-chips-with-improved-error-segmentation",
+      "category": "LIVE_NOW",
+      "published": "Fri, 04 Sep 2026 20:08:39 GMT",
+      "title": "Improved: Dynamic Value Chips with Improved error segmentation",
+      "content": "**Dynamic Value Chips Now Have Three States**\n\nWorkflow variable chips now distinguish between three conditions instead of two, so you can tell at a glance whether a value is missing by mistake or missing by design.\n\n**What's new:**\n\n- **Blue chip** — value is available in this workflow. Kayan can resolve it from the contact record, a system value, or a previous step.\n- **Yellow chip** — value exists on the platform but has no source in this workflow. It will render blank unless another workflow passes it in. This is a warning, not a blocker — you can still save and publish.\n- **Red chip** — value doesn't exist anywhere on the platform. This means a typo or invalid reference that won't resolve under any conditions.\n- Spacing inside variable tags no longer causes false errors. `{{ attribution.first.url }}` and `{{attribution.first.url}}` are now treated as the same value.\n\n**Why it matters:**\n\nPreviously, both \"wrong value\" and \"value supplied externally\" showed the same red error state, making intentional cross-workflow configurations look like mistakes. Red now means something is actually broken. Yellow means verify your source.\n\n**How to set it up:**\n\n1. Open any automation in the **Kayan Automations** tab.\n2. Click into any action that contains a dynamic variable chip.\n3. Check the chip color — blue is ready, yellow needs a source step or external input, red needs to be corrected.\n4. For yellow chips, confirm whether a separate workflow is passing the value in via a trigger parameter, or add the appropriate step to this workflow directly.\n5. Save and publish as normal — yellow chips do not block publishing.\n\nNo changes to execution logic. Anything that ran before continues to run the same way.",
+      "processed_at": "2026-09-05T10:00:48.136288+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/more-reliable-missed-call-text-back-with-smarter-number-selection",
