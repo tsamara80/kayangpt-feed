@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-06T10:19:50.073456+00:00",
+  "last_updated": "2026-09-07T11:40:48.364886+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -1011,6 +1011,22 @@
       "source_link": "https://ideas.gohighlevel.com/changelog/bulk-keyword-management-for-google-ads-in-ad-manager",
       "category": "DISCARD",
       "published": "Mon, 10 Aug 2026 03:51:05 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/ai-image-generation-action-in-workflows",
+      "category": "LIVE_NOW",
+      "published": "Mon, 07 Sep 2026 07:32:18 GMT",
+      "title": "AI Image Generation Action in Workflows",
+      "content": "**AI Image Generation in Automations**\n\nYou can now generate images directly inside an automation workflow. Kayan's AI Image Generation action creates an image from a prompt, stores it at a public URL, and passes that URL forward to the next action in your sequence.\n\n> **Note:** This is a premium action. Each execution carries an additional charge based on your configuration.\n\n---\n\n**What's New**\n\n- **Four AI models:** Choose from GPT Image 2, Gemini 3 Pro Image, Gemini 3.1 Flash Image, or Gemini 2.5 Flash Image\n- **Flexible prompts:** Write the prompt directly, or pull it dynamically from a contact field, webhook payload, or a previous action's output\n- **Enhance Prompt:** One click expands a short prompt into a detailed one automatically\n- **Templates:** Start from a preset — Product Mockup, Social Post, Promo Flyer, or Lifestyle\n- **Quality control:** Set Auto, High, Medium, or Low (default is Auto)\n- **Brand control:** Apply your Design Kit and Brand Voice to keep output on-brand\n- **Output settings:** Configure image size, background, and file format\n- **Automatic storage:** Every generated image is saved to Media Storage and returned as an Image URL variable for downstream actions\n\n**Pricing factors:** Your cost per image depends on the model selected, quality level, output size, and whether a Design Kit or Brand Voice is applied (both pass additional context to the model). Treat published estimates as planning figures, not fixed rates.\n\n---\n\n**How to set it up**\n\n1. Go to the **Kayan Automations** tab and open an existing workflow or create a new one\n2. Add a new action and select **AI Image Generation** from the AI Actions section\n3. Choose your model and set your quality level (Auto is the default)\n4. Write your prompt — type it directly or insert a dynamic value to pull from your data at runtime\n5. Optionally click **Enhance Prompt** or select a template to speed up setup\n6. Open **Additional Settings** to configure size, background, output format, Design Kit, and Brand Voice\n7. Save the action\n\n> **Heads up:** Generated images are stored at a public URL — no login is required to view them. If your prompts include customer data, factor this into how you use the action.\n\n---\n\n**Why it matters**\n\nYour automations can now create visuals on demand, not just move ones you've uploaded manually. Use the Image URL output to attach an image to an email or SMS, publish it to a social post, write it to a custom field, or send it via webhook. Because the prompt can be driven by contact data, a single workflow can produce a unique image for every contact — or populate an image field across every row of a connected sheet.",
+      "processed_at": "2026-09-07T11:40:38.238685+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/ai-analyze-image-new-workflow-action",
+      "category": "LIVE_NOW",
+      "published": "Mon, 07 Sep 2026 07:20:11 GMT",
+      "title": "AI Analyze Image: New Workflow Action",
+      "content": "**AI Image Analysis Now Available in Kayan Automations**\n\nYour workflows can now read and interpret images using AI vision. Add the AI Analyze Image action to any automation, point it at an image URL, and get back a plain-text result you can use in any subsequent step.\n\n*Note: This is a premium action. Each execution incurs an additional charge.*\n\n**What's new:**\n\n- **Text extraction** — Pull text from receipts, invoices, screenshots, and documents\n- **Image descriptions** — Generate a written description of what an image contains\n- **Flexible prompts** — Tell the model exactly what to look for and how to respond; the prompt field accepts dynamic values from earlier steps\n- **Detail level control** — Choose Auto, High, or Low; High improves accuracy on small text, Low is faster\n- **Two models available** — GPT-5.6 Luna or GPT-5.6 Tera\n\n**How to set it up:**\n\n1. Go to the **Automations** tab in your Kayan dashboard and open a workflow\n2. Add a new action and select **AI Analyze Image** from the AI Actions section\n3. Choose your model (Luna or Tera)\n4. Enter the image URL — use a direct link to the image file, not a page that displays it; images stored in your Kayan Media Library are already public\n5. Write your analysis prompt, using custom or dynamic values as needed\n6. Set the detail level (defaults to Auto)\n7. Save the action\n\nThe text output can be passed directly into any following step — save it to a contact field, include it in an email or SMS, send it to a webhook, or feed it into another AI action.",
+      "processed_at": "2026-09-07T11:40:48.364812+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/tags-for-courses",
