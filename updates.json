@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-07T11:40:48.364886+00:00",
+  "last_updated": "2026-09-08T10:39:46.582274+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -1011,6 +1011,22 @@
       "source_link": "https://ideas.gohighlevel.com/changelog/bulk-keyword-management-for-google-ads-in-ad-manager",
       "category": "DISCARD",
       "published": "Mon, 10 Aug 2026 03:51:05 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/transfer-calls-to-mobile-web-phone-and-sip-of-a-user-no-personal-phone-number-re",
+      "category": "LIVE_NOW",
+      "published": "Mon, 07 Sep 2026 13:59:10 GMT",
+      "title": "Transfer calls to Mobile, Web, phone and SIP of a user - no personal phone number required 📞",
+      "content": "**Call Transfers Now Work Without Personal Phone Numbers**\n\nYou can now transfer active calls to any staff member directly through the Kayan mobile app — no personal phone number required on either end.\n\n**What's new:**\n\n- Transfer inbound or outbound calls to staff members from within the mobile app\n- Supports both warm transfers (call and hold) and blind transfers (transfer and end)\n- Transferred calls ring all devices the staff member has configured simultaneously: web app, mobile app, phone, and SIP desk phone\n- The receiving staff member can see it's a transferred call and who sent it\n  - iOS: incoming banner shows the contact name followed by \"via [transferring staff member's name]\"\n  - Android: incoming screen shows \"Transferred call from [staff member's name]\"\n- Staff members with no devices configured appear as disabled in the transfer list\n- The mobile app now works as both a transfer source and destination\n- Re-transferring an already-transferred call is not yet supported\n\n**How to set it up:**\n\n1. Make or receive a call in the Kayan mobile app\n2. During the active call, tap the transfer icon in the top-right corner\n3. Open the **Staff Members** tab and select who you want to transfer to — their available devices are listed next to their name\n4. Tap **Call and Hold** for a warm transfer, or **Transfer and End** for a blind transfer\n5. The receiving staff member taps **Answer** to connect",
+      "processed_at": "2026-09-08T10:39:34.507117+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/working-hours-for-conversation-ai-agents",
+      "category": "LIVE_NOW",
+      "published": "Mon, 07 Sep 2026 13:33:41 GMT",
+      "title": "Working Hours for Conversation AI Agents",
+      "content": "**Working Hours for Conversation AI Agents**\n\nYou can now control exactly when your AI agents are active — and what happens when a customer reaches out outside those hours.\n\n**What's new:**\n\n- **Set per-agent schedules** — Define active days and times for each agent, including different hours per day and multiple time slots for breaks or split shifts\n- **Choose which channels follow the schedule** — Apply working hours selectively to SMS, Email, WhatsApp, Instagram, Facebook, Chat Widget, Live Chat, and TikTok; unselected channels keep running 24/7\n- **Timezone flexibility** — Run schedules against your business timezone or each contact's local timezone\n- **Continue active conversations after hours** — If a conversation started during working hours, the agent keeps responding until it goes inactive\n- **Off-hours auto-reply** — Send a custom acknowledgement message to customers who reach out outside working hours, personalised with supported dynamic values\n- **Team notifications** — Alert admins, assigned users, or specific team members when after-hours messages come in\n- **Auto-tag after-hours contacts** — Automatically apply tags to contacts who message outside working hours for easy filtering and follow-up\n- **Reopen follow-up** — Automatically send a follow-up when business hours resume, if the customer hasn't already received a reply\n\n**A few things to know:**\n- Working Hours is off by default — agents continue responding around the clock unless you enable it\n- Auto-replies, notifications, and tags fire once per closed period, not once per message\n- Agents can still be manually activated outside their scheduled hours from the conversation panel\n- In Suggestion Mode, the agent can still generate suggestions for your team after hours\n- Each agent has its own independent schedule\n\n---\n\n**How to set it up:**\n\n1. Go to your **Kayan dashboard** and open the **AI Agents** section\n2. Select the agent you want to configure and open its settings\n3. Navigate to the **Working Hours** tab\n4. Toggle Working Hours on, then set your active days and time slots\n5. Select which channels should follow the schedule\n6. Choose your timezone preference (business or contact)\n7. Configure your off-hours auto-reply message, team notifications, contact tags, and reopen follow-up as needed\n8. Save your settings — repeat for any additional agents that need their own schedule",
+      "processed_at": "2026-09-08T10:39:46.582203+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/ai-image-generation-action-in-workflows",
