@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-08T10:39:46.582274+00:00",
+  "last_updated": "2026-09-09T10:49:01.578735+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -110,6 +110,14 @@
       "title": "Rental Booking Page Gets Smarter CTAs, Clearer Checkout & Polished UI",
       "content": "**Rental Booking: Smarter CTAs, Clearer Checkout & UI Improvements**\n\nThe rental booking experience just got a meaningful upgrade — from the listing page through to checkout. These changes give you more control over button labeling, surface key booking details where they matter most, and clean up the overall flow for a more trustworthy experience.\n\n**What's new:**\n\n- **Custom \"Add to Cart\" button label** — When multi-item cart is enabled, you can now set a custom label for the add-to-cart button directly from your booking page settings. Defaults to \"Add to cart\" if left unchanged. Only appears when multi-cart is active, so single-item bookings are unaffected.\n- **Rental dates shown throughout checkout** — Selected rental dates now appear in the Order Summary on the checkout page, giving customers clear confirmation they're booking the right dates before they complete payment.\n- **Listing descriptions expanded by default** — Full descriptions are now shown inline on rental detail pages with no \"Read more\" click required. Mobile experience is improved as well.\n- **Cart persistence when navigating** — Clicking the company logo to return to the homepage no longer clears an in-progress booking. The cart stays intact while browsing.\n- **General UI polish** — Improved text wrapping on homepage listing cards, removal of a redundant single-quantity label from Booking Summary and Confirmation screens, and various minor fixes for a cleaner look.\n\n**How to set it up:**\n\n1. In your Kayan dashboard, go to **Global Settings** and open the **Booking Page** tab.\n2. Enable **Multi-item cart** — this reveals the button label field.\n3. Enter your preferred label text and save. The change reflects on your booking page immediately.\n\nAll other improvements are live automatically across all rental listings — no configuration needed.",
       "processed_at": "2026-08-19T06:41:37.805817+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/fixed-incorrect-billing-amount-shown-for-huf-priced-plans",
+      "category": "LIVE_NOW",
+      "published": "Wed, 09 Sep 2026 05:38:29 GMT",
+      "title": "Fixed: Incorrect Billing Amount Shown for HUF-Priced Plans",
+      "content": "**Fixed: HUF Plan Billing Now Displays the Correct Amount**\n\nIf your subscription plan is priced in Hungarian Forint (HUF), the billing amount shown in your client portal now accurately reflects what was configured — no more inflated figures.\n\n**What's fixed:**\n\n- HUF-priced plans previously displayed amounts 100× higher than the actual price (e.g., a 9,700 HUF plan showed as 970,000 HUF)\n- The correct plan price now displays automatically in the Billing section of your client portal\n- No action required — the fix is live and applied instantly\n\n**How to confirm it:**\n\n1. Log in to your Kayan dashboard\n2. Navigate to **Billing** in your client portal\n3. Verify your HUF plan price matches your expected subscription amount\n\nThis fix applies to HUF-denominated plans only. All other currencies were unaffected.",
+      "processed_at": "2026-09-09T10:48:59.015651+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/goal-action-now-with-support-for-user-replies",
@@ -473,6 +481,11 @@
       "title": "Gift Cards: Redeem Gift Cards While Collecting Calendar Payments",
       "content": "**Gift Cards: Redeem Gift Cards During Calendar Payment Collection**\n\nYou can now apply a customer's Gift Card balance when collecting payment for an appointment — without requiring the customer to initiate it themselves. Works across Meetings, Services, and Rentals calendars.\n\n**What's new:**\n- Apply a customer's Gift Card balance when collecting payment on their behalf, including when charging a saved card or adding a new one\n- Full balance coverage: if the Gift Card covers the total, no additional payment method is charged\n- Partial balance: Gift Card is applied first, remaining amount is automatically charged to the customer's saved payment method\n- Invalid, expired, or zero-balance Gift Cards surface clear validation messages\n- Transaction details show exactly how much was redeemed via Gift Card; split payments display each amount separately\n- The associated Gift Card order updates automatically with the remaining balance after each redemption\n\n**How to set it up:**\n\n1. Open the relevant appointment in your Kayan dashboard\n2. Navigate to the **Payments** tab within the appointment\n3. Click **Collect Payment**\n4. Select **Charge a Card**\n5. Choose **Redeem a Gift Card** and apply the customer's available balance\n6. Any remaining amount after the Gift Card is applied will be charged to the customer's saved payment method",
       "processed_at": "2026-08-11T07:06:41.467099+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/ai-studio-introducing-ssr-server-functions-secrets",
+      "category": "DISCARD",
+      "published": "Tue, 08 Sep 2026 16:09:04 GMT"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/control-google-sign-in-on-your-client-portal",
