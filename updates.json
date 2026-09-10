@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-09T10:49:01.578735+00:00",
+  "last_updated": "2026-09-10T10:42:43.021093+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -110,6 +110,16 @@
       "title": "Rental Booking Page Gets Smarter CTAs, Clearer Checkout & Polished UI",
       "content": "**Rental Booking: Smarter CTAs, Clearer Checkout & UI Improvements**\n\nThe rental booking experience just got a meaningful upgrade — from the listing page through to checkout. These changes give you more control over button labeling, surface key booking details where they matter most, and clean up the overall flow for a more trustworthy experience.\n\n**What's new:**\n\n- **Custom \"Add to Cart\" button label** — When multi-item cart is enabled, you can now set a custom label for the add-to-cart button directly from your booking page settings. Defaults to \"Add to cart\" if left unchanged. Only appears when multi-cart is active, so single-item bookings are unaffected.\n- **Rental dates shown throughout checkout** — Selected rental dates now appear in the Order Summary on the checkout page, giving customers clear confirmation they're booking the right dates before they complete payment.\n- **Listing descriptions expanded by default** — Full descriptions are now shown inline on rental detail pages with no \"Read more\" click required. Mobile experience is improved as well.\n- **Cart persistence when navigating** — Clicking the company logo to return to the homepage no longer clears an in-progress booking. The cart stays intact while browsing.\n- **General UI polish** — Improved text wrapping on homepage listing cards, removal of a redundant single-quantity label from Booking Summary and Confirmation screens, and various minor fixes for a cleaner look.\n\n**How to set it up:**\n\n1. In your Kayan dashboard, go to **Global Settings** and open the **Booking Page** tab.\n2. Enable **Multi-item cart** — this reveals the button label field.\n3. Enter your preferred label text and save. The change reflects on your booking page immediately.\n\nAll other improvements are live automatically across all rental listings — no configuration needed.",
       "processed_at": "2026-08-19T06:41:37.805817+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/agency-workflow-settings-default-builder-for-workflows",
+      "category": "DISCARD",
+      "published": "Wed, 09 Sep 2026 20:19:01 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/a-refreshed-user-management-experience",
+      "category": "DISCARD",
+      "published": "Wed, 09 Sep 2026 14:49:46 GMT"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/fixed-incorrect-billing-amount-shown-for-huf-priced-plans",
@@ -735,6 +745,30 @@
       "title": "🌟 New Review Received Trigger Now Supports All Integrated Review Platforms",
       "content": "**Review Automations Now Work Across All Connected Review Platforms**\n\nThe \"New Review Received\" trigger in Kayan Automations now fires for reviews from every review platform connected to your account — not just Google and Facebook.\n\n**What's new:**\n\n- Trigger automations from reviews on Trustpilot, Yelp, TripAdvisor, and any other integrated review source\n- Notify team members instantly when a new review comes in from any platform\n- Build automated follow-up or response workflows that work across your entire review ecosystem\n- Route reviews internally based on platform, rating, or any other logic\n- Existing Google and Facebook review triggers are unaffected — nothing breaks\n\n**How to set it up:**\n\n1. Go to **Automations** in your Kayan dashboard and open an existing workflow or create a new one\n2. Set the trigger to **New Review Received**\n3. In the trigger settings, select your desired review platform from the source list — you'll now see all connected platforms available, not just Google and Facebook\n4. Add your actions (notify a team member, send a response, update a contact record, etc.)\n5. Save and publish the workflow\n\nOne trigger. Every connected review platform.",
       "processed_at": "2026-08-14T07:23:03.990869+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/gpt-image-25-in-ai-image-generation-action-in-workflows",
+      "category": "LIVE_NOW",
+      "published": "Thu, 10 Sep 2026 10:02:46 GMT",
+      "title": "GPT Image 2.5 in AI Image Generation Action In Workflows",
+      "content": "**GPT Image 2.5 Now Available in AI Image Generation Workflows**\n\nTwo new image generation models are live inside Kayan Automations — GPT Image 2.5 Flare and GPT Image 2.5 Sunburst. Select your model from the dropdown and generate.\n\n---\n\n**What's New**\n\n- **GPT Image 2.5 Flare** — The default for most use cases. Delivers higher quality output than the previous generation at up to 50% lower latency. Best suited for social content, product visuals, quick prototyping, and high-volume generation.\n- **GPT Image 2.5 Sunburst** — Built for premium visual work requiring tighter control across edits. Use it for campaign creative and polished product imagery.\n- Subjects stay consistent across new settings, styles, and compositions — lighting, textures, and distinctive features carry through reliably.\n- Swap a single element (product, background, copy) while keeping the subject, composition, and brand treatment intact — making it practical to re-version and localize assets directly inside a workflow.\n\n---\n\n**How to set it up**\n\n1. Open the Kayan dashboard and navigate to **Automations**.\n2. Add or edit a workflow and insert the **AI Image Generation** action.\n3. Open the **model dropdown** and select **GPT Image 2.5 Flare** or **GPT Image 2.5 Sunburst**.\n4. Write your prompt and save the workflow.",
+      "processed_at": "2026-09-10T10:42:18.697981+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/add-reference-images-in-ai-image-generation-action",
+      "category": "LIVE_NOW",
+      "published": "Thu, 10 Sep 2026 09:12:51 GMT",
+      "title": "Add Reference Images in AI Image Generation Action",
+      "content": "**AI Image Generation Now Accepts Reference Images**\n\nYou can now attach reference images directly to the AI Image Generation action in Kayan Automations — so instead of describing a face, a room, or a logo in words, you show it.\n\n**What's New**\n\n- **Up to 5 reference images per action** — each image is passed to the model as visual context alongside your prompt\n- **Three ways to add them** — upload from your device, select from your Media Library, or paste a URL\n- **Dynamic URL support** — the URL field accepts custom values pulled from webhook payloads, contact fields, or previous workflow actions, so a single automation can generate a different image for every contact\n- **Positional ordering** — images are passed in the order you add them, and your prompt can reference each one by position (first, second, third, etc.)\n\n**How to set it up**\n\n1. Open the AI Image Generation action inside any workflow in your Kayan Automations tab\n2. Write your prompt as usual\n3. Scroll to the **Reference images** section below the prompt settings\n4. Choose a source for each image: device upload, Media Library, or URL\n5. Add up to 5 images — a counter tracks how many you've added\n6. In your prompt, refer to each image by its position (e.g. \"the setting shown in the first reference image\")\n7. Save the action and publish your workflow\n\n**Why it matters**\n\nText descriptions approximate. Reference images don't. Logos stay exact, faces stay consistent, and with dynamic URL support, personalised visual output at scale is now a single workflow action.",
+      "processed_at": "2026-09-10T10:42:27.846192+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/self-serve-cancellation-links-for-rental-bookings",
+      "category": "LIVE_NOW",
+      "published": "Thu, 10 Sep 2026 09:12:27 GMT",
+      "title": "Self-Serve Cancellation Links for Rental Bookings",
+      "content": "**Self-Serve Cancellation Links for Rental Bookings**\n\nRental customers can now cancel upcoming bookings themselves via a cancellation link — no call or email to your team required. Refund and security deposit decisions stay entirely in your hands.\n\n**What's new:**\n\n- **Self-service cancellation** — Customers cancel directly from their confirmation link. The booking is released immediately, no approval step needed. Once a booking is active or completed, the self-cancel option is no longer available.\n- **Optional cancellation reason** — Customers can leave a short note explaining why they're cancelling. It's never required, and it saves directly to the booking record so you have context without following up.\n- **Configurable cancellation window** — Set a cutoff (in minutes, hours, or days) before a booking starts, after which the self-cancel link expires. Leave it off and customers can self-cancel any time up until the booking begins.\n- **Multi-listing booking support** — Bookings that include more than one listing show each listing with its own dates in the booking details panel. Cancellation applies to the entire booking together.\n- **Clear messaging for expired or used links** — Instead of a technical error, customers now see a plain-language message explaining what happened and how to get help.\n\n**How to set it up:**\n\n1. The core cancellation flow is live automatically — no setup needed for existing rental booking confirmations and reminders.\n2. To set a cancellation cutoff window, go to **Kayan dashboard → Rentals → Global Settings → Booking Settings** and enable the cancellation link expiry option, then choose your cutoff window.\n3. To add the cancellation link to a notification template or confirmation page, insert the `{{rentalBooking.cancellation_link}}` variable wherever you want the link to appear.",
+      "processed_at": "2026-09-10T10:42:38.025043+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/fully-edit-service-bookingseven-after-payment",
