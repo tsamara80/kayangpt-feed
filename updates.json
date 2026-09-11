@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-10T10:42:43.021093+00:00",
+  "last_updated": "2026-09-11T10:41:28.873205+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -747,6 +747,32 @@
       "processed_at": "2026-08-14T07:23:03.990869+00:00"
     },
     {
+      "source_link": "https://ideas.gohighlevel.com/changelog/discover-marketplace-apps-with-ask-ai",
+      "category": "DISCARD",
+      "published": "Thu, 10 Sep 2026 13:50:18 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/meta-post-publish-recommendations-in-ad-manager",
+      "category": "LIVE_NOW",
+      "published": "Thu, 10 Sep 2026 13:04:22 GMT",
+      "title": "Meta Post-Publish Recommendations in Ad Manager",
+      "content": "**Meta Post-Publish Recommendations in Ad Manager**\n\nAfter publishing a Meta campaign, you can now view and act on Meta's optimization recommendations directly inside Kayan — no need to jump over to Meta Ads Manager to find out what to fix.\n\n**What's new:**\n\n- View Meta-generated recommendations from the campaign Review screen once a campaign is published\n- See the total number of available recommendations at a glance\n- Review each recommendation's suggested change, the affected campaign element, and the expected performance impact (when provided by Meta)\n- See the impact level for each recommendation: High, Medium, or Low\n- Click **Review and Update** to jump directly to the relevant campaign section and apply the change\n- See a clear \"No recommendations right now\" state when Meta has nothing to suggest\n\n**How to set it up:**\n\n1. Open a published Meta campaign in the Kayan Ad Manager\n2. Navigate to the **Review** screen\n3. Select **Meta Recommendations** from the top-left button to load available suggestions\n4. Click **Review and Update** on any recommendation\n5. Make the suggested change within the relevant section of the campaign\n\n**A few things to note:**\n\n- Recommendations and projected outcomes come from Meta and may shift as campaign data evolves — applying a recommendation does not guarantee improved results\n- Only recommendations actionable within Kayan's Ad Manager are surfaced here",
+      "processed_at": "2026-09-11T10:41:17.249361+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/your-sub-accounts-customizations-are-now-protected-when-you-apply-a-snapshot",
+      "category": "DISCARD",
+      "published": "Thu, 10 Sep 2026 12:09:21 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/conditional-form-support-services-rentals",
+      "category": "LIVE_NOW",
+      "published": "Thu, 10 Sep 2026 11:47:22 GMT",
+      "title": "Conditional Form Support – Services & Rentals",
+      "content": "**Conditional Form Logic Now Fully Supported for Services & Rentals**\n\nCustom forms attached to your bookings now control the entire booking experience — from field visibility during booking through to what happens after submission.\n\n**What's new:**\n\n- **Post-booking conditional rules are now active.** Form conditions that trigger a URL redirect, display a custom message, or disqualify a lead now apply after a booking is submitted — not just during it.\n- **On Submit actions now control the confirmation page.** When enabled, your custom form's submit action replaces the default confirmation settings, giving the form full authority over what the customer sees next.\n- **New global toggle to activate form control.** A single checkbox in Global Settings under Form & Confirmation — \"Let a custom form override this with its own rules\" — switches on end-to-end form control across all your listings and services.\n- **Smart fallback built in.** If an attached form has no post-booking rules configured, the confirmation page automatically falls back to your Global Settings defaults. Nothing breaks.\n- **Inline banners at the listing and service level.** When you select a custom form on an individual listing or service, a banner tells you exactly how that form's rules will behave.\n\n**How to set it up:**\n\n1. In your Kayan dashboard, go to **Services or Rentals → Global Settings → Form & Confirmation**.\n2. Select a custom form under **Global Form Settings**.\n3. In the **Confirmation Page** section, check **\"Let a custom form override this with its own rules.\"**\n4. At the individual listing or service level, select your form — the inline banner will confirm whether form rules are active.\n5. Show/hide field conditions apply automatically during booking. No extra setup needed for those.",
+      "processed_at": "2026-09-11T10:41:28.873140+00:00"
+    },
+    {
       "source_link": "https://ideas.gohighlevel.com/changelog/gpt-image-25-in-ai-image-generation-action-in-workflows",
       "category": "LIVE_NOW",
       "published": "Thu, 10 Sep 2026 10:02:46 GMT",
@@ -1263,6 +1289,22 @@
       "title": "📢 Course Announcements",
       "content": "**Course Announcements**\n\nKeep learners in the loop without leaving your course environment. You can now create and send announcements directly inside Kayan's course builder — no external email tool required.\n\n**What's new:**\n\n- **Create and manage announcements** — Build, edit, clone, and delete announcements from the Courses admin area\n- **Rich content support** — Format text, add images, and include links to make announcements clear and engaging\n- **Flexible targeting** — Send to learners in a specific course or broadcast across all courses at once\n- **Optional email delivery** — Choose to notify course members by email alongside the in-app announcement\n- **In-app visibility** — Learners see new announcements via banners and unread indicators without interrupting their progress\n- **Dedicated announcement view** — Learners can browse all announcements and open individual updates without leaving their course\n\n---\n\n**How to set it up:**\n\n1. In your Kayan dashboard, go to **Courses** and select **Announcements**\n2. Click to create a new announcement\n3. Add a title and your content (text, images, links)\n4. Choose your target — a specific course or all courses\n5. Toggle on email notifications if you want members to receive it by email as well\n6. Publish — learners will see it immediately via the announcement banner and unread indicator in their learning view",
       "processed_at": "2026-08-15T06:36:38.994360+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/manually-retry-failed-subscription-payments",
+      "category": "LIVE_NOW",
+      "published": "Fri, 11 Sep 2026 08:25:59 GMT",
+      "title": "Manually retry failed subscription payments",
+      "content": "**Manually Retry Failed Subscription Payments**\n\nYou can now manually retry failed subscription payments directly from the Subscription Details page, giving you more control over payment recovery when automatic retries have been exhausted.\n\n**What's new:**\n- Manually retry the oldest unpaid invoice using a saved card or a newly added card\n- Option to set the selected card as the subscription's default payment method\n- Up to three retry attempts allowed per card before a 24-hour cooldown applies\n- Localized warnings display when a retry isn't yet available\n- Supported across NMI, Authorize.Net, Square, and Mercado Pago\n\n**Why it matters:**\nWhen automatic retries run out, failed payments no longer have to stay unpaid. This gives your team a direct way to recover subscription revenue and reduce involuntary churn without leaving the Kayan dashboard.\n\n**How to set it up:**\n1. Go to the **Payments** section in your Kayan dashboard and open **Subscriptions**\n2. Select any subscription with an **Unpaid** or **Past Due** status\n3. Once automatic retries are exhausted, the manual retry option will appear\n4. Choose a saved card or add a new one, then trigger the retry\n5. Optionally, set the new card as the subscription's default payment method going forward",
+      "processed_at": "2026-09-11T10:40:59.171096+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/communities-voice-notes-in-posts-and-comments",
+      "category": "LIVE_NOW",
+      "published": "Fri, 11 Sep 2026 07:25:37 GMT",
+      "title": "🎙️ Communities - Voice Notes in Posts and Comments",
+      "content": "**Voice Notes in Community Posts & Comments**\n\nCommunity members can now record and send voice notes directly in posts and comments — no more long typed replies when a quick message gets the point across faster.\n\n**What's new:**\n\n- **Record inline** — A mic button in the post and comment composer lets members record, pause, resume, or cancel before sending, all without leaving the editor\n- **Upload audio files** — Members can attach existing audio files alongside images, videos, and other media; multiple audio files supported per post\n- **Inline playback** — Voice notes and audio play directly in the feed; recorded notes show a waveform view, uploaded files show a timeline view\n- **Playback speed control** — Toggle between 1x, 1.5x, and 2x; audio autoplays to the next track for continuous listening\n- Available on web now; mobile support coming soon\n\n**How to set it up:**\n\n1. Open your Kayan dashboard and navigate to your **Community**\n2. Create a new post or open a comment thread\n3. Click the **mic icon** in the composer to start recording — pause, resume, or cancel as needed before sending\n4. To attach an existing audio file, use the **attachment option** in the composer and select your file\n5. Published voice notes and audio will play inline for all members directly in the feed",
+      "processed_at": "2026-09-11T10:41:07.008857+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/targeted-edits-in-ai-builder",
