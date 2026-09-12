@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-11T10:41:28.873205+00:00",
+  "last_updated": "2026-09-12T10:10:27.070336+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -1289,6 +1289,14 @@
       "title": "📢 Course Announcements",
       "content": "**Course Announcements**\n\nKeep learners in the loop without leaving your course environment. You can now create and send announcements directly inside Kayan's course builder — no external email tool required.\n\n**What's new:**\n\n- **Create and manage announcements** — Build, edit, clone, and delete announcements from the Courses admin area\n- **Rich content support** — Format text, add images, and include links to make announcements clear and engaging\n- **Flexible targeting** — Send to learners in a specific course or broadcast across all courses at once\n- **Optional email delivery** — Choose to notify course members by email alongside the in-app announcement\n- **In-app visibility** — Learners see new announcements via banners and unread indicators without interrupting their progress\n- **Dedicated announcement view** — Learners can browse all announcements and open individual updates without leaving their course\n\n---\n\n**How to set it up:**\n\n1. In your Kayan dashboard, go to **Courses** and select **Announcements**\n2. Click to create a new announcement\n3. Add a title and your content (text, images, links)\n4. Choose your target — a specific course or all courses\n5. Toggle on email notifications if you want members to receive it by email as well\n6. Publish — learners will see it immediately via the announcement banner and unread indicator in their learning view",
       "processed_at": "2026-08-15T06:36:38.994360+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/workflow-publish-validation-gate",
+      "category": "LIVE_NOW",
+      "published": "Fri, 11 Sep 2026 12:40:16 GMT",
+      "title": "Workflow Publish & Validation Gate",
+      "content": "**Workflow Publish & Validation Gate**\n\nPublishing an automation is now gated by a validation check — so broken workflows can't quietly go live and cause problems downstream.\n\n**What's new:**\n\n- **Unified error view** — All validation errors (frontend and backend) are consolidated into a single Highlight Error sidebar. One place, every issue, no contradictions between views.\n- **Actionable error items** — Each flagged error gives you two direct options: jump to the exact step causing the problem, or use AI assistance to resolve it on the spot.\n- **Save works even with errors** — Auto-save and manual save now function regardless of unresolved errors on the canvas. Build, stop, come back later — your progress is kept.\n- **Publish is blocked until the workflow is clean** — Attempting to publish with unresolved errors surfaces a modal listing every issue. Nothing goes live until it's ready.\n\n**How to set it up:**\n\n1. In the Kayan Automations tab, open the workflow you want to publish.\n2. Click **Publish**. If errors exist, a modal will appear listing all unresolved issues.\n3. Click **Review Issues** to open the Resolve Errors sidebar.\n4. For each error, select **Open Step** to navigate directly to the problem, or use the AI option to get a suggested fix.\n5. Once all errors are resolved, publish the workflow.",
+      "processed_at": "2026-09-12T10:10:27.070248+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/manually-retry-failed-subscription-payments",
