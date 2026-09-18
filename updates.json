@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-17T11:02:16.793161+00:00",
+  "last_updated": "2026-09-18T10:39:25.818313+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -731,6 +731,45 @@
       "processed_at": "2026-08-21T06:44:13.314368+00:00"
     },
     {
+      "source_link": "https://ideas.gohighlevel.com/changelog/set-the-default-dashboard-during-snapshot-load",
+      "category": "DISCARD",
+      "published": "Thu, 17 Sep 2026 15:47:06 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/automatic-company-creation-association-by-email-domain-with-company-enrichment-u",
+      "category": "COMING_SOON",
+      "published": "Thu, 17 Sep 2026 14:48:54 GMT",
+      "title": "Automatic Company Creation & Association by Email Domain, with Company Enrichment & Unique Domain Field",
+      "content": "**Automatic Company Creation & Association by Email Domain** *(Coming Soon)*\n\nWhen a contact is created or updated, Kayan will automatically find the right company and link them — no manual association needed. If no matching company exists, Kayan can create one on the spot and enrich it with the company name and logo.\n\n**What's coming:**\n\n- A unique Company Domain Name field to prevent duplicate company records\n- Automatic contact-to-company association when the email domain matches an existing company\n- Automatic company creation when no suitable match is found\n- Company enrichment with name and logo pulled automatically\n- Protection against duplicate companies sharing the same domain\n- Exclusion of common free email providers (Gmail, Yahoo, etc.) from domain matching, with the ability to add your own exclusions\n- Smart matching against existing company records before any new record is created\n- Optional backfill to populate domain data on existing companies when the feature goes live\n\n**Why it matters:**\n\nFor B2B teams, contacts should belong to the right company without anyone having to wire it up manually. This keeps your CRM organised in the background — cleaner company data, fewer duplicates, and more reliable smart lists, automations, and reporting — all without touching records you've already built out.",
+      "processed_at": "2026-09-18T10:38:58.820078+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/your-subscription-payments-now-stay-in-sync-with-your-default-card",
+      "category": "DISCARD",
+      "published": "Thu, 17 Sep 2026 14:04:57 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/gift-cards-granular-user-permissions",
+      "category": "DISCARD",
+      "published": "Thu, 17 Sep 2026 13:49:08 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/workflow-ai-builder-now-available-inside-ask-ai-as-well",
+      "category": "LIVE_NOW",
+      "published": "Thu, 17 Sep 2026 13:25:46 GMT",
+      "title": "Workflow AI Builder now available inside Ask AI as well",
+      "content": "**Build Automations Directly from Ask AI — Including on WhatsApp**\n\nYou can now create and edit automations through Ask AI, without opening the Automations builder first. Describe what you want, and the AI builds it — from any surface, including WhatsApp.\n\n**What's New**\n\n- **Prompt-to-automation.** Start a new chat in Ask AI, describe the workflow you need, and the agent builds it for you.\n- **Live preview in-panel.** The generated automation renders directly inside Ask AI — no screen switching required.\n- **Inspect any step.** Click any trigger or action in the preview to see its full configuration.\n- **Conversational edits.** Ask the agent to adjust anything; it updates the automation in place.\n- **One-click into the builder.** When you're ready, a single click opens the automation in the full builder to test and publish.\n- **WhatsApp support.** The full automation-creation experience is now available over WhatsApp.\n\n**How to set it up**\n\n1. Open Ask AI in your Kayan dashboard and start a new chat.\n2. Describe the automation you want to create.\n3. Review the generated automation in the preview panel. Click any trigger or action to inspect its configuration.\n4. Ask the agent to make changes until it matches your needs.\n5. Click the link to open the automation in the Kayan Automations builder.\n6. Run a final test, then publish from the builder.\n\n**Good to know:** Manual editing isn't supported inside Ask AI. Use the redirect link to open the Automations builder for any direct edits. Publishing always happens from the builder after a final review.",
+      "processed_at": "2026-09-18T10:39:17.407591+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/send-bulk-emails-to-associated-contacts-from-list-view-in-companies-custom-objec",
+      "category": "LIVE_NOW",
+      "published": "Thu, 17 Sep 2026 12:46:45 GMT",
+      "title": "Send Bulk Emails to Associated Contacts from List view in Companies & Custom Objects",
+      "content": "**Send Bulk Emails to Contacts Directly from Company and Object Lists**\n\nYou can now email associated contacts straight from your Company or Custom Object list views — no need to rebuild your audience from the Contacts section.\n\n**What's new:**\n\n- New bulk email action available directly in Company and Custom Object list views\n- For Custom Objects, select one or more association labels to define which contacts receive the email\n- Choose whether to target the most recently associated contact, the earliest associated contact, or all associated contacts\n- Use Company and Custom Object fields as merge fields inside your email content\n- Compose with Quick Compose, Smart Builder, or a saved template\n- Send immediately, schedule for later, or use batch send mode\n- Contacts appearing across multiple selected association labels are automatically de-duplicated before sending\n- Track delivery and engagement through Bulk Actions and your Email Campaigns section\n\n**How to set it up:**\n\n1. Open **Companies** or a Custom Object list in your Kayan dashboard\n2. Select the records you want to email\n3. Click **Send Email** from the bulk actions bar\n4. For Custom Objects, choose the relevant association label(s)\n5. Select which associated contacts should receive the email (most recent, earliest, or all)\n6. Compose your email and personalize using contact, company, or object fields\n7. Send now, schedule it, or run in batch mode\n8. Monitor results under **Bulk Actions** in your dashboard\n\n**Note:** This action is only available for Custom Objects that have a Contact association configured. Existing consent requirements and email deliverability rules apply. The final recipient list is resolved at send time.",
+      "processed_at": "2026-09-18T10:39:25.818243+00:00"
+    },
+    {
       "source_link": "https://ideas.gohighlevel.com/changelog/introducing-new-templates-102",
       "category": "LIVE_NOW",
       "published": "Thu, 16 Jul 2026 15:16:02 GMT",
@@ -1273,6 +1312,19 @@
       "title": "Badge automation is now available in Workflows",
       "content": "**Badge Automation Now Available in Kayan Automations**\n\nYou can now issue badges and trigger follow-up actions directly inside Kayan Automations — no manual steps required.\n\n**What's new:**\n- **Issue Badge action:** Automatically issue a badge to a contact when workflow conditions are met\n- **Badge Issued trigger:** Kick off a new automation the moment a badge is issued — send a message, update a contact, or chain into another workflow\n\n**How to set it up:**\n\n1. Open the **Kayan Automations** tab and create or edit a workflow\n2. To issue a badge automatically, add the **Issue Badge** action and select the badge to assign\n3. To trigger follow-up steps after a badge is issued, create a new workflow and set **Badge Issued** as the trigger\n4. Add your follow-up actions (message, email, contact update, etc.) and publish",
       "processed_at": "2026-08-22T06:37:49.121132+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/reputation-management-video-testimonial-enhancements",
+      "category": "LIVE_NOW",
+      "published": "Fri, 18 Sep 2026 07:46:31 GMT",
+      "title": "Reputation Management – Video Testimonial Enhancements 🎥",
+      "content": "**Video Testimonial Automation & Moderation Controls**\n\nYou can now automate workflows the moment a video testimonial is submitted, and control exactly which testimonials appear publicly on your widgets.\n\n**What's new:**\n\n- **Video Testimonial Received trigger** — Automations can now fire instantly when a new video testimonial comes in through a collector, letting you notify your team, send a thank-you to the reviewer, create tasks, or push data to a webhook\n- **Trigger filters** — Scope automations by marketing consent status or by specific collector, so different campaigns, products, or partners can run entirely separate flows\n- **Testimonial custom values** — Reviewer name, email, phone, marketing consent, submission timestamp, collector name, and video link are all available as dynamic values inside automation actions (notifications, SMS, email, notes, webhooks, and more)\n- **Approval & visibility controls** — Choose between auto-publishing new video testimonials to your widget immediately, or requiring manual review before anything goes live\n- **Responses page visibility management** — Review, show, or hide individual testimonials directly from the Responses view without touching widget settings each time\n\n**How to set it up:**\n\n1. Go to the **Kayan Automations** tab and create a new workflow\n2. Select **Video Testimonial Received** as the trigger\n3. Add filters for **Marketing Consent** or **Video Collector** as needed\n4. Use the available testimonial custom values inside your chosen actions (email, SMS, internal notification, webhook, etc.)\n5. To configure approval settings, open **Reputation → Widget Settings**, then set new video testimonials to either auto-publish or require manual approval\n6. To manage individual testimonial visibility, go to **Video Testimonials → Responses** and toggle show/hide per submission directly from that view",
+      "processed_at": "2026-09-18T10:38:41.898675+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/marketplace-app-detail-page-revamp-a-clearer-way-to-evaluate-apps-before-you-ins",
+      "category": "DISCARD",
+      "published": "Fri, 18 Sep 2026 06:55:12 GMT"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/whatsapp-analytics-in-the-ai-assistant-in-workflows",
