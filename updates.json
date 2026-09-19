@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-18T10:39:25.818313+00:00",
+  "last_updated": "2026-09-19T10:23:51.614449+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -1312,6 +1312,48 @@
       "title": "Badge automation is now available in Workflows",
       "content": "**Badge Automation Now Available in Kayan Automations**\n\nYou can now issue badges and trigger follow-up actions directly inside Kayan Automations — no manual steps required.\n\n**What's new:**\n- **Issue Badge action:** Automatically issue a badge to a contact when workflow conditions are met\n- **Badge Issued trigger:** Kick off a new automation the moment a badge is issued — send a message, update a contact, or chain into another workflow\n\n**How to set it up:**\n\n1. Open the **Kayan Automations** tab and create or edit a workflow\n2. To issue a badge automatically, add the **Issue Badge** action and select the badge to assign\n3. To trigger follow-up steps after a badge is issued, create a new workflow and set **Badge Issued** as the trigger\n4. Add your follow-up actions (message, email, contact update, etc.) and publish",
       "processed_at": "2026-08-22T06:37:49.121132+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/smarter-color-picker-experience-across-browsers",
+      "category": "DISCARD",
+      "published": "Fri, 18 Sep 2026 16:21:34 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/chat-widget-spam-protection",
+      "category": "LIVE_NOW",
+      "published": "Fri, 18 Sep 2026 16:17:31 GMT",
+      "title": "Chat Widget Spam Protection",
+      "content": "**Chat Widget Spam Protection**\n\nKayan's Chat Widget now includes built-in spam protection that automatically detects and limits bot activity and high-volume suspicious submissions — protecting your messaging costs and sender reputation without disrupting real visitors.\n\n**What's new**\n\n- Spam detection runs silently in the background — no CAPTCHA, no extra form fields, no friction for genuine visitors\n- Suspicious contacts are not deleted; they're created normally and tagged `chat_widget_high_volume_flag` for your team to review\n- Outbound messaging can be paused automatically on SMS, email, or both for flagged contacts\n- Protection is configured per widget — choose from four actions: Tag Only, Pause SMS, Pause Email, or Pause Both\n- Only the selected channel is affected; other communication channels and existing preferences stay unchanged\n- All spam protection actions are logged in the contact's activity history\n- Existing widgets have spam protection **off** by default so nothing changes unexpectedly; new widgets have it **on** with Pause Both selected\n\n---\n\n**How to set it up**\n\n1. In your Kayan dashboard, go to **Sites → Chat Widget**\n2. Open the widget you want to configure\n3. In the builder sidebar, find **Spam Protection** and toggle it on\n4. Select the action to apply when a suspicious submission is detected\n5. Save your changes\n\nTo review flagged contacts, filter your contacts list using the tag `chat_widget_high_volume_flag`.\n\n> If you're expecting a large legitimate traffic spike — during a campaign launch or event, for example — you can temporarily disable Spam Protection for that widget and re-enable it afterward.",
+      "processed_at": "2026-09-19T10:23:15.038021+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/ask-ai-now-lives-in-whatsapp",
+      "category": "LIVE_NOW",
+      "published": "Fri, 18 Sep 2026 13:47:30 GMT",
+      "title": "Ask AI now lives in WhatsApp",
+      "content": "**Ask AI is now on WhatsApp**\n\nYour Kayan AI copilot is now reachable directly from WhatsApp — no dashboard, no browser tab, no app to open. Connect your number once and every capability your copilot has on the web is available from a message.\n\n---\n\n**What's new**\n\n- **Full copilot, not a lite version.** Everything Ask AI can do inside Kayan, it can do over WhatsApp. No features removed, no trimmed-down experience.\n- **CRM actions by text.** Look up contacts, add notes, update fields, and move deals to the next stage — all from a message, in the moment it matters.\n- **Calendar at a glance.** Ask what's on your schedule today or what's coming up next and get an instant answer.\n- **Create work product from your phone.** Draft blog posts, generate email templates, and produce images, video, or audio — all returned directly in the conversation thread.\n- **Set recurring tasks by text.** \"Every Monday at 9am, summarize new leads.\" Say it once, it runs on its own. Results appear in your Scheduled Tasks tab.\n- **Deferred follow-ups.** \"Check on this lead in a few days.\" Set it from a message and it happens automatically.\n- **Custom skills travel with you.** Any workflow you've built into your copilot behaves identically over WhatsApp.\n- **Support AI in-thread.** Ask a product or account question mid-task and get a real answer without leaving the conversation.\n- **Private by default.** Each WhatsApp number is tied to the individual who connected it. No other user can view or take over your connection.\n- **Full conversation history.** Every WhatsApp exchange is saved in the Dispatch tab — searchable, sortable, and paginated.\n- **Portable connection.** Already connected this number elsewhere? Confirm once and it moves over, no manual cleanup required.\n\n---\n\n**How to set it up**\n\n1. Open the **Dispatch tab** in your Kayan dashboard (or navigate via **Customize → Dispatch**) and select **Connect WhatsApp**.\n2. Scan the QR code with your phone, then send the first message to the number shown.\n3. You'll receive a verification code back on WhatsApp — enter it in the dashboard to complete verification.\n4. Message that number any time to reach your copilot. All past conversations remain available in the Dispatch tab.\n\nSetup takes about a minute.\n\n---\n\n**Coming next:** Additional Dispatch channels — including Slack and Instagram — are in progress.",
+      "processed_at": "2026-09-19T10:23:33.687713+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/granular-whatsapp-user-permissions-are-here",
+      "category": "DISCARD",
+      "published": "Fri, 18 Sep 2026 13:40:33 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/introducing-app-qr-codes",
+      "category": "LIVE_NOW",
+      "published": "Fri, 18 Sep 2026 12:50:07 GMT",
+      "title": "📱 Introducing App QR Codes",
+      "content": "**App QR Codes Now Available**\n\nA single QR code can now detect a user's device and send them directly to the right app store — no landing pages, no duplicate codes.\n\n**What's new:**\n- New **App QR Code** type available when creating a QR code\n- Configure separate destinations for iOS (App Store), Android (Play Store), and a fallback URL for unrecognized devices\n- Device detection and routing happens automatically on scan\n- All existing QR code design and customization options remain unchanged\n\n**How to set it up:**\n1. In your Kayan dashboard, go to **QR Codes** and select **Create QR Code**\n2. Choose the **App** type\n3. Enter your App Store URL, Play Store URL, and (optionally) a fallback URL for other devices\n4. Customize the design as needed and publish\n5. Use the single QR code across print, digital, and campaign materials — routing happens automatically",
+      "processed_at": "2026-09-19T10:23:42.978520+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/smarter-local-presence-dialing-higher-pickup-rates-global-reach-and-total-contro",
+      "category": "LIVE_NOW",
+      "published": "Fri, 18 Sep 2026 12:38:33 GMT",
+      "title": "Smarter local presence dialing: higher pickup rates, global reach, and total control",
+      "content": "**Smarter Local Presence Dialing: Higher Pickup Rates, Broader Coverage, Full Control**\n\nKayan's local presence dialing automatically selects the best matching local caller ID for every outbound call — and we've rebuilt the engine from the ground up to make it smarter, wider-reaching, and easier to manage.\n\n**What's new**\n\n- **Expanded country support:** Location-based number matching is now live across the 🇺🇸 US, 🇨🇦 Canada, 🇬🇧 UK, and 🇦🇺 Australia, using real postal code distance calculations instead of static lookup tables.\n- **Consistent caller ID:** Contacts see the same number from you on every repeat attempt — building familiarity and supporting strong carrier standing.\n- **Universal outbound coverage:** Local presence works across the web dialer and desk phones. Mobile app support is coming soon.\n- **Reserved numbers:** Mark up to 50 numbers per account as reserved to prevent them from being auto-selected — protecting main office lines while keeping them available for manual use.\n- **Smarter matching hierarchy:** The system cycles through an optimized priority ladder — lead's zip code → area code → overlay code → nearest available distance → same region → account default.\n- **Fail-safe routing:** Calls are never delayed or blocked. If no local match is found, the system instantly falls back to your account default.\n\n**How to set it up**\n\n1. In your Kayan dashboard, go to **Settings → Phone System**.\n2. Select **Voice**, then open **Outbound Call Settings**.\n3. Scroll to the **Local Presence Dialing** section to configure reserved numbers or adjust matching preferences.",
+      "processed_at": "2026-09-19T10:23:51.614378+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/reputation-management-video-testimonial-enhancements",
