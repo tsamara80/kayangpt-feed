@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-19T10:23:51.614449+00:00",
+  "last_updated": "2026-09-20T10:42:41.229100+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -954,6 +954,19 @@
       "title": "Turn Your Custom Fields Into Real Metrics in Sub-account dashboards and custom reports",
       "content": "**Custom Fields Now Work as Live Metrics in Dashboards and Reports**\n\nNumeric and monetary custom fields on Contacts and Opportunities can now be used as real metrics — aggregated, calculated, and displayed live across your dashboards and reports.\n\n**What's new:**\n- Use any numeric or monetary custom field as a metric (not just a filter or grouping)\n- Aggregate values with Sum, Min, Max, or Average\n- Works across dashboard widgets, custom reports, and the custom metric builder\n- New custom fields are automatically available in the metric picker the moment you create them — no extra configuration needed\n\n**How to set it up:**\n\n1. Open a dashboard widget, custom report, or custom metric builder in your Kayan dashboard\n2. Select **Add Metric**, then open the **Field** dropdown — your numeric and monetary custom fields (e.g. \"Property Value,\" \"Treatment Cost\") will appear alongside standard fields\n3. Choose your **Aggregation** method: Sum, Min, Max, or Average\n4. Save — your widget or report will reflect the live aggregated value immediately\n\n**Note:** Applies to numeric and monetary custom field types on Contacts and Opportunities records only.",
       "processed_at": "2026-08-24T06:55:59.137307+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/jotform-new-actions-triggers-in-workflows",
+      "category": "LIVE_NOW",
+      "published": "Sun, 20 Sep 2026 10:19:11 GMT",
+      "title": "Jotform – New Actions & Triggers in Workflows",
+      "content": "**Jotform Automation: New Triggers and Actions in Kayan Automations**\n\nYou can now connect Jotform directly to your Kayan Automations — trigger workflows the moment a form is submitted or a contract is signed, and write submissions into Jotform from any workflow step.\n\n---\n\n**What's New**\n\n*Triggers — Jotform events that start a Kayan workflow:*\n- **New Submission** — Fires instantly when a response is submitted to a Jotform form\n- **New Signed Document** — Fires when a document with an e-signature field is completed and signed (checked every 5 minutes)\n\n*Actions — Jotform steps you can run from inside a workflow:*\n- **Create Submission** — Adds a new submission to any Jotform form, with field values mapped from your workflow data\n\n---\n\n**What this enables**\n- Follow up with new leads the moment a form lands — no manual import\n- Kick off onboarding automatically when a contract is signed\n- Write phone, walk-in, or event sign-ups into Jotform so every lead appears in one report\n- Eliminate third-party zaps and webhooks, reducing cost and failure points\n\n---\n\n**Field support for Create Submission**\n\nSupported: Full Name, Email, Address, Phone, Short Text, Long Text, Number, Dropdown, Single Choice, Multiple Choice, Yes/No, Star Rating, Scale Rating, Date Picker, Time\n\nNot supported (fields won't appear in mapping): File Upload, Signature, Appointment, Payment, Product List, Input Table, Fill in the Blanks, Spinner, Emoji Slider, Image Choice, Captcha, and widgets like Terms and Conditions and Checklist\n\nA few things to keep in mind:\n- Unsupported fields are saved empty — even if marked required on the form, Jotform accepts the submission and marks it active, so your workflow won't break\n- Submissions created by this action carry no payment, product, or booking data — on a payment form they look identical to paid submissions, so treat them as unpaid unless payment was collected separately\n- The New Signed Document trigger reads completed signatures; Create Submission cannot write a signature\n- Dates must be formatted YYYY-MM-DD and times HH:MM\n- More field types will be added in future releases\n- Coming next: Assign Form and Assign Prefilled Form actions, so you can send a form to someone to complete rather than writing the submission directly\n\n---\n\n**How to set it up**\n\n1. Open the **Kayan Automations** tab and create or edit a workflow\n2. Add a trigger or action step and search for **Jotform**\n3. Click **Connect Now** when prompted and sign in with your Jotform account\n4. Select your form — fields load automatically and are ready to map\n5. Alternatively, connect your account first via **Settings → Integrations → Jotform**, then return to your workflow",
+      "processed_at": "2026-09-20T10:42:38.784447+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/bulk-update-tag-colors-and-create-categories-on-the-go",
+      "category": "DISCARD",
+      "published": "Sun, 20 Sep 2026 03:16:22 GMT"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/expanded-permissions-for-meetings-services-rentals",
