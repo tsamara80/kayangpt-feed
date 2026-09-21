@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-20T10:42:41.229100+00:00",
+  "last_updated": "2026-09-21T12:05:52.346351+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -1049,6 +1049,11 @@
       "title": "Zero-Dollar Checkout for Sell Products - Forms & Surveys",
       "content": "**Zero-Dollar Checkout for Forms & Surveys**\n\nFree offers shouldn't ask for a credit card. Kayan now lets you skip payment fields entirely when a product order totals $0 — no workarounds needed.\n\n**What's new**\n\n- New **Require card for $0 orders** toggle on the Sell Products element in Forms and Surveys\n- When toggled off, payment fields are automatically hidden any time an order totals $0 with no recurring charges due\n- Works for coupon-driven zeros too — a 100% discount hides the card the moment the total hits $0\n- Free orders are still created and recorded; submission history and order records remain intact\n- Subscriptions, free trials, and any order with a future recurring charge always require a card regardless of this setting\n- If the $0 total can't be confirmed (e.g. pricing still loading, totals mid-update), the card field is shown as a safe fallback\n- For Sell Products elements embedded inside a Funnel, the Funnel-level card requirement takes precedence over the element-level toggle\n- Existing Forms and Surveys are unaffected — the toggle defaults to on, so nothing changes unless you turn it off\n- Fully supported on desktop and mobile\n\n**How to set it up**\n\n1. Open the Kayan dashboard and navigate to your Form or Survey builder.\n2. Add or select an existing **Sell Products** element.\n3. In the element settings, locate **Require card for $0 orders** and toggle it off.\n4. Save and publish. Customers whose order totals $0 with nothing recurring will now complete checkout without entering card details.\n5. If the Form or Survey is embedded inside a Funnel, adjust the card requirement at the Funnel level instead — that setting takes precedence.",
       "processed_at": "2026-08-25T06:43:46.736949+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/messaging-and-phone-numbers-pricing-updates-effective-october-13-2026",
+      "category": "DISCARD",
+      "published": "Mon, 21 Sep 2026 05:35:23 GMT"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/rearrange-and-rename-tabs-in-communities",
