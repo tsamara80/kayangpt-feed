@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-22T11:02:24.164046+00:00",
+  "last_updated": "2026-09-23T10:51:25.736054+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/improved-facebook-profile-detection-in-prospecting-marketing-audit-reports",
@@ -55,6 +55,16 @@
       "title": "✨ Guest Enhancements in Calendars — More Flexible Guest Details",
       "content": "**Guest Management in Calendars — More Flexible Guest Details**\n\nYou can now control exactly what information you collect from guests during booking, and guest contact records are more accurate from the start.\n\n**What's new:**\n\n- **Flexible guest detail fields** — Choose which information to collect per calendar:\n  - Name & Email\n  - Name & Phone\n  - Name, Email & Phone\n  - Guest Count Only (records headcount without creating a guest contact)\n- **Auto contact matching** — When guest details are collected, Kayan automatically creates or matches a contact using the provided email and/or phone number\n- **Existing calendars** — No change; they continue collecting Name & Email by default\n- **New calendars** — Default to Name, Email & Phone for richer records out of the box\n- **Accurate guest timezones** — Guest contacts now inherit the primary contact's timezone instead of defaulting to the business timezone. If the guest already exists in your CRM, their timezone stays unchanged\n\n---\n\n**How to set it up:**\n\n1. Go to your **Kayan dashboard** and open **Calendars**\n2. Select the calendar you want to edit and open its settings\n3. Navigate to the **Guest Settings** section\n4. Choose your preferred guest detail fields from the available options\n5. Save your changes — new bookings will reflect the updated configuration immediately",
       "processed_at": "2026-08-27T17:22:38.016893+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/in-labs-more-secure-access-to-conversation-attachments-permanently-enabling-on-n",
+      "category": "DISCARD",
+      "published": "Wed, 23 Sep 2026 10:47:35 GMT"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/opportunities-snapshot-support-for-smart-lists-smart-tags",
+      "category": "DISCARD",
+      "published": "Wed, 23 Sep 2026 10:19:29 GMT"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/rebuilt-course-progress-analytics",
@@ -327,6 +337,54 @@
       "title": "Offer multiple meeting durations within a single calendar",
       "content": "**Offer Multiple Meeting Durations on a Single Calendar**\n\nBookers can now choose their preferred meeting length directly from your booking page — no need to maintain separate calendars for different durations.\n\n**What's new:**\n\n- Configure up to 3 duration options on a single calendar\n- Set a default duration for new bookings\n- Add or remove duration options at any time without affecting existing appointments\n- Availability refreshes automatically when a booker selects a different duration\n- Duration selection is supported during rescheduling — bookers can change the meeting length alongside the date and time\n- Works across web and mobile booking pages, booking widgets, and in-app appointment booking\n- Supported on Personal, Round Robin, Collective, and Event calendars\n\n**How to set it up:**\n\n1. Open the **Kayan dashboard** and navigate to your **Calendars** section\n2. Select the calendar you want to update and open its settings\n3. Find the **Duration Options** setting and add up to 3 time options\n4. Mark one duration as the default\n5. Save your changes — the booking page will update immediately\n\nExisting appointments are never modified when you change duration options. Any already-booked meetings retain their original length, reminders, and notifications.",
       "processed_at": "2026-08-25T06:43:35.595745+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/introducing-new-templates-109",
+      "category": "LIVE_NOW",
+      "published": "Tue, 22 Sep 2026 18:31:45 GMT",
+      "title": "Introducing New Templates",
+      "content": "**New Templates Now Available**\n\nWe've expanded the Kayan template library across websites, funnels, social posts, and ads — giving you more ready-to-use starting points across a wider range of industries.\n\n**What's new:**\n\n- **1 Website Template** — Marketing Agency\n- **4 Funnel Templates** — Coming Soon pages (×3), Marketing Agency (×1)\n- **8 Social Templates** — Restaurant & Bar, Automotive, Medical, Legal (2 each)\n- **5 Facebook Ad Templates** — Home Services (Solar), Travel & Hospitality (Boutique Hotel & Resort)\n- **5 Google Ad Templates** — Creative Artists, Dermatology Practice, CRM Platform, Accident Attorney, Health Insurance Agent\n- **7 LinkedIn Ad Templates** — Agricultural Insurance, Transaction Processing, Retirement Planning, Architecture & Urban Planning, Chiropractor, Corporate Mentorship, Digital Media Creator\n- **1 New Snapshot** — Legal: Intellectual Property Law Firm\n\n**How to set it up:**\n\n1. Open your **Kayan dashboard** and navigate to the relevant builder — Sites, Funnels, Social Planner, or Ads.\n2. Select **Templates** and browse the updated library.\n3. Filter by industry or content type to find the right fit.\n4. Select a template, customize it to match your brand, and publish.",
+      "processed_at": "2026-09-23T10:50:35.806633+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/ai-studio-live-for-all",
+      "category": "LIVE_NOW",
+      "published": "Tue, 22 Sep 2026 14:30:35 GMT",
+      "title": "AI Studio Live for All",
+      "content": "**AI Studio Now Available for All Workspaces**\n\nAI Studio has moved out of early access and is now live for all Kayan.ai workspaces.\n\n**What's new:**\n\n- AI Studio is fully launched and accessible across all workspaces\n- User and admin permissions for AI Studio are **off by default** — existing users who had early access retain it automatically\n- A dashboard banner now appears to prompt permission setup for workspaces where users still need access granted\n- Access can be granted to everyone in a workspace or to specific individuals\n- Setup typically completes within a few minutes, after which users can open and use AI Studio immediately\n\n**Who sees the access banner:**\n\n- Workspace owners, admins, and agency-level users with write access\n- Sub-account users and read-only users do **not** see the banner\n\n---\n\n**How to set it up:**\n\n1. Look for the AI Studio access banner on your **Kayan dashboard** home screen\n2. Click **Configure** within the banner\n3. Search for or select the users you want to grant access to\n4. Choose to grant access to all users or specific individuals, then confirm\n5. Wait a few minutes for setup to complete — those users can then open AI Studio directly from their dashboard",
+      "processed_at": "2026-09-23T10:50:44.506161+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/configure-manual-taxes-by-region-with-tax-zones",
+      "category": "LIVE_NOW",
+      "published": "Tue, 22 Sep 2026 14:23:31 GMT",
+      "title": "Configure Manual Taxes by Region with Tax Zones",
+      "content": "**Configure Regional Tax Zones for Manual Taxes**\n\nYou can now create Tax Zones within Manual Taxes to apply different tax rates based on where your customers are located — by country or state. This gives you precise control over regional tax setups without complicating your existing configuration.\n\n**What's new:**\n\n- Create geographic Tax Zones by grouping specific countries and states together, each with a unique name\n- A country or state can only belong to one Tax Zone at a time — no overlapping configurations\n- Attach up to 10 manual tax rates per zone\n- Add or remove rates from a zone at any time as your needs change\n- When a tax rate is attached to both a product and a zone, it applies at checkout — both conditions must be met for the rate to trigger\n- For any region not assigned to a zone, all product-level tax rates apply without filtering\n- A zone with no attached rates means customers in that region are charged no taxes\n- Existing product tax rates are unaffected if no zones are defined\n- Automatic Taxes always take priority — Manual Tax Zones act as a fallback when automatic taxes are off or unavailable for a given country/product combination\n- Tax settings are now organized into three clear sections: Display Settings, Automatic Taxes, and Manual Taxes\n\n**How to set it up:**\n\n1. In your Kayan dashboard, go to **Payments → Settings → Taxes → Manual Taxes**\n2. Select **Create Tax Zone** and give it a name (e.g. \"Canada\")\n3. Add the countries and/or states that belong to that zone\n4. Attach your existing manual tax rates to the zone — up to 10 per zone\n5. Ensure those same rates are also attached to the relevant products for them to apply at checkout\n6. Repeat for any additional regions that require a separate tax setup",
+      "processed_at": "2026-09-23T10:50:55.368812+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/add-role-badges-to-your-staff-for-services",
+      "category": "LIVE_NOW",
+      "published": "Tue, 22 Sep 2026 13:25:24 GMT",
+      "title": "🏷️ Add Role Badges to Your Staff for Services",
+      "content": "**Add Role Badges to Your Staff for Services**\n\nWhen a service has multiple staff members, customers booking from a plain list of names often can't tell who's the right fit. You can now add short role badges — like \"Lead Therapist\" or \"Senior Consultant\" — to each staff member's profile. The badge appears directly on their card during booking, making staff selection clearer for customers and giving roles more visibility.\n\n**What's new:**\n\n- **Reusable badges** — Create badges once and reuse them across staff. Previously created badges are available to select when assigning, so you're not re-entering the same tag repeatedly.\n- **One badge per staff member** — Assign a single text-based role tag (up to 30 characters) per person from their staff profile.\n- **Custom badge colors** — Each badge can have its own color so roles are visually distinct at a glance.\n- **Shown on the booking widget** — Badges appear on the staff selection card, styled in a lighter shade of your widget's primary color to stay on-brand without overpowering the card.\n- **No empty states** — Staff without a badge assigned show no placeholder. Their card stays clean.\n- **Live updates** — Edit or remove a badge and the booking widget reflects it on next load.\n- **Consistent across devices** — Badge rendering is the same on desktop and mobile.\n\n**How to set it up:**\n\n1. In your Kayan dashboard, go to **Services → Staff**.\n2. Open the staff member you want to update and navigate to the **Basic Details** tab.\n3. Locate the **Staff Badge** field — create a new badge or select an existing one from the dropdown.\n4. Save. The badge will appear on that staff member's card during booking immediately.",
+      "processed_at": "2026-09-23T10:51:05.681671+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/custom-pricing-for-service-appointments",
+      "category": "LIVE_NOW",
+      "published": "Tue, 22 Sep 2026 13:00:56 GMT",
+      "title": "💰 Custom Pricing for Service Appointments",
+      "content": "**Custom Pricing for Service Appointments**\n\nSet a one-off price on any service booking without changing your global service rates.\n\n**What's new:**\n\n- **Editable price per appointment** — When creating, editing, or duplicating a service appointment, you can now adjust the price directly in the appointment modal. The total updates immediately.\n- **Appointment-only, never global** — The price change applies only to that single booking. Your globally configured service rate stays untouched for every other appointment.\n- **Built-in validation** — Zero is accepted (useful for complimentary sessions); negative values are blocked with a clear error before saving.\n- **\"Custom\" tag for visibility** — Any appointment with an adjusted price is labeled with a **Custom** tag next to the amount, so it's immediately clear this booking isn't using the standard rate.\n- **Overrides staff-specific pricing too** — If a staff member has their own configured rate for a service, the price you enter on the appointment takes precedence.\n- **Available on mobile** — Price edits work the same way in the Kayan mobile app.\n\n**How to set it up:**\n\n1. Open any service appointment in your Kayan dashboard (create, edit, or duplicate).\n2. Click the edit icon next to the service price field.\n3. Enter the price for this appointment.\n4. Save as usual — the custom price applies to this booking only.",
+      "processed_at": "2026-09-23T10:51:14.073281+00:00"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/ai-studio-migrate-existing-projects-to-ssr",
+      "category": "LIVE_NOW",
+      "published": "Tue, 22 Sep 2026 11:02:39 GMT",
+      "title": "AI Studio: Migrate Existing Projects to SSR",
+      "content": "**AI Studio: Migrate Existing Projects to Server-Side Rendering**\n\nReact projects built in Kayan's AI Studio can now be upgraded to full server-side rendering (SSR) — without touching the live site. The migration creates a separate copy of your project, leaving your published site and domains completely intact while the upgrade runs.\n\n**What's new:**\n\n- Existing React/Vite projects can now be migrated to the SSR stack directly from Project Settings\n- Migration spins up a new project alongside the original — same account, same pages, new stack\n- Your live site, domains, and version history stay with the original project throughout\n- The migrated copy starts as a draft; nothing goes live until you choose to publish it\n- During migration, the new project shows a **Migrating to SSR** status; publish, code save, version restore, domain changes, and remix are paused on the copy until it's ready\n- Projects that don't need SSR, server functions, or secrets stay on React — no changes forced\n- If migration stops early, resuming in that project's chat picks up exactly where it left off\n\n**How to set it up:**\n\n1. Open the React project you want to upgrade in the Kayan AI Studio dashboard\n2. Go to **Project Settings** and locate **Migrate to SSR** (listed under Advanced)\n3. Confirm or rename the copy (default name: *Your Project Name (TanStack)*)\n4. Review the notes, then click **Migrate**\n5. Watch the chat — Kayan's AI reads your app, rewrites it onto the SSR stack, and clears the migration badge when the new project is ready\n6. Before publishing the copy: walk through the migrated project, verify everything looks right, and update any automation triggers to point to the new project if needed",
+      "processed_at": "2026-09-23T10:51:25.735982+00:00"
     },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/calendar-ai-can-now-tell-you-why-a-slot-isnt-bookable-1",
