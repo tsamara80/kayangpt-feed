@@ -1,20 +1,16 @@
 openapi: 3.1.0
 info:
   title: Kayan Live Updates Feed
-  description: Returns the current list of Kayan.ai feature updates, kept fresh daily.
-  version: "1.0.0"
+  description: Returns the current list of Kayan.ai feature updates, refreshed daily.
+  version: "2.0.0"
 servers:
   - url: https://raw.githubusercontent.com
 paths:
-  /tsamara80/kayangpt-feed/main/updates.json:
+  /tsamara80/kayanupdates/main/updates.json:
     get:
       operationId: getKayanUpdates
       summary: Get the latest Kayan.ai feature updates
-      description: >
-        Returns Kayan.ai's latest feature updates as JSON. Each item has a
-        category (LIVE_NOW or COMING_SOON), a title, and content. Use
-        LIVE_NOW items by default for "what's new". Only mention
-        COMING_SOON items if asked about upcoming features or the roadmap.
+      description: "Returns Kayan.ai feature updates as JSON, newest first. Each item has a category (LIVE_NOW or COMING_SOON), a published date, an English title and content, and an Arabic title_ar and content_ar. Answer in the user's language using the matching fields. Use LIVE_NOW items by default when asked what is new. Mention COMING_SOON items only when asked about upcoming features, never with a date."
       responses:
         "200":
           description: Successful response
@@ -32,9 +28,13 @@ paths:
                       properties:
                         category:
                           type: string
+                        published:
+                          type: string
                         title:
                           type: string
                         content:
                           type: string
-                        published:
+                        title_ar:
+                          type: string
+                        content_ar:
                           type: string
