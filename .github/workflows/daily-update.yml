@@ -1,18 +1,28 @@
-name: KayanGPT Daily Feed Update
+name: Kayan Updates Feed
 
 on:
   schedule:
-    # Runs every day at 06:00 UTC (~09:00 Amman time). Adjust as needed.
-    - cron: "0 6 * * *"
-  workflow_dispatch: {}  # lets you trigger it manually from the Actions tab
+    - cron: "0 6 * * *"   # 06:00 UTC, about 09:00 in Amman
+  workflow_dispatch:
+    inputs:
+      reclean:
+        description: "Rewrite every stored item under the current rules (run once after upgrading)"
+        type: boolean
+        default: false
+
+concurrency:
+  group: kayan-feed
+  cancel-in-progress: false
 
 jobs:
   update-feed:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      PUBLIC_REPO: ${{ vars.PUBLIC_REPO }}   # for example tsamara80/kayanupdates
     steps:
-      - name: Check out repo
+      - name: Check out this (private) repo
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -26,12 +36,30 @@ jobs:
       - name: Run pipeline
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python update_feed.py
-
-      - name: Commit updated feed
         run: |
-          git config user.name "kayangpt-bot"
+          if [ "${{ inputs.reclean }}" = "true" ]; then
+            python update_feed.py --reclean
+          else
+            python update_feed.py
+          fi
+
+      - name: Save working data to this repo
+        run: |
+          git config user.name "kayan-feed-bot"
+          git config user.email "actions@github.com"
+          git add data/updates_full.json
+          git diff --quiet --cached || git commit -m "Feed data: $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Publish the clean feed to the public repo
+        env:
+          TOKEN: ${{ secrets.PUBLIC_REPO_TOKEN }}
+        run: |
+          git clone --depth 1 "https://x-access-token:${TOKEN}@github.com/${PUBLIC_REPO}.git" public_repo
+          cp public/updates.json public_repo/updates.json
+          cd public_repo
+          git config user.name "kayan-feed-bot"
           git config user.email "actions@github.com"
           git add updates.json
-          git diff --quiet --cached || git commit -m "Daily feed update: $(date -u +%Y-%m-%d)"
+          git diff --quiet --cached || git commit -m "Update feed: $(date -u +%Y-%m-%d)"
           git push
