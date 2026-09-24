@@ -300,6 +300,8 @@ def run_reclean(client, data):
     for item in data["updates"]:
         if item.get("category") not in ("LIVE_NOW", "COMING_SOON"):
             continue
+        if item.get("status") == "published" and "--force" not in sys.argv:
+            continue  # already done under version 2; resumes an interrupted clean up without paying twice
         title = item.get("raw_title") or item.get("title", "")
         content = item.get("raw_content") or item.get("content", "")
         # Re check the category under the new rules (catches SMS only updates).
