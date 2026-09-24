@@ -21,6 +21,7 @@ jobs:
       contents: write
     env:
       PUBLIC_REPO: ${{ vars.PUBLIC_REPO }}   # for example tsamara80/kayanupdates
+      PYTHONUNBUFFERED: "1"                  # show progress lines live in the log
     steps:
       - name: Check out this (private) repo
         uses: actions/checkout@v4
