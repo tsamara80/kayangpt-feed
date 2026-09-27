@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face{font-family:Cairo;src:url(fonts/cairo1.ttf);font-weight:400}
+@font-face{font-family:Cairo;src:url(fonts/cairo2.ttf);font-weight:700}
+@font-face{font-family:Cairo;src:url(fonts/cairo3.ttf);font-weight:900}
+@font-face{font-family:Ruqaa;src:url(fonts/ruqaa.ttf);font-weight:700}
+:root{--ink:#161616;--mid:#4a4a4a;--paper:#ececea;--accent:#35b39b}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--paper)}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:Cairo,sans-serif;color:var(--ink);
+  background-color:var(--paper);
+  background-image:radial-gradient(circle,rgba(0,0,0,.075) 1.6px,transparent 1.8px);
+  background-size:36px 36px}
+#vignette{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 45%,transparent 55%,rgba(0,0,0,.10) 100%);z-index:90}
+#grain{position:absolute;inset:-50%;z-index:91;opacity:.06;pointer-events:none}
+.abs{position:absolute;left:0;top:0;will-change:transform}
+.center{transform-origin:50% 50%}
+.blob{width:560px;height:560px;filter:drop-shadow(0 18px 22px rgba(0,0,0,.25))}
+.patch{position:absolute;background-image:
+  linear-gradient(rgba(0,0,0,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.09) 1px,transparent 1px);
+  background-size:28px 28px;
+  -webkit-mask-image:radial-gradient(ellipse at center,#000 35%,transparent 72%)}
+.sel{position:absolute;left:0;top:0;border:3px dashed #2a2a2a;display:flex;align-items:center;justify-content:center;flex-direction:column;overflow:visible}
+.sel .in{position:absolute;top:0;right:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.sel .h{position:absolute;width:14px;height:14px;background:#fff;border:3px solid #222;border-radius:50%}
+.sel .h.tl{left:-9px;top:-9px}.sel .h.tr{right:-9px;top:-9px}.sel .h.bl{left:-9px;bottom:-9px}.sel .h.br{right:-9px;bottom:-9px}
+.t{white-space:nowrap;line-height:1.15}
+.w{display:inline-block}
+.shadowtxt{text-shadow:0 6px 14px rgba(0,0,0,.18)}
+</style>
+</head>
+<body>
+<div id="stage">
+
+  <!-- blobs -->
+  <svg id="blobdef" width="0" height="0" style="position:absolute">
+    <defs>
+      <radialGradient id="blobg" cx="45%" cy="40%" r="70%"><stop offset="0" stop-color="#2b2b2b"/><stop offset="1" stop-color="#0c0c0c"/></radialGradient>
+    </defs>
+  </svg>
+  <div id="blobs"></div>
+
+  <!-- dark swoosh (scenes 3-4) -->
+  <svg id="swoosh" class="abs" width="2400" height="2400" viewBox="0 0 2400 2400" style="z-index:5">
+    <path d="M -200 900 C 500 700, 1200 1100, 2600 2100 L 2600 2700 C 1300 1600, 400 1350, -200 1500 Z" fill="#3a3a3a"/>
+  </svg>
+
+  <!-- scene 8 panels -->
+  <svg id="panelL" class="abs" width="1080" height="1920" style="z-index:6"><polygon points="0,0 300,0 300,980 0,1720" fill="#141414"/></svg>
+  <svg id="panelR" class="abs" width="1080" height="1920" style="z-index:6"><polygon points="1080,0 780,0 780,980 1080,1720" fill="#141414"/></svg>
+
+  <!-- S1 -->
+  <div id="s1box" class="sel" style="z-index:20">
+    <div class="h tl"></div><div class="h tr"></div><div class="h bl"></div><div class="h br"></div>
+    <div class="in"><div id="s1a" class="t" style="font-size:44px;font-weight:400;color:#333">الجميعُ يلهثُ خلفَ</div>
+    <div id="s1b" class="t" style="font-size:92px;font-weight:900;margin-top:-6px">الطرقِ المختصرة</div></div>
+  </div>
+
+  <!-- S2 -->
+  <div id="s2patch" class="patch" style="width:560px;height:620px;z-index:8"></div>
+  <div id="s2look" class="abs t" style="z-index:20;text-align:center">
+    <div style="font-size:64px;font-weight:900;line-height:1">يبحثون</div>
+    <div style="font-size:40px;font-weight:400;color:#444;line-height:1.1;margin-right:90px">عن تلك</div>
+  </div>
+  <div id="s2title" class="abs t shadowtxt" style="z-index:20;font-size:120px;font-weight:900"><span class="w">الحبّةِ</span> <span class="w">السحرية</span></div>
+
+  <!-- pill (shared S2/S4) -->
+  <svg id="pill" class="abs" width="220" height="440" viewBox="0 0 220 440" style="z-index:15;filter:drop-shadow(0 30px 26px rgba(0,0,0,.35))">
+    <defs>
+      <linearGradient id="pTop" x1="0" x2="1"><stop offset="0" stop-color="#2a2a2a"/><stop offset=".35" stop-color="#6d6d6d"/><stop offset=".55" stop-color="#4a4a4a"/><stop offset="1" stop-color="#1c1c1c"/></linearGradient>
+      <linearGradient id="pBot" x1="0" x2="1"><stop offset="0" stop-color="#1a1a1a"/><stop offset=".4" stop-color="#3c3c3c"/><stop offset="1" stop-color="#101010"/></linearGradient>
+      <pattern id="gran" width="26" height="24" patternUnits="userSpaceOnUse">
+        <circle cx="7" cy="7" r="8" fill="#5a5a5a"/><circle cx="7" cy="6" r="4" fill="#8a8a8a" opacity=".5"/>
+        <circle cx="20" cy="19" r="8" fill="#555"/><circle cx="20" cy="18" r="4" fill="#888" opacity=".5"/>
+      </pattern>
+      <clipPath id="pClip"><rect x="10" y="10" width="200" height="420" rx="100"/></clipPath>
+    </defs>
+    <g clip-path="url(#pClip)">
+      <rect x="10" y="10" width="200" height="220" fill="url(#pTop)"/>
+      <rect x="10" y="222" width="200" height="210" fill="url(#pBot)"/>
+      <rect x="10" y="222" width="200" height="210" fill="url(#gran)" opacity=".9"/>
+      <rect x="10" y="222" width="200" height="210" fill="url(#pBot)" opacity=".35"/>
+      <rect x="10" y="214" width="200" height="12" fill="#111"/>
+      <rect x="44" y="30" width="26" height="170" rx="13" fill="#fff" opacity=".22"/>
+    </g>
+  </svg>
+
+  <!-- S3 frame -->
+  <svg id="frame" class="abs" width="520" height="560" viewBox="0 0 520 560" style="z-index:15;filter:drop-shadow(0 30px 30px rgba(0,0,0,.4))">
+    <defs>
+      <linearGradient id="fr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbf8f1"/><stop offset=".5" stop-color="#d9d2c2"/><stop offset="1" stop-color="#f4efe4"/></linearGradient>
+      <pattern id="bead" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r="7" fill="#efe9dc" stroke="#b8ae98" stroke-width="1.5"/></pattern>
+    </defs>
+    <rect x="6" y="6" width="508" height="548" rx="28" fill="url(#fr)" stroke="#a89e86" stroke-width="3"/>
+    <rect x="26" y="26" width="468" height="508" rx="18" fill="url(#bead)" stroke="#b8ae98" stroke-width="2"/>
+    <rect x="48" y="48" width="424" height="464" rx="10" fill="url(#fr)" stroke="#9c927a" stroke-width="3"/>
+    <g fill="#e9e2d2" stroke="#a89e86" stroke-width="2">
+      <path d="M260 6 q-40 30 -80 0 q40 -2 80 0 q40 -2 80 0 q-40 30 -80 0z"/>
+      <path d="M260 554 q-40 -30 -80 0 q40 2 80 0 q40 2 80 0 q-40 -30 -80 0z"/>
+      <circle cx="30" cy="30" r="22"/><circle cx="490" cy="30" r="22"/><circle cx="30" cy="530" r="22"/><circle cx="490" cy="530" r="22"/>
+    </g>
+    <rect x="72" y="72" width="376" height="416" fill="#f7f4ec" stroke="#cfc6b2" stroke-width="2"/>
+    <g opacity=".08"><path d="M72 488 L448 72" stroke="#000" stroke-width="60"/></g>
+    <text x="260" y="300" text-anchor="middle" font-family="Ruqaa" font-weight="700" font-size="118" fill="#1b1b1b">الحقيقة</text>
+    <line x1="170" y1="352" x2="350" y2="352" stroke="#1b1b1b" stroke-width="3"/>
+    <text x="260" y="400" text-anchor="middle" font-family="Cairo" font-weight="700" font-size="30" fill="#555">لا تُختصَر</text>
+  </svg>
+  <div id="s3a" class="abs t" style="z-index:20;font-size:58px;font-weight:700">وإليكَ</div>
+  <div id="s3b" class="abs t" style="z-index:20;font-size:112px;font-weight:900">الحقيقة</div>
+
+  <!-- S4 -->
+  <svg id="s4circle" class="abs" width="520" height="520" viewBox="0 0 520 520" style="z-index:14">
+    <circle id="s4c" cx="260" cy="260" r="240" fill="none" stroke="#222" stroke-width="4" stroke-dasharray="14 12" transform="rotate(-90 260 260)"/>
+  </svg>
+  <div id="s4t" class="abs t" style="z-index:20;font-size:104px;font-weight:900;color:#fff;text-shadow:0 8px 24px rgba(0,0,0,.45)"><span class="w">لا</span> <span class="w">حبوبَ</span> <span class="w">سحرية</span></div>
+  <svg id="s4x" class="abs" width="360" height="360" viewBox="0 0 360 360" style="z-index:16"><path id="s4xp" d="M330 30 L30 330" stroke="#111" stroke-width="20" stroke-linecap="round" style="filter:drop-shadow(0 0 0 #fff) drop-shadow(0 6px 8px rgba(0,0,0,.35))" fill="none"/></svg>
+
+  <!-- S5 -->
+  <div id="s5a" class="sel" style="z-index:20"><div class="h tl"></div><div class="h tr"></div><div class="h bl"></div><div class="h br"></div>
+    <div class="in"><div class="t" id="s5at" style="font-size:84px;font-weight:900">سنواتُ الخبرة</div></div></div>
+  <div id="s5b" class="sel" style="z-index:20"><div class="h tl"></div><div class="h tr"></div><div class="h bl"></div><div class="h br"></div>
+    <div class="in"><div class="t" id="s5bt" style="font-size:84px;font-weight:900">الممارسةُ اليومية</div></div></div>
+  <div id="s5c" class="sel" style="z-index:20"><div class="h tl"></div><div class="h tr"></div><div class="h bl"></div><div class="h br"></div>
+    <div class="in"><div class="t" id="s5ct" style="font-size:84px;font-weight:900">منهجٌ واضح</div></div></div>
+
+  <!-- S6 phone -->
+  <div id="s6title" class="abs t" style="z-index:20;font-size:70px;font-weight:900"><span class="w">الأثرُ</span> <span class="w" style="font-weight:400;color:#555">قبلَ</span> <span class="w">الأرقام</span></div>
+  <div id="s6patch" class="patch" style="width:760px;height:900px;z-index:8"></div>
+  <div id="phoneWrap" class="abs" style="z-index:15;perspective:1800px;width:430px;height:880px">
+    <div id="phone" style="width:430px;height:880px;border-radius:70px;background:linear-gradient(135deg,#d9d9d9,#8c8c8c 40%,#eaeaea 60%,#9a9a9a);padding:12px;box-shadow:40px 60px 60px rgba(0,0,0,.35);transform-style:preserve-3d">
+      <div style="width:100%;height:100%;border-radius:60px;background:#0e0e0e;padding:14px">
+        <div id="screen" style="position:relative;width:100%;height:100%;border-radius:48px;background:#f6f6f4;overflow:hidden">
+          <div style="position:absolute;top:14px;left:50%;transform:translateX(-50%);width:120px;height:34px;border-radius:20px;background:#0e0e0e;z-index:5"></div>
+          <div id="feed" style="position:absolute;left:0;top:70px;width:100%"></div>
+          <div id="ring" style="position:absolute;left:50%;top:50%;width:250px;height:250px;margin:-125px 0 0 -125px;border-radius:50%;border:26px solid var(--accent);z-index:6;opacity:0"></div>
+          <div id="ringTxt" class="t" style="position:absolute;left:0;right:0;top:50%;margin-top:-36px;text-align:center;font-size:48px;font-weight:900;z-index:7;opacity:0">منهج</div>
+          <div style="position:absolute;bottom:0;left:0;right:0;height:70px;background:#fff;border-top:1px solid #ddd;display:flex;justify-content:space-around;align-items:center;z-index:5">
+            <i style="width:26px;height:26px;border:3px solid #333;border-radius:6px"></i><i style="width:26px;height:26px;border:3px solid #333;border-radius:50%"></i><i style="width:30px;height:26px;border:3px solid #333;border-radius:6px"></i><i style="width:26px;height:26px;background:#333;border-radius:50%"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S7 -->
+  <div id="s7" class="abs t" style="z-index:20;font-size:96px;font-weight:900;width:1080px;text-align:center"></div>
+
+  <!-- S8 -->
+  <div id="s8a" class="abs t" style="z-index:20;font-size:150px;font-weight:900;color:#3b3b3b;line-height:1">توقّف</div>
+  <div id="s8b" class="abs t" style="z-index:20;font-size:62px;font-weight:700;color:#333">عن هدرِ خبرتك</div>
+  <div id="s8p" class="abs" style="z-index:20;width:660px;text-align:center;font-size:39px;font-weight:400;line-height:1.55;color:#333"></div>
+  <div id="watchMain" class="abs" style="z-index:15"></div>
+  <div id="watchBig" class="abs" style="z-index:7"></div>
+  <div id="watchTop" class="abs" style="z-index:7"></div>
+
+  <!-- S9 -->
+  <div id="s9a" class="abs t" style="z-index:20;font-size:52px;font-weight:700;color:#333">أرسِل لي كلمة</div>
+  <div id="s9b" class="abs t" style="z-index:20;font-size:170px;font-weight:900;line-height:1.1">«منهج»</div>
+  <div id="s9c" class="abs t" style="z-index:20;font-size:44px;font-weight:400;color:#333">وسأريكَ كيف تحوّلُ خبرتَك إلى برنامج</div>
+  <div id="s9line" class="abs" style="z-index:20;height:6px;background:var(--ink);border-radius:3px"></div>
+
+  <!-- cursor -->
+  <svg id="cursor" class="abs" width="60" height="70" viewBox="0 0 30 35" style="z-index:60;filter:drop-shadow(2px 4px 4px rgba(0,0,0,.35))">
+    <path d="M2 2 L2 27 L8.5 21 L13 31 L17.5 29 L13 19.5 L22 19.5 Z" fill="#111" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+  </svg>
+  <div id="flash" class="abs" style="width:1080px;height:1920px;background:#fff;z-index:80;opacity:0"></div>
+  <div id="vignette"></div>
+</div>
+
+<script>
+const W=1080,H=1920;
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const lerp=(a,b,t)=>a+(b-a)*t;
+const p=(t,a,b)=>clamp((t-a)/(b-a));
+const eo=x=>1-Math.pow(1-x,3);
+const eo5=x=>1-Math.pow(1-x,5);
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const back=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const ei=x=>x*x*x;
+function set(el,{x=0,y=0,s=1,r=0,o=1,blur=0,sx,ry=0,rz}={}){
+  if(typeof el==='string')el=$(el);
+  el.style.transform=`translate(${x}px,${y}px) rotate(${r}deg) scale(${s})`+(sx!==undefined?` scaleX(${sx})`:'');
+  el.style.opacity=o; el.style.display=o<=0.001?'none':'';
+  el.style.filter=blur>0.05?`blur(${blur}px)`:(el.dataset.f||'');
+}
+// place element with its centre at cx,cy
+function place(el,cx,cy,opts={}){
+  if(typeof el==='string')el=$(el);
+  if(!el._w){el.style.display='';el._w=el.offsetWidth||+el.getAttribute('width');el._h=el.offsetHeight||+el.getAttribute('height');}
+  set(el,{...opts,x:cx-el._w/2+(opts.dx||0),y:cy-el._h/2+(opts.dy||0)});
+}
+// keep original drop-shadow filters
+['pill','frame','phone'].forEach(id=>{$(id).dataset.f=getComputedStyle($(id)).filter==='none'?'':getComputedStyle($(id)).filter});
+
+/* ---------- blobs ---------- */
+function blobPath(){
+  const n=5,pts=[];
+  for(let i=0;i<=360;i++){
+    const a=i/360*Math.PI*2;
+    const k=Math.pow(Math.abs(Math.cos(n*a/2)),1.6);
+    const r=95+175*k;
+    pts.push([280+r*Math.cos(a),280+r*Math.sin(a)]);
+  }
+  return 'M'+pts.map(q=>q.map(v=>v.toFixed(1)).join(' ')).join(' L')+'Z';
+}
+const bp=blobPath();
+const blobs=[];
+for(let i=0;i<3;i++){
+  const d=document.createElement('div');
+  d.className='abs blob';d.style.zIndex=10;
+  d.innerHTML=`<svg width="560" height="560" viewBox="0 0 560 560"><path d="${bp}" fill="url(#blobg)"/></svg>`;
+  $('blobs').appendChild(d);blobs.push(d);
+}
+// keyframes: [t, cx, cy, scale, rot]
+const off=9999;
+const BK=[
+ [[0,-200,-300,.4,0],[.35,90,160,1,40],[2.2,110,150,1,70],[2.55,900,-260,.9,120],[4.7,930,150,1,160],[5.0,1500,-300,1,200],[8.8,1500,-300,1,200],[9.1,100,180,1,250],[11.4,120,160,1,290],[11.8,-400,-400,1,320],[14.4,-400,-400,1,320],[14.4,-400,-400,1,320],[23,-400,-400,1,320]],
+ [[0,1400,2300,.4,0],[.45,1000,1720,1.05,-30],[2.2,980,1740,1.05,-60],[2.55,120,1880,1,-100],[4.7,110,1850,1,-150],[5.0,-400,2400,1,-190],[8.8,-400,2400,1,-190],[9.1,960,1760,1.05,-220],[11.4,980,1760,1.05,-250],[11.8,110,1900,1,-300],[14.2,90,1880,1,-330],[14.5,-400,2400,1,-360],[23,-400,2400,1,-360]],
+ [[0,off,off,0,0],[23,off,off,0,0]]
+];
+function kf(list,t){
+  if(t<=list[0][0])return list[0];
+  for(let i=0;i<list.length-1;i++){
+    const a=list[i],b=list[i+1];
+    if(t>=a[0]&&t<=b[0]){const k=eio(p(t,a[0],b[0]));return a.map((v,j)=>j?lerp(v,b[j],k):t);}
+  }
+  return list[list.length-1];
+}
+
+/* ---------- watches ---------- */
+function watchSVG(size,id){
+  const ar=['١٢','١','٢','٣','٤','٥','٦','٧','٨','٩','١٠','١١'];
+  let ticks='',nums='';
+  for(let i=0;i<60;i++){const a=i*6*Math.PI/180,r1=i%5?118:110;
+    ticks+=`<line x1="${150+r1*Math.sin(a)}" y1="${190-r1*Math.cos(a)}" x2="${150+124*Math.sin(a)}" y2="${190-124*Math.cos(a)}" stroke="#333" stroke-width="${i%5?1.5:4}"/>`;}
+  ar.forEach((s,i)=>{const a=i*30*Math.PI/180;nums+=`<text x="${150+92*Math.sin(a)}" y="${190-92*Math.cos(a)+10}" text-anchor="middle" font-family="Cairo" font-weight="700" font-size="26" fill="#2a2a2a">${s}</text>`});
+  return `<svg width="${size}" height="${size*340/300}" viewBox="0 0 300 340" style="filter:drop-shadow(0 26px 24px rgba(0,0,0,.4))">
+  <defs>
+   <linearGradient id="gold${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3dfaa"/><stop offset=".35" stop-color="#b98c3e"/><stop offset=".6" stop-color="#f6e6b8"/><stop offset="1" stop-color="#7a5620"/></linearGradient>
+   <radialGradient id="face${id}" cx="40%" cy="35%" r="75%"><stop offset="0" stop-color="#f7f6f2"/><stop offset="1" stop-color="#bdbab2"/></radialGradient>
+  </defs>
+  <circle cx="150" cy="22" r="20" fill="none" stroke="url(#gold${id})" stroke-width="8"/>
+  <rect x="136" y="36" width="28" height="22" rx="5" fill="url(#gold${id})"/>
+  <circle cx="150" cy="190" r="146" fill="url(#gold${id})"/>
+  <circle cx="150" cy="190" r="132" fill="#6b4c1c"/>
+  <circle cx="150" cy="190" r="128" fill="url(#face${id})"/>
+  ${ticks}${nums}
+  <circle cx="150" cy="248" r="26" fill="none" stroke="#777" stroke-width="1.5"/>
+  <g class="hh"><path d="M146 190 L150 118 L154 190 Z" fill="#1a1a1a"/></g>
+  <g class="mh"><path d="M147.5 190 L150 82 L152.5 190 Z" fill="#1a1a1a"/></g>
+  <g class="sh"><line x1="150" y1="210" x2="150" y2="76" stroke="#8a1c1c" stroke-width="2"/></g>
+  <circle cx="150" cy="190" r="7" fill="#1a1a1a"/>
+  <path d="M40 120 A128 128 0 0 1 200 70" stroke="#fff" stroke-width="10" fill="none" opacity=".35"/>
+ </svg>`;
+}
+$('watchMain').innerHTML=watchSVG(330,'a');
+$('watchBig').innerHTML=watchSVG(560,'b');
+$('watchTop').innerHTML=watchSVG(240,'c');
+function tickWatch(el,t){
+  const sec=t*6*6, min=t*20, hr=t*2;
+  el.querySelector('.sh').setAttribute('transform',`rotate(${Math.floor(sec/6)*6} 150 190)`);
+  el.querySelector('.mh').setAttribute('transform',`rotate(${60+min} 150 190)`);
+  el.querySelector('.hh').setAttribute('transform',`rotate(${300+hr} 150 190)`);
+}
+
+/* ---------- phone feed ---------- */
+(function(){
+  const f=$('feed');let h='';
+  const shades=[['#3a3a3a','#9a9a9a'],['#d8c9a8','#6e5a3a'],['#222','#555'],['#b0b0b0','#e8e8e8'],['#3fb8a0','#1e6b5c'],['#444','#aaa']];
+  for(let i=0;i<8;i++){
+    const s=shades[i%shades.length];
+    h+=`<div style="margin:0 18px 22px;background:#fff;border-radius:22px;box-shadow:0 4px 10px rgba(0,0,0,.08);overflow:hidden">
+      <div style="display:flex;align-items:center;gap:10px;padding:12px 14px"><i style="width:34px;height:34px;border-radius:50%;background:#bbb"></i><i style="width:120px;height:12px;border-radius:6px;background:#ccc"></i></div>
+      <div style="height:260px;background:linear-gradient(135deg,${s[0]},${s[1]})"></div>
+      <div style="display:flex;gap:14px;padding:12px 16px;align-items:center;font-family:Cairo;font-weight:700;font-size:20px;color:#333">♥ <span class="cnt" data-b="${(i+2)*1375}">0</span></div>
+    </div>`;
+  }
+  f.innerHTML=h;
+})();
+const toAr=n=>n.toLocaleString('ar-EG');
+
+/* ---------- S7 words ---------- */
+const s7words=['هذا','ما','يصنعُ','النجاحَ','الحقيقي'];
+$('s7').innerHTML=`<div id="s7l1">${s7words.slice(0,2).map(w=>`<span class="w">${w}</span>`).join(' ')}</div><div id="s7l2">${s7words.slice(2).map(w=>`<span class="w">${w}</span>`).join(' ')}</div>`;
+
+/* ---------- S8 paragraph ---------- */
+const para='خبرتُكَ من أثمنِ ما تملك، لكنّها تضيعُ إن بقيت حبيسةَ رأسِك، ولم تتحوّل إلى منهجٍ يُعلَّمُ ويصنعُ أثراً.';
+$('s8p').innerHTML=para.split(' ').map(w=>`<span class="w">${w}</span>`).join(' ');
+
+/* ---------- selection box helper ---------- */
+function selBox(el,cx,cy,w,h,prog,o=1){
+  el=$(el);
+  const inn=el.querySelector('.in');
+  if(!el._tw){el.style.display='flex';inn.style.width='auto';el._tw=Math.max(...[...inn.querySelectorAll('.t')].map(t=>t.scrollWidth));}
+  w=Math.max(w,el._tw+110);
+  const k=eo(prog);
+  const ww=Math.max(2,w*k),hh=Math.max(2,h*Math.min(1,k*1.4));
+  el.style.width=ww+'px';el.style.height=hh+'px';
+  inn.style.width=w+'px';inn.style.height=h+'px';
+  inn.style.clipPath=`inset(0 0 0 ${w-ww}px)`;
+  const x0=cx+w/2-ww,y0=cy-h/2;
+  el.style.transform=`translate(${x0}px,${y0}px)`;
+  el.style.opacity=o;el.style.display=o<=0.001?'none':'flex';
+  el._W=w;
+  return w;
+}
+/* ---------- main render ---------- */
+const S={s1:[0,2.4],s2:[2.4,5.0],s3:[5.0,6.8],s4:[6.8,8.8],s5:[8.8,11.6],s6:[11.6,14.4],s7:[14.4,16.4],s8:[16.4,20.6],s9:[20.6,23.2]};
+const DURATION=23.2;
+let cursorPos=[1200,1300],cursorO=0,cursorS=1;
+
+function render(t){
+  // grain offset
+  cursorO=0;cursorS=1;
+
+  // blobs
+  BK.forEach((list,i)=>{const [_,cx,cy,s,r]=kf(list,t);place(blobs[i],cx,cy,{s,r:r+Math.sin(t*1.3+i)*6});});
+
+  /* S1 */
+  {const lt=t-S.s1[0];
+   const out=p(t,2.15,2.45);
+   let W1=740;const H1=220,cx=540,cy=880;
+   W1=selBox('s1box',cx,cy,W1,H1,p(lt,.35,1.25),1-out);
+   if(t<2.45){ $('s1box').style.transform+=` scale(${1+out*.3})`; $('s1box').style.filter=out>0?`blur(${out*14}px)`:''; }
+   // cursor path
+   if(lt<2.3){
+     cursorO=clamp(lt/.2);
+     const a=p(lt,0,.35),b=p(lt,.35,1.25);
+     let x=lerp(1150,cx+W1/2,eo(a)),y=lerp(1250,cy-H1/2,eo(a));
+     if(lt>.35){x=lerp(cx+W1/2,cx-W1/2,eo(b));y=lerp(cy-H1/2,cy+H1/2,eo(b));}
+     if(lt>1.3){const c=p(lt,1.4,2.2);x=lerp(cx-W1/2,-120,eio(c));y=lerp(cy+H1/2,cy+500,eio(c));}
+     cursorS=(lt>.3&&lt<.42)?.85:1;
+     cursorPos=[x,y];
+   }
+  }
+
+  /* S2 */
+  {const lt=t-S.s2[0];const vis=t>S.s2[0]-.05&&t<S.s2[1]+.1;
+   const out=p(t,S.s2[1]-.3,S.s2[1]);
+   const pin=p(lt,.05,.7);
+   place('s2patch',540,900,{o:vis?clamp(lt/.5)*(1-out):0,s:.8+.2*eo(pin)});
+   place('s2look',520,560,{o:vis?clamp((lt-.1)/.3)*(1-out):0,y:0,dy:(1-eo(p(lt,.1,.5)))*40});
+   // title: word blur-in
+   const tt=$('s2title');place(tt,540,1300,{o:vis?1-out:0,s:1+out*.15,blur:out*16});
+   [...tt.children].forEach((w,i)=>{const k=p(lt,1.0+i*.3,1.45+i*.3);w.style.opacity=k;w.style.filter=`blur(${(1-k)*18}px)`;w.style.transform=`translateY(${(1-eo(k))*50}px) scale(${1+(1-k)*.4})`;});
+  }
+
+  /* pill : S2 + S4 */
+  {let o=0,cx=540,cy=900,r=0,s=1;
+   if(t>=S.s2[0]&&t<S.s3[0]){const lt=t-S.s2[0];const k=eo5(p(lt,.05,.8));
+     o=clamp(lt/.15);cx=lerp(700,540,k);cy=lerp(560,900,k);r=lerp(-50,18,back(p(lt,.05,.9)))+Math.sin(lt*2)*3;s=lerp(.5,1,k);
+     const out=p(t,S.s2[1]-.3,S.s2[1]);s*=1-out*.6;cy-=out*300;o*=1-out;r+=out*90;}
+   if(t>=S.s4[0]&&t<S.s5[0]+.1){const lt=t-S.s4[0];const k=eo5(p(lt,0,.7));
+     o=1;cx=lerp(760,540,k);cy=lerp(300,720,k);r=lerp(60,14,k)+Math.sin(lt*2.2)*4;s=lerp(.7,1.05,k);
+     const out=p(t,S.s4[1]-.3,S.s4[1]);o*=1-out;s*=1-out*.5;}
+   place('pill',cx,cy,{o,r,s});}
+
+  /* swoosh S3-S4 */
+  {let o=0,x=0,y=0,r=0;
+   if(t>=S.s3[0]-.1&&t<S.s4[1]+.1){
+     const k=eo5(p(t,S.s3[0]-.1,S.s3[0]+.5));
+     x=lerp(-1500,-400,k);y=lerp(-200,-300,k);o=1;
+     const k2=eio(p(t,S.s4[0]-.2,S.s4[0]+.35)); // slide down for s4
+     y+=k2*380;x+=k2*-60;
+     const out=eio(p(t,S.s4[1]-.3,S.s4[1]+.05));x+=out*1800;y+=out*300;
+   }
+   set('swoosh',{x,y,o});}
+
+  /* S3 */
+  {const lt=t-S.s3[0];const vis=t>S.s3[0]-.1&&t<S.s3[1]+.05;
+   const out=p(t,S.s3[1]-.3,S.s3[1]);
+   const k=eo5(p(lt,.1,.8));
+   place('frame',lerp(-300,470,k)+out*-900,lerp(1250,1060,k),{o:vis?1:0,r:lerp(-40,-9,back(p(lt,.1,.9)))+Math.sin(lt*1.5)*1.5,s:lerp(.7,1,k)});
+   const a=p(lt,.4,.8),b=p(lt,.65,1.05);
+   place('s3a',660,540,{o:vis?a*(1-out):0,dy:(1-eo(a))*40});
+   place('s3b',620,650,{o:vis?b*(1-out):0,s:lerp(1.4,1,eo(b)),blur:(1-b)*14+out*10});
+  }
+
+  /* S4 */
+  {const lt=t-S.s4[0];const vis=t>S.s4[0]&&t<S.s4[1]+.05;
+   const out=p(t,S.s4[1]-.3,S.s4[1]);
+   const c=p(lt,.5,1.2);
+   const circ=2*Math.PI*240;$('s4c').setAttribute('stroke-dashoffset',circ*(1-eo(c)));
+   $('s4c').setAttribute('stroke-dasharray',c<1?`${circ*eo(c)} ${circ}`:'14 12');
+   place('s4circle',540,720,{o:vis?(1-out):0,r:lt*25});
+   const tt=$('s4t');place(tt,560,1450,{o:vis?1-out:0});
+   [...tt.children].forEach((w,i)=>{const k=p(lt,.25+i*.18,.6+i*.18);w.style.opacity=k;w.style.filter=`blur(${(1-k)*16}px)`;w.style.transform=`translateX(${(1-eo(k))*-80}px)`;});
+   const xk=p(lt,1.15,1.5);
+   const xp=$('s4xp');xp.setAttribute('stroke-dasharray','425 430');xp.setAttribute('stroke-dashoffset',425*(1-eo(xk)));
+   place('s4x',540,720,{o:vis&&xk>0?(1-out):0,s:1+(1-eo(xk))*.2});
+  }
+
+  /* S5 */
+  {const lt=t-S.s5[0];const vis=t>S.s5[0]&&t<S.s5[1];
+   const out=p(t,S.s5[1]-.35,S.s5[1]);
+   const bx=[[540,760,640,190,.45],[540,1000,760,190,1.2],[540,1240,600,190,1.95]];
+   ['s5a','s5b','s5c'].forEach((id,i)=>{const [cx,cy,w,h,st]=bx[i];
+     const pr=p(lt,st,st+.6);
+     bx[i][2]=selBox(id,cx+out*(i%2?1:-1)*900,cy,w,h,pr,vis&&pr>0?1:0);
+   });
+   if(vis){
+     let x=1150,y=1400;cursorO=clamp(lt/.2)*(1-out);
+     for(let i=0;i<3;i++){const [cx,cy,w,h,st]=bx[i];
+       const mv=p(lt,st-.4,st),dr=p(lt,st,st+.6);
+       if(lt>=st-.4){const px=i?bx[i-1][0]-bx[i-1][2]/2:1150,py=i?bx[i-1][1]+bx[i-1][3]/2:1400;
+         x=lerp(px,cx+w/2,eio(mv));y=lerp(py,cy-h/2,eio(mv));
+         if(lt>=st){x=lerp(cx+w/2,cx-w/2,eo(dr));y=lerp(cy-h/2,cy+h/2,eo(dr));}
+         cursorS=(lt>st-.05&&lt<st+.08)?.85:1;}
+     }
+     cursorPos=[x,y];
+   }
+  }
+
+  /* S6 */
+  {const lt=t-S.s6[0];const vis=t>S.s6[0]-.1&&t<S.s6[1]+.05;
+   const out=p(t,S.s6[1]-.3,S.s6[1]);
+   const k=eo5(p(lt,0,.9));
+   place('s6patch',560,1060,{o:vis?clamp(lt/.4)*(1-out):0});
+   const pw=$('phoneWrap');place(pw,lerp(1000,560,k),lerp(1300,1080,k),{o:vis?1-out:0,s:1-out*.2});
+   $('phone').style.transform=`rotateY(${lerp(-70,-16,k)+Math.sin(lt*1.4)*3}deg) rotateX(${lerp(20,8,k)}deg) rotateZ(${lerp(30,9,k)}deg)`;
+   // feed scroll then slow
+   const sc=eio(p(lt,.6,1.7));$('feed').style.transform=`translateY(${-sc*900}px)`;
+   document.querySelectorAll('.cnt').forEach(c=>{c.textContent=toAr(Math.round(+c.dataset.b*(0.2+eo(p(lt,.4,1.8)))))});
+   const rg=p(lt,1.75,2.2);$('ring').style.opacity=rg;$('ring').style.transform=`scale(${lerp(1.8,1,back(rg))})`;
+   $('ringTxt').style.opacity=p(lt,1.9,2.2);
+   $('feed').style.filter=`blur(${rg*6}px)`;
+   const tt=$('s6title');place(tt,540,420,{o:vis?1-out:0});
+   [...tt.children].forEach((w,i)=>{const kk=p(lt,.5+i*.25,.85+i*.25);w.style.opacity=kk;w.style.filter=`blur(${(1-kk)*14}px)`;w.style.transform=`translateY(${(1-eo(kk))*-40}px)`;});
+  }
+
+  /* S7 kinetic */
+  {const lt=t-S.s7[0];const vis=t>S.s7[0]&&t<S.s7[1];
+   const out=p(t,S.s7[1]-.3,S.s7[1]);
+   place('s7',540,960,{o:vis?1:0});
+   const ws=$('s7').querySelectorAll('.w');
+   ws.forEach((w,i)=>{const k=p(lt,.05+i*.16,.55+i*.16);
+     const dir=i<2?1:-1;
+     w.style.opacity=k*(1-out);
+     w.style.transform=`translate(${(1-eo5(k))*-500*dir + out*900*dir}px, ${(1-eo(k))*((i%2)?-60:60)}px)`;
+     w.style.filter=`blur(${(1-k)*20+out*20}px)`;
+     w.style.color=i>=3?'#111':'#555';
+   });
+   $("s7l2").style.fontSize="96px";
+  }
+
+  /* S8 */
+  {const lt=t-S.s8[0];const vis=t>S.s8[0]-.1&&t<S.s8[1]+.05;
+   const out=p(t,S.s8[1]-.3,S.s8[1]);
+   const k=eo5(p(lt,-.1,.5));
+   set('panelL',{x:lerp(-420,0,k)-out*400,o:vis?1:0});set('panelR',{x:lerp(420,0,k)+out*400,o:vis?1:0});
+   const a=p(lt,.25,.6),b=p(lt,.7,1.05);
+   place('s8a',540,470,{o:vis?a*(1-out):0,s:lerp(1.6,1,eo(a)),blur:(1-a)*16});
+   place('s8b',540,590,{o:vis?b*(1-out):0,dy:(1-eo(b))*30});
+   const wk=eo5(p(lt,.3,1.0));
+   place('watchMain',540,lerp(-300,930,wk),{o:vis?1-out:0,r:Math.sin(lt*2.4)*7*(wk),s:1-out*.3});
+   place('watchBig',lerp(-300,120,k),lerp(2100,1800,k),{o:vis?1-out:0,r:-15+lt*2});
+   place('watchTop',lerp(1300,1010,k),lerp(-200,100,k),{o:vis?1-out:0,r:20-lt*3});
+   [$('watchMain'),$('watchBig'),$('watchTop')].forEach(w=>tickWatch(w,t));
+   place('s8p',540,1290,{o:vis?1-out:0});
+   $('s8p').querySelectorAll('.w').forEach((w,i)=>{const kk=p(lt,1.1+i*.07,1.4+i*.07);w.style.opacity=kk;w.style.filter=`blur(${(1-kk)*8}px)`;});
+  }
+
+  /* S9 */
+  {const lt=t-S.s9[0];const vis=t>S.s9[0];
+   const a=p(lt,.1,.45),b=p(lt,.35,.8),c=p(lt,.9,1.3),l=p(lt,.7,1.2);
+   place('s9a',650,820,{o:vis?a:0,dy:(1-eo(a))*30});
+   place('s9b',540,960,{o:vis?b:0,s:lerp(1.5,1,eo5(b)),blur:(1-b)*18});
+   $('s9line').style.width=(560*eo(l))+'px';
+   const lw=$('s9line');lw._w=null;place(lw,540+(560-560*eo(l))/2*0,1070,{o:vis?1:0});
+   place('s9c',540,1150,{o:vis?c:0,dy:(1-eo(c))*20});
+   if(vis&&lt<2.6){ // cursor clicks the CTA
+     const m=p(lt,1.1,1.7);cursorO=clamp((lt-1.0)/.2);
+     cursorPos=[lerp(1150,700,eio(m)),lerp(1500,1040,eio(m))];
+     cursorS=(lt>1.75&&lt<1.9)?.82:1;
+     if(lt>1.75){const pulse=p(lt,1.75,2.2);$('s9b').style.transform+=` scale(${1+Math.sin(pulse*Math.PI)*.06})`;}
+   } else if(vis){cursorO=1;cursorPos=[700,1040];}
+  }
+
+  // transition flashes
+  const flashes=[S.s3[0],S.s5[0],S.s7[0],S.s9[0]];
+  let fo=0;flashes.forEach(f=>{fo=Math.max(fo,1-Math.abs(t-f)/.08)});
+  $('flash').style.opacity=fo*.55;$('flash').style.display=fo>0?'':'none';
+
+  // cursor
+  set('cursor',{x:cursorPos[0],y:cursorPos[1],o:cursorO,s:cursorS});
+
+  // subtle camera drift
+  $('stage').style.backgroundPosition=`${-t*6}px ${-t*10}px`;
+}
+window.render=render;window.DURATION=DURATION;
+document.fonts.ready.then(()=>{window.ready=true;});
+</script>
+</body>
+</html>
