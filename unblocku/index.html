@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Beat writer's block: answer 3 questions, get 3 ready content ideas with hooks and outlines.">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
+<title>UnblockU</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Lalezar&display=swap" rel="stylesheet">
+<style>
+/* Layout: one working column (max 1080px). Home hero splits pitch | live sample idea card and stacks under 820px.
+   Visual idea: cool writing paper, ink-blue, and a highlighter stripe that marks the hook. */
+:root{
+  --paper:#F1F3F8; --surface:#FFFFFF; --sunk:#E8EBF3; --ink:#141C45; --muted:#596187; --line:#D6DBE8;
+  --brand:#2B3BD6; --brand-ink:#FFFFFF; --mark:#FFE14D; --ok:#1C7F54; --warn:#B4441F;
+  --shadow:0 1px 0 rgba(20,28,69,.04), 0 14px 34px -16px rgba(20,28,69,.22);
+  --f-display:"Bricolage Grotesque","Lalezar",ui-sans-serif,system-ui,sans-serif;
+  --f-body:"IBM Plex Sans","IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0C1130; --surface:#151C44; --sunk:#10163A; --ink:#ECEFFA; --muted:#A2A9CA; --line:#2A3367;
+    --brand:#8D9BFF; --brand-ink:#0C1130; --mark:#6A5714; --ok:#5BD39E; --warn:#FF9B78;
+    --shadow:0 1px 0 rgba(0,0,0,.2), 0 16px 40px -18px rgba(0,0,0,.6);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0C1130; --surface:#151C44; --sunk:#10163A; --ink:#ECEFFA; --muted:#A2A9CA; --line:#2A3367;
+  --brand:#8D9BFF; --brand-ink:#0C1130; --mark:#6A5714; --ok:#5BD39E; --warn:#FF9B78;
+  --shadow:0 1px 0 rgba(0,0,0,.2), 0 16px 40px -18px rgba(0,0,0,.6);
+  color-scheme:dark;
+}
+[lang="ar"]{
+  --f-display:"Lalezar","Bricolage Grotesque",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans Arabic","IBM Plex Sans",system-ui,Tahoma,sans-serif;
+}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+button,input,textarea{font:inherit;color:inherit}
+.disp{font-family:var(--f-display);font-weight:800;letter-spacing:-.02em;line-height:1.08;text-wrap:balance}
+[lang="ar"] .disp,.disp:lang(ar){font-weight:400;letter-spacing:0;line-height:1.35}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:16px}
+:focus-visible{outline:3px solid var(--brand);outline-offset:2px;border-radius:6px}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;gap:12px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:2px;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:1.3rem;letter-spacing:-.03em;background:none;border:0;padding:0;cursor:pointer;direction:ltr}
+.logo b{background:var(--mark);padding:0 .28em;border-radius:4px;transform:rotate(-3deg);display:inline-block;margin-inline-start:2px}
+.bar nav{margin-inline-start:auto;display:flex;gap:6px;flex-wrap:wrap}
+.navbtn{border:1px solid transparent;background:none;border-radius:999px;padding:6px 12px;font-size:.92rem;font-weight:500;cursor:pointer;color:var(--muted)}
+.navbtn:hover{color:var(--ink);background:var(--sunk)}
+.navbtn[aria-current="true"]{color:var(--ink);border-color:var(--line);background:var(--surface)}
+.navbtn .n{font-family:var(--f-mono);font-size:.78rem;margin-inline-start:4px}
+.langbtn{border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+
+main{padding-block:32px 72px}
+.view{display:grid;gap:40px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:10px;padding:12px 20px;font-weight:600;cursor:pointer;border:1px solid transparent;line-height:1.2;transition:transform .12s ease,background .12s ease}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--brand);color:var(--brand-ink)}
+.btn-primary:hover{filter:brightness(1.08)}
+.btn-ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{background:var(--surface)}
+.btn-sm{padding:7px 12px;font-size:.88rem;border-radius:8px;font-weight:500}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero-text{display:grid;gap:18px;min-width:0}
+.eyebrow{font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:0}
+[lang="ar"] .eyebrow{font-family:var(--f-body);letter-spacing:0;font-size:.9rem;font-weight:600}
+.hero h1{font-size:clamp(2.2rem,5.4vw,3.9rem);margin:0}
+mark{background:linear-gradient(transparent 52%,var(--mark) 52%,var(--mark) 92%,transparent 92%);color:inherit;padding:0 .08em}
+.lede{font-size:1.12rem;color:var(--muted);max-width:34em;margin:0}
+.ticks{list-style:none;padding:0;margin:4px 0 0;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.92rem;color:var(--muted)}
+.ticks li::before{content:"✓";color:var(--ok);font-weight:700;margin-inline-end:6px}
+.hero-card{min-width:0;display:grid;gap:10px}
+.hero-card .idea{transform:rotate(1.2deg)}
+[dir="rtl"] .hero-card .idea{transform:rotate(-1.2deg)}
+.tiny{font-family:var(--f-mono);font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:0}
+[lang="ar"] .tiny,.tiny:lang(ar){font-family:var(--f-body);letter-spacing:0;font-size:.82rem;font-weight:600}
+
+/* how */
+.how h2,.section-head h2{font-size:clamp(1.5rem,3vw,2rem);margin:0}
+.steps{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
+.steps li{counter-increment:s;border-top:2px solid var(--ink);padding-top:14px;display:grid;gap:6px;min-width:0}
+.steps li::before{content:counter(s);font-family:var(--f-mono);font-size:.8rem;color:var(--muted)}
+.steps b{font-size:1.06rem}
+.steps span{color:var(--muted);font-size:.95rem}
+
+/* panels */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px;box-shadow:var(--shadow);max-width:720px;width:100%;margin-inline:auto;display:grid;gap:20px}
+.section-head{display:grid;gap:6px}
+.section-head p{margin:0;color:var(--muted)}
+.field{display:grid;gap:6px}
+.field label{font-weight:600;font-size:.95rem}
+.field input{border:1px solid var(--line);background:var(--paper);border-radius:10px;padding:12px 14px;width:100%}
+.field input:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px color-mix(in srgb,var(--brand) 25%,transparent)}
+.field small{color:var(--muted)}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer;font-weight:500;font-size:.92rem;background:var(--paper)}
+.seg input:checked+label{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.seg input:focus-visible+label{outline:3px solid var(--brand);outline-offset:2px}
+.err{color:var(--warn);font-size:.92rem;margin:0;min-height:1.4em}
+
+/* session */
+.progress{display:flex;align-items:center;gap:10px}
+.dots{display:flex;gap:6px}
+.dots i{width:28px;height:6px;border-radius:3px;background:var(--line);display:block}
+.dots i.on{background:var(--brand)}
+.dots i.done{background:var(--ink)}
+.q-angle{display:inline-flex;align-self:start;justify-self:start}
+.q{font-size:clamp(1.5rem,3.4vw,2.2rem);margin:0}
+.hint{color:var(--muted);margin:0}
+.ruled{width:100%;min-height:9.5rem;resize:vertical;border:1px solid var(--line);border-radius:12px;padding:6px 16px;font-size:1.1rem;line-height:2.25rem;background-color:var(--paper);
+  background-image:repeating-linear-gradient(to bottom,transparent 0,transparent calc(2.25rem - 1px),var(--line) calc(2.25rem - 1px),var(--line) 2.25rem);
+  background-position:0 6px;background-attachment:local}
+.ruled:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px color-mix(in srgb,var(--brand) 25%,transparent)}
+.meter{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.meter .tiny{margin-inline-end:4px}
+.pill{font-size:.82rem;border:1px solid var(--line);border-radius:999px;padding:3px 10px;color:var(--muted);background:var(--paper)}
+.pill.on{border-color:var(--ok);color:var(--ok);background:color-mix(in srgb,var(--ok) 10%,var(--surface))}
+.pill.on::before{content:"✓ "}
+.session-actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+
+/* idea card */
+.chip{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;background:var(--ink);color:var(--paper);border-radius:6px;padding:4px 8px;line-height:1.2}
+.chip:lang(ar){font-family:var(--f-body);letter-spacing:0;font-size:.8rem;font-weight:600}
+.ideas{display:grid;gap:24px;max-width:780px;width:100%;margin-inline:auto}
+.idea{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:22px;display:grid;gap:16px;min-width:0;font-family:var(--f-body)}
+.idea-head{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.from{color:var(--muted);font-size:.86rem;min-width:0;overflow-wrap:anywhere}
+.idea-title{font-size:1.45rem;margin:0;overflow-wrap:anywhere}
+.idea-title:lang(ar){font-family:"Lalezar",var(--f-display);font-weight:400;letter-spacing:0;line-height:1.4}
+.sec-label{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.sec-label .tiny:last-child{text-transform:none;letter-spacing:0}
+.hooks{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:8px}
+.hooks li{display:grid;grid-template-columns:1.6rem 1fr auto;gap:8px;align-items:start;padding:10px 12px;border-radius:10px;background:var(--paper)}
+.hooks li .k{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);padding-top:.2em}
+.hooks li .h{font-weight:500;min-width:0;overflow-wrap:anywhere}
+.hooks li:first-child .h > span:first-child{background:linear-gradient(transparent 55%,var(--mark) 55%,var(--mark) 95%,transparent 95%);box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.hooks li .wc{display:block;font-family:var(--f-mono);font-size:.72rem;color:var(--muted);margin-top:4px;font-weight:500}
+.hooks li .wc.long{color:var(--warn)}
+.icon-btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:5px 9px;font-size:.8rem;cursor:pointer;color:var(--muted)}
+.icon-btn:hover{color:var(--ink);border-color:var(--ink)}
+.tabs{display:flex;gap:4px;background:var(--sunk);padding:4px;border-radius:10px;flex-wrap:wrap}
+.tab{flex:1 1 auto;border:0;background:transparent;border-radius:7px;padding:7px 10px;font-size:.88rem;font-weight:500;cursor:pointer;color:var(--muted);white-space:nowrap}
+.tab[aria-selected="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.outline{list-style:none;margin:0;padding:0;display:grid}
+.outline li{display:grid;grid-template-columns:5.2rem 1fr;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.outline li:last-child{border-bottom:0}
+.outline .t{font-family:var(--f-mono);font-size:.76rem;color:var(--brand);padding-top:.25em;font-variant-numeric:tabular-nums}
+.outline .t:lang(ar){font-family:var(--f-body);font-size:.84rem;font-weight:600}
+.outline .b{min-width:0;overflow-wrap:anywhere}
+.idea-actions{display:flex;flex-wrap:wrap;gap:8px;border-top:1px solid var(--line);padding-top:14px}
+.idea-actions .saved{color:var(--ok);border-color:var(--ok)}
+.results-head{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:end;max-width:780px;width:100%;margin-inline:auto}
+.empty{max-width:560px;margin:24px auto;text-align:center;color:var(--muted);display:grid;gap:16px;justify-items:center}
+.empty .disp{color:var(--ink);font-size:1.6rem;margin:0}
+
+footer.foot{border-top:1px solid var(--line);color:var(--muted);font-size:.86rem}
+footer.foot .wrap{padding-block:18px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+
+.toast{position:fixed;inset-inline:0;bottom:0;padding-bottom:calc(18px + env(safe-area-inset-bottom,0px));display:flex;justify-content:center;pointer-events:none;z-index:20}
+.toast span{background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:999px;font-size:.92rem;font-weight:500;box-shadow:var(--shadow);transform:translateY(12px);opacity:0;transition:all .2s ease}
+.toast.show span{transform:none;opacity:1}
+
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;gap:28px}
+  .hero-card .idea,[dir="rtl"] .hero-card .idea{transform:none}
+  .steps{grid-template-columns:1fr}
+  .panel{padding:20px}
+}
+@media (max-width:480px){
+  .outline li{grid-template-columns:1fr;gap:2px}
+  .idea{padding:16px}
+  .hooks li{grid-template-columns:1.2rem 1fr}
+  .hooks li .icon-btn{grid-column:2;justify-self:start}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+</head>
+<body>
+<header class="bar"><div class="wrap">
+  <button class="logo" data-action="home" aria-label="UnblockU home">Unblock<b>U</b></button>
+  <nav id="nav"></nav>
+</div></header>
+<main><div class="wrap" id="app"></div></main>
+<footer class="foot"><div class="wrap"><span id="foot1"></span><span id="foot2"></span></div></footer>
+<div class="toast" id="toast" aria-live="polite"><span></span></div>
+
+<script>
+(function(){
+"use strict";
+
+/* ---------- storage (never trusted to exist) ---------- */
+const store = {
+  get(k, d){ try{ const v = localStorage.getItem("ub_"+k); return v==null ? d : JSON.parse(v); }catch(e){ return d; } },
+  set(k, v){ try{ localStorage.setItem("ub_"+k, JSON.stringify(v)); }catch(e){} }
+};
+
+/* ---------- interface text ---------- */
+const T = {
+  en:{
+    langBtn:"عربي", navNew:"New round", navVault:"Vault", navProfile:"Profile",
+    eyebrow:"For coaches, consultants, experts & creators",
+    heroTitle:"Blank page? Answer <mark>3 questions</mark>. Leave with 3 ready ideas.",
+    lede:"UnblockU asks short, sharp questions about your own work, then turns your answers into hooks, angles and outlines for short videos, YouTube and posts.",
+    ticks:["No prompts to write","No AI account or credits","Ideas from your real experience"],
+    start:"Start unblocking", openVault:"Open my vault", sample:"Example idea card",
+    howTitle:"How it works",
+    how:[["Tell it who you help","Your field, your audience and the result you deliver. You do this once."],["Answer 3 questions","Short questions that pull ideas out of your real experience."],["Get ready-to-use ideas","3 hooks, an angle and an outline for short video, YouTube and posts."]],
+    profileTitle:"Who do you help?", profileSub:"UnblockU aims every question and hook at this. You set it once per language and can change it any time.",
+    fNiche:"Your field", fNichePh:"business coaching", fNicheHelp:"The topic you create content about.",
+    fAud:"Your audience", fAudPh:"new coaches", fAudHelp:"Write it as a group of people (plural).",
+    fRes:"The result you help them get", fResPh:"consistent clients", fResHelp:"Short phrase. It finishes the sentence “help them get…”",
+    fPlat:"Where you post most",
+    example:"Fill with example", saveProfile:"Save and start", needAll:"Fill in all three so your hooks make sense.",
+    qOf:"Question {n} of 3", swap:"Different question", back:"Back", next:"Next", finish:"Generate my ideas",
+    needAnswer:"Write a few words first, or tap “Different question”.",
+    sharp:"Sharpness", m1:"Specific", m2:"Has a number", m3:"One sentence",
+    resultsTitle:"Your 3 ideas", resultsSub:"Pick one and post it today. Save the rest to your vault.",
+    again:"Another round", vaultTitle:"Your vault", vaultSub:"Ideas you saved. They stay in this browser.",
+    vaultEmptyT:"Nothing saved yet", vaultEmpty:"Run a round and tap “Save to vault” on the ideas you like.",
+    copyAll:"Copy all", hooks:"Hooks", hookTip:"Under 15 words reads fastest", words:"{n} words",
+    from:"From your answer", angle:"Angle", cta:"Call to action",
+    reroll:"New hooks", save:"Save to vault", saved:"Saved", copy:"Copy", copyIdea:"Copy idea", remove:"Remove",
+    copied:"Copied", savedToast:"Saved to your vault", removed:"Removed from your vault",
+    fmt:{short:"Short video",youtube:"YouTube",post:"Post / carousel"},
+    times:{short:["0–3s","3–10s","10–20s","20–30s","30–40s","40–45s"],youtube:["0:00","0:45","2:30","5:00","8:00","End"],post:["Line 1","Part 1","Part 2","Part 3","Part 4","Last line"]},
+    promise:"Then promise the payoff: what they will know by the end.",
+    foot1:"Runs in your browser. Your answers stay on this device.", foot2:"UnblockU · beat the blank page in 3 minutes"
+  },
+  ar:{
+    langBtn:"English", navNew:"جولة جديدة", navVault:"الخزنة", navProfile:"ملفي",
+    eyebrow:"للمدربين والمستشارين والخبراء وصنّاع المحتوى",
+    heroTitle:"صفحة فارغة؟ جاوب على <mark>٣ أسئلة</mark>، واخرج بـ٣ أفكار جاهزة.",
+    lede:"يسألك UnblockU أسئلة قصيرة ومباشرة عن عملك أنت، ثم يحوّل إجاباتك إلى افتتاحيات وزوايا ومخططات جاهزة للفيديو القصير ويوتيوب والمنشورات.",
+    ticks:["بدون كتابة أوامر","بدون حساب ذكاء اصطناعي أو رصيد","أفكار من تجربتك الحقيقية"],
+    start:"ابدأ الآن", openVault:"افتح خزنتي", sample:"مثال على بطاقة فكرة",
+    howTitle:"كيف يعمل",
+    how:[["عرّفه على من تساعد","مجالك وجمهورك والنتيجة التي تقدّمها. مرة واحدة فقط."],["جاوب على ٣ أسئلة","أسئلة قصيرة تستخرج الأفكار من تجربتك الحقيقية."],["استلم أفكارًا جاهزة","٣ افتتاحيات وزاوية ومخطط للفيديو القصير ويوتيوب والمنشورات."]],
+    profileTitle:"من تساعد؟", profileSub:"يوجّه UnblockU كل سؤال وكل افتتاحية بناءً على هذا. تضبطه مرة واحدة لكل لغة، وتستطيع تغييره في أي وقت.",
+    fNiche:"مجالك", fNichePh:"التدريب", fNicheHelp:"الموضوع الذي تصنع عنه المحتوى.",
+    fAud:"جمهورك", fAudPh:"المدربين الجدد", fAudHelp:"اكتبه بصيغة الجمع.",
+    fRes:"النتيجة التي تساعدهم على الوصول إليها", fResPh:"عملاء ثابتين", fResHelp:"عبارة قصيرة تكمل جملة «أساعدهم على الوصول إلى…»",
+    fPlat:"أين تنشر أكثر",
+    example:"املأ بمثال", saveProfile:"احفظ وابدأ", needAll:"املأ الحقول الثلاثة حتى تكون الافتتاحيات منطقية.",
+    qOf:"السؤال {n} من ٣", swap:"سؤال آخر", back:"رجوع", next:"التالي", finish:"أنشئ أفكاري",
+    needAnswer:"اكتب بضع كلمات أولًا، أو اضغط «سؤال آخر».",
+    sharp:"الحدّة", m1:"محدد", m2:"فيه رقم", m3:"جملة واحدة",
+    resultsTitle:"أفكارك الثلاث", resultsSub:"اختر واحدة وانشرها اليوم، واحفظ الباقي في خزنتك.",
+    again:"جولة أخرى", vaultTitle:"خزنتك", vaultSub:"الأفكار التي حفظتها. تبقى في هذا المتصفح.",
+    vaultEmptyT:"لا شيء محفوظ بعد", vaultEmpty:"ابدأ جولة واضغط «احفظ في الخزنة» على الأفكار التي تعجبك.",
+    copyAll:"انسخ الكل", hooks:"الافتتاحيات", hookTip:"أقل من ١٥ كلمة تُقرأ أسرع", words:"{n} كلمة",
+    from:"من إجابتك", angle:"الزاوية", cta:"الدعوة لاتخاذ إجراء",
+    reroll:"افتتاحيات جديدة", save:"احفظ في الخزنة", saved:"محفوظة", copy:"انسخ", copyIdea:"انسخ الفكرة", remove:"احذف",
+    copied:"تم النسخ", savedToast:"حُفظت في خزنتك", removed:"حُذفت من خزنتك",
+    fmt:{short:"فيديو قصير",youtube:"يوتيوب",post:"منشور / كاروسيل"},
+    times:{short:["٠–٣ث","٣–١٠ث","١٠–٢٠ث","٢٠–٣٠ث","٣٠–٤٠ث","٤٠–٤٥ث"],youtube:["0:00","0:45","2:30","5:00","8:00","النهاية"],post:["السطر الأول","الجزء ١","الجزء ٢","الجزء ٣","الجزء ٤","السطر الأخير"]},
+    promise:"ثم اوعدهم بالنتيجة: ماذا سيعرفون في النهاية.",
+    foot1:"يعمل داخل متصفحك. إجاباتك تبقى على جهازك.", foot2:"UnblockU · تغلّب على الصفحة الفارغة في ٣ دقائق"
+  }
+};
+
+const EXAMPLE = {
+  en:{niche:"business coaching", aud:"new coaches", res:"consistent clients", plat:"short"},
+  ar:{niche:"التدريب", aud:"المدربين الجدد", res:"عملاء ثابتين", plat:"short"}
+};
+
+/* ---------- the engine: question angles, hook formulas, content spines ----------
+   Slots: {a} short answer, {full} full answer, {aud} audience, {res} result, {niche} field */
+const ANGLES = {
+  mistake:{
+    en:{name:"Common mistake", q:"What mistake do you see {aud} make again and again?", hint:"Name the exact behavior, not a vague category.", ph:"They post every day but never ask for the sale.",
+      title:"The mistake that keeps {aud} from {res}",
+      hooks:["Stop doing this if you want {res}: {a}","Most {aud} do this every week and wonder why nothing changes.","I see this mistake in almost every {niche} client I meet.","One habit is quietly killing your results, and most {aud} never notice it."],
+      spine:["Name the mistake: {full}","Why it feels right (the trap)","What it actually costs them","The fix: what to do instead, in one step"]},
+    ar:{name:"الخطأ الشائع", q:"ما الخطأ الذي تراه يتكرر عند {aud} مرة بعد مرة؟", hint:"سمِّ السلوك نفسه، لا فئة عامة.", ph:"ينشرون كل يوم لكنهم لا يطلبون البيع أبدًا.",
+      title:"الخطأ الذي يحرم {aud} من {res}",
+      hooks:["توقف عن هذا إذا كنت تريد {res}: {a}","أغلب {aud} يفعلون هذا كل أسبوع، ثم يتساءلون لماذا لا يتغير شيء.","هذا الخطأ أراه عند كل عميل تقريبًا في مجال {niche}.","عادة واحدة تقتل نتائجك بصمت، وأغلب {aud} لا ينتبهون لها."],
+      spine:["سمِّ الخطأ: {full}","لماذا يبدو صحيحًا (الفخ)","ماذا يكلّفهم فعلًا","الحل: ماذا يفعلون بدلًا منه، في خطوة واحدة"]}
+  },
+  myth:{
+    en:{name:"Myth buster", q:"What do most people in {niche} believe that you think is wrong?", hint:"Write the belief the way people actually say it.", ph:"You need a big audience to make money.",
+      title:"Myth: {a}",
+      hooks:["Everyone says “{a}”. Here's why that's wrong.","The most popular advice in {niche} is the one holding you back.","I used to believe “{a}” too. Then I saw what actually works.","If you still believe this, you'll keep getting the same results."],
+      spine:["State the myth plainly: {full}","Why so many people believe it","What actually happens (your proof or example)","The truth, and what to do with it"]},
+    ar:{name:"كسر خرافة", q:"ما الشيء الذي يؤمن به أغلب الناس في {niche} وتراه أنت خطأ؟", hint:"اكتب الاعتقاد كما يقوله الناس فعلًا.", ph:"أنك تحتاج جمهورًا كبيرًا حتى تربح.",
+      title:"خرافة: {a}",
+      hooks:["الكل يقول «{a}». وهذا غير صحيح، وإليك السبب.","أشهر نصيحة في {niche} هي نفسها التي تعطّلك.","كنت أصدّق «{a}». ثم رأيت ما الذي ينجح فعلًا.","إذا كنت ما زلت تصدّق هذا، ستبقى في نفس النتائج."],
+      spine:["اذكر الخرافة بوضوح: {full}","لماذا يصدّقها كثير من الناس","ما الذي يحدث فعلًا (دليلك أو مثالك)","الحقيقة، وماذا يفعلون بها"]}
+  },
+  story:{
+    en:{name:"Client story", q:"Think of a client's breakthrough. What changed for them?", hint:"Use a name and a result. Change the name if you need to.", ph:"Sara doubled her prices and lost zero clients.",
+      title:"Client story: {a}",
+      hooks:["{a}. Here's exactly what happened.","This client was about to quit. Then one thing changed.","When my client got {res}, it wasn't because of more effort.","What I learned watching a client go from stuck to {res}."],
+      spine:["Where they started (the struggle)","The turning point: {full}","What they did differently","The lesson for your audience"]},
+    ar:{name:"قصة عميل", q:"تذكّر لحظة تحوّل عند أحد عملائك. ما الذي تغيّر عنده؟", hint:"استخدم اسمًا ونتيجة. غيّر الاسم إن احتجت.", ph:"سارة ضاعفت أسعارها ولم تخسر أي عميل.",
+      title:"قصة عميل: {a}",
+      hooks:["{a}. وإليك ما حدث بالضبط.","هذا العميل كان على وشك الاستسلام. ثم تغيّر شيء واحد.","عندما وصل عميلي إلى {res}، لم يكن السبب مجهودًا أكثر.","ماذا تعلّمت من عميل انتقل من التعثّر إلى {res}."],
+      spine:["من أين بدأ (المعاناة)","لحظة التحوّل: {full}","ما الذي فعله بشكل مختلف","الدرس لجمهورك"]}
+  },
+  number:{
+    en:{name:"Surprising number", q:"Give a number from your work that surprises people.", hint:"Any real number works: a percentage, hours, a price.", ph:"80% of my clients' sales come from just 3 posts.",
+      title:"The number: {a}",
+      hooks:["{a}. Let that sink in.","Here's a number most {aud} have never heard.","This one number changed how I think about {niche}.","I tracked this for months. The result surprised me."],
+      spine:["Drop the number: {full}","Where it comes from","Why it matters to your audience","What to do about it this week"]},
+    ar:{name:"رقم مفاجئ", q:"أعطني رقمًا من عملك يفاجئ الناس.", hint:"أي رقم حقيقي ينفع: نسبة، ساعات، سعر.", ph:"٨٠٪ من مبيعات عملائي تأتي من ٣ منشورات فقط.",
+      title:"الرقم: {a}",
+      hooks:["{a}. توقف عند هذا الرقم لحظة.","رقم لم يسمعه أغلب {aud} من قبل.","رقم واحد غيّر طريقة تفكيري في {niche}.","تابعت هذا لشهور، والنتيجة فاجأتني."],
+      spine:["اذكر الرقم: {full}","من أين جاء","لماذا يهم جمهورك","ماذا يفعلون به هذا الأسبوع"]}
+  },
+  confession:{
+    en:{name:"Confession", q:"What did you get wrong early in your career?", hint:"The more honest, the stronger the hook.", ph:"I said yes to every client and burned out in a year.",
+      title:"What I got wrong: {a}",
+      hooks:["My biggest mistake in {niche}: {a}","I wish someone had told me this when I started.","I lost time and money learning this the hard way.","Confession: I used to do the exact thing I now tell clients to avoid."],
+      spine:["The confession: {full}","Why you did it back then","What it cost you","What you do now, and what they should do"]},
+    ar:{name:"اعتراف", q:"ما الشيء الذي أخطأت فيه في بداياتك؟", hint:"كلما كنت أصدق، كانت الافتتاحية أقوى.", ph:"قبلت كل عميل، واحترقت خلال سنة.",
+      title:"أين أخطأت: {a}",
+      hooks:["أكبر خطأ ارتكبته في {niche}: {a}","تمنيت لو أن أحدًا أخبرني بهذا عندما بدأت.","خسرت وقتًا ومالًا لأتعلّم هذا بالطريقة الصعبة.","اعتراف: كنت أفعل نفس الشيء الذي أحذّر عملائي منه اليوم."],
+      spine:["الاعتراف: {full}","لماذا فعلت ذلك وقتها","ماذا كلّفك","ماذا تفعل الآن، وماذا يجب أن يفعلوا"]}
+  },
+  faq:{
+    en:{name:"Top question", q:"What question do people ask you the most?", hint:"Write the question in their words.", ph:"How do I get clients without paid ads?",
+      title:"Answering: {a}",
+      hooks:["“{a}” I get this question every week. Here's my straight answer.","The honest answer to the question {aud} ask me most.","Stop searching for this. Here's the short answer.","Most answers to this question are wrong. Here's mine."],
+      spine:["Repeat the question: {full}","The common (wrong) answer","Your answer in one sentence","One example or step that proves it"]},
+    ar:{name:"السؤال الأشهر", q:"ما السؤال الذي يسألك إياه الناس أكثر من غيره؟", hint:"اكتب السؤال بكلماتهم هم.", ph:"كيف أحصل على عملاء بدون إعلانات مدفوعة؟",
+      title:"إجابة: {a}",
+      hooks:["«{a}» يصلني هذا السؤال كل أسبوع، وهذه إجابتي المباشرة.","الإجابة الصريحة عن السؤال الذي يسألني إياه {aud} أكثر من غيره.","توقف عن البحث عنه. هذه الإجابة المختصرة.","أغلب الإجابات عن هذا السؤال خاطئة. وهذه إجابتي."],
+      spine:["أعد طرح السؤال: {full}","الإجابة الشائعة (الخاطئة)","إجابتك في جملة واحدة","مثال أو خطوة واحدة تثبتها"]}
+  },
+  badadvice:{
+    en:{name:"Bad advice", q:"What popular advice in {niche} do you disagree with?", hint:"Quote the advice exactly as you hear it.", ph:"Post 3 times a day to grow.",
+      title:"Bad advice: {a}",
+      hooks:["“{a}” is the worst advice in {niche}. Here's why.","Please stop following this advice.","This advice sounds smart. It's costing you {res}.","I disagree with most experts on this one."],
+      spine:["Quote the advice: {full}","Why it spread","Where it breaks","What you recommend instead"]},
+    ar:{name:"نصيحة سيئة", q:"ما النصيحة المشهورة في {niche} التي لا تتفق معها؟", hint:"انقل النصيحة كما تسمعها حرفيًا.", ph:"انشر ٣ مرات يوميًا حتى تكبر.",
+      title:"نصيحة سيئة: {a}",
+      hooks:["«{a}» أسوأ نصيحة في {niche}، وهذا السبب.","أرجوك توقف عن اتباع هذه النصيحة.","النصيحة تبدو ذكية، لكنها تحرمك من {res}.","أختلف مع أغلب الخبراء في هذه النقطة."],
+      spine:["انقل النصيحة: {full}","لماذا انتشرت","أين تفشل","ماذا تنصح بدلًا منها"]}
+  },
+  beforeafter:{
+    en:{name:"Before → After", q:"Describe your client's situation before working with you, in one line.", hint:"Describe a moment, not a feeling.", ph:"Working 60 hours a week with no idea where the next client comes from.",
+      title:"From “{a}” to {res}",
+      hooks:["If this sounds like you: {a}. This is for you.","From stuck to {res}. Here's what actually changed.","The gap between where you are and {res} is smaller than you think.","What nobody tells {aud} about getting to {res}."],
+      spine:["Before: {full}","The hidden reason they're stuck","The shift that changes it","After: what {res} looks like"]},
+    ar:{name:"قبل ← بعد", q:"صف وضع عميلك قبل العمل معك، في سطر واحد.", hint:"صف موقفًا، لا شعورًا.", ph:"يعمل ٦٠ ساعة أسبوعيًا ولا يعرف من أين سيأتي العميل القادم.",
+      title:"من «{a}» إلى {res}",
+      hooks:["إذا كان هذا وضعك: {a}. هذا المحتوى لك.","من التعثّر إلى {res}. وهذا ما تغيّر فعلًا.","المسافة بينك وبين {res} أقصر مما تظن.","ما لا يخبرك به أحد عن الوصول إلى {res}."],
+      spine:["قبل: {full}","السبب الخفي لتعثّرهم","التحوّل الذي يغيّر الوضع","بعد: كيف تبدو الحياة مع {res}"]}
+  },
+  smallmove:{
+    en:{name:"Small move", q:"What's one small action that gets big results for your clients?", hint:"Something they could do today.", ph:"Ending every post with one clear question.",
+      title:"The small move: {a}",
+      hooks:["One small change, big results: {a}","This takes 5 minutes and most {aud} skip it.","The easiest win in {niche} that nobody talks about.","Do this today and you'll see the difference this week."],
+      spine:["The move: {full}","Why it works","How to do it, in 2–3 steps","What to expect after"]},
+    ar:{name:"خطوة صغيرة", q:"ما الخطوة الصغيرة التي تعطي عملاءك نتائج كبيرة؟", hint:"شيء يستطيعون فعله اليوم.", ph:"إنهاء كل منشور بسؤال واحد واضح.",
+      title:"الخطوة الصغيرة: {a}",
+      hooks:["تغيير صغير، ونتيجة كبيرة: {a}","تأخذ ٥ دقائق فقط، وأغلب {aud} يتجاهلونها.","أسهل مكسب في {niche} ولا أحد يتحدث عنه.","طبّق هذا اليوم، وسترى الفرق هذا الأسبوع."],
+      spine:["الخطوة: {full}","لماذا تنجح","كيف تُطبَّق، في ٢–٣ خطوات","ماذا يتوقعون بعدها"]}
+  },
+  shift:{
+    en:{name:"What's changing", q:"What's changing in {niche} that most people haven't noticed yet?", hint:"What you're seeing that others are missing.", ph:"Short videos are replacing long sales pages.",
+      title:"What's changing: {a}",
+      hooks:["Something is shifting in {niche}: {a}","A year from now, {aud} who ignore this will be left behind.","Nobody is talking about this yet. They will.","The rules of {niche} just changed. Here's what I'm seeing."],
+      spine:["The shift: {full}","The signs you're seeing","What it means for your audience","How to get ahead of it"]},
+    ar:{name:"ما الذي يتغيّر", q:"ما الذي يتغيّر في {niche} ولم ينتبه له أغلب الناس بعد؟", hint:"ما تراه أنت ويفوت غيرك.", ph:"الفيديوهات القصيرة بدأت تحلّ محل صفحات البيع الطويلة.",
+      title:"ما الذي يتغيّر: {a}",
+      hooks:["شيء يتغيّر الآن في {niche}: {a}","بعد سنة، {aud} الذين يتجاهلون هذا سيتأخرون كثيرًا.","لا أحد يتحدث عن هذا بعد، لكنهم سيفعلون.","قواعد {niche} تغيّرت. وهذا ما أراه."],
+      spine:["التحوّل: {full}","العلامات التي تراها","ماذا يعني لجمهورك","كيف يسبقون الآخرين"]}
+  },
+  excuse:{
+    en:{name:"The excuse", q:"What excuse stops people from starting?", hint:"Write it the way they say it to you.", ph:"I don't have time.",
+      title:"The excuse: “{a}”",
+      hooks:["“{a}” Let's talk about that.","The real reason {aud} don't start isn't what they say.","I used to say the same thing. Here's what changed my mind.","This excuse is costing you more than you think."],
+      spine:["Say the excuse out loud: {full}","Show you understand it","Reframe: what's really going on","The smallest possible first step"]},
+    ar:{name:"العذر", q:"ما العذر الذي يمنع الناس من البدء؟", hint:"اكتبه كما يقولونه لك.", ph:"ما عندي وقت.",
+      title:"العذر: «{a}»",
+      hooks:["«{a}» دعنا نتحدث عن هذا.","السبب الحقيقي لعدم بدء {aud} ليس ما يقولونه.","كنت أقول نفس الشيء. وهذا ما غيّر رأيي.","هذا العذر يكلّفك أكثر مما تظن."],
+      spine:["قل العذر بصوت عالٍ: {full}","أظهر أنك تفهمه","أعد صياغته: ما الذي يحدث فعلًا","أصغر خطوة أولى ممكنة"]}
+  },
+  origin:{
+    en:{name:"Origin story", q:"Why did you start doing this work in the first place?", hint:"One specific moment beats a summary.", ph:"I watched my father lose his business with no one to guide him.",
+      title:"Why I do this",
+      hooks:["I never planned to work in {niche}. Here's what happened.","{a}. That's why I do what I do.","People ask why I care so much about {res}. This is why.","The story I don't share often."],
+      spine:["The moment: {full}","What it made you realize","What you decided to do","What it means for your audience today"]},
+    ar:{name:"قصة البداية", q:"لماذا بدأت في هذا العمل أصلًا؟", hint:"لحظة واحدة محددة أقوى من ملخص.", ph:"رأيت والدي يخسر مشروعه دون أن يرشده أحد.",
+      title:"لماذا أفعل ما أفعله",
+      hooks:["لم أخطط يومًا للعمل في {niche}. وهذا ما حدث.","{a}. ولهذا أفعل ما أفعله.","يسألني الناس لماذا أهتم كثيرًا بـ{res}. وهذا هو السبب.","قصة لا أشاركها كثيرًا."],
+      spine:["اللحظة: {full}","ماذا جعلتك تدرك","ماذا قررت أن تفعل","ماذا تعني لجمهورك اليوم"]}
+  }
+};
+
+const UNIVERSAL = {
+  en:["Nobody tells {aud} this, but they should.","Save this. You'll need it later.","If I had to start over in {niche}, this is the first thing I'd fix.","This is the part of {niche} nobody explains."],
+  ar:["{aud}: لا أحد يقول لكم هذا، لكن يجب أن تسمعوه.","احفظ هذا، ستحتاجه لاحقًا.","لو بدأت في {niche} من جديد، هذا أول شيء سأصلحه.","هذا الجزء من {niche} لا أحد يشرحه."]
+};
+const CTAS = {
+  en:["Follow for more on {res}.","Save this so you can come back to it.","Comment with your biggest question about this.","Send this to someone who needs to hear it."],
+  ar:["تابعني لمحتوى أكثر عن {res}.","احفظ هذا لترجع إليه لاحقًا.","اكتب في التعليقات أكبر سؤال عندك عن هذا.","أرسله لشخص يحتاج أن يسمعه."]
+};
+const ANGLE_IDS = Object.keys(ANGLES);
+
+/* ---------- helpers ---------- */
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const shuffle = a => { a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
+const words = s => s.trim().split(/\s+/).filter(Boolean).length;
+const uid = () => Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+const AR_DIGITS = "٠١٢٣٤٥٦٧٨٩";
+const localNum = (n, lang) => lang==="ar" ? String(n).replace(/\d/g, d => AR_DIGITS[d]) : String(n);
+
+function cleanAnswer(s){
+  return s.trim().replace(/\s+/g," ").replace(/^["“”«»']+|["“”«»']+$/g,"").trim();
+}
+function shortAnswer(s){
+  let first = cleanAnswer(s).split(/(?<=[.!?؟])\s/)[0];
+  first = first.replace(/[.!。]+$/,"");
+  const w = first.split(" ");
+  if(w.length > 18) first = w.slice(0,18).join(" ")+"…";
+  return first;
+}
+function fill(tpl, ctx, lang){
+  let out = tpl.replace(/\{(a|full|aud|res|niche)\}/g, (_,k) => ctx[k] || "");
+  out = out.replace(/([?!.…؟])\./g,"$1").replace(/([?؟])”\s/g,"$1” ").replace(/\s+/g," ").trim();
+  if(lang==="en") out = out.charAt(0).toUpperCase()+out.slice(1);
+  return out;
+}
+function profileCtx(p){ return {aud:p.aud.trim(), res:p.res.trim(), niche:p.niche.trim()}; }
+function questionText(id, lang, p){
+  const A = ANGLES[id][lang];
+  return fill(A.q, profileCtx(p || EXAMPLE[lang]), lang);
+}
+
+function makeIdea(angle, answer, profile, lang, fixed){
+  const A = ANGLES[angle][lang];
+  const ctx = Object.assign(profileCtx(profile), {a:shortAnswer(answer), full:cleanAnswer(answer)});
+  const angleHooks = A.hooks.map(h => fill(h, ctx, lang));
+  const uniHooks = UNIVERSAL[lang].map(h => fill(h, ctx, lang));
+  const ctas = CTAS[lang].map(c => fill(c, ctx, lang));
+  const idea = {
+    id:uid(), lang, angle, answer:cleanAnswer(answer),
+    title:fill(A.title, ctx, lang),
+    beats:A.spine.map(b => fill(b, ctx, lang)),
+    angleHooks, uniHooks, ctas,
+    tab:(profile.plat || "short"), created:Date.now()
+  };
+  pickHooks(idea, fixed);
+  return idea;
+}
+function pickHooks(idea, fixed){
+  if(fixed){ idea.hooks=[idea.angleHooks[0], idea.angleHooks[1], idea.uniHooks[0]]; idea.cta=idea.ctas[1]; return; }
+  const prev = idea.hooks || [];
+  let a = shuffle(idea.angleHooks), u = shuffle(idea.uniHooks);
+  // prefer hooks not shown last time
+  a.sort((x,y) => prev.includes(x) - prev.includes(y));
+  u.sort((x,y) => prev.includes(x) - prev.includes(y));
+  idea.hooks = [a[0], a[1], u[0]];
+  idea.cta = shuffle(idea.ctas)[0];
+}
+function outlineRows(it, tab){
+  const L = T[it.lang];
+  const first = tab==="youtube" ? it.hooks[0]+" "+L.promise : it.hooks[0];
+  const items = [first].concat(it.beats, [it.cta]);
+  return L.times[tab].map((t,i) => [t, items[i]]);
+}
+function ideaText(it){
+  const L = T[it.lang];
+  const lines = [it.title, L.angle+": "+ANGLES[it.angle][it.lang].name, "", L.hooks+":"];
+  it.hooks.forEach((h,i) => lines.push((i+1)+". "+h));
+  lines.push("", L.fmt[it.tab]+":");
+  outlineRows(it, it.tab).forEach(r => lines.push(r[0]+" · "+r[1]));
+  return lines.join("\n");
+}
+
+/* ---------- state ---------- */
+const navLang = (navigator.language||"").toLowerCase().startsWith("ar") ? "ar" : "en";
+const state = {
+  lang: store.get("lang", navLang),
+  profiles: store.get("profiles", {en:null, ar:null}),
+  vault: store.get("vault", []),
+  recent: store.get("recent", []),
+  view: "home",
+  session: null,
+  results: [],
+  sample: null,
+  err: ""
+};
+if(!Array.isArray(state.vault)) state.vault = [];
+if(!state.profiles || typeof state.profiles!=="object") state.profiles = {en:null, ar:null};
+// The profile is kept per language so Arabic hooks never mix in English phrases.
+Object.defineProperty(state, "profile", {get(){ return state.profiles[state.lang] || null; }, set(p){ state.profiles[state.lang] = p; store.set("profiles", state.profiles); }});
+
+function sampleIdea(){
+  const lang = state.lang;
+  if(!state.sample || state.sample.lang !== lang){
+    state.sample = makeIdea("mistake", ANGLES.mistake[lang].ph, EXAMPLE[lang], lang, true);
+    state.sample.id = "sample";
+  }
+  return state.sample;
+}
+function findIdea(id){
+  if(id==="sample") return state.sample;
+  return state.results.find(x => x.id===id) || state.vault.find(x => x.id===id);
+}
+const inVault = id => state.vault.some(x => x.id===id);
+function saveVault(){ store.set("vault", state.vault); }
+
+/* ---------- views ---------- */
+function L(){ return T[state.lang]; }
+
+function renderNav(){
+  const l = L(), v = state.view;
+  document.getElementById("nav").innerHTML =
+    `<button class="navbtn" data-action="start" aria-current="${v==="session"||v==="results"}">${l.navNew}</button>`+
+    `<button class="navbtn" data-action="vault" aria-current="${v==="vault"}">${l.navVault}<span class="n">${localNum(state.vault.length, state.lang)}</span></button>`+
+    (state.profile ? `<button class="navbtn" data-action="profile" aria-current="${v==="profile"}">${l.navProfile}</button>` : "")+
+    `<button class="navbtn langbtn" data-action="lang" lang="${state.lang==="ar"?"en":"ar"}">${l.langBtn}</button>`;
+  document.getElementById("foot1").textContent = l.foot1;
+  document.getElementById("foot2").textContent = l.foot2;
+}
+
+function cardHTML(it, opts){
+  opts = opts || {};
+  const l = T[it.lang], A = ANGLES[it.angle][it.lang];
+  const hooks = it.hooks.map((h,i) => {
+    const n = words(h);
+    return `<li><span class="k">${localNum(i+1,it.lang)}</span><div class="h"><span>${esc(h)}</span><span class="wc ${n>15?"long":""}">${l.words.replace("{n}", localNum(n,it.lang))}</span></div>`+
+      `<button class="icon-btn" data-action="copy-hook" data-id="${it.id}" data-k="${i}">${l.copy}</button></li>`;
+  }).join("");
+  const tabs = ["short","youtube","post"].map(t =>
+    `<button class="tab" role="tab" aria-selected="${it.tab===t}" data-action="tab" data-id="${it.id}" data-tab="${t}">${l.fmt[t]}</button>`).join("");
+  const rows = outlineRows(it, it.tab).map(r => `<li><span class="t">${esc(r[0])}</span><span class="b">${esc(r[1])}</span></li>`).join("");
+  let actions = "";
+  if(!opts.sample){
+    const saved = inVault(it.id);
+    actions = `<footer class="idea-actions">`+
+      (opts.vault ? "" : `<button class="btn btn-ghost btn-sm" data-action="reroll" data-id="${it.id}">↻ ${l.reroll}</button>`)+
+      (opts.vault ? `<button class="btn btn-ghost btn-sm" data-action="remove" data-id="${it.id}">${l.remove}</button>`
+                  : `<button class="btn btn-ghost btn-sm ${saved?"saved":""}" data-action="save" data-id="${it.id}" ${saved?"disabled":""}>${saved?"✓ "+l.saved:l.save}</button>`)+
+      `<button class="btn btn-ghost btn-sm" data-action="copy-idea" data-id="${it.id}">${l.copyIdea}</button></footer>`;
+  }
+  return `<article class="idea" lang="${it.lang}" dir="${it.lang==="ar"?"rtl":"ltr"}">
+    <div class="idea-head"><span class="chip">${esc(A.name)}</span><span class="from">${l.from}: ${it.lang==="ar"?"«"+esc(it.answer)+"»":"“"+esc(it.answer)+"”"}</span></div>
+    <h3 class="disp idea-title">${esc(it.title)}</h3>
+    <div><div class="sec-label"><span class="tiny">${l.hooks}</span><span class="tiny">${l.hookTip}</span></div><ol class="hooks">${hooks}</ol></div>
+    <div class="tabs" role="tablist">${tabs}</div>
+    <ol class="outline">${rows}</ol>
+    ${actions}
+  </article>`;
+}
+
+function viewHome(){
+  const l = L();
+  return `<div class="view">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">${l.eyebrow}</p>
+        <h1 class="disp">${l.heroTitle}</h1>
+        <p class="lede">${l.lede}</p>
+        <div class="row"><button class="btn btn-primary" data-action="start">${l.start}</button><button class="btn btn-ghost" data-action="vault">${l.openVault}</button></div>
+        <ul class="ticks">${l.ticks.map(t=>`<li>${t}</li>`).join("")}</ul>
+      </div>
+      <div class="hero-card"><p class="tiny">${l.sample}</p>${cardHTML(sampleIdea(), {sample:true})}</div>
+    </section>
+    <section class="how"><h2 class="disp">${l.howTitle}</h2>
+      <ol class="steps">${l.how.map(s=>`<li><b>${s[0]}</b><span>${s[1]}</span></li>`).join("")}</ol>
+    </section>
+  </div>`;
+}
+
+function viewProfile(){
+  const l = L(), p = state.profile || {niche:"",aud:"",res:"",plat:"short"};
+  const plats = ["short","youtube","post"].map(t =>
+    `<input type="radio" name="plat" id="plat-${t}" value="${t}" ${p.plat===t?"checked":""}><label for="plat-${t}">${l.fmt[t]}</label>`).join("");
+  return `<div class="view"><form class="panel" id="profile-form" novalidate>
+    <div class="section-head"><h2 class="disp">${l.profileTitle}</h2><p>${l.profileSub}</p></div>
+    <div class="field"><label for="f-niche">${l.fNiche}</label><input id="f-niche" name="niche" value="${esc(p.niche)}" placeholder="${esc(l.fNichePh)}" autocomplete="off"><small>${l.fNicheHelp}</small></div>
+    <div class="field"><label for="f-aud">${l.fAud}</label><input id="f-aud" name="aud" value="${esc(p.aud)}" placeholder="${esc(l.fAudPh)}" autocomplete="off"><small>${l.fAudHelp}</small></div>
+    <div class="field"><label for="f-res">${l.fRes}</label><input id="f-res" name="res" value="${esc(p.res)}" placeholder="${esc(l.fResPh)}" autocomplete="off"><small>${l.fResHelp}</small></div>
+    <div class="field"><span style="font-weight:600;font-size:.95rem">${l.fPlat}</span><div class="seg">${plats}</div></div>
+    <p class="err" id="err">${esc(state.err)}</p>
+    <div class="row"><button class="btn btn-primary" type="submit">${l.saveProfile}</button><button class="btn btn-ghost" type="button" data-action="example">${l.example}</button></div>
+  </form></div>`;
+}
+
+function meterHTML(text){
+  const l = L(), n = words(text);
+  const specific = n >= 6;
+  const hasNum = /[0-9٠-٩۰-۹]/.test(text);
+  const oneSentence = n >= 3 && n <= 25;
+  return `<span class="tiny">${l.sharp}</span>`+
+    `<span class="pill ${specific?"on":""}">${l.m1}</span><span class="pill ${hasNum?"on":""}">${l.m2}</span><span class="pill ${oneSentence?"on":""}">${l.m3}</span>`;
+}
+
+function viewSession(){
+  const l = L(), s = state.session, id = s.qs[s.i], A = ANGLES[id][state.lang];
+  const dots = s.qs.map((_,k)=>`<i class="${k<s.i?"done":k===s.i?"on":""}"></i>`).join("");
+  const last = s.i === s.qs.length-1;
+  return `<div class="view"><section class="panel">
+    <div class="progress"><div class="dots">${dots}</div><span class="tiny">${l.qOf.replace("{n}", localNum(s.i+1,state.lang))}</span></div>
+    <span class="chip q-angle">${esc(A.name)}</span>
+    <h2 class="disp q" id="q-label">${esc(questionText(id, state.lang, state.profile))}</h2>
+    <p class="hint">${esc(A.hint)}</p>
+    <textarea class="ruled" id="answer" aria-labelledby="q-label" placeholder="${esc(A.ph)}">${esc(s.answers[s.i])}</textarea>
+    <div class="meter" id="meter">${meterHTML(s.answers[s.i])}</div>
+    <p class="err" id="err">${esc(state.err)}</p>
+    <div class="session-actions">
+      <div class="row">${s.i>0?`<button class="btn btn-ghost" data-action="prev">${l.back}</button>`:""}<button class="btn btn-ghost" data-action="swap">↻ ${l.swap}</button></div>
+      <button class="btn btn-primary" data-action="next">${last?l.finish:l.next}</button>
+    </div>
+  </section></div>`;
+}
+
+function viewResults(){
+  const l = L();
+  return `<div class="view">
+    <div class="results-head"><div class="section-head"><h2 class="disp">${l.resultsTitle}</h2><p>${l.resultsSub}</p></div>
+      <button class="btn btn-primary" data-action="start">${l.again}</button></div>
+    <div class="ideas">${state.results.map(it => cardHTML(it)).join("")}</div>
+  </div>`;
+}
+
+function viewVault(){
+  const l = L();
+  if(!state.vault.length){
+    return `<div class="view"><div class="empty"><h2 class="disp">${l.vaultEmptyT}</h2><p>${l.vaultEmpty}</p><button class="btn btn-primary" data-action="start">${l.start}</button></div></div>`;
+  }
+  return `<div class="view">
+    <div class="results-head"><div class="section-head"><h2 class="disp">${l.vaultTitle}</h2><p>${l.vaultSub}</p></div>
+      <button class="btn btn-ghost" data-action="copy-all">${l.copyAll}</button></div>
+    <div class="ideas">${state.vault.slice().reverse().map(it => cardHTML(it,{vault:true})).join("")}</div>
+  </div>`;
+}
+
+function render(focus){
+  const root = document.documentElement;
+  root.lang = state.lang; root.dir = state.lang==="ar" ? "rtl" : "ltr";
+  renderNav();
+  const app = document.getElementById("app");
+  const v = state.view;
+  app.innerHTML = v==="profile" ? viewProfile() : v==="session" ? viewSession() : v==="results" ? viewResults() : v==="vault" ? viewVault() : viewHome();
+  if(focus){ const el = document.getElementById(focus); if(el){ el.focus(); if(el.setSelectionRange){ const n=el.value.length; el.setSelectionRange(n,n);} } }
+}
+function go(view, focus){ state.view = view; state.err = ""; render(focus); window.scrollTo({top:0}); }
+
+/* ---------- session logic ---------- */
+function newSession(){
+  const fresh = shuffle(ANGLE_IDS.filter(id => !state.recent.includes(id)));
+  const pool = fresh.concat(shuffle(ANGLE_IDS.filter(id => state.recent.includes(id))));
+  state.session = {qs:pool.slice(0,3), answers:["","",""], i:0};
+  go("session","answer");
+}
+function swapQuestion(){
+  const s = state.session;
+  s.seen = s.seen || s.qs.slice();
+  let options = ANGLE_IDS.filter(id => !s.qs.includes(id) && !s.seen.includes(id) && !state.recent.includes(id));
+  if(!options.length) options = ANGLE_IDS.filter(id => !s.qs.includes(id) && !s.seen.includes(id));
+  if(!options.length){ s.seen = s.qs.slice(); options = ANGLE_IDS.filter(id => !s.qs.includes(id)); }
+  const pick = shuffle(options)[0];
+  s.qs[s.i] = pick; s.seen.push(pick); s.answers[s.i] = "";
+  state.err = ""; render("answer");
+}
+function nextQuestion(){
+  const s = state.session;
+  if(words(s.answers[s.i]) < 2){ state.err = L().needAnswer; render("answer"); return; }
+  state.err = "";
+  if(s.i < s.qs.length-1){ s.i++; render("answer"); return; }
+  state.results = s.qs.map((id,k) => makeIdea(id, s.answers[k], state.profile, state.lang));
+  state.recent = s.qs.concat(state.recent.filter(id => !s.qs.includes(id))).slice(0,6);
+  store.set("recent", state.recent);
+  state.session = null;
+  go("results");
+}
+
+/* ---------- copy + toast ---------- */
+let toastTimer;
+function toast(msg){
+  const t = document.getElementById("toast");
+  t.firstElementChild.textContent = msg; t.classList.add("show");
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove("show"), 1800);
+}
+function copyText(text, lang){
+  const done = () => toast(T[lang||state.lang].copied);
+  const fallback = () => {
+    const ta = document.createElement("textarea");
+    ta.value = text; ta.setAttribute("readonly",""); ta.style.position="fixed"; ta.style.opacity="0";
+    document.body.appendChild(ta); ta.select();
+    try{ document.execCommand("copy"); done(); }catch(e){}
+    ta.remove();
+  };
+  try{
+    if(navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, fallback);
+    else fallback();
+  }catch(e){ fallback(); }
+}
+
+/* ---------- events ---------- */
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-action]"); if(!b) return;
+  const a = b.dataset.action, id = b.dataset.id;
+  if(a==="home") go("home");
+  else if(a==="start"){ state.profile ? newSession() : go("profile","f-niche"); }
+  else if(a==="vault") go("vault");
+  else if(a==="profile") go("profile","f-niche");
+  else if(a==="lang"){ state.lang = state.lang==="ar" ? "en" : "ar"; store.set("lang", state.lang); if(state.view==="session") state.view = state.profile ? "session" : "profile"; state.err=""; render(); }
+  else if(a==="example"){
+    const ex = EXAMPLE[state.lang];
+    document.getElementById("f-niche").value = ex.niche;
+    document.getElementById("f-aud").value = ex.aud;
+    document.getElementById("f-res").value = ex.res;
+  }
+  else if(a==="swap") swapQuestion();
+  else if(a==="next") nextQuestion();
+  else if(a==="prev"){ state.session.i--; state.err=""; render("answer"); }
+  else if(a==="tab"){ const it = findIdea(id); if(it){ it.tab = b.dataset.tab; if(inVault(id)) saveVault(); render(); } }
+  else if(a==="reroll"){ const it = findIdea(id); if(it){ pickHooks(it); render(); } }
+  else if(a==="save"){ const it = findIdea(id); if(it && !inVault(id)){ state.vault.push(JSON.parse(JSON.stringify(it))); saveVault(); render(); toast(T[it.lang].savedToast); } }
+  else if(a==="remove"){ state.vault = state.vault.filter(x => x.id!==id); saveVault(); render(); toast(L().removed); }
+  else if(a==="copy-hook"){ const it = findIdea(id); if(it) copyText(it.hooks[+b.dataset.k], it.lang); }
+  else if(a==="copy-idea"){ const it = findIdea(id); if(it) copyText(ideaText(it), it.lang); }
+  else if(a==="copy-all"){ copyText(state.vault.slice().reverse().map(ideaText).join("\n\n————\n\n")); }
+});
+
+document.addEventListener("input", e => {
+  if(e.target.id==="answer" && state.session){
+    state.session.answers[state.session.i] = e.target.value;
+    document.getElementById("meter").innerHTML = meterHTML(e.target.value);
+    if(state.err){ state.err=""; const er=document.getElementById("err"); if(er) er.textContent=""; }
+  }
+});
+document.addEventListener("keydown", e => {
+  if(e.target.id==="answer" && e.key==="Enter" && (e.metaKey||e.ctrlKey)){ e.preventDefault(); nextQuestion(); }
+});
+document.addEventListener("submit", e => {
+  if(e.target.id!=="profile-form") return;
+  e.preventDefault();
+  const f = e.target;
+  const p = {niche:f.niche.value.trim(), aud:f.aud.value.trim(), res:f.res.value.trim(), plat:(f.querySelector("input[name=plat]:checked")||{}).value || "short"};
+  if(!p.niche || !p.aud || !p.res){ document.getElementById("err").textContent = L().needAll; return; }
+  state.profile = p;
+  newSession();
+});
+
+render();
+})();
+</script>
+
+</body>
+</html>
