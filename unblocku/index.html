@@ -14,6 +14,7 @@
 /* Layout: one working column (max 1080px). Home hero splits pitch | live sample idea card and stacks under 820px.
    Visual idea: cool writing paper, ink-blue, and a highlighter stripe that marks the hook. */
 :root{
+  --hl:#FFE14D; --hl-ink:#141C45;
   --paper:#F1F3F8; --surface:#FFFFFF; --sunk:#E8EBF3; --ink:#141C45; --muted:#596187; --line:#D6DBE8;
   --brand:#2B3BD6; --brand-ink:#FFFFFF; --mark:#FFE14D; --ok:#1C7F54; --warn:#B4441F;
   --shadow:0 1px 0 rgba(20,28,69,.04), 0 14px 34px -16px rgba(20,28,69,.22);
@@ -175,7 +176,30 @@ footer.foot .wrap{padding-block:18px;display:flex;flex-wrap:wrap;gap:8px 20px;ju
 .toast span{background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:999px;font-size:.92rem;font-weight:500;box-shadow:var(--shadow);transform:translateY(12px);opacity:0;transition:all .2s ease}
 .toast.show span{transform:none;opacity:1}
 
+/* unlock */
+.navbtn.unlockbtn{background:var(--hl);color:var(--hl-ink);font-weight:600}
+.navbtn.unlockbtn:hover{background:var(--hl);filter:brightness(.96)}
+.fine{margin:0;font-size:.9rem;color:var(--muted)}
+.btn-lg{padding:14px 26px;font-size:1.05rem}
+.btn-hl{background:var(--hl);color:var(--hl-ink)}
+.banner{max-width:780px;width:100%;margin-inline:auto;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;background:var(--ink);color:var(--paper);border-radius:16px;padding:18px 22px}
+.banner div{display:grid;gap:2px;min-width:0}
+.banner span{opacity:.8}
+.unlock{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+.unlock-pitch{display:grid;gap:18px;min-width:0}
+.unlock-pitch h2{font-size:clamp(2rem,4.6vw,3.2rem);margin:0}
+.price{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px}
+.price .amount{font-size:clamp(3rem,7vw,4.4rem);line-height:1}
+.perks{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.perks li{display:flex;gap:10px}
+.perks li::before{content:"✓";color:var(--ok);font-weight:700}
+.unlock-side{margin:0;max-width:none}
+.side-title{font-size:1.5rem;margin:0}
+.small{font-size:.88rem}
+.keyline{margin:0;display:flex;gap:8px;align-items:baseline}
+.keyline code{font-family:var(--f-mono);font-size:.95rem}
 @media (max-width:820px){
+  .unlock{grid-template-columns:1fr;gap:28px}
   .hero{grid-template-columns:1fr;gap:28px}
   .hero-card .idea,[dir="rtl"] .hero-card .idea{transform:none}
   .steps{grid-template-columns:1fr}
@@ -203,6 +227,15 @@ footer.foot .wrap{padding-block:18px;display:flex;flex-wrap:wrap;gap:8px 20px;ju
 <script>
 (function(){
 "use strict";
+
+/* ===== OWNER SETTINGS: edit these two links (see SETUP.md) ===== */
+const CONFIG = {
+  checkoutUrl: "PASTE_YOUR_CHECKOUT_LINK",   // your Lemon Squeezy or Gumroad checkout link
+  licenseApi: "PASTE_YOUR_WORKER_URL",    // your license checker URL (the Cloudflare Worker)
+  price: "$9",
+  freeRounds: 1          // rounds a visitor can run before paying
+};
+/* =============================================================== */
 
 /* ---------- storage (never trusted to exist) ---------- */
 const store = {
@@ -240,7 +273,17 @@ const T = {
     fmt:{short:"Short video",youtube:"YouTube",post:"Post / carousel"},
     times:{short:["0–3s","3–10s","10–20s","20–30s","30–40s","40–45s"],youtube:["0:00","0:45","2:30","5:00","8:00","End"],post:["Line 1","Part 1","Part 2","Part 3","Part 4","Last line"]},
     promise:"Then promise the payoff: what they will know by the end.",
-    foot1:"Runs in your browser. Your answers stay on this device.", foot2:"UnblockU · beat the blank page in 3 minutes"
+    foot1:"Runs in your browser. Your answers stay on this device.", foot2:"UnblockU · beat the blank page in 3 minutes",
+    navUnlock:"Unlock", freeNote:"Your first round is free. Then {price} once, no subscription.",
+    unlockTitle:"Unlock UnblockU", unlockSub:"Unlimited rounds, whenever the blank page wins.", priceNote:"one-time payment · no subscription",
+    perks:["Unlimited idea rounds","12 question angles and 150+ hook formulas in each language","Arabic and English","Your vault stays on your device","Free updates"],
+    buy:"Buy for {price}", buyMissing:"Preview: your checkout link opens here.",
+    haveKey:"Already bought?", keyLabel:"License key", keyHelp:"It's in your receipt email.", activate:"Unlock this device", checking:"Checking…",
+    unlockedTitle:"Unlocked on this device", unlockedSub:"Thanks for buying UnblockU.", keyShown:"Key", removeDevice:"Remove from this device",
+    unlockedToast:"Unlocked. Enjoy unlimited rounds.", removedDevice:"Removed from this device", manage:"Manage license",
+    freeUsedT:"That was your free round", freeUsed:"Unlock unlimited rounds for {price}, one time.",
+    demoNote:"Preview mode: any key that starts with DEMO- works, for example DEMO-2026.",
+    errors:{invalid_key:"That key wasn't found. Check it against your receipt email and try again.",limit_reached:"This key is already active on the maximum number of devices. Remove it from an old device, or contact support.",disabled:"This key is no longer active (refunded or disabled).",wrong_product:"This key belongs to a different product.",network:"Couldn't reach the license server. Check your connection and try again.",not_set:"The store isn't connected yet. If you own this app, follow SETUP.md.",missing_key:"Paste your license key first."}
   },
   ar:{
     langBtn:"English", navNew:"جولة جديدة", navVault:"الخزنة", navProfile:"ملفي",
@@ -270,7 +313,17 @@ const T = {
     fmt:{short:"فيديو قصير",youtube:"يوتيوب",post:"منشور / كاروسيل"},
     times:{short:["٠–٣ث","٣–١٠ث","١٠–٢٠ث","٢٠–٣٠ث","٣٠–٤٠ث","٤٠–٤٥ث"],youtube:["0:00","0:45","2:30","5:00","8:00","النهاية"],post:["السطر الأول","الجزء ١","الجزء ٢","الجزء ٣","الجزء ٤","السطر الأخير"]},
     promise:"ثم اوعدهم بالنتيجة: ماذا سيعرفون في النهاية.",
-    foot1:"يعمل داخل متصفحك. إجاباتك تبقى على جهازك.", foot2:"UnblockU · تغلّب على الصفحة الفارغة في ٣ دقائق"
+    foot1:"يعمل داخل متصفحك. إجاباتك تبقى على جهازك.", foot2:"UnblockU · تغلّب على الصفحة الفارغة في ٣ دقائق",
+    navUnlock:"فعّل", freeNote:"جولتك الأولى مجانية. بعدها {price} مرة واحدة، بدون اشتراك.",
+    unlockTitle:"فعّل UnblockU", unlockSub:"جولات غير محدودة، كلما غلبتك الصفحة الفارغة.", priceNote:"دفعة واحدة · بدون اشتراك",
+    perks:["جولات أفكار غير محدودة","١٢ زاوية للأسئلة وأكثر من ١٥٠ صيغة افتتاحية لكل لغة","العربية والإنجليزية","خزنتك تبقى على جهازك","تحديثات مجانية"],
+    buy:"اشترِ الآن · {price}", buyMissing:"معاينة: رابط الدفع الخاص بك يفتح هنا.",
+    haveKey:"اشتريت بالفعل؟", keyLabel:"مفتاح الترخيص", keyHelp:"تجده في إيميل الإيصال.", activate:"فعّل على هذا الجهاز", checking:"جارٍ التحقق…",
+    unlockedTitle:"مفعّل على هذا الجهاز", unlockedSub:"شكرًا لشرائك UnblockU.", keyShown:"المفتاح", removeDevice:"أزله من هذا الجهاز",
+    unlockedToast:"تم التفعيل. استمتع بجولات غير محدودة.", removedDevice:"أُزيل من هذا الجهاز", manage:"إدارة الترخيص",
+    freeUsedT:"كانت هذه جولتك المجانية", freeUsed:"فعّل جولات غير محدودة بـ{price}، مرة واحدة فقط.",
+    demoNote:"وضع المعاينة: أي مفتاح يبدأ بـ DEMO- يعمل، مثل DEMO-2026.",
+    errors:{invalid_key:"لم نجد هذا المفتاح. قارنه بإيميل الإيصال وحاول مرة أخرى.",limit_reached:"هذا المفتاح مفعّل على الحد الأقصى من الأجهزة. أزله من جهاز قديم أو تواصل مع الدعم.",disabled:"هذا المفتاح لم يعد فعّالًا (تم استرداده أو إيقافه).",wrong_product:"هذا المفتاح يخص منتجًا آخر.",network:"تعذّر الوصول إلى خادم التراخيص. تحقق من اتصالك وحاول مرة أخرى.",not_set:"المتجر غير مربوط بعد. إذا كنت صاحب التطبيق، اتبع SETUP.md.",missing_key:"الصق مفتاح الترخيص أولًا."}
   }
 };
 
@@ -412,6 +465,67 @@ const CTAS = {
   en:["Follow for more on {res}.","Save this so you can come back to it.","Comment with your biggest question about this.","Send this to someone who needs to hear it."],
   ar:["تابعني لمحتوى أكثر عن {res}.","احفظ هذا لترجع إليه لاحقًا.","اكتب في التعليقات أكبر سؤال عندك عن هذا.","أرسله لشخص يحتاج أن يسمعه."]
 };
+/* ---------- expanded hook library (added to each angle) ---------- */
+const MORE_HOOKS = {
+  mistake:{
+    en:["You're not lazy. You're making this mistake: {a}","Why {aud} who work hard still don't get {res}.","The {niche} mistake I keep fixing for clients.","If {res} feels far away, check this first.","{a}. Sound familiar?","Nobody warned me about this mistake. So I'm warning you.","Here's what's really blocking {res}, and it's not what you think.","Do you do this? {a}"],
+    ar:["لست كسولًا. أنت فقط تقع في هذا الخطأ: {a}","لماذا يعمل {aud} بجد ولا يصلون إلى {res}؟","خطأ في {niche} أصلحه لعملائي مرة بعد مرة.","إذا كنت بعيدًا عن {res}، افحص هذا أولًا.","{a}. هل يبدو هذا مألوفًا؟","لم يحذّرني أحد من هذا الخطأ، لذلك أحذّرك أنا.","هذا ما يمنعك فعلًا من {res}، وليس ما تظن.","هل تفعل هذا؟ {a}"]
+  },
+  myth:{
+    en:["“{a}” is a myth. Let me prove it.","Stop believing this about {niche}.","This belief sounds true. It's keeping {aud} stuck.","Who told you “{a}”? They were wrong.","The biggest lie in {niche}: {a}","I'm about to make some {aud} angry.","What if everything you've heard about {res} is backwards?","Myth vs reality: {a}"],
+    ar:["«{a}» مجرد خرافة. دعني أثبت لك.","توقف عن تصديق هذا عن {niche}.","هذا الاعتقاد يبدو صحيحًا، لكنه يُبقي {aud} في مكانهم.","من قال لك «{a}»؟ كان مخطئًا.","أكبر كذبة في {niche}: {a}","هذا المحتوى سيُغضب بعض {aud}.","ماذا لو كان كل ما سمعته عن {res} معكوسًا؟","الخرافة مقابل الحقيقة: {a}"]
+  },
+  story:{
+    en:["My client almost gave up. Then this happened.","From stuck to {res}: a real story.","This is what getting to {res} actually looks like.","{a}. No hacks. Here's how.","I still remember the message my client sent me.","One conversation changed everything for this client.","The before and after nobody believes.","If my client can do this, so can you."],
+    ar:["عميلي كاد أن يستسلم. ثم حدث هذا.","من التعثّر إلى {res}: قصة حقيقية.","هكذا يبدو الوصول إلى {res} في الواقع.","{a}. بدون حيل. وإليك كيف.","ما زلت أتذكر الرسالة التي أرسلها لي عميلي.","محادثة واحدة غيّرت كل شيء لهذا العميل.","قبل وبعد، والفرق لا يُصدَّق.","إذا استطاع عميلي فعلها، تستطيع أنت أيضًا."]
+  },
+  number:{
+    en:["Most {aud} guess wrong on this number.","{a}. Here's what that means for you.","The math behind {res} is simpler than you think.","Numbers don't lie: {a}","Read that number again: {a}","I didn't believe this number either. Then I checked.","This number explains why most {aud} stay stuck.","Forget the theory. Look at this number."],
+    ar:["أغلب {aud} يخمّنون هذا الرقم بشكل خاطئ.","{a}. وهذا ما يعنيه لك.","حسابات الوصول إلى {res} أبسط مما تظن.","الأرقام لا تكذب: {a}","اقرأ هذا الرقم مرة أخرى: {a}","لم أصدّق هذا الرقم أنا أيضًا، حتى تحقّقت منه.","هذا الرقم يشرح لماذا يبقى أغلب {aud} في مكانهم.","انسَ النظريات. انظر إلى هذا الرقم."]
+  },
+  confession:{
+    en:["I'm a little embarrassed to share this.","{a}. Here's what it taught me.","The lesson that cost me the most in {niche}.","If you're making this mistake now, I made it too.","I did everything “right” and still failed. Here's why.","Here's the version of me I don't post about.","Before I got to {res}, there was this.","If I could tell my younger self one thing, it would be this."],
+    ar:["أشعر ببعض الإحراج وأنا أشارك هذا.","{a}. وهذا ما علّمني إياه.","الدرس الذي كلّفني أكثر من أي شيء في {niche}.","إذا كنت تقع في هذا الخطأ الآن، فقد وقعت فيه أنا أيضًا.","فعلت كل شيء «صحيح» وفشلت رغم ذلك. وهذا السبب.","هذه نسخة مني لا أنشر عنها عادة.","قبل الوصول إلى {res}، مررت بهذا.","لو استطعت أن أقول لنفسي الأصغر شيئًا واحدًا، لكان هذا."]
+  },
+  faq:{
+    en:["You asked: “{a}” Here's the answer.","The answer to this is simpler than you think.","If you've ever asked this, this is for you.","I'll answer this in under a minute.","{aud} ask me this all the time. Here's the answer.","There's a short answer and a real answer. Here's the real one.","Most people overcomplicate this question.","Here's what I tell my clients when they ask this."],
+    ar:["سألتني: «{a}» وهذه الإجابة.","الإجابة أبسط مما تظن.","إذا سألت هذا السؤال يومًا، هذا المحتوى لك.","سأجيب عن هذا في أقل من دقيقة.","{aud} يسألونني هذا طوال الوقت. وهذه الإجابة.","هناك إجابة مختصرة وإجابة حقيقية. وهذه الحقيقية.","أغلب الناس يعقّدون هذا السؤال أكثر من اللازم.","هذا ما أقوله لعملائي عندما يسألونني هذا السؤال."]
+  },
+  badadvice:{
+    en:["Whoever told you “{a}”, I'm sorry.","Unpopular opinion: “{a}” is wrong.","This advice works for gurus. Not for you.","Bad advice I hear in {niche} every week.","If you followed this advice and got nowhere, it's not your fault.","Let's retire this advice for good.","The advice that sounds right and quietly kills {res}.","Good intentions, terrible advice: {a}"],
+    ar:["من قال لك «{a}»، أعتذر لك نيابةً عنه.","رأي غير شائع: «{a}» خطأ.","هذه النصيحة تنفع المشاهير، لا تنفعك أنت.","نصيحة سيئة أسمعها في {niche} كل أسبوع.","إذا اتبعت هذه النصيحة ولم تصل لشيء، فليس الذنب ذنبك.","حان وقت التخلّص من هذه النصيحة نهائيًا.","النصيحة التي تبدو صحيحة وتقتل فرصتك في {res}.","نيّة طيبة، ونصيحة سيئة: {a}"]
+  },
+  beforeafter:{
+    en:["{a}. That was my client before we started.","Where you are now isn't where you have to stay.","Before: {a}. After: {res}.","The one shift between stuck and {res}.","Here's what changes when {aud} finally get {res}.","Tired of this? {a}","Same person. Different results. Here's what changed.","What getting to {res} actually takes."],
+    ar:["{a}. هكذا كان عميلي قبل أن نبدأ.","مكانك الآن ليس بالضرورة مكانك غدًا.","قبل: {a}. بعد: {res}.","التحوّل الوحيد بين التعثّر والوصول إلى {res}.","هذا ما يتغيّر عندما يصل {aud} أخيرًا إلى {res}.","تعبت من هذا؟ {a}","نفس الشخص، ونتائج مختلفة. وهذا ما تغيّر.","ما الذي يتطلبه الوصول إلى {res} فعلًا."]
+  },
+  smallmove:{
+    en:["Try this for 7 days: {a}","The smallest habit with the biggest payoff in {niche}.","You don't need a new strategy. You need this.","Steal this: {a}","Simple, not easy: {a}","Most {aud} overthink it. Start here.","If you only change one thing this week, change this.","This is the fastest path to {res} I know."],
+    ar:["جرّب هذا لمدة ٧ أيام: {a}","أصغر عادة بأكبر نتيجة في {niche}.","لا تحتاج استراتيجية جديدة. تحتاج هذا.","خذها مني: {a}","بسيطة، لكنها ليست سهلة: {a}","أغلب {aud} يفكرون أكثر من اللازم. ابدأ من هنا.","إذا كنت ستغيّر شيئًا واحدًا هذا الأسبوع، فليكن هذا.","هذا أسرع طريق أعرفه إلى {res}."]
+  },
+  shift:{
+    en:["What worked in {niche} last year won't work next year.","I'm calling it now: {a}","Pay attention to this before everyone else does.","The {aud} who adapt to this first will win.","This change is already happening. Most people missed it.","The old way to get {res} is dying.","Here's my prediction for {niche}.","Everything is about to change for {aud}."],
+    ar:["ما نجح في {niche} العام الماضي لن ينجح العام القادم.","أقولها من الآن: {a}","انتبه لهذا قبل أن ينتبه له الجميع.","{aud} الذين يتكيّفون مع هذا أولًا هم من سيفوزون.","هذا التغيير يحدث بالفعل، وأغلب الناس لم يلاحظوه.","الطريقة القديمة للوصول إلى {res} تنتهي.","هذا توقّعي لمستقبل {niche}.","كل شيء على وشك أن يتغيّر بالنسبة إلى {aud}."]
+  },
+  excuse:{
+    en:["If you've ever said “{a}”, this is for you.","I hear “{a}” every week. Here's my answer.","Excuses feel like reasons. This one isn't.","“{a}” is the most expensive sentence in {niche}.","What if “{a}” is the reason to start, not to wait?","You're not behind. You're just stuck on this.","The excuse that keeps {aud} away from {res}.","Let's be honest about this excuse."],
+    ar:["إذا قلت يومًا «{a}»، هذا المحتوى لك.","أسمع «{a}» كل أسبوع. وهذا ردّي.","الأعذار تبدو كأنها أسباب، وهذا العذر ليس سببًا.","«{a}» أغلى جملة في {niche}.","ماذا لو كان «{a}» سببًا لتبدأ، لا لتنتظر؟","أنت لست متأخرًا. أنت فقط عالق عند هذا.","العذر الذي يُبعد {aud} عن {res}.","دعنا نكون صريحين بشأن هذا العذر."]
+  },
+  origin:{
+    en:["This is the moment everything changed for me.","I didn't choose {niche}. It chose me.","Why I'll never stop talking about {res}.","Most people don't know this about me.","{a}. I still think about it.","The real reason I help {aud}.","I almost didn't start. Here's what pushed me.","Everything I teach comes from this moment."],
+    ar:["هذه اللحظة التي تغيّر فيها كل شيء بالنسبة لي.","لم أختر {niche}، بل هو الذي اختارني.","لماذا لن أتوقف عن الحديث عن {res}.","أغلب الناس لا يعرفون هذا عني.","{a}. وما زلت أفكر فيه حتى اليوم.","السبب الحقيقي الذي يجعلني أساعد {aud}.","كدت ألا أبدأ أبدًا. وهذا ما دفعني.","كل ما أعلّمه اليوم جاء من هذه اللحظة."]
+  }
+};
+const MORE_UNIVERSAL = {
+  en:["Read this before your next move in {niche}.","This took me years to learn. You get it in a minute.","Stop scrolling if you want {res}.","Here's the truth about {res}.","I wish I'd known this sooner.","Most {aud} will ignore this. Don't.","This might be the most useful thing you read today.","Quick one for {aud}."],
+  ar:["اقرأ هذا قبل خطوتك القادمة في {niche}.","تعلّمت هذا في سنوات، وأنت ستتعلّمه في دقيقة.","توقف عن التمرير إذا كنت تريد {res}.","هذه هي الحقيقة عن {res}.","تمنيت لو عرفت هذا مبكرًا.","أغلب {aud} سيتجاهلون هذا. لا تكن منهم.","قد يكون هذا أنفع شيء تقرؤه اليوم.","رسالة سريعة إلى {aud}."]
+};
+const MORE_CTAS = {
+  en:["Which part hit home? Tell me in the comments.","Share this with a friend in {niche}.","Want more like this? Follow along.","Try it this week and tell me how it goes."],
+  ar:["أي جزء لمسك أكثر؟ اكتبه في التعليقات.","شارك هذا مع صديق يعمل في {niche}.","تريد المزيد من هذا؟ تابعني.","جرّبه هذا الأسبوع وأخبرني بالنتيجة."]
+};
+Object.keys(MORE_HOOKS).forEach(id => ["en","ar"].forEach(lg => ANGLES[id][lg].hooks.push(...MORE_HOOKS[id][lg])));
+["en","ar"].forEach(lg => { UNIVERSAL[lg].push(...MORE_UNIVERSAL[lg]); CTAS[lg].push(...MORE_CTAS[lg]); });
 const ANGLE_IDS = Object.keys(ANGLES);
 
 /* ---------- helpers ---------- */
@@ -492,6 +606,9 @@ const state = {
   profiles: store.get("profiles", {en:null, ar:null}),
   vault: store.get("vault", []),
   recent: store.get("recent", []),
+  license: store.get("license", null),
+  rounds: store.get("rounds", 0),
+  busy: false,
   view: "home",
   session: null,
   results: [],
@@ -518,6 +635,63 @@ function findIdea(id){
 const inVault = id => state.vault.some(x => x.id===id);
 function saveVault(){ store.set("vault", state.vault); }
 
+/* ---------- access: free round, then license key ---------- */
+const DEMO = CONFIG.licenseApi === "demo";
+const storeReady = DEMO || /^https:\/\//.test(CONFIG.licenseApi);
+const isUnlocked = () => !!(state.license && state.license.key);
+const canStartRound = () => isUnlocked() || (+state.rounds || 0) < CONFIG.freeRounds;
+const price = s => s.replace(/\{price\}/g, CONFIG.price);
+// The price is wrapped so "$9" keeps its order inside Arabic sentences.
+const priceHTML = s => esc(s).replace(/\{price\}/g, `<bdi dir="ltr">${esc(CONFIG.price)}</bdi>`);
+
+function licenseCall(action, payload){
+  if(DEMO){
+    return new Promise(r => setTimeout(() => r(/^DEMO-/i.test(payload.key||"") ? {ok:true, instance:"demo", email:""} : {ok:false, error:"invalid_key"}), 500));
+  }
+  if(!storeReady) return Promise.resolve({ok:false, error:"not_set"});
+  return fetch(CONFIG.licenseApi.replace(/\/+$/,"")+"/"+action, {
+    method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(payload)
+  }).then(r => r.json()).catch(() => ({ok:false, error:"network"}));
+}
+function deviceName(){
+  const ua = navigator.userAgent || "";
+  const os = /iPhone|iPad/.test(ua) ? "iOS" : /Android/.test(ua) ? "Android" : /Mac/.test(ua) ? "Mac" : /Win/.test(ua) ? "Windows" : "Device";
+  return "UnblockU · "+os+" · "+new Date().toISOString().slice(0,10);
+}
+function activateKey(key){
+  key = key.trim();
+  if(!key){ state.err = L().errors.missing_key; render("f-key"); return; }
+  state.busy = true; state.err = ""; render();
+  licenseCall("activate", {key, device:deviceName()}).then(res => {
+    state.busy = false;
+    if(res && res.ok){
+      state.license = {key, instance:res.instance || null, email:res.email || "", checked:Date.now()};
+      store.set("license", state.license);
+      toast(L().unlockedToast);
+      state.profile ? newSession() : go("profile","f-niche");
+    } else {
+      state.err = L().errors[(res && res.error) || "invalid_key"] || L().errors.invalid_key;
+      state.keyDraft = key; render("f-key");
+    }
+  });
+}
+function removeLicense(){
+  const lic = state.license;
+  if(lic && !DEMO) licenseCall("deactivate", {key:lic.key, instance:lic.instance});
+  state.license = null; store.set("license", null);
+  toast(L().removedDevice); render();
+}
+// Re-check a stored key about once a week, so refunded keys stop working. Offline keeps access.
+function recheckLicense(){
+  const lic = state.license;
+  if(!lic || DEMO || !storeReady) return;
+  if(Date.now() - (lic.checked || 0) < 7*24*3600*1000) return;
+  licenseCall("validate", {key:lic.key, instance:lic.instance}).then(res => {
+    if(res && res.ok){ lic.checked = Date.now(); store.set("license", lic); }
+    else if(res && ["invalid_key","disabled","wrong_product"].includes(res.error)){ state.license = null; store.set("license", null); render(); }
+  });
+}
+
 /* ---------- views ---------- */
 function L(){ return T[state.lang]; }
 
@@ -526,6 +700,7 @@ function renderNav(){
   document.getElementById("nav").innerHTML =
     `<button class="navbtn" data-action="start" aria-current="${v==="session"||v==="results"}">${l.navNew}</button>`+
     `<button class="navbtn" data-action="vault" aria-current="${v==="vault"}">${l.navVault}<span class="n">${localNum(state.vault.length, state.lang)}</span></button>`+
+    (isUnlocked() ? "" : `<button class="navbtn unlockbtn" data-action="unlock" aria-current="${v==="unlock"}">${l.navUnlock}</button>`)+
     (state.profile ? `<button class="navbtn" data-action="profile" aria-current="${v==="profile"}">${l.navProfile}</button>` : "")+
     `<button class="navbtn langbtn" data-action="lang" lang="${state.lang==="ar"?"en":"ar"}">${l.langBtn}</button>`;
   document.getElementById("foot1").textContent = l.foot1;
@@ -572,6 +747,7 @@ function viewHome(){
         <p class="lede">${l.lede}</p>
         <div class="row"><button class="btn btn-primary" data-action="start">${l.start}</button><button class="btn btn-ghost" data-action="vault">${l.openVault}</button></div>
         <ul class="ticks">${l.ticks.map(t=>`<li>${t}</li>`).join("")}</ul>
+        ${isUnlocked() ? "" : `<p class="fine">${priceHTML(l.freeNote)}</p>`}
       </div>
       <div class="hero-card"><p class="tiny">${l.sample}</p>${cardHTML(sampleIdea(), {sample:true})}</div>
     </section>
@@ -592,7 +768,7 @@ function viewProfile(){
     <div class="field"><label for="f-res">${l.fRes}</label><input id="f-res" name="res" value="${esc(p.res)}" placeholder="${esc(l.fResPh)}" autocomplete="off"><small>${l.fResHelp}</small></div>
     <div class="field"><span style="font-weight:600;font-size:.95rem">${l.fPlat}</span><div class="seg">${plats}</div></div>
     <p class="err" id="err">${esc(state.err)}</p>
-    <div class="row"><button class="btn btn-primary" type="submit">${l.saveProfile}</button><button class="btn btn-ghost" type="button" data-action="example">${l.example}</button></div>
+    <div class="row"><button class="btn btn-primary" type="submit">${l.saveProfile}</button><button class="btn btn-ghost" type="button" data-action="example">${l.example}</button>${isUnlocked()?`<button class="btn btn-ghost" type="button" data-action="unlock">${l.manage}</button>`:""}</div>
   </form></div>`;
 }
 
@@ -629,8 +805,44 @@ function viewResults(){
   return `<div class="view">
     <div class="results-head"><div class="section-head"><h2 class="disp">${l.resultsTitle}</h2><p>${l.resultsSub}</p></div>
       <button class="btn btn-primary" data-action="start">${l.again}</button></div>
+    ${canStartRound() ? "" : `<div class="banner"><div><b>${l.freeUsedT}</b><span>${priceHTML(l.freeUsed)}</span></div><button class="btn btn-hl" data-action="unlock">${l.navUnlock}</button></div>`}
     <div class="ideas">${state.results.map(it => cardHTML(it)).join("")}</div>
   </div>`;
+}
+
+function viewUnlock(){
+  const l = L();
+  const buy = /^https:\/\//.test(CONFIG.checkoutUrl)
+    ? `<a class="btn btn-primary btn-lg" href="${esc(CONFIG.checkoutUrl)}" target="_blank" rel="noopener">${priceHTML(l.buy)}</a>`
+    : `<button class="btn btn-primary btn-lg" data-action="buy-missing">${priceHTML(l.buy)}</button>`;
+  let side;
+  if(isUnlocked()){
+    const k = state.license.key;
+    side = `<div class="panel unlock-side">
+      <span class="pill on">${l.unlockedTitle}</span>
+      <p class="hint">${l.unlockedSub}</p>
+      <p class="keyline"><span class="tiny">${l.keyShown}</span> <code dir="ltr">••••${esc(k.slice(-4))}</code></p>
+      <div class="row"><button class="btn btn-primary" data-action="start">${l.start}</button><button class="btn btn-ghost" data-action="remove-license">${l.removeDevice}</button></div>
+    </div>`;
+  } else {
+    side = `<form class="panel unlock-side" id="unlock-form" novalidate>
+      <h3 class="disp side-title">${l.haveKey}</h3>
+      <div class="field"><label for="f-key">${l.keyLabel}</label><input id="f-key" name="key" dir="ltr" autocomplete="off" spellcheck="false" value="${esc(state.keyDraft||"")}" placeholder="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"><small>${l.keyHelp}</small></div>
+      <p class="err" id="err">${esc(state.err)}</p>
+      <button class="btn btn-primary" type="submit" ${state.busy?"disabled":""}>${state.busy?l.checking:l.activate}</button>
+      ${DEMO ? `<p class="hint small">${l.demoNote}</p>` : ""}
+    </form>`;
+  }
+  return `<div class="view"><section class="unlock">
+    <div class="unlock-pitch">
+      <h2 class="disp">${l.unlockTitle}</h2>
+      <p class="lede">${l.unlockSub}</p>
+      <div class="price"><span class="disp amount" dir="ltr"><mark>${esc(CONFIG.price)}</mark></span><span class="tiny">${l.priceNote}</span></div>
+      <ul class="perks">${l.perks.map(p=>`<li>${p}</li>`).join("")}</ul>
+      ${isUnlocked() ? "" : `<div class="row">${buy}</div>`}
+    </div>
+    ${side}
+  </section></div>`;
 }
 
 function viewVault(){
@@ -651,7 +863,7 @@ function render(focus){
   renderNav();
   const app = document.getElementById("app");
   const v = state.view;
-  app.innerHTML = v==="profile" ? viewProfile() : v==="session" ? viewSession() : v==="results" ? viewResults() : v==="vault" ? viewVault() : viewHome();
+  app.innerHTML = v==="profile" ? viewProfile() : v==="session" ? viewSession() : v==="results" ? viewResults() : v==="vault" ? viewVault() : v==="unlock" ? viewUnlock() : viewHome();
   if(focus){ const el = document.getElementById(focus); if(el){ el.focus(); if(el.setSelectionRange){ const n=el.value.length; el.setSelectionRange(n,n);} } }
 }
 function go(view, focus){ state.view = view; state.err = ""; render(focus); window.scrollTo({top:0}); }
@@ -682,6 +894,7 @@ function nextQuestion(){
   state.recent = s.qs.concat(state.recent.filter(id => !s.qs.includes(id))).slice(0,6);
   store.set("recent", state.recent);
   state.session = null;
+  if(!isUnlocked()){ state.rounds = (+state.rounds || 0) + 1; store.set("rounds", state.rounds); }
   go("results");
 }
 
@@ -712,7 +925,10 @@ document.addEventListener("click", e => {
   const b = e.target.closest("[data-action]"); if(!b) return;
   const a = b.dataset.action, id = b.dataset.id;
   if(a==="home") go("home");
-  else if(a==="start"){ state.profile ? newSession() : go("profile","f-niche"); }
+  else if(a==="start"){ !canStartRound() ? go("unlock","f-key") : state.profile ? newSession() : go("profile","f-niche"); }
+  else if(a==="unlock") go("unlock","f-key");
+  else if(a==="remove-license") removeLicense();
+  else if(a==="buy-missing") toast(L().buyMissing);
   else if(a==="vault") go("vault");
   else if(a==="profile") go("profile","f-niche");
   else if(a==="lang"){ state.lang = state.lang==="ar" ? "en" : "ar"; store.set("lang", state.lang); if(state.view==="session") state.view = state.profile ? "session" : "profile"; state.err=""; render(); }
@@ -745,16 +961,18 @@ document.addEventListener("keydown", e => {
   if(e.target.id==="answer" && e.key==="Enter" && (e.metaKey||e.ctrlKey)){ e.preventDefault(); nextQuestion(); }
 });
 document.addEventListener("submit", e => {
+  if(e.target.id==="unlock-form"){ e.preventDefault(); if(!state.busy) activateKey(e.target.key.value); return; }
   if(e.target.id!=="profile-form") return;
   e.preventDefault();
   const f = e.target;
   const p = {niche:f.niche.value.trim(), aud:f.aud.value.trim(), res:f.res.value.trim(), plat:(f.querySelector("input[name=plat]:checked")||{}).value || "short"};
   if(!p.niche || !p.aud || !p.res){ document.getElementById("err").textContent = L().needAll; return; }
   state.profile = p;
-  newSession();
+  canStartRound() ? newSession() : go("unlock","f-key");
 });
 
 render();
+recheckLicense();
 })();
 </script>
 
