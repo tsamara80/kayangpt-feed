@@ -1,6 +1,15 @@
 {
-  "last_updated": "2026-10-07T12:43:34.190329+00:00",
+  "last_updated": "2026-10-08T12:52:34.094686+00:00",
   "updates": [
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/social-planner-community-posting-via-public-api",
+      "category": "DISCARD",
+      "reason": "This is a developer/public API feature for integration partners and marketplace apps, not a direct user-facing feature for coaches or businesses using the platform UI.",
+      "published": "2026-10-08T07:23:34+00:00",
+      "raw_title": "Social Planner: Community Posting via Public API",
+      "raw_content": "Community posting just became more powerful for developers and integration partners.You can now schedule and publish Community posts through the Social Planner Public API, including choosing which Community member the post should be published as.This makes it easier for marketplace apps and custom integrations to bring Community publishing into their own workflows.What's newList Community MembersIntegration partners can now retrieve eligible Community members who can publish posts.Search members by namePaginate through member listsOnly active, permitted members are returnedPrivate Communities return only members of that specific groupValidate Member EligibilityBefore scheduling a post, integrations can verify whether a selected member is still active and authorized to publish in the Community.Publish as a Specific MemberWhen creating a Community post through the API, integrations can specify which eligible member the post should be published as.Publish-Time VerificationSocial Planner performs a final eligibility check before publishing. If the selected member has left the Community or lost permission, the post won't be published under the wrong identity.Instead, the post fails with a clear and actionable error.How it worksConnect a Community group in Marketing → Social Planner → Settings → Social AccountsUse Get Accounts to retrieve the Community account IDUse Get Community Members to retrieve eligible membersSelect the member you want to publish asCreate the post using the Community post APIOptionally validate the member before schedulingSocial Planner verifies the member again before publishingWhy it mattersEnable Community publishing through marketplace apps and custom integrationsAutomate Community announcements from external workflowsEnsure posts are always published by an eligible memberCatch invalid member selections before publishingGet clear error messages instead of silent publishing failuresBring Community posting closer to API parity with other social channelsNotesCommunity account connection and management remain available in the HighLevel UI.The Public API supports member listing, member validation, scheduling, and publishing.Draft posts don't require a postAsUser selection.Member eligibility is checked when posts are scheduled or published.The selected member must remain active and permitted in the Community at publish time.API access requires the appropriate Social Planner scopes.Marketplace API link - https://marketplace.gohighlevel.com/docs/ghl/social-planner/get-community-users/",
+      "status": "discarded"
+    },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/enhanced-notifications-for-recurring-appointments",
       "category": "LIVE_NOW",
