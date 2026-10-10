@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-09T12:39:25.843091+00:00",
+  "last_updated": "2026-10-10T11:58:09.460977+00:00",
   "updates": [
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/ai-studio-cloud-a-built-in-backend-for-your-apps",
@@ -31,6 +31,15 @@
       "published": "2026-10-08T14:20:41+00:00",
       "raw_title": "Improved A2P Rejection Guidance for Chat Widget and Manual Campaigns",
       "raw_content": "We've rewritten the guidance in the &quot;View required fixes&quot; modal so it matches how you registered your campaign.What's new:Guidance for your setup: the most common rejection reasons now have separate guidance for campaigns set up through the Chat Widget (Quick Setup) and through Manual Setup, since the fix is in a different place for each.Clearer next steps: each reason explains in plain language what happened, then lists the specific actions to take.Know when it's not on you: some rejections are caused by something the platform generates, like the chat widget's consent wording. We'll tell you and point you to support, so you don't spend a resubmission on something you can't change.Exact wording where carriers require it: for reasons like privacy policy verification, the steps include the required statement.Notice when resubmitting won't help: for reasons like a business type mismatch, we'll tell you what needs to change first.Previously:The modal showed the carrier's generic guidance, written for every registration method. Chat Widget users were often asked to fix fields or consent wording they never wrote.Why it matters:Guidance that matches your setup helps you fix the right thing the first time and resubmit with confidence, without waiting on support.",
+      "status": "discarded"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/improved-rejection-guidance-for-a2p-campaigns",
+      "category": "DISCARD",
+      "reason": "Entirely about A2P SMS campaign registration and carrier rejection guidance, which relates to SMS — an unavailable feature on Kayan.",
+      "published": "2026-10-08T14:20:41+00:00",
+      "raw_title": "Improved  Rejection Guidance for A2P Campaigns",
+      "raw_content": "We’ve rewritten the guidance in the “View required fixes” modal so it matches how you registered your campaign.What’s new:Guidance for your setup: the most common rejection reasons now have separate guidance for campaigns set up through the Chat Widget (Quick Setup) and through Manual Setup, since the fix is in a different place for each.Only steps you can act on: if you registered through the Chat Widget, the guidance focuses on what you control, like your website, other forms on your site and your policy links. It no longer asks you to change the consent wording or form fields the widget creates for you.Clearer next steps: each reason explains in plain language what happened, then lists the specific actions to take.Exact wording where carriers require it: for reasons like privacy policy verification, the steps include the required statement.Notice when resubmitting won’t help: for reasons like a business type mismatch, we’ll tell you what needs to change first.Examples of the updated Chat Widget guidance:Previously:The modal showed the carrier’s generic guidance, written for every registration method. Chat Widget users were often asked to fix fields or consent wording they never wrote.Why it matters:Guidance that matches your setup helps you fix the right thing the first time and resubmit with confidence, without waiting on support.",
       "status": "discarded"
     },
     {
