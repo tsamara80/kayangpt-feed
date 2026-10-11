@@ -1,6 +1,15 @@
 {
-  "last_updated": "2026-10-10T11:58:09.460977+00:00",
+  "last_updated": "2026-10-11T12:10:13.506982+00:00",
   "updates": [
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/introducing-snapshot-and-public-api-support-for-new-custom-field-types",
+      "category": "DISCARD",
+      "reason": "Snapshot support is an agency/sub-account reseller feature, and public API support targets developers building integrations — neither is a direct end-user feature for Kayan coaches or businesses.",
+      "published": "2026-10-10T13:49:23+00:00",
+      "raw_title": "Introducing snapshot and public API support for new custom field types",
+      "raw_content": "OverviewWe're excited to announce that snapshot and public API support is now available for all our recently launched custom field types (URL, Date &amp; Time, Rich text, Users field, Image support in Radio and Checkbox fields - https://highlevel.canny.io/changelog/introducing-new-custom-fields)With these enhancements, you can now seamlessly replicate custom field configurations across sub-accounts using snapshots and manage custom field data programmatically through public APIs.Whether you're setting up multiple sub-accounts, building integrations, or automating processes, these additions make it easier to manage, reuse, and scale your custom fields across HighLevel.What's new?1. Snapshot support for new custom field types - You can now include the newly introduced custom field types in your snapshots, eliminating the need to manually recreate field configurations across sub-accounts.Why it matters: Save time, maintain consistency, and simplify sub-account setup by reusing custom field configurations through snapshots.2. Public API support for new custom field types - We've also extended our public APIs to support all the newly introduced custom field types, allowing developers to work with these fields programmatically.https://marketplace.gohighlevel.com/docs/ghl/locations/create-custom-field/Why it matters: Build more flexible integrations, synchronize custom field data with external applications, and automate processes without relying solely on manual updates.Availability: Both snapshot and public API support are now live in production and available to all accounts. If you've already enabled the new custom field types through Labs, you can start taking advantage of these enhancements without any additional activation.With snapshot and public API support now available, we're making custom fields more powerful, reusable, and easier to integrate into your everyday business processes.",
+      "status": "discarded"
+    },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/ai-studio-cloud-a-built-in-backend-for-your-apps",
       "category": "DISCARD",
