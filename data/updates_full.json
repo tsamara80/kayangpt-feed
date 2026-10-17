@@ -1,6 +1,24 @@
 {
-  "last_updated": "2026-10-16T10:51:22.534672+00:00",
+  "last_updated": "2026-10-17T10:12:26.224592+00:00",
   "updates": [
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/get-the-right-ad-platform-on-your-number-pool-calls",
+      "category": "DISCARD",
+      "reason": "Entirely about phone call tracking and number pools — AI voice/phone calling is an unavailable feature under Rule 2/3.",
+      "published": "2026-10-16T13:54:30+00:00",
+      "raw_title": "Get the right ad platform on your number pool calls",
+      "raw_content": "6th of October, 2026Get the right ad platform on your number pool callsWhat's newCall tracking now labels Facebook ad calls correctly. Before, many calls from Facebook ads showed up as &quot;Facebook&quot; or &quot;Direct&quot;, so you couldn't tell which ads were driving calls. They now show as Facebook Paid.What you getFacebook ad calls are labeled &quot;Facebook Paid&quot;.Other ad platforms are covered too. Calls from TikTok, LinkedIn, and Microsoft (Bing) ads, and Google ads clicked in apps, are now labeled by platform.Tagged links are labeled too. If your ad link uses utm_medium=cpc, the source shows as the platform plus &quot;Paid&quot;, such as &quot;Bing Paid&quot;.AI referrals. Visits that come from ChatGPT and similar tools show up as their own source.Good to knowNothing to set up. Your number pool tracking script updates on its own.These changes apply to new calls only. Past calls keep the source they already have.Some calls will still show as &quot;Direct&quot;. This happens when a visitor's browser hides where they came from and the link has no ad tracking code. We can't label those.If a visitor's link has several ad tracking codes, the first match wins. Google is checked first, then Facebook, TikTok, and LinkedIn.More about Number pools and call tracking here.Where to find itYour call reports and call details now show the improved source.",
+      "status": "discarded"
+    },
+    {
+      "source_link": "https://ideas.gohighlevel.com/changelog/send-number-pool-calls-to-multiple-users-who-can-answer-it-on-any-device-they-ch",
+      "category": "DISCARD",
+      "reason": "Entirely about phone call routing and voice calling features, which are unavailable to Kayan users under rule 2.",
+      "published": "2026-10-16T13:10:07+00:00",
+      "raw_title": "Send number pool calls to multiple users who can answer it on any device they choose",
+      "raw_content": "6th of October, 2026Send number pool calls to multiple users who can answer it on any device they chooseWhat's newYou can now send number pool calls to several team members at once. Each person can answer on the device they prefer: web, mobile, desk phone, or their own phone number. Earlier, number pool calls couldn't be sent to specific team members' devices.How it worksOpen a number pool's settings and turn on Ring Incoming Call to selected Users.Pick up to 6 team members. Each person's devices ring at the same time, using the ring channel they've set up.Your choices are saved and show up again the next time you open the pool.Good to knowYou can choose the preferred device type of a user under Settings &gt; Users/My Staff &gt; Edit &gt; Call &amp; voicemail &gt; Default channel for ring all.More about number pools and call tracking here.",
+      "status": "discarded"
+    },
     {
       "source_link": "https://ideas.gohighlevel.com/changelog/localized-gift-card-communications",
       "category": "LIVE_NOW",
