@@ -28,3 +28,7 @@ This repo must stay PRIVATE. It holds the source links, the raw upstream text an
 ## Rules
 
 The Kayan rules live in KAYAN_RULES inside update_feed.py. Keep them in step with kayan_rules.md in the Support Assistant package.
+
+## Video studio
+
+`video-studio/` holds a separate Remotion setup for making SaaS launch videos with Claude Code. See `video-studio/README.md`. It is not part of the feed pipeline.

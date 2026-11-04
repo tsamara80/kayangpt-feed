@@ -1,0 +1,9 @@
+node_modules/
+out/
+# Large media lives in public/ but is not committed by default.
+# Remove these lines (or use Git LFS) if you want your assets in the repo.
+public/**/*.mp4
+public/**/*.mov
+public/**/*.mp3
+public/**/*.wav
+!public/**/.gitkeep
